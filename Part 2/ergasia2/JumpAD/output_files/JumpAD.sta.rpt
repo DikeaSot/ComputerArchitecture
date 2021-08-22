@@ -1,0 +1,1698 @@
+TimeQuest Timing Analyzer report for JumpAD
+Thu May 20 09:54:05 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; JumpAD                                                            ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------------+
+; Propagation Delay                                               ;
++---------------+-------------+--------+--------+--------+--------+
+; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++---------------+-------------+--------+--------+--------+--------+
+; instrP2AD[0]  ; EjumpAD[0]  ; 4.848  ;        ;        ; 4.848  ;
+; instrP2AD[1]  ; EjumpAD[1]  ; 6.461  ; 6.461  ; 6.461  ; 6.461  ;
+; instrP2AD[1]  ; EjumpAD[2]  ; 6.844  ; 6.844  ; 6.844  ; 6.844  ;
+; instrP2AD[1]  ; EjumpAD[3]  ; 6.667  ; 6.667  ; 6.667  ; 6.667  ;
+; instrP2AD[1]  ; EjumpAD[4]  ; 7.473  ; 7.473  ; 7.473  ; 7.473  ;
+; instrP2AD[1]  ; EjumpAD[5]  ; 7.069  ; 7.069  ; 7.069  ; 7.069  ;
+; instrP2AD[1]  ; EjumpAD[6]  ; 7.099  ; 7.099  ; 7.099  ; 7.099  ;
+; instrP2AD[1]  ; EjumpAD[7]  ; 7.430  ; 7.430  ; 7.430  ; 7.430  ;
+; instrP2AD[1]  ; EjumpAD[8]  ; 7.609  ; 7.609  ; 7.609  ; 7.609  ;
+; instrP2AD[1]  ; EjumpAD[9]  ; 7.904  ; 7.904  ; 7.904  ; 7.904  ;
+; instrP2AD[1]  ; EjumpAD[10] ; 7.249  ; 7.249  ; 7.249  ; 7.249  ;
+; instrP2AD[1]  ; EjumpAD[11] ; 7.539  ; 7.539  ; 7.539  ; 7.539  ;
+; instrP2AD[1]  ; EjumpAD[12] ; 8.082  ; 8.082  ; 8.082  ; 8.082  ;
+; instrP2AD[1]  ; EjumpAD[13] ; 7.913  ; 7.913  ; 7.913  ; 7.913  ;
+; instrP2AD[1]  ; EjumpAD[14] ; 7.545  ; 7.545  ; 7.545  ; 7.545  ;
+; instrP2AD[1]  ; EjumpAD[15] ; 7.853  ; 7.853  ; 7.853  ; 7.853  ;
+; instrP2AD[2]  ; EjumpAD[2]  ; 10.159 ; 10.159 ; 10.159 ; 10.159 ;
+; instrP2AD[2]  ; EjumpAD[3]  ; 10.297 ; 10.297 ; 10.297 ; 10.297 ;
+; instrP2AD[2]  ; EjumpAD[4]  ; 11.103 ; 11.103 ; 11.103 ; 11.103 ;
+; instrP2AD[2]  ; EjumpAD[5]  ; 10.699 ; 10.699 ; 10.699 ; 10.699 ;
+; instrP2AD[2]  ; EjumpAD[6]  ; 10.729 ; 10.729 ; 10.729 ; 10.729 ;
+; instrP2AD[2]  ; EjumpAD[7]  ; 11.060 ; 11.060 ; 11.060 ; 11.060 ;
+; instrP2AD[2]  ; EjumpAD[8]  ; 11.239 ; 11.239 ; 11.239 ; 11.239 ;
+; instrP2AD[2]  ; EjumpAD[9]  ; 11.534 ; 11.534 ; 11.534 ; 11.534 ;
+; instrP2AD[2]  ; EjumpAD[10] ; 10.879 ; 10.879 ; 10.879 ; 10.879 ;
+; instrP2AD[2]  ; EjumpAD[11] ; 11.169 ; 11.169 ; 11.169 ; 11.169 ;
+; instrP2AD[2]  ; EjumpAD[12] ; 11.712 ; 11.712 ; 11.712 ; 11.712 ;
+; instrP2AD[2]  ; EjumpAD[13] ; 11.543 ; 11.543 ; 11.543 ; 11.543 ;
+; instrP2AD[2]  ; EjumpAD[14] ; 11.175 ; 11.175 ; 11.175 ; 11.175 ;
+; instrP2AD[2]  ; EjumpAD[15] ; 11.483 ; 11.483 ; 11.483 ; 11.483 ;
+; instrP2AD[3]  ; EjumpAD[3]  ; 10.160 ; 10.160 ; 10.160 ; 10.160 ;
+; instrP2AD[3]  ; EjumpAD[4]  ; 11.281 ; 11.281 ; 11.281 ; 11.281 ;
+; instrP2AD[3]  ; EjumpAD[5]  ; 10.877 ; 10.877 ; 10.877 ; 10.877 ;
+; instrP2AD[3]  ; EjumpAD[6]  ; 10.907 ; 10.907 ; 10.907 ; 10.907 ;
+; instrP2AD[3]  ; EjumpAD[7]  ; 11.238 ; 11.238 ; 11.238 ; 11.238 ;
+; instrP2AD[3]  ; EjumpAD[8]  ; 11.417 ; 11.417 ; 11.417 ; 11.417 ;
+; instrP2AD[3]  ; EjumpAD[9]  ; 11.712 ; 11.712 ; 11.712 ; 11.712 ;
+; instrP2AD[3]  ; EjumpAD[10] ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
+; instrP2AD[3]  ; EjumpAD[11] ; 11.347 ; 11.347 ; 11.347 ; 11.347 ;
+; instrP2AD[3]  ; EjumpAD[12] ; 11.890 ; 11.890 ; 11.890 ; 11.890 ;
+; instrP2AD[3]  ; EjumpAD[13] ; 11.721 ; 11.721 ; 11.721 ; 11.721 ;
+; instrP2AD[3]  ; EjumpAD[14] ; 11.353 ; 11.353 ; 11.353 ; 11.353 ;
+; instrP2AD[3]  ; EjumpAD[15] ; 11.661 ; 11.661 ; 11.661 ; 11.661 ;
+; instrP2AD[4]  ; EjumpAD[4]  ; 10.895 ; 10.895 ; 10.895 ; 10.895 ;
+; instrP2AD[4]  ; EjumpAD[5]  ; 10.806 ; 10.806 ; 10.806 ; 10.806 ;
+; instrP2AD[4]  ; EjumpAD[6]  ; 10.836 ; 10.836 ; 10.836 ; 10.836 ;
+; instrP2AD[4]  ; EjumpAD[7]  ; 11.167 ; 11.167 ; 11.167 ; 11.167 ;
+; instrP2AD[4]  ; EjumpAD[8]  ; 11.346 ; 11.346 ; 11.346 ; 11.346 ;
+; instrP2AD[4]  ; EjumpAD[9]  ; 11.641 ; 11.641 ; 11.641 ; 11.641 ;
+; instrP2AD[4]  ; EjumpAD[10] ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; instrP2AD[4]  ; EjumpAD[11] ; 11.276 ; 11.276 ; 11.276 ; 11.276 ;
+; instrP2AD[4]  ; EjumpAD[12] ; 11.819 ; 11.819 ; 11.819 ; 11.819 ;
+; instrP2AD[4]  ; EjumpAD[13] ; 11.650 ; 11.650 ; 11.650 ; 11.650 ;
+; instrP2AD[4]  ; EjumpAD[14] ; 11.282 ; 11.282 ; 11.282 ; 11.282 ;
+; instrP2AD[4]  ; EjumpAD[15] ; 11.590 ; 11.590 ; 11.590 ; 11.590 ;
+; instrP2AD[5]  ; EjumpAD[5]  ; 10.203 ; 10.203 ; 10.203 ; 10.203 ;
+; instrP2AD[5]  ; EjumpAD[6]  ; 10.548 ; 10.548 ; 10.548 ; 10.548 ;
+; instrP2AD[5]  ; EjumpAD[7]  ; 10.879 ; 10.879 ; 10.879 ; 10.879 ;
+; instrP2AD[5]  ; EjumpAD[8]  ; 11.058 ; 11.058 ; 11.058 ; 11.058 ;
+; instrP2AD[5]  ; EjumpAD[9]  ; 11.353 ; 11.353 ; 11.353 ; 11.353 ;
+; instrP2AD[5]  ; EjumpAD[10] ; 10.698 ; 10.698 ; 10.698 ; 10.698 ;
+; instrP2AD[5]  ; EjumpAD[11] ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; instrP2AD[5]  ; EjumpAD[12] ; 11.531 ; 11.531 ; 11.531 ; 11.531 ;
+; instrP2AD[5]  ; EjumpAD[13] ; 11.362 ; 11.362 ; 11.362 ; 11.362 ;
+; instrP2AD[5]  ; EjumpAD[14] ; 10.994 ; 10.994 ; 10.994 ; 10.994 ;
+; instrP2AD[5]  ; EjumpAD[15] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; instrP2AD[6]  ; EjumpAD[6]  ; 9.719  ; 9.719  ; 9.719  ; 9.719  ;
+; instrP2AD[6]  ; EjumpAD[7]  ; 10.365 ; 10.365 ; 10.365 ; 10.365 ;
+; instrP2AD[6]  ; EjumpAD[8]  ; 10.544 ; 10.544 ; 10.544 ; 10.544 ;
+; instrP2AD[6]  ; EjumpAD[9]  ; 10.839 ; 10.839 ; 10.839 ; 10.839 ;
+; instrP2AD[6]  ; EjumpAD[10] ; 10.184 ; 10.184 ; 10.184 ; 10.184 ;
+; instrP2AD[6]  ; EjumpAD[11] ; 10.474 ; 10.474 ; 10.474 ; 10.474 ;
+; instrP2AD[6]  ; EjumpAD[12] ; 11.017 ; 11.017 ; 11.017 ; 11.017 ;
+; instrP2AD[6]  ; EjumpAD[13] ; 10.848 ; 10.848 ; 10.848 ; 10.848 ;
+; instrP2AD[6]  ; EjumpAD[14] ; 10.480 ; 10.480 ; 10.480 ; 10.480 ;
+; instrP2AD[6]  ; EjumpAD[15] ; 10.788 ; 10.788 ; 10.788 ; 10.788 ;
+; instrP2AD[7]  ; EjumpAD[7]  ; 10.384 ; 10.384 ; 10.384 ; 10.384 ;
+; instrP2AD[7]  ; EjumpAD[8]  ; 10.878 ; 10.878 ; 10.878 ; 10.878 ;
+; instrP2AD[7]  ; EjumpAD[9]  ; 11.173 ; 11.173 ; 11.173 ; 11.173 ;
+; instrP2AD[7]  ; EjumpAD[10] ; 10.518 ; 10.518 ; 10.518 ; 10.518 ;
+; instrP2AD[7]  ; EjumpAD[11] ; 10.808 ; 10.808 ; 10.808 ; 10.808 ;
+; instrP2AD[7]  ; EjumpAD[12] ; 11.351 ; 11.351 ; 11.351 ; 11.351 ;
+; instrP2AD[7]  ; EjumpAD[13] ; 11.182 ; 11.182 ; 11.182 ; 11.182 ;
+; instrP2AD[7]  ; EjumpAD[14] ; 10.814 ; 10.814 ; 10.814 ; 10.814 ;
+; instrP2AD[7]  ; EjumpAD[15] ; 11.122 ; 11.122 ; 11.122 ; 11.122 ;
+; instrP2AD[8]  ; EjumpAD[8]  ; 10.475 ; 10.475 ; 10.475 ; 10.475 ;
+; instrP2AD[8]  ; EjumpAD[9]  ; 11.087 ; 11.087 ; 11.087 ; 11.087 ;
+; instrP2AD[8]  ; EjumpAD[10] ; 10.432 ; 10.432 ; 10.432 ; 10.432 ;
+; instrP2AD[8]  ; EjumpAD[11] ; 10.722 ; 10.722 ; 10.722 ; 10.722 ;
+; instrP2AD[8]  ; EjumpAD[12] ; 11.265 ; 11.265 ; 11.265 ; 11.265 ;
+; instrP2AD[8]  ; EjumpAD[13] ; 11.096 ; 11.096 ; 11.096 ; 11.096 ;
+; instrP2AD[8]  ; EjumpAD[14] ; 10.728 ; 10.728 ; 10.728 ; 10.728 ;
+; instrP2AD[8]  ; EjumpAD[15] ; 11.036 ; 11.036 ; 11.036 ; 11.036 ;
+; instrP2AD[9]  ; EjumpAD[9]  ; 10.144 ; 10.144 ; 10.144 ; 10.144 ;
+; instrP2AD[9]  ; EjumpAD[10] ; 9.801  ; 9.801  ; 9.801  ; 9.801  ;
+; instrP2AD[9]  ; EjumpAD[11] ; 10.091 ; 10.091 ; 10.091 ; 10.091 ;
+; instrP2AD[9]  ; EjumpAD[12] ; 10.634 ; 10.634 ; 10.634 ; 10.634 ;
+; instrP2AD[9]  ; EjumpAD[13] ; 10.465 ; 10.465 ; 10.465 ; 10.465 ;
+; instrP2AD[9]  ; EjumpAD[14] ; 10.097 ; 10.097 ; 10.097 ; 10.097 ;
+; instrP2AD[9]  ; EjumpAD[15] ; 10.405 ; 10.405 ; 10.405 ; 10.405 ;
+; instrP2AD[10] ; EjumpAD[10] ; 9.837  ; 9.837  ; 9.837  ; 9.837  ;
+; instrP2AD[10] ; EjumpAD[11] ; 10.443 ; 10.443 ; 10.443 ; 10.443 ;
+; instrP2AD[10] ; EjumpAD[12] ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; instrP2AD[10] ; EjumpAD[13] ; 10.817 ; 10.817 ; 10.817 ; 10.817 ;
+; instrP2AD[10] ; EjumpAD[14] ; 10.449 ; 10.449 ; 10.449 ; 10.449 ;
+; instrP2AD[10] ; EjumpAD[15] ; 10.757 ; 10.757 ; 10.757 ; 10.757 ;
+; instrP2AD[11] ; EjumpAD[11] ; 10.510 ; 10.510 ; 10.510 ; 10.510 ;
+; instrP2AD[11] ; EjumpAD[12] ; 11.365 ; 11.365 ; 11.365 ; 11.365 ;
+; instrP2AD[11] ; EjumpAD[13] ; 11.196 ; 11.196 ; 11.196 ; 11.196 ;
+; instrP2AD[11] ; EjumpAD[14] ; 10.828 ; 10.828 ; 10.828 ; 10.828 ;
+; instrP2AD[11] ; EjumpAD[15] ; 11.136 ; 11.136 ; 11.136 ; 11.136 ;
+; instrP2AD[12] ; EjumpAD[12] ; 10.801 ; 10.801 ; 10.801 ; 10.801 ;
+; instrP2AD[12] ; EjumpAD[13] ; 10.948 ; 10.948 ; 10.948 ; 10.948 ;
+; instrP2AD[12] ; EjumpAD[14] ; 10.580 ; 10.580 ; 10.580 ; 10.580 ;
+; instrP2AD[12] ; EjumpAD[15] ; 10.888 ; 10.888 ; 10.888 ; 10.888 ;
+; instrP2AD[13] ; EjumpAD[13] ; 9.824  ; 9.824  ; 9.824  ; 9.824  ;
+; instrP2AD[13] ; EjumpAD[14] ; 9.768  ; 9.768  ; 9.768  ; 9.768  ;
+; instrP2AD[13] ; EjumpAD[15] ; 10.076 ; 10.076 ; 10.076 ; 10.076 ;
+; instrP2AD[14] ; EjumpAD[14] ; 9.603  ; 9.603  ; 9.603  ; 9.603  ;
+; instrP2AD[14] ; EjumpAD[15] ; 10.227 ; 10.227 ; 10.227 ; 10.227 ;
+; instrP2AD[15] ; EjumpAD[15] ; 9.848  ; 9.848  ; 9.848  ; 9.848  ;
+; jumpADR[0]    ; EjumpAD[1]  ; 10.516 ; 10.516 ; 10.516 ; 10.516 ;
+; jumpADR[0]    ; EjumpAD[2]  ; 10.903 ; 10.903 ; 10.903 ; 10.903 ;
+; jumpADR[0]    ; EjumpAD[3]  ; 10.726 ; 10.726 ; 10.726 ; 10.726 ;
+; jumpADR[0]    ; EjumpAD[4]  ; 11.532 ; 11.532 ; 11.532 ; 11.532 ;
+; jumpADR[0]    ; EjumpAD[5]  ; 11.128 ; 11.128 ; 11.128 ; 11.128 ;
+; jumpADR[0]    ; EjumpAD[6]  ; 11.158 ; 11.158 ; 11.158 ; 11.158 ;
+; jumpADR[0]    ; EjumpAD[7]  ; 11.489 ; 11.489 ; 11.489 ; 11.489 ;
+; jumpADR[0]    ; EjumpAD[8]  ; 11.668 ; 11.668 ; 11.668 ; 11.668 ;
+; jumpADR[0]    ; EjumpAD[9]  ; 11.963 ; 11.963 ; 11.963 ; 11.963 ;
+; jumpADR[0]    ; EjumpAD[10] ; 11.308 ; 11.308 ; 11.308 ; 11.308 ;
+; jumpADR[0]    ; EjumpAD[11] ; 11.598 ; 11.598 ; 11.598 ; 11.598 ;
+; jumpADR[0]    ; EjumpAD[12] ; 12.141 ; 12.141 ; 12.141 ; 12.141 ;
+; jumpADR[0]    ; EjumpAD[13] ; 11.972 ; 11.972 ; 11.972 ; 11.972 ;
+; jumpADR[0]    ; EjumpAD[14] ; 11.604 ; 11.604 ; 11.604 ; 11.604 ;
+; jumpADR[0]    ; EjumpAD[15] ; 11.912 ; 11.912 ; 11.912 ; 11.912 ;
+; jumpADR[1]    ; EjumpAD[2]  ; 10.421 ; 10.421 ; 10.421 ; 10.421 ;
+; jumpADR[1]    ; EjumpAD[3]  ; 10.560 ; 10.560 ; 10.560 ; 10.560 ;
+; jumpADR[1]    ; EjumpAD[4]  ; 11.366 ; 11.366 ; 11.366 ; 11.366 ;
+; jumpADR[1]    ; EjumpAD[5]  ; 10.962 ; 10.962 ; 10.962 ; 10.962 ;
+; jumpADR[1]    ; EjumpAD[6]  ; 10.992 ; 10.992 ; 10.992 ; 10.992 ;
+; jumpADR[1]    ; EjumpAD[7]  ; 11.323 ; 11.323 ; 11.323 ; 11.323 ;
+; jumpADR[1]    ; EjumpAD[8]  ; 11.502 ; 11.502 ; 11.502 ; 11.502 ;
+; jumpADR[1]    ; EjumpAD[9]  ; 11.797 ; 11.797 ; 11.797 ; 11.797 ;
+; jumpADR[1]    ; EjumpAD[10] ; 11.142 ; 11.142 ; 11.142 ; 11.142 ;
+; jumpADR[1]    ; EjumpAD[11] ; 11.432 ; 11.432 ; 11.432 ; 11.432 ;
+; jumpADR[1]    ; EjumpAD[12] ; 11.975 ; 11.975 ; 11.975 ; 11.975 ;
+; jumpADR[1]    ; EjumpAD[13] ; 11.806 ; 11.806 ; 11.806 ; 11.806 ;
+; jumpADR[1]    ; EjumpAD[14] ; 11.438 ; 11.438 ; 11.438 ; 11.438 ;
+; jumpADR[1]    ; EjumpAD[15] ; 11.746 ; 11.746 ; 11.746 ; 11.746 ;
+; jumpADR[2]    ; EjumpAD[3]  ; 9.911  ; 9.911  ; 9.911  ; 9.911  ;
+; jumpADR[2]    ; EjumpAD[4]  ; 11.029 ; 11.029 ; 11.029 ; 11.029 ;
+; jumpADR[2]    ; EjumpAD[5]  ; 10.625 ; 10.625 ; 10.625 ; 10.625 ;
+; jumpADR[2]    ; EjumpAD[6]  ; 10.655 ; 10.655 ; 10.655 ; 10.655 ;
+; jumpADR[2]    ; EjumpAD[7]  ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; jumpADR[2]    ; EjumpAD[8]  ; 11.165 ; 11.165 ; 11.165 ; 11.165 ;
+; jumpADR[2]    ; EjumpAD[9]  ; 11.460 ; 11.460 ; 11.460 ; 11.460 ;
+; jumpADR[2]    ; EjumpAD[10] ; 10.805 ; 10.805 ; 10.805 ; 10.805 ;
+; jumpADR[2]    ; EjumpAD[11] ; 11.095 ; 11.095 ; 11.095 ; 11.095 ;
+; jumpADR[2]    ; EjumpAD[12] ; 11.638 ; 11.638 ; 11.638 ; 11.638 ;
+; jumpADR[2]    ; EjumpAD[13] ; 11.469 ; 11.469 ; 11.469 ; 11.469 ;
+; jumpADR[2]    ; EjumpAD[14] ; 11.101 ; 11.101 ; 11.101 ; 11.101 ;
+; jumpADR[2]    ; EjumpAD[15] ; 11.409 ; 11.409 ; 11.409 ; 11.409 ;
+; jumpADR[3]    ; EjumpAD[4]  ; 10.920 ; 10.920 ; 10.920 ; 10.920 ;
+; jumpADR[3]    ; EjumpAD[5]  ; 10.832 ; 10.832 ; 10.832 ; 10.832 ;
+; jumpADR[3]    ; EjumpAD[6]  ; 10.862 ; 10.862 ; 10.862 ; 10.862 ;
+; jumpADR[3]    ; EjumpAD[7]  ; 11.193 ; 11.193 ; 11.193 ; 11.193 ;
+; jumpADR[3]    ; EjumpAD[8]  ; 11.372 ; 11.372 ; 11.372 ; 11.372 ;
+; jumpADR[3]    ; EjumpAD[9]  ; 11.667 ; 11.667 ; 11.667 ; 11.667 ;
+; jumpADR[3]    ; EjumpAD[10] ; 11.012 ; 11.012 ; 11.012 ; 11.012 ;
+; jumpADR[3]    ; EjumpAD[11] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; jumpADR[3]    ; EjumpAD[12] ; 11.845 ; 11.845 ; 11.845 ; 11.845 ;
+; jumpADR[3]    ; EjumpAD[13] ; 11.676 ; 11.676 ; 11.676 ; 11.676 ;
+; jumpADR[3]    ; EjumpAD[14] ; 11.308 ; 11.308 ; 11.308 ; 11.308 ;
+; jumpADR[3]    ; EjumpAD[15] ; 11.616 ; 11.616 ; 11.616 ; 11.616 ;
+; jumpADR[4]    ; EjumpAD[5]  ; 10.135 ; 10.135 ; 10.135 ; 10.135 ;
+; jumpADR[4]    ; EjumpAD[6]  ; 10.477 ; 10.477 ; 10.477 ; 10.477 ;
+; jumpADR[4]    ; EjumpAD[7]  ; 10.808 ; 10.808 ; 10.808 ; 10.808 ;
+; jumpADR[4]    ; EjumpAD[8]  ; 10.987 ; 10.987 ; 10.987 ; 10.987 ;
+; jumpADR[4]    ; EjumpAD[9]  ; 11.282 ; 11.282 ; 11.282 ; 11.282 ;
+; jumpADR[4]    ; EjumpAD[10] ; 10.627 ; 10.627 ; 10.627 ; 10.627 ;
+; jumpADR[4]    ; EjumpAD[11] ; 10.917 ; 10.917 ; 10.917 ; 10.917 ;
+; jumpADR[4]    ; EjumpAD[12] ; 11.460 ; 11.460 ; 11.460 ; 11.460 ;
+; jumpADR[4]    ; EjumpAD[13] ; 11.291 ; 11.291 ; 11.291 ; 11.291 ;
+; jumpADR[4]    ; EjumpAD[14] ; 10.923 ; 10.923 ; 10.923 ; 10.923 ;
+; jumpADR[4]    ; EjumpAD[15] ; 11.231 ; 11.231 ; 11.231 ; 11.231 ;
+; jumpADR[5]    ; EjumpAD[6]  ; 10.150 ; 10.150 ; 10.150 ; 10.150 ;
+; jumpADR[5]    ; EjumpAD[7]  ; 10.797 ; 10.797 ; 10.797 ; 10.797 ;
+; jumpADR[5]    ; EjumpAD[8]  ; 10.976 ; 10.976 ; 10.976 ; 10.976 ;
+; jumpADR[5]    ; EjumpAD[9]  ; 11.271 ; 11.271 ; 11.271 ; 11.271 ;
+; jumpADR[5]    ; EjumpAD[10] ; 10.616 ; 10.616 ; 10.616 ; 10.616 ;
+; jumpADR[5]    ; EjumpAD[11] ; 10.906 ; 10.906 ; 10.906 ; 10.906 ;
+; jumpADR[5]    ; EjumpAD[12] ; 11.449 ; 11.449 ; 11.449 ; 11.449 ;
+; jumpADR[5]    ; EjumpAD[13] ; 11.280 ; 11.280 ; 11.280 ; 11.280 ;
+; jumpADR[5]    ; EjumpAD[14] ; 10.912 ; 10.912 ; 10.912 ; 10.912 ;
+; jumpADR[5]    ; EjumpAD[15] ; 11.220 ; 11.220 ; 11.220 ; 11.220 ;
+; jumpADR[6]    ; EjumpAD[7]  ; 10.373 ; 10.373 ; 10.373 ; 10.373 ;
+; jumpADR[6]    ; EjumpAD[8]  ; 10.864 ; 10.864 ; 10.864 ; 10.864 ;
+; jumpADR[6]    ; EjumpAD[9]  ; 11.159 ; 11.159 ; 11.159 ; 11.159 ;
+; jumpADR[6]    ; EjumpAD[10] ; 10.504 ; 10.504 ; 10.504 ; 10.504 ;
+; jumpADR[6]    ; EjumpAD[11] ; 10.794 ; 10.794 ; 10.794 ; 10.794 ;
+; jumpADR[6]    ; EjumpAD[12] ; 11.337 ; 11.337 ; 11.337 ; 11.337 ;
+; jumpADR[6]    ; EjumpAD[13] ; 11.168 ; 11.168 ; 11.168 ; 11.168 ;
+; jumpADR[6]    ; EjumpAD[14] ; 10.800 ; 10.800 ; 10.800 ; 10.800 ;
+; jumpADR[6]    ; EjumpAD[15] ; 11.108 ; 11.108 ; 11.108 ; 11.108 ;
+; jumpADR[7]    ; EjumpAD[8]  ; 10.227 ; 10.227 ; 10.227 ; 10.227 ;
+; jumpADR[7]    ; EjumpAD[9]  ; 10.842 ; 10.842 ; 10.842 ; 10.842 ;
+; jumpADR[7]    ; EjumpAD[10] ; 10.187 ; 10.187 ; 10.187 ; 10.187 ;
+; jumpADR[7]    ; EjumpAD[11] ; 10.477 ; 10.477 ; 10.477 ; 10.477 ;
+; jumpADR[7]    ; EjumpAD[12] ; 11.020 ; 11.020 ; 11.020 ; 11.020 ;
+; jumpADR[7]    ; EjumpAD[13] ; 10.851 ; 10.851 ; 10.851 ; 10.851 ;
+; jumpADR[7]    ; EjumpAD[14] ; 10.483 ; 10.483 ; 10.483 ; 10.483 ;
+; jumpADR[7]    ; EjumpAD[15] ; 10.791 ; 10.791 ; 10.791 ; 10.791 ;
+; jumpADR[8]    ; EjumpAD[9]  ; 10.626 ; 10.626 ; 10.626 ; 10.626 ;
+; jumpADR[8]    ; EjumpAD[10] ; 10.286 ; 10.286 ; 10.286 ; 10.286 ;
+; jumpADR[8]    ; EjumpAD[11] ; 10.576 ; 10.576 ; 10.576 ; 10.576 ;
+; jumpADR[8]    ; EjumpAD[12] ; 11.119 ; 11.119 ; 11.119 ; 11.119 ;
+; jumpADR[8]    ; EjumpAD[13] ; 10.950 ; 10.950 ; 10.950 ; 10.950 ;
+; jumpADR[8]    ; EjumpAD[14] ; 10.582 ; 10.582 ; 10.582 ; 10.582 ;
+; jumpADR[8]    ; EjumpAD[15] ; 10.890 ; 10.890 ; 10.890 ; 10.890 ;
+; jumpADR[9]    ; EjumpAD[10] ; 9.637  ; 9.637  ; 9.637  ; 9.637  ;
+; jumpADR[9]    ; EjumpAD[11] ; 10.242 ; 10.242 ; 10.242 ; 10.242 ;
+; jumpADR[9]    ; EjumpAD[12] ; 10.785 ; 10.785 ; 10.785 ; 10.785 ;
+; jumpADR[9]    ; EjumpAD[13] ; 10.616 ; 10.616 ; 10.616 ; 10.616 ;
+; jumpADR[9]    ; EjumpAD[14] ; 10.248 ; 10.248 ; 10.248 ; 10.248 ;
+; jumpADR[9]    ; EjumpAD[15] ; 10.556 ; 10.556 ; 10.556 ; 10.556 ;
+; jumpADR[10]   ; EjumpAD[11] ; 9.903  ; 9.903  ; 9.903  ; 9.903  ;
+; jumpADR[10]   ; EjumpAD[12] ; 10.761 ; 10.761 ; 10.761 ; 10.761 ;
+; jumpADR[10]   ; EjumpAD[13] ; 10.592 ; 10.592 ; 10.592 ; 10.592 ;
+; jumpADR[10]   ; EjumpAD[14] ; 10.224 ; 10.224 ; 10.224 ; 10.224 ;
+; jumpADR[10]   ; EjumpAD[15] ; 10.532 ; 10.532 ; 10.532 ; 10.532 ;
+; jumpADR[11]   ; EjumpAD[12] ; 10.858 ; 10.858 ; 10.858 ; 10.858 ;
+; jumpADR[11]   ; EjumpAD[13] ; 11.004 ; 11.004 ; 11.004 ; 11.004 ;
+; jumpADR[11]   ; EjumpAD[14] ; 10.636 ; 10.636 ; 10.636 ; 10.636 ;
+; jumpADR[11]   ; EjumpAD[15] ; 10.944 ; 10.944 ; 10.944 ; 10.944 ;
++---------------+-------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------------+
+; Minimum Propagation Delay                                       ;
++---------------+-------------+--------+--------+--------+--------+
+; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++---------------+-------------+--------+--------+--------+--------+
+; instrP2AD[0]  ; EjumpAD[0]  ; 4.848  ;        ;        ; 4.848  ;
+; instrP2AD[1]  ; EjumpAD[1]  ; 6.461  ; 6.461  ; 6.461  ; 6.461  ;
+; instrP2AD[1]  ; EjumpAD[2]  ; 6.844  ; 6.844  ; 6.844  ; 6.844  ;
+; instrP2AD[1]  ; EjumpAD[3]  ; 6.667  ; 6.667  ; 6.667  ; 6.667  ;
+; instrP2AD[1]  ; EjumpAD[4]  ; 7.473  ; 7.473  ; 7.473  ; 7.473  ;
+; instrP2AD[1]  ; EjumpAD[5]  ; 7.069  ; 7.069  ; 7.069  ; 7.069  ;
+; instrP2AD[1]  ; EjumpAD[6]  ; 7.099  ; 7.099  ; 7.099  ; 7.099  ;
+; instrP2AD[1]  ; EjumpAD[7]  ; 7.430  ; 7.430  ; 7.430  ; 7.430  ;
+; instrP2AD[1]  ; EjumpAD[8]  ; 7.609  ; 7.609  ; 7.609  ; 7.609  ;
+; instrP2AD[1]  ; EjumpAD[9]  ; 7.904  ; 7.904  ; 7.904  ; 7.904  ;
+; instrP2AD[1]  ; EjumpAD[10] ; 7.249  ; 7.249  ; 7.249  ; 7.249  ;
+; instrP2AD[1]  ; EjumpAD[11] ; 7.539  ; 7.539  ; 7.539  ; 7.539  ;
+; instrP2AD[1]  ; EjumpAD[12] ; 8.082  ; 8.082  ; 8.082  ; 8.082  ;
+; instrP2AD[1]  ; EjumpAD[13] ; 7.913  ; 7.913  ; 7.913  ; 7.913  ;
+; instrP2AD[1]  ; EjumpAD[14] ; 7.545  ; 7.545  ; 7.545  ; 7.545  ;
+; instrP2AD[1]  ; EjumpAD[15] ; 7.853  ; 7.853  ; 7.853  ; 7.853  ;
+; instrP2AD[2]  ; EjumpAD[2]  ; 10.159 ; 10.159 ; 10.159 ; 10.159 ;
+; instrP2AD[2]  ; EjumpAD[3]  ; 10.297 ; 10.297 ; 10.297 ; 10.297 ;
+; instrP2AD[2]  ; EjumpAD[4]  ; 11.103 ; 11.103 ; 11.103 ; 11.103 ;
+; instrP2AD[2]  ; EjumpAD[5]  ; 10.699 ; 10.699 ; 10.699 ; 10.699 ;
+; instrP2AD[2]  ; EjumpAD[6]  ; 10.729 ; 10.729 ; 10.729 ; 10.729 ;
+; instrP2AD[2]  ; EjumpAD[7]  ; 11.060 ; 11.060 ; 11.060 ; 11.060 ;
+; instrP2AD[2]  ; EjumpAD[8]  ; 11.239 ; 11.239 ; 11.239 ; 11.239 ;
+; instrP2AD[2]  ; EjumpAD[9]  ; 11.534 ; 11.534 ; 11.534 ; 11.534 ;
+; instrP2AD[2]  ; EjumpAD[10] ; 10.879 ; 10.879 ; 10.879 ; 10.879 ;
+; instrP2AD[2]  ; EjumpAD[11] ; 11.169 ; 11.169 ; 11.169 ; 11.169 ;
+; instrP2AD[2]  ; EjumpAD[12] ; 11.712 ; 11.712 ; 11.712 ; 11.712 ;
+; instrP2AD[2]  ; EjumpAD[13] ; 11.543 ; 11.543 ; 11.543 ; 11.543 ;
+; instrP2AD[2]  ; EjumpAD[14] ; 11.175 ; 11.175 ; 11.175 ; 11.175 ;
+; instrP2AD[2]  ; EjumpAD[15] ; 11.483 ; 11.483 ; 11.483 ; 11.483 ;
+; instrP2AD[3]  ; EjumpAD[3]  ; 10.160 ; 10.160 ; 10.160 ; 10.160 ;
+; instrP2AD[3]  ; EjumpAD[4]  ; 11.281 ; 11.281 ; 11.281 ; 11.281 ;
+; instrP2AD[3]  ; EjumpAD[5]  ; 10.877 ; 10.877 ; 10.877 ; 10.877 ;
+; instrP2AD[3]  ; EjumpAD[6]  ; 10.907 ; 10.907 ; 10.907 ; 10.907 ;
+; instrP2AD[3]  ; EjumpAD[7]  ; 11.238 ; 11.238 ; 11.238 ; 11.238 ;
+; instrP2AD[3]  ; EjumpAD[8]  ; 11.417 ; 11.417 ; 11.417 ; 11.417 ;
+; instrP2AD[3]  ; EjumpAD[9]  ; 11.712 ; 11.712 ; 11.712 ; 11.712 ;
+; instrP2AD[3]  ; EjumpAD[10] ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
+; instrP2AD[3]  ; EjumpAD[11] ; 11.347 ; 11.347 ; 11.347 ; 11.347 ;
+; instrP2AD[3]  ; EjumpAD[12] ; 11.890 ; 11.890 ; 11.890 ; 11.890 ;
+; instrP2AD[3]  ; EjumpAD[13] ; 11.721 ; 11.721 ; 11.721 ; 11.721 ;
+; instrP2AD[3]  ; EjumpAD[14] ; 11.353 ; 11.353 ; 11.353 ; 11.353 ;
+; instrP2AD[3]  ; EjumpAD[15] ; 11.661 ; 11.661 ; 11.661 ; 11.661 ;
+; instrP2AD[4]  ; EjumpAD[4]  ; 10.895 ; 10.895 ; 10.895 ; 10.895 ;
+; instrP2AD[4]  ; EjumpAD[5]  ; 10.806 ; 10.806 ; 10.806 ; 10.806 ;
+; instrP2AD[4]  ; EjumpAD[6]  ; 10.836 ; 10.836 ; 10.836 ; 10.836 ;
+; instrP2AD[4]  ; EjumpAD[7]  ; 11.167 ; 11.167 ; 11.167 ; 11.167 ;
+; instrP2AD[4]  ; EjumpAD[8]  ; 11.346 ; 11.346 ; 11.346 ; 11.346 ;
+; instrP2AD[4]  ; EjumpAD[9]  ; 11.641 ; 11.641 ; 11.641 ; 11.641 ;
+; instrP2AD[4]  ; EjumpAD[10] ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; instrP2AD[4]  ; EjumpAD[11] ; 11.276 ; 11.276 ; 11.276 ; 11.276 ;
+; instrP2AD[4]  ; EjumpAD[12] ; 11.819 ; 11.819 ; 11.819 ; 11.819 ;
+; instrP2AD[4]  ; EjumpAD[13] ; 11.650 ; 11.650 ; 11.650 ; 11.650 ;
+; instrP2AD[4]  ; EjumpAD[14] ; 11.282 ; 11.282 ; 11.282 ; 11.282 ;
+; instrP2AD[4]  ; EjumpAD[15] ; 11.590 ; 11.590 ; 11.590 ; 11.590 ;
+; instrP2AD[5]  ; EjumpAD[5]  ; 10.203 ; 10.203 ; 10.203 ; 10.203 ;
+; instrP2AD[5]  ; EjumpAD[6]  ; 10.548 ; 10.548 ; 10.548 ; 10.548 ;
+; instrP2AD[5]  ; EjumpAD[7]  ; 10.879 ; 10.879 ; 10.879 ; 10.879 ;
+; instrP2AD[5]  ; EjumpAD[8]  ; 11.058 ; 11.058 ; 11.058 ; 11.058 ;
+; instrP2AD[5]  ; EjumpAD[9]  ; 11.353 ; 11.353 ; 11.353 ; 11.353 ;
+; instrP2AD[5]  ; EjumpAD[10] ; 10.698 ; 10.698 ; 10.698 ; 10.698 ;
+; instrP2AD[5]  ; EjumpAD[11] ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; instrP2AD[5]  ; EjumpAD[12] ; 11.531 ; 11.531 ; 11.531 ; 11.531 ;
+; instrP2AD[5]  ; EjumpAD[13] ; 11.362 ; 11.362 ; 11.362 ; 11.362 ;
+; instrP2AD[5]  ; EjumpAD[14] ; 10.994 ; 10.994 ; 10.994 ; 10.994 ;
+; instrP2AD[5]  ; EjumpAD[15] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; instrP2AD[6]  ; EjumpAD[6]  ; 9.719  ; 9.719  ; 9.719  ; 9.719  ;
+; instrP2AD[6]  ; EjumpAD[7]  ; 10.365 ; 10.365 ; 10.365 ; 10.365 ;
+; instrP2AD[6]  ; EjumpAD[8]  ; 10.544 ; 10.544 ; 10.544 ; 10.544 ;
+; instrP2AD[6]  ; EjumpAD[9]  ; 10.839 ; 10.839 ; 10.839 ; 10.839 ;
+; instrP2AD[6]  ; EjumpAD[10] ; 10.184 ; 10.184 ; 10.184 ; 10.184 ;
+; instrP2AD[6]  ; EjumpAD[11] ; 10.474 ; 10.474 ; 10.474 ; 10.474 ;
+; instrP2AD[6]  ; EjumpAD[12] ; 11.017 ; 11.017 ; 11.017 ; 11.017 ;
+; instrP2AD[6]  ; EjumpAD[13] ; 10.848 ; 10.848 ; 10.848 ; 10.848 ;
+; instrP2AD[6]  ; EjumpAD[14] ; 10.480 ; 10.480 ; 10.480 ; 10.480 ;
+; instrP2AD[6]  ; EjumpAD[15] ; 10.788 ; 10.788 ; 10.788 ; 10.788 ;
+; instrP2AD[7]  ; EjumpAD[7]  ; 10.384 ; 10.384 ; 10.384 ; 10.384 ;
+; instrP2AD[7]  ; EjumpAD[8]  ; 10.878 ; 10.878 ; 10.878 ; 10.878 ;
+; instrP2AD[7]  ; EjumpAD[9]  ; 11.173 ; 11.173 ; 11.173 ; 11.173 ;
+; instrP2AD[7]  ; EjumpAD[10] ; 10.518 ; 10.518 ; 10.518 ; 10.518 ;
+; instrP2AD[7]  ; EjumpAD[11] ; 10.808 ; 10.808 ; 10.808 ; 10.808 ;
+; instrP2AD[7]  ; EjumpAD[12] ; 11.351 ; 11.351 ; 11.351 ; 11.351 ;
+; instrP2AD[7]  ; EjumpAD[13] ; 11.182 ; 11.182 ; 11.182 ; 11.182 ;
+; instrP2AD[7]  ; EjumpAD[14] ; 10.814 ; 10.814 ; 10.814 ; 10.814 ;
+; instrP2AD[7]  ; EjumpAD[15] ; 11.122 ; 11.122 ; 11.122 ; 11.122 ;
+; instrP2AD[8]  ; EjumpAD[8]  ; 10.475 ; 10.475 ; 10.475 ; 10.475 ;
+; instrP2AD[8]  ; EjumpAD[9]  ; 11.087 ; 11.087 ; 11.087 ; 11.087 ;
+; instrP2AD[8]  ; EjumpAD[10] ; 10.432 ; 10.432 ; 10.432 ; 10.432 ;
+; instrP2AD[8]  ; EjumpAD[11] ; 10.722 ; 10.722 ; 10.722 ; 10.722 ;
+; instrP2AD[8]  ; EjumpAD[12] ; 11.265 ; 11.265 ; 11.265 ; 11.265 ;
+; instrP2AD[8]  ; EjumpAD[13] ; 11.096 ; 11.096 ; 11.096 ; 11.096 ;
+; instrP2AD[8]  ; EjumpAD[14] ; 10.728 ; 10.728 ; 10.728 ; 10.728 ;
+; instrP2AD[8]  ; EjumpAD[15] ; 11.036 ; 11.036 ; 11.036 ; 11.036 ;
+; instrP2AD[9]  ; EjumpAD[9]  ; 10.144 ; 10.144 ; 10.144 ; 10.144 ;
+; instrP2AD[9]  ; EjumpAD[10] ; 9.801  ; 9.801  ; 9.801  ; 9.801  ;
+; instrP2AD[9]  ; EjumpAD[11] ; 10.091 ; 10.091 ; 10.091 ; 10.091 ;
+; instrP2AD[9]  ; EjumpAD[12] ; 10.634 ; 10.634 ; 10.634 ; 10.634 ;
+; instrP2AD[9]  ; EjumpAD[13] ; 10.465 ; 10.465 ; 10.465 ; 10.465 ;
+; instrP2AD[9]  ; EjumpAD[14] ; 10.097 ; 10.097 ; 10.097 ; 10.097 ;
+; instrP2AD[9]  ; EjumpAD[15] ; 10.405 ; 10.405 ; 10.405 ; 10.405 ;
+; instrP2AD[10] ; EjumpAD[10] ; 9.837  ; 9.837  ; 9.837  ; 9.837  ;
+; instrP2AD[10] ; EjumpAD[11] ; 10.443 ; 10.443 ; 10.443 ; 10.443 ;
+; instrP2AD[10] ; EjumpAD[12] ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; instrP2AD[10] ; EjumpAD[13] ; 10.817 ; 10.817 ; 10.817 ; 10.817 ;
+; instrP2AD[10] ; EjumpAD[14] ; 10.449 ; 10.449 ; 10.449 ; 10.449 ;
+; instrP2AD[10] ; EjumpAD[15] ; 10.757 ; 10.757 ; 10.757 ; 10.757 ;
+; instrP2AD[11] ; EjumpAD[11] ; 10.510 ; 10.510 ; 10.510 ; 10.510 ;
+; instrP2AD[11] ; EjumpAD[12] ; 11.365 ; 11.365 ; 11.365 ; 11.365 ;
+; instrP2AD[11] ; EjumpAD[13] ; 11.196 ; 11.196 ; 11.196 ; 11.196 ;
+; instrP2AD[11] ; EjumpAD[14] ; 10.828 ; 10.828 ; 10.828 ; 10.828 ;
+; instrP2AD[11] ; EjumpAD[15] ; 11.136 ; 11.136 ; 11.136 ; 11.136 ;
+; instrP2AD[12] ; EjumpAD[12] ; 10.801 ; 10.801 ; 10.801 ; 10.801 ;
+; instrP2AD[12] ; EjumpAD[13] ; 10.948 ; 10.948 ; 10.948 ; 10.948 ;
+; instrP2AD[12] ; EjumpAD[14] ; 10.580 ; 10.580 ; 10.580 ; 10.580 ;
+; instrP2AD[12] ; EjumpAD[15] ; 10.888 ; 10.888 ; 10.888 ; 10.888 ;
+; instrP2AD[13] ; EjumpAD[13] ; 9.824  ; 9.824  ; 9.824  ; 9.824  ;
+; instrP2AD[13] ; EjumpAD[14] ; 9.768  ; 9.768  ; 9.768  ; 9.768  ;
+; instrP2AD[13] ; EjumpAD[15] ; 10.076 ; 10.076 ; 10.076 ; 10.076 ;
+; instrP2AD[14] ; EjumpAD[14] ; 9.603  ; 9.603  ; 9.603  ; 9.603  ;
+; instrP2AD[14] ; EjumpAD[15] ; 10.227 ; 10.227 ; 10.227 ; 10.227 ;
+; instrP2AD[15] ; EjumpAD[15] ; 9.848  ; 9.848  ; 9.848  ; 9.848  ;
+; jumpADR[0]    ; EjumpAD[1]  ; 10.516 ; 10.516 ; 10.516 ; 10.516 ;
+; jumpADR[0]    ; EjumpAD[2]  ; 10.903 ; 10.903 ; 10.903 ; 10.903 ;
+; jumpADR[0]    ; EjumpAD[3]  ; 10.726 ; 10.726 ; 10.726 ; 10.726 ;
+; jumpADR[0]    ; EjumpAD[4]  ; 11.532 ; 11.532 ; 11.532 ; 11.532 ;
+; jumpADR[0]    ; EjumpAD[5]  ; 11.128 ; 11.128 ; 11.128 ; 11.128 ;
+; jumpADR[0]    ; EjumpAD[6]  ; 11.158 ; 11.158 ; 11.158 ; 11.158 ;
+; jumpADR[0]    ; EjumpAD[7]  ; 11.489 ; 11.489 ; 11.489 ; 11.489 ;
+; jumpADR[0]    ; EjumpAD[8]  ; 11.668 ; 11.668 ; 11.668 ; 11.668 ;
+; jumpADR[0]    ; EjumpAD[9]  ; 11.963 ; 11.963 ; 11.963 ; 11.963 ;
+; jumpADR[0]    ; EjumpAD[10] ; 11.308 ; 11.308 ; 11.308 ; 11.308 ;
+; jumpADR[0]    ; EjumpAD[11] ; 11.598 ; 11.598 ; 11.598 ; 11.598 ;
+; jumpADR[0]    ; EjumpAD[12] ; 12.141 ; 12.141 ; 12.141 ; 12.141 ;
+; jumpADR[0]    ; EjumpAD[13] ; 11.972 ; 11.972 ; 11.972 ; 11.972 ;
+; jumpADR[0]    ; EjumpAD[14] ; 11.604 ; 11.604 ; 11.604 ; 11.604 ;
+; jumpADR[0]    ; EjumpAD[15] ; 11.912 ; 11.912 ; 11.912 ; 11.912 ;
+; jumpADR[1]    ; EjumpAD[2]  ; 10.421 ; 10.421 ; 10.421 ; 10.421 ;
+; jumpADR[1]    ; EjumpAD[3]  ; 10.560 ; 10.560 ; 10.560 ; 10.560 ;
+; jumpADR[1]    ; EjumpAD[4]  ; 11.366 ; 11.366 ; 11.366 ; 11.366 ;
+; jumpADR[1]    ; EjumpAD[5]  ; 10.962 ; 10.962 ; 10.962 ; 10.962 ;
+; jumpADR[1]    ; EjumpAD[6]  ; 10.992 ; 10.992 ; 10.992 ; 10.992 ;
+; jumpADR[1]    ; EjumpAD[7]  ; 11.323 ; 11.323 ; 11.323 ; 11.323 ;
+; jumpADR[1]    ; EjumpAD[8]  ; 11.502 ; 11.502 ; 11.502 ; 11.502 ;
+; jumpADR[1]    ; EjumpAD[9]  ; 11.797 ; 11.797 ; 11.797 ; 11.797 ;
+; jumpADR[1]    ; EjumpAD[10] ; 11.142 ; 11.142 ; 11.142 ; 11.142 ;
+; jumpADR[1]    ; EjumpAD[11] ; 11.432 ; 11.432 ; 11.432 ; 11.432 ;
+; jumpADR[1]    ; EjumpAD[12] ; 11.975 ; 11.975 ; 11.975 ; 11.975 ;
+; jumpADR[1]    ; EjumpAD[13] ; 11.806 ; 11.806 ; 11.806 ; 11.806 ;
+; jumpADR[1]    ; EjumpAD[14] ; 11.438 ; 11.438 ; 11.438 ; 11.438 ;
+; jumpADR[1]    ; EjumpAD[15] ; 11.746 ; 11.746 ; 11.746 ; 11.746 ;
+; jumpADR[2]    ; EjumpAD[3]  ; 9.911  ; 9.911  ; 9.911  ; 9.911  ;
+; jumpADR[2]    ; EjumpAD[4]  ; 11.029 ; 11.029 ; 11.029 ; 11.029 ;
+; jumpADR[2]    ; EjumpAD[5]  ; 10.625 ; 10.625 ; 10.625 ; 10.625 ;
+; jumpADR[2]    ; EjumpAD[6]  ; 10.655 ; 10.655 ; 10.655 ; 10.655 ;
+; jumpADR[2]    ; EjumpAD[7]  ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; jumpADR[2]    ; EjumpAD[8]  ; 11.165 ; 11.165 ; 11.165 ; 11.165 ;
+; jumpADR[2]    ; EjumpAD[9]  ; 11.460 ; 11.460 ; 11.460 ; 11.460 ;
+; jumpADR[2]    ; EjumpAD[10] ; 10.805 ; 10.805 ; 10.805 ; 10.805 ;
+; jumpADR[2]    ; EjumpAD[11] ; 11.095 ; 11.095 ; 11.095 ; 11.095 ;
+; jumpADR[2]    ; EjumpAD[12] ; 11.638 ; 11.638 ; 11.638 ; 11.638 ;
+; jumpADR[2]    ; EjumpAD[13] ; 11.469 ; 11.469 ; 11.469 ; 11.469 ;
+; jumpADR[2]    ; EjumpAD[14] ; 11.101 ; 11.101 ; 11.101 ; 11.101 ;
+; jumpADR[2]    ; EjumpAD[15] ; 11.409 ; 11.409 ; 11.409 ; 11.409 ;
+; jumpADR[3]    ; EjumpAD[4]  ; 10.920 ; 10.920 ; 10.920 ; 10.920 ;
+; jumpADR[3]    ; EjumpAD[5]  ; 10.832 ; 10.832 ; 10.832 ; 10.832 ;
+; jumpADR[3]    ; EjumpAD[6]  ; 10.862 ; 10.862 ; 10.862 ; 10.862 ;
+; jumpADR[3]    ; EjumpAD[7]  ; 11.193 ; 11.193 ; 11.193 ; 11.193 ;
+; jumpADR[3]    ; EjumpAD[8]  ; 11.372 ; 11.372 ; 11.372 ; 11.372 ;
+; jumpADR[3]    ; EjumpAD[9]  ; 11.667 ; 11.667 ; 11.667 ; 11.667 ;
+; jumpADR[3]    ; EjumpAD[10] ; 11.012 ; 11.012 ; 11.012 ; 11.012 ;
+; jumpADR[3]    ; EjumpAD[11] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; jumpADR[3]    ; EjumpAD[12] ; 11.845 ; 11.845 ; 11.845 ; 11.845 ;
+; jumpADR[3]    ; EjumpAD[13] ; 11.676 ; 11.676 ; 11.676 ; 11.676 ;
+; jumpADR[3]    ; EjumpAD[14] ; 11.308 ; 11.308 ; 11.308 ; 11.308 ;
+; jumpADR[3]    ; EjumpAD[15] ; 11.616 ; 11.616 ; 11.616 ; 11.616 ;
+; jumpADR[4]    ; EjumpAD[5]  ; 10.135 ; 10.135 ; 10.135 ; 10.135 ;
+; jumpADR[4]    ; EjumpAD[6]  ; 10.477 ; 10.477 ; 10.477 ; 10.477 ;
+; jumpADR[4]    ; EjumpAD[7]  ; 10.808 ; 10.808 ; 10.808 ; 10.808 ;
+; jumpADR[4]    ; EjumpAD[8]  ; 10.987 ; 10.987 ; 10.987 ; 10.987 ;
+; jumpADR[4]    ; EjumpAD[9]  ; 11.282 ; 11.282 ; 11.282 ; 11.282 ;
+; jumpADR[4]    ; EjumpAD[10] ; 10.627 ; 10.627 ; 10.627 ; 10.627 ;
+; jumpADR[4]    ; EjumpAD[11] ; 10.917 ; 10.917 ; 10.917 ; 10.917 ;
+; jumpADR[4]    ; EjumpAD[12] ; 11.460 ; 11.460 ; 11.460 ; 11.460 ;
+; jumpADR[4]    ; EjumpAD[13] ; 11.291 ; 11.291 ; 11.291 ; 11.291 ;
+; jumpADR[4]    ; EjumpAD[14] ; 10.923 ; 10.923 ; 10.923 ; 10.923 ;
+; jumpADR[4]    ; EjumpAD[15] ; 11.231 ; 11.231 ; 11.231 ; 11.231 ;
+; jumpADR[5]    ; EjumpAD[6]  ; 10.150 ; 10.150 ; 10.150 ; 10.150 ;
+; jumpADR[5]    ; EjumpAD[7]  ; 10.797 ; 10.797 ; 10.797 ; 10.797 ;
+; jumpADR[5]    ; EjumpAD[8]  ; 10.976 ; 10.976 ; 10.976 ; 10.976 ;
+; jumpADR[5]    ; EjumpAD[9]  ; 11.271 ; 11.271 ; 11.271 ; 11.271 ;
+; jumpADR[5]    ; EjumpAD[10] ; 10.616 ; 10.616 ; 10.616 ; 10.616 ;
+; jumpADR[5]    ; EjumpAD[11] ; 10.906 ; 10.906 ; 10.906 ; 10.906 ;
+; jumpADR[5]    ; EjumpAD[12] ; 11.449 ; 11.449 ; 11.449 ; 11.449 ;
+; jumpADR[5]    ; EjumpAD[13] ; 11.280 ; 11.280 ; 11.280 ; 11.280 ;
+; jumpADR[5]    ; EjumpAD[14] ; 10.912 ; 10.912 ; 10.912 ; 10.912 ;
+; jumpADR[5]    ; EjumpAD[15] ; 11.220 ; 11.220 ; 11.220 ; 11.220 ;
+; jumpADR[6]    ; EjumpAD[7]  ; 10.373 ; 10.373 ; 10.373 ; 10.373 ;
+; jumpADR[6]    ; EjumpAD[8]  ; 10.864 ; 10.864 ; 10.864 ; 10.864 ;
+; jumpADR[6]    ; EjumpAD[9]  ; 11.159 ; 11.159 ; 11.159 ; 11.159 ;
+; jumpADR[6]    ; EjumpAD[10] ; 10.504 ; 10.504 ; 10.504 ; 10.504 ;
+; jumpADR[6]    ; EjumpAD[11] ; 10.794 ; 10.794 ; 10.794 ; 10.794 ;
+; jumpADR[6]    ; EjumpAD[12] ; 11.337 ; 11.337 ; 11.337 ; 11.337 ;
+; jumpADR[6]    ; EjumpAD[13] ; 11.168 ; 11.168 ; 11.168 ; 11.168 ;
+; jumpADR[6]    ; EjumpAD[14] ; 10.800 ; 10.800 ; 10.800 ; 10.800 ;
+; jumpADR[6]    ; EjumpAD[15] ; 11.108 ; 11.108 ; 11.108 ; 11.108 ;
+; jumpADR[7]    ; EjumpAD[8]  ; 10.227 ; 10.227 ; 10.227 ; 10.227 ;
+; jumpADR[7]    ; EjumpAD[9]  ; 10.842 ; 10.842 ; 10.842 ; 10.842 ;
+; jumpADR[7]    ; EjumpAD[10] ; 10.187 ; 10.187 ; 10.187 ; 10.187 ;
+; jumpADR[7]    ; EjumpAD[11] ; 10.477 ; 10.477 ; 10.477 ; 10.477 ;
+; jumpADR[7]    ; EjumpAD[12] ; 11.020 ; 11.020 ; 11.020 ; 11.020 ;
+; jumpADR[7]    ; EjumpAD[13] ; 10.851 ; 10.851 ; 10.851 ; 10.851 ;
+; jumpADR[7]    ; EjumpAD[14] ; 10.483 ; 10.483 ; 10.483 ; 10.483 ;
+; jumpADR[7]    ; EjumpAD[15] ; 10.791 ; 10.791 ; 10.791 ; 10.791 ;
+; jumpADR[8]    ; EjumpAD[9]  ; 10.626 ; 10.626 ; 10.626 ; 10.626 ;
+; jumpADR[8]    ; EjumpAD[10] ; 10.286 ; 10.286 ; 10.286 ; 10.286 ;
+; jumpADR[8]    ; EjumpAD[11] ; 10.576 ; 10.576 ; 10.576 ; 10.576 ;
+; jumpADR[8]    ; EjumpAD[12] ; 11.119 ; 11.119 ; 11.119 ; 11.119 ;
+; jumpADR[8]    ; EjumpAD[13] ; 10.950 ; 10.950 ; 10.950 ; 10.950 ;
+; jumpADR[8]    ; EjumpAD[14] ; 10.582 ; 10.582 ; 10.582 ; 10.582 ;
+; jumpADR[8]    ; EjumpAD[15] ; 10.890 ; 10.890 ; 10.890 ; 10.890 ;
+; jumpADR[9]    ; EjumpAD[10] ; 9.637  ; 9.637  ; 9.637  ; 9.637  ;
+; jumpADR[9]    ; EjumpAD[11] ; 10.242 ; 10.242 ; 10.242 ; 10.242 ;
+; jumpADR[9]    ; EjumpAD[12] ; 10.785 ; 10.785 ; 10.785 ; 10.785 ;
+; jumpADR[9]    ; EjumpAD[13] ; 10.616 ; 10.616 ; 10.616 ; 10.616 ;
+; jumpADR[9]    ; EjumpAD[14] ; 10.248 ; 10.248 ; 10.248 ; 10.248 ;
+; jumpADR[9]    ; EjumpAD[15] ; 10.556 ; 10.556 ; 10.556 ; 10.556 ;
+; jumpADR[10]   ; EjumpAD[11] ; 9.903  ; 9.903  ; 9.903  ; 9.903  ;
+; jumpADR[10]   ; EjumpAD[12] ; 10.761 ; 10.761 ; 10.761 ; 10.761 ;
+; jumpADR[10]   ; EjumpAD[13] ; 10.592 ; 10.592 ; 10.592 ; 10.592 ;
+; jumpADR[10]   ; EjumpAD[14] ; 10.224 ; 10.224 ; 10.224 ; 10.224 ;
+; jumpADR[10]   ; EjumpAD[15] ; 10.532 ; 10.532 ; 10.532 ; 10.532 ;
+; jumpADR[11]   ; EjumpAD[12] ; 10.858 ; 10.858 ; 10.858 ; 10.858 ;
+; jumpADR[11]   ; EjumpAD[13] ; 10.618 ; 10.618 ; 10.618 ; 10.618 ;
+; jumpADR[11]   ; EjumpAD[14] ; 10.180 ; 10.180 ; 10.180 ; 10.180 ;
+; jumpADR[11]   ; EjumpAD[15] ; 10.418 ; 10.418 ; 10.418 ; 10.418 ;
++---------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; instrP2AD[0]  ; EjumpAD[0]  ; 2.598 ;       ;       ; 2.598 ;
+; instrP2AD[1]  ; EjumpAD[1]  ; 3.318 ; 3.318 ; 3.318 ; 3.318 ;
+; instrP2AD[1]  ; EjumpAD[2]  ; 3.454 ; 3.454 ; 3.454 ; 3.454 ;
+; instrP2AD[1]  ; EjumpAD[3]  ; 3.364 ; 3.364 ; 3.364 ; 3.364 ;
+; instrP2AD[1]  ; EjumpAD[4]  ; 3.754 ; 3.754 ; 3.754 ; 3.754 ;
+; instrP2AD[1]  ; EjumpAD[5]  ; 3.569 ; 3.569 ; 3.569 ; 3.569 ;
+; instrP2AD[1]  ; EjumpAD[6]  ; 3.567 ; 3.567 ; 3.567 ; 3.567 ;
+; instrP2AD[1]  ; EjumpAD[7]  ; 3.725 ; 3.725 ; 3.725 ; 3.725 ;
+; instrP2AD[1]  ; EjumpAD[8]  ; 3.834 ; 3.834 ; 3.834 ; 3.834 ;
+; instrP2AD[1]  ; EjumpAD[9]  ; 3.968 ; 3.968 ; 3.968 ; 3.968 ;
+; instrP2AD[1]  ; EjumpAD[10] ; 3.666 ; 3.666 ; 3.666 ; 3.666 ;
+; instrP2AD[1]  ; EjumpAD[11] ; 3.798 ; 3.798 ; 3.798 ; 3.798 ;
+; instrP2AD[1]  ; EjumpAD[12] ; 4.050 ; 4.050 ; 4.050 ; 4.050 ;
+; instrP2AD[1]  ; EjumpAD[13] ; 3.976 ; 3.976 ; 3.976 ; 3.976 ;
+; instrP2AD[1]  ; EjumpAD[14] ; 3.817 ; 3.817 ; 3.817 ; 3.817 ;
+; instrP2AD[1]  ; EjumpAD[15] ; 3.966 ; 3.966 ; 3.966 ; 3.966 ;
+; instrP2AD[2]  ; EjumpAD[2]  ; 5.596 ; 5.596 ; 5.596 ; 5.596 ;
+; instrP2AD[2]  ; EjumpAD[3]  ; 5.611 ; 5.611 ; 5.611 ; 5.611 ;
+; instrP2AD[2]  ; EjumpAD[4]  ; 6.001 ; 6.001 ; 6.001 ; 6.001 ;
+; instrP2AD[2]  ; EjumpAD[5]  ; 5.816 ; 5.816 ; 5.816 ; 5.816 ;
+; instrP2AD[2]  ; EjumpAD[6]  ; 5.814 ; 5.814 ; 5.814 ; 5.814 ;
+; instrP2AD[2]  ; EjumpAD[7]  ; 5.972 ; 5.972 ; 5.972 ; 5.972 ;
+; instrP2AD[2]  ; EjumpAD[8]  ; 6.081 ; 6.081 ; 6.081 ; 6.081 ;
+; instrP2AD[2]  ; EjumpAD[9]  ; 6.215 ; 6.215 ; 6.215 ; 6.215 ;
+; instrP2AD[2]  ; EjumpAD[10] ; 5.913 ; 5.913 ; 5.913 ; 5.913 ;
+; instrP2AD[2]  ; EjumpAD[11] ; 6.045 ; 6.045 ; 6.045 ; 6.045 ;
+; instrP2AD[2]  ; EjumpAD[12] ; 6.297 ; 6.297 ; 6.297 ; 6.297 ;
+; instrP2AD[2]  ; EjumpAD[13] ; 6.223 ; 6.223 ; 6.223 ; 6.223 ;
+; instrP2AD[2]  ; EjumpAD[14] ; 6.064 ; 6.064 ; 6.064 ; 6.064 ;
+; instrP2AD[2]  ; EjumpAD[15] ; 6.213 ; 6.213 ; 6.213 ; 6.213 ;
+; instrP2AD[3]  ; EjumpAD[3]  ; 5.578 ; 5.578 ; 5.578 ; 5.578 ;
+; instrP2AD[3]  ; EjumpAD[4]  ; 6.073 ; 6.073 ; 6.073 ; 6.073 ;
+; instrP2AD[3]  ; EjumpAD[5]  ; 5.888 ; 5.888 ; 5.888 ; 5.888 ;
+; instrP2AD[3]  ; EjumpAD[6]  ; 5.886 ; 5.886 ; 5.886 ; 5.886 ;
+; instrP2AD[3]  ; EjumpAD[7]  ; 6.044 ; 6.044 ; 6.044 ; 6.044 ;
+; instrP2AD[3]  ; EjumpAD[8]  ; 6.153 ; 6.153 ; 6.153 ; 6.153 ;
+; instrP2AD[3]  ; EjumpAD[9]  ; 6.287 ; 6.287 ; 6.287 ; 6.287 ;
+; instrP2AD[3]  ; EjumpAD[10] ; 5.985 ; 5.985 ; 5.985 ; 5.985 ;
+; instrP2AD[3]  ; EjumpAD[11] ; 6.117 ; 6.117 ; 6.117 ; 6.117 ;
+; instrP2AD[3]  ; EjumpAD[12] ; 6.369 ; 6.369 ; 6.369 ; 6.369 ;
+; instrP2AD[3]  ; EjumpAD[13] ; 6.295 ; 6.295 ; 6.295 ; 6.295 ;
+; instrP2AD[3]  ; EjumpAD[14] ; 6.136 ; 6.136 ; 6.136 ; 6.136 ;
+; instrP2AD[3]  ; EjumpAD[15] ; 6.285 ; 6.285 ; 6.285 ; 6.285 ;
+; instrP2AD[4]  ; EjumpAD[4]  ; 5.935 ; 5.935 ; 5.935 ; 5.935 ;
+; instrP2AD[4]  ; EjumpAD[5]  ; 5.855 ; 5.855 ; 5.855 ; 5.855 ;
+; instrP2AD[4]  ; EjumpAD[6]  ; 5.853 ; 5.853 ; 5.853 ; 5.853 ;
+; instrP2AD[4]  ; EjumpAD[7]  ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
+; instrP2AD[4]  ; EjumpAD[8]  ; 6.120 ; 6.120 ; 6.120 ; 6.120 ;
+; instrP2AD[4]  ; EjumpAD[9]  ; 6.254 ; 6.254 ; 6.254 ; 6.254 ;
+; instrP2AD[4]  ; EjumpAD[10] ; 5.952 ; 5.952 ; 5.952 ; 5.952 ;
+; instrP2AD[4]  ; EjumpAD[11] ; 6.084 ; 6.084 ; 6.084 ; 6.084 ;
+; instrP2AD[4]  ; EjumpAD[12] ; 6.336 ; 6.336 ; 6.336 ; 6.336 ;
+; instrP2AD[4]  ; EjumpAD[13] ; 6.262 ; 6.262 ; 6.262 ; 6.262 ;
+; instrP2AD[4]  ; EjumpAD[14] ; 6.103 ; 6.103 ; 6.103 ; 6.103 ;
+; instrP2AD[4]  ; EjumpAD[15] ; 6.252 ; 6.252 ; 6.252 ; 6.252 ;
+; instrP2AD[5]  ; EjumpAD[5]  ; 5.628 ; 5.628 ; 5.628 ; 5.628 ;
+; instrP2AD[5]  ; EjumpAD[6]  ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; instrP2AD[5]  ; EjumpAD[7]  ; 5.889 ; 5.889 ; 5.889 ; 5.889 ;
+; instrP2AD[5]  ; EjumpAD[8]  ; 5.998 ; 5.998 ; 5.998 ; 5.998 ;
+; instrP2AD[5]  ; EjumpAD[9]  ; 6.132 ; 6.132 ; 6.132 ; 6.132 ;
+; instrP2AD[5]  ; EjumpAD[10] ; 5.830 ; 5.830 ; 5.830 ; 5.830 ;
+; instrP2AD[5]  ; EjumpAD[11] ; 5.962 ; 5.962 ; 5.962 ; 5.962 ;
+; instrP2AD[5]  ; EjumpAD[12] ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; instrP2AD[5]  ; EjumpAD[13] ; 6.140 ; 6.140 ; 6.140 ; 6.140 ;
+; instrP2AD[5]  ; EjumpAD[14] ; 5.981 ; 5.981 ; 5.981 ; 5.981 ;
+; instrP2AD[5]  ; EjumpAD[15] ; 6.130 ; 6.130 ; 6.130 ; 6.130 ;
+; instrP2AD[6]  ; EjumpAD[6]  ; 5.395 ; 5.395 ; 5.395 ; 5.395 ;
+; instrP2AD[6]  ; EjumpAD[7]  ; 5.658 ; 5.658 ; 5.658 ; 5.658 ;
+; instrP2AD[6]  ; EjumpAD[8]  ; 5.767 ; 5.767 ; 5.767 ; 5.767 ;
+; instrP2AD[6]  ; EjumpAD[9]  ; 5.901 ; 5.901 ; 5.901 ; 5.901 ;
+; instrP2AD[6]  ; EjumpAD[10] ; 5.599 ; 5.599 ; 5.599 ; 5.599 ;
+; instrP2AD[6]  ; EjumpAD[11] ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; instrP2AD[6]  ; EjumpAD[12] ; 5.983 ; 5.983 ; 5.983 ; 5.983 ;
+; instrP2AD[6]  ; EjumpAD[13] ; 5.909 ; 5.909 ; 5.909 ; 5.909 ;
+; instrP2AD[6]  ; EjumpAD[14] ; 5.750 ; 5.750 ; 5.750 ; 5.750 ;
+; instrP2AD[6]  ; EjumpAD[15] ; 5.899 ; 5.899 ; 5.899 ; 5.899 ;
+; instrP2AD[7]  ; EjumpAD[7]  ; 5.684 ; 5.684 ; 5.684 ; 5.684 ;
+; instrP2AD[7]  ; EjumpAD[8]  ; 5.898 ; 5.898 ; 5.898 ; 5.898 ;
+; instrP2AD[7]  ; EjumpAD[9]  ; 6.032 ; 6.032 ; 6.032 ; 6.032 ;
+; instrP2AD[7]  ; EjumpAD[10] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; instrP2AD[7]  ; EjumpAD[11] ; 5.862 ; 5.862 ; 5.862 ; 5.862 ;
+; instrP2AD[7]  ; EjumpAD[12] ; 6.114 ; 6.114 ; 6.114 ; 6.114 ;
+; instrP2AD[7]  ; EjumpAD[13] ; 6.040 ; 6.040 ; 6.040 ; 6.040 ;
+; instrP2AD[7]  ; EjumpAD[14] ; 5.881 ; 5.881 ; 5.881 ; 5.881 ;
+; instrP2AD[7]  ; EjumpAD[15] ; 6.030 ; 6.030 ; 6.030 ; 6.030 ;
+; instrP2AD[8]  ; EjumpAD[8]  ; 5.747 ; 5.747 ; 5.747 ; 5.747 ;
+; instrP2AD[8]  ; EjumpAD[9]  ; 5.981 ; 5.981 ; 5.981 ; 5.981 ;
+; instrP2AD[8]  ; EjumpAD[10] ; 5.679 ; 5.679 ; 5.679 ; 5.679 ;
+; instrP2AD[8]  ; EjumpAD[11] ; 5.811 ; 5.811 ; 5.811 ; 5.811 ;
+; instrP2AD[8]  ; EjumpAD[12] ; 6.063 ; 6.063 ; 6.063 ; 6.063 ;
+; instrP2AD[8]  ; EjumpAD[13] ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; instrP2AD[8]  ; EjumpAD[14] ; 5.830 ; 5.830 ; 5.830 ; 5.830 ;
+; instrP2AD[8]  ; EjumpAD[15] ; 5.979 ; 5.979 ; 5.979 ; 5.979 ;
+; instrP2AD[9]  ; EjumpAD[9]  ; 5.591 ; 5.591 ; 5.591 ; 5.591 ;
+; instrP2AD[9]  ; EjumpAD[10] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; instrP2AD[9]  ; EjumpAD[11] ; 5.524 ; 5.524 ; 5.524 ; 5.524 ;
+; instrP2AD[9]  ; EjumpAD[12] ; 5.776 ; 5.776 ; 5.776 ; 5.776 ;
+; instrP2AD[9]  ; EjumpAD[13] ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; instrP2AD[9]  ; EjumpAD[14] ; 5.543 ; 5.543 ; 5.543 ; 5.543 ;
+; instrP2AD[9]  ; EjumpAD[15] ; 5.692 ; 5.692 ; 5.692 ; 5.692 ;
+; instrP2AD[10] ; EjumpAD[10] ; 5.433 ; 5.433 ; 5.433 ; 5.433 ;
+; instrP2AD[10] ; EjumpAD[11] ; 5.668 ; 5.668 ; 5.668 ; 5.668 ;
+; instrP2AD[10] ; EjumpAD[12] ; 5.920 ; 5.920 ; 5.920 ; 5.920 ;
+; instrP2AD[10] ; EjumpAD[13] ; 5.846 ; 5.846 ; 5.846 ; 5.846 ;
+; instrP2AD[10] ; EjumpAD[14] ; 5.687 ; 5.687 ; 5.687 ; 5.687 ;
+; instrP2AD[10] ; EjumpAD[15] ; 5.836 ; 5.836 ; 5.836 ; 5.836 ;
+; instrP2AD[11] ; EjumpAD[11] ; 5.817 ; 5.817 ; 5.817 ; 5.817 ;
+; instrP2AD[11] ; EjumpAD[12] ; 6.172 ; 6.172 ; 6.172 ; 6.172 ;
+; instrP2AD[11] ; EjumpAD[13] ; 6.098 ; 6.098 ; 6.098 ; 6.098 ;
+; instrP2AD[11] ; EjumpAD[14] ; 5.939 ; 5.939 ; 5.939 ; 5.939 ;
+; instrP2AD[11] ; EjumpAD[15] ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; instrP2AD[12] ; EjumpAD[12] ; 5.884 ; 5.884 ; 5.884 ; 5.884 ;
+; instrP2AD[12] ; EjumpAD[13] ; 5.913 ; 5.913 ; 5.913 ; 5.913 ;
+; instrP2AD[12] ; EjumpAD[14] ; 5.754 ; 5.754 ; 5.754 ; 5.754 ;
+; instrP2AD[12] ; EjumpAD[15] ; 5.903 ; 5.903 ; 5.903 ; 5.903 ;
+; instrP2AD[13] ; EjumpAD[13] ; 5.438 ; 5.438 ; 5.438 ; 5.438 ;
+; instrP2AD[13] ; EjumpAD[14] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
+; instrP2AD[13] ; EjumpAD[15] ; 5.531 ; 5.531 ; 5.531 ; 5.531 ;
+; instrP2AD[14] ; EjumpAD[14] ; 5.323 ; 5.323 ; 5.323 ; 5.323 ;
+; instrP2AD[14] ; EjumpAD[15] ; 5.575 ; 5.575 ; 5.575 ; 5.575 ;
+; instrP2AD[15] ; EjumpAD[15] ; 5.462 ; 5.462 ; 5.462 ; 5.462 ;
+; jumpADR[0]    ; EjumpAD[1]  ; 5.773 ; 5.773 ; 5.773 ; 5.773 ;
+; jumpADR[0]    ; EjumpAD[2]  ; 5.914 ; 5.914 ; 5.914 ; 5.914 ;
+; jumpADR[0]    ; EjumpAD[3]  ; 5.824 ; 5.824 ; 5.824 ; 5.824 ;
+; jumpADR[0]    ; EjumpAD[4]  ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; jumpADR[0]    ; EjumpAD[5]  ; 6.029 ; 6.029 ; 6.029 ; 6.029 ;
+; jumpADR[0]    ; EjumpAD[6]  ; 6.027 ; 6.027 ; 6.027 ; 6.027 ;
+; jumpADR[0]    ; EjumpAD[7]  ; 6.185 ; 6.185 ; 6.185 ; 6.185 ;
+; jumpADR[0]    ; EjumpAD[8]  ; 6.294 ; 6.294 ; 6.294 ; 6.294 ;
+; jumpADR[0]    ; EjumpAD[9]  ; 6.428 ; 6.428 ; 6.428 ; 6.428 ;
+; jumpADR[0]    ; EjumpAD[10] ; 6.126 ; 6.126 ; 6.126 ; 6.126 ;
+; jumpADR[0]    ; EjumpAD[11] ; 6.258 ; 6.258 ; 6.258 ; 6.258 ;
+; jumpADR[0]    ; EjumpAD[12] ; 6.510 ; 6.510 ; 6.510 ; 6.510 ;
+; jumpADR[0]    ; EjumpAD[13] ; 6.436 ; 6.436 ; 6.436 ; 6.436 ;
+; jumpADR[0]    ; EjumpAD[14] ; 6.277 ; 6.277 ; 6.277 ; 6.277 ;
+; jumpADR[0]    ; EjumpAD[15] ; 6.426 ; 6.426 ; 6.426 ; 6.426 ;
+; jumpADR[1]    ; EjumpAD[2]  ; 5.770 ; 5.770 ; 5.770 ; 5.770 ;
+; jumpADR[1]    ; EjumpAD[3]  ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; jumpADR[1]    ; EjumpAD[4]  ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; jumpADR[1]    ; EjumpAD[5]  ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; jumpADR[1]    ; EjumpAD[6]  ; 5.986 ; 5.986 ; 5.986 ; 5.986 ;
+; jumpADR[1]    ; EjumpAD[7]  ; 6.144 ; 6.144 ; 6.144 ; 6.144 ;
+; jumpADR[1]    ; EjumpAD[8]  ; 6.253 ; 6.253 ; 6.253 ; 6.253 ;
+; jumpADR[1]    ; EjumpAD[9]  ; 6.387 ; 6.387 ; 6.387 ; 6.387 ;
+; jumpADR[1]    ; EjumpAD[10] ; 6.085 ; 6.085 ; 6.085 ; 6.085 ;
+; jumpADR[1]    ; EjumpAD[11] ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
+; jumpADR[1]    ; EjumpAD[12] ; 6.469 ; 6.469 ; 6.469 ; 6.469 ;
+; jumpADR[1]    ; EjumpAD[13] ; 6.395 ; 6.395 ; 6.395 ; 6.395 ;
+; jumpADR[1]    ; EjumpAD[14] ; 6.236 ; 6.236 ; 6.236 ; 6.236 ;
+; jumpADR[1]    ; EjumpAD[15] ; 6.385 ; 6.385 ; 6.385 ; 6.385 ;
+; jumpADR[2]    ; EjumpAD[3]  ; 5.477 ; 5.477 ; 5.477 ; 5.477 ;
+; jumpADR[2]    ; EjumpAD[4]  ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; jumpADR[2]    ; EjumpAD[5]  ; 5.785 ; 5.785 ; 5.785 ; 5.785 ;
+; jumpADR[2]    ; EjumpAD[6]  ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; jumpADR[2]    ; EjumpAD[7]  ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; jumpADR[2]    ; EjumpAD[8]  ; 6.050 ; 6.050 ; 6.050 ; 6.050 ;
+; jumpADR[2]    ; EjumpAD[9]  ; 6.184 ; 6.184 ; 6.184 ; 6.184 ;
+; jumpADR[2]    ; EjumpAD[10] ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
+; jumpADR[2]    ; EjumpAD[11] ; 6.014 ; 6.014 ; 6.014 ; 6.014 ;
+; jumpADR[2]    ; EjumpAD[12] ; 6.266 ; 6.266 ; 6.266 ; 6.266 ;
+; jumpADR[2]    ; EjumpAD[13] ; 6.192 ; 6.192 ; 6.192 ; 6.192 ;
+; jumpADR[2]    ; EjumpAD[14] ; 6.033 ; 6.033 ; 6.033 ; 6.033 ;
+; jumpADR[2]    ; EjumpAD[15] ; 6.182 ; 6.182 ; 6.182 ; 6.182 ;
+; jumpADR[3]    ; EjumpAD[4]  ; 5.996 ; 5.996 ; 5.996 ; 5.996 ;
+; jumpADR[3]    ; EjumpAD[5]  ; 5.914 ; 5.914 ; 5.914 ; 5.914 ;
+; jumpADR[3]    ; EjumpAD[6]  ; 5.912 ; 5.912 ; 5.912 ; 5.912 ;
+; jumpADR[3]    ; EjumpAD[7]  ; 6.070 ; 6.070 ; 6.070 ; 6.070 ;
+; jumpADR[3]    ; EjumpAD[8]  ; 6.179 ; 6.179 ; 6.179 ; 6.179 ;
+; jumpADR[3]    ; EjumpAD[9]  ; 6.313 ; 6.313 ; 6.313 ; 6.313 ;
+; jumpADR[3]    ; EjumpAD[10] ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
+; jumpADR[3]    ; EjumpAD[11] ; 6.143 ; 6.143 ; 6.143 ; 6.143 ;
+; jumpADR[3]    ; EjumpAD[12] ; 6.395 ; 6.395 ; 6.395 ; 6.395 ;
+; jumpADR[3]    ; EjumpAD[13] ; 6.321 ; 6.321 ; 6.321 ; 6.321 ;
+; jumpADR[3]    ; EjumpAD[14] ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; jumpADR[3]    ; EjumpAD[15] ; 6.311 ; 6.311 ; 6.311 ; 6.311 ;
+; jumpADR[4]    ; EjumpAD[5]  ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
+; jumpADR[4]    ; EjumpAD[6]  ; 5.690 ; 5.690 ; 5.690 ; 5.690 ;
+; jumpADR[4]    ; EjumpAD[7]  ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
+; jumpADR[4]    ; EjumpAD[8]  ; 5.957 ; 5.957 ; 5.957 ; 5.957 ;
+; jumpADR[4]    ; EjumpAD[9]  ; 6.091 ; 6.091 ; 6.091 ; 6.091 ;
+; jumpADR[4]    ; EjumpAD[10] ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
+; jumpADR[4]    ; EjumpAD[11] ; 5.921 ; 5.921 ; 5.921 ; 5.921 ;
+; jumpADR[4]    ; EjumpAD[12] ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; jumpADR[4]    ; EjumpAD[13] ; 6.099 ; 6.099 ; 6.099 ; 6.099 ;
+; jumpADR[4]    ; EjumpAD[14] ; 5.940 ; 5.940 ; 5.940 ; 5.940 ;
+; jumpADR[4]    ; EjumpAD[15] ; 6.089 ; 6.089 ; 6.089 ; 6.089 ;
+; jumpADR[5]    ; EjumpAD[6]  ; 5.600 ; 5.600 ; 5.600 ; 5.600 ;
+; jumpADR[5]    ; EjumpAD[7]  ; 5.861 ; 5.861 ; 5.861 ; 5.861 ;
+; jumpADR[5]    ; EjumpAD[8]  ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; jumpADR[5]    ; EjumpAD[9]  ; 6.104 ; 6.104 ; 6.104 ; 6.104 ;
+; jumpADR[5]    ; EjumpAD[10] ; 5.802 ; 5.802 ; 5.802 ; 5.802 ;
+; jumpADR[5]    ; EjumpAD[11] ; 5.934 ; 5.934 ; 5.934 ; 5.934 ;
+; jumpADR[5]    ; EjumpAD[12] ; 6.186 ; 6.186 ; 6.186 ; 6.186 ;
+; jumpADR[5]    ; EjumpAD[13] ; 6.112 ; 6.112 ; 6.112 ; 6.112 ;
+; jumpADR[5]    ; EjumpAD[14] ; 5.953 ; 5.953 ; 5.953 ; 5.953 ;
+; jumpADR[5]    ; EjumpAD[15] ; 6.102 ; 6.102 ; 6.102 ; 6.102 ;
+; jumpADR[6]    ; EjumpAD[7]  ; 5.690 ; 5.690 ; 5.690 ; 5.690 ;
+; jumpADR[6]    ; EjumpAD[8]  ; 5.902 ; 5.902 ; 5.902 ; 5.902 ;
+; jumpADR[6]    ; EjumpAD[9]  ; 6.036 ; 6.036 ; 6.036 ; 6.036 ;
+; jumpADR[6]    ; EjumpAD[10] ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
+; jumpADR[6]    ; EjumpAD[11] ; 5.866 ; 5.866 ; 5.866 ; 5.866 ;
+; jumpADR[6]    ; EjumpAD[12] ; 6.118 ; 6.118 ; 6.118 ; 6.118 ;
+; jumpADR[6]    ; EjumpAD[13] ; 6.044 ; 6.044 ; 6.044 ; 6.044 ;
+; jumpADR[6]    ; EjumpAD[14] ; 5.885 ; 5.885 ; 5.885 ; 5.885 ;
+; jumpADR[6]    ; EjumpAD[15] ; 6.034 ; 6.034 ; 6.034 ; 6.034 ;
+; jumpADR[7]    ; EjumpAD[8]  ; 5.649 ; 5.649 ; 5.649 ; 5.649 ;
+; jumpADR[7]    ; EjumpAD[9]  ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
+; jumpADR[7]    ; EjumpAD[10] ; 5.580 ; 5.580 ; 5.580 ; 5.580 ;
+; jumpADR[7]    ; EjumpAD[11] ; 5.712 ; 5.712 ; 5.712 ; 5.712 ;
+; jumpADR[7]    ; EjumpAD[12] ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; jumpADR[7]    ; EjumpAD[13] ; 5.890 ; 5.890 ; 5.890 ; 5.890 ;
+; jumpADR[7]    ; EjumpAD[14] ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; jumpADR[7]    ; EjumpAD[15] ; 5.880 ; 5.880 ; 5.880 ; 5.880 ;
+; jumpADR[8]    ; EjumpAD[9]  ; 5.795 ; 5.795 ; 5.795 ; 5.795 ;
+; jumpADR[8]    ; EjumpAD[10] ; 5.598 ; 5.598 ; 5.598 ; 5.598 ;
+; jumpADR[8]    ; EjumpAD[11] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; jumpADR[8]    ; EjumpAD[12] ; 5.982 ; 5.982 ; 5.982 ; 5.982 ;
+; jumpADR[8]    ; EjumpAD[13] ; 5.908 ; 5.908 ; 5.908 ; 5.908 ;
+; jumpADR[8]    ; EjumpAD[14] ; 5.749 ; 5.749 ; 5.749 ; 5.749 ;
+; jumpADR[8]    ; EjumpAD[15] ; 5.898 ; 5.898 ; 5.898 ; 5.898 ;
+; jumpADR[9]    ; EjumpAD[10] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; jumpADR[9]    ; EjumpAD[11] ; 5.570 ; 5.570 ; 5.570 ; 5.570 ;
+; jumpADR[9]    ; EjumpAD[12] ; 5.822 ; 5.822 ; 5.822 ; 5.822 ;
+; jumpADR[9]    ; EjumpAD[13] ; 5.748 ; 5.748 ; 5.748 ; 5.748 ;
+; jumpADR[9]    ; EjumpAD[14] ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
+; jumpADR[9]    ; EjumpAD[15] ; 5.738 ; 5.738 ; 5.738 ; 5.738 ;
+; jumpADR[10]   ; EjumpAD[11] ; 5.461 ; 5.461 ; 5.461 ; 5.461 ;
+; jumpADR[10]   ; EjumpAD[12] ; 5.818 ; 5.818 ; 5.818 ; 5.818 ;
+; jumpADR[10]   ; EjumpAD[13] ; 5.744 ; 5.744 ; 5.744 ; 5.744 ;
+; jumpADR[10]   ; EjumpAD[14] ; 5.585 ; 5.585 ; 5.585 ; 5.585 ;
+; jumpADR[10]   ; EjumpAD[15] ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
+; jumpADR[11]   ; EjumpAD[12] ; 5.907 ; 5.907 ; 5.907 ; 5.907 ;
+; jumpADR[11]   ; EjumpAD[13] ; 5.938 ; 5.938 ; 5.938 ; 5.938 ;
+; jumpADR[11]   ; EjumpAD[14] ; 5.779 ; 5.779 ; 5.779 ; 5.779 ;
+; jumpADR[11]   ; EjumpAD[15] ; 5.928 ; 5.928 ; 5.928 ; 5.928 ;
++---------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; instrP2AD[0]  ; EjumpAD[0]  ; 2.598 ;       ;       ; 2.598 ;
+; instrP2AD[1]  ; EjumpAD[1]  ; 3.318 ; 3.318 ; 3.318 ; 3.318 ;
+; instrP2AD[1]  ; EjumpAD[2]  ; 3.454 ; 3.454 ; 3.454 ; 3.454 ;
+; instrP2AD[1]  ; EjumpAD[3]  ; 3.364 ; 3.364 ; 3.364 ; 3.364 ;
+; instrP2AD[1]  ; EjumpAD[4]  ; 3.754 ; 3.754 ; 3.754 ; 3.754 ;
+; instrP2AD[1]  ; EjumpAD[5]  ; 3.569 ; 3.569 ; 3.569 ; 3.569 ;
+; instrP2AD[1]  ; EjumpAD[6]  ; 3.567 ; 3.567 ; 3.567 ; 3.567 ;
+; instrP2AD[1]  ; EjumpAD[7]  ; 3.725 ; 3.725 ; 3.725 ; 3.725 ;
+; instrP2AD[1]  ; EjumpAD[8]  ; 3.834 ; 3.834 ; 3.834 ; 3.834 ;
+; instrP2AD[1]  ; EjumpAD[9]  ; 3.968 ; 3.968 ; 3.968 ; 3.968 ;
+; instrP2AD[1]  ; EjumpAD[10] ; 3.666 ; 3.666 ; 3.666 ; 3.666 ;
+; instrP2AD[1]  ; EjumpAD[11] ; 3.798 ; 3.798 ; 3.798 ; 3.798 ;
+; instrP2AD[1]  ; EjumpAD[12] ; 4.050 ; 4.050 ; 4.050 ; 4.050 ;
+; instrP2AD[1]  ; EjumpAD[13] ; 3.976 ; 3.976 ; 3.976 ; 3.976 ;
+; instrP2AD[1]  ; EjumpAD[14] ; 3.817 ; 3.817 ; 3.817 ; 3.817 ;
+; instrP2AD[1]  ; EjumpAD[15] ; 3.966 ; 3.966 ; 3.966 ; 3.966 ;
+; instrP2AD[2]  ; EjumpAD[2]  ; 5.596 ; 5.596 ; 5.596 ; 5.596 ;
+; instrP2AD[2]  ; EjumpAD[3]  ; 5.611 ; 5.611 ; 5.611 ; 5.611 ;
+; instrP2AD[2]  ; EjumpAD[4]  ; 6.001 ; 6.001 ; 6.001 ; 6.001 ;
+; instrP2AD[2]  ; EjumpAD[5]  ; 5.816 ; 5.816 ; 5.816 ; 5.816 ;
+; instrP2AD[2]  ; EjumpAD[6]  ; 5.814 ; 5.814 ; 5.814 ; 5.814 ;
+; instrP2AD[2]  ; EjumpAD[7]  ; 5.972 ; 5.972 ; 5.972 ; 5.972 ;
+; instrP2AD[2]  ; EjumpAD[8]  ; 6.081 ; 6.081 ; 6.081 ; 6.081 ;
+; instrP2AD[2]  ; EjumpAD[9]  ; 6.215 ; 6.215 ; 6.215 ; 6.215 ;
+; instrP2AD[2]  ; EjumpAD[10] ; 5.913 ; 5.913 ; 5.913 ; 5.913 ;
+; instrP2AD[2]  ; EjumpAD[11] ; 6.045 ; 6.045 ; 6.045 ; 6.045 ;
+; instrP2AD[2]  ; EjumpAD[12] ; 6.297 ; 6.297 ; 6.297 ; 6.297 ;
+; instrP2AD[2]  ; EjumpAD[13] ; 6.223 ; 6.223 ; 6.223 ; 6.223 ;
+; instrP2AD[2]  ; EjumpAD[14] ; 6.064 ; 6.064 ; 6.064 ; 6.064 ;
+; instrP2AD[2]  ; EjumpAD[15] ; 6.213 ; 6.213 ; 6.213 ; 6.213 ;
+; instrP2AD[3]  ; EjumpAD[3]  ; 5.578 ; 5.578 ; 5.578 ; 5.578 ;
+; instrP2AD[3]  ; EjumpAD[4]  ; 6.073 ; 6.073 ; 6.073 ; 6.073 ;
+; instrP2AD[3]  ; EjumpAD[5]  ; 5.888 ; 5.888 ; 5.888 ; 5.888 ;
+; instrP2AD[3]  ; EjumpAD[6]  ; 5.886 ; 5.886 ; 5.886 ; 5.886 ;
+; instrP2AD[3]  ; EjumpAD[7]  ; 6.044 ; 6.044 ; 6.044 ; 6.044 ;
+; instrP2AD[3]  ; EjumpAD[8]  ; 6.153 ; 6.153 ; 6.153 ; 6.153 ;
+; instrP2AD[3]  ; EjumpAD[9]  ; 6.287 ; 6.287 ; 6.287 ; 6.287 ;
+; instrP2AD[3]  ; EjumpAD[10] ; 5.985 ; 5.985 ; 5.985 ; 5.985 ;
+; instrP2AD[3]  ; EjumpAD[11] ; 6.117 ; 6.117 ; 6.117 ; 6.117 ;
+; instrP2AD[3]  ; EjumpAD[12] ; 6.369 ; 6.369 ; 6.369 ; 6.369 ;
+; instrP2AD[3]  ; EjumpAD[13] ; 6.295 ; 6.295 ; 6.295 ; 6.295 ;
+; instrP2AD[3]  ; EjumpAD[14] ; 6.136 ; 6.136 ; 6.136 ; 6.136 ;
+; instrP2AD[3]  ; EjumpAD[15] ; 6.285 ; 6.285 ; 6.285 ; 6.285 ;
+; instrP2AD[4]  ; EjumpAD[4]  ; 5.935 ; 5.935 ; 5.935 ; 5.935 ;
+; instrP2AD[4]  ; EjumpAD[5]  ; 5.855 ; 5.855 ; 5.855 ; 5.855 ;
+; instrP2AD[4]  ; EjumpAD[6]  ; 5.853 ; 5.853 ; 5.853 ; 5.853 ;
+; instrP2AD[4]  ; EjumpAD[7]  ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
+; instrP2AD[4]  ; EjumpAD[8]  ; 6.120 ; 6.120 ; 6.120 ; 6.120 ;
+; instrP2AD[4]  ; EjumpAD[9]  ; 6.254 ; 6.254 ; 6.254 ; 6.254 ;
+; instrP2AD[4]  ; EjumpAD[10] ; 5.952 ; 5.952 ; 5.952 ; 5.952 ;
+; instrP2AD[4]  ; EjumpAD[11] ; 6.084 ; 6.084 ; 6.084 ; 6.084 ;
+; instrP2AD[4]  ; EjumpAD[12] ; 6.336 ; 6.336 ; 6.336 ; 6.336 ;
+; instrP2AD[4]  ; EjumpAD[13] ; 6.262 ; 6.262 ; 6.262 ; 6.262 ;
+; instrP2AD[4]  ; EjumpAD[14] ; 6.103 ; 6.103 ; 6.103 ; 6.103 ;
+; instrP2AD[4]  ; EjumpAD[15] ; 6.252 ; 6.252 ; 6.252 ; 6.252 ;
+; instrP2AD[5]  ; EjumpAD[5]  ; 5.628 ; 5.628 ; 5.628 ; 5.628 ;
+; instrP2AD[5]  ; EjumpAD[6]  ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; instrP2AD[5]  ; EjumpAD[7]  ; 5.889 ; 5.889 ; 5.889 ; 5.889 ;
+; instrP2AD[5]  ; EjumpAD[8]  ; 5.998 ; 5.998 ; 5.998 ; 5.998 ;
+; instrP2AD[5]  ; EjumpAD[9]  ; 6.132 ; 6.132 ; 6.132 ; 6.132 ;
+; instrP2AD[5]  ; EjumpAD[10] ; 5.830 ; 5.830 ; 5.830 ; 5.830 ;
+; instrP2AD[5]  ; EjumpAD[11] ; 5.962 ; 5.962 ; 5.962 ; 5.962 ;
+; instrP2AD[5]  ; EjumpAD[12] ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; instrP2AD[5]  ; EjumpAD[13] ; 6.140 ; 6.140 ; 6.140 ; 6.140 ;
+; instrP2AD[5]  ; EjumpAD[14] ; 5.981 ; 5.981 ; 5.981 ; 5.981 ;
+; instrP2AD[5]  ; EjumpAD[15] ; 6.130 ; 6.130 ; 6.130 ; 6.130 ;
+; instrP2AD[6]  ; EjumpAD[6]  ; 5.395 ; 5.395 ; 5.395 ; 5.395 ;
+; instrP2AD[6]  ; EjumpAD[7]  ; 5.658 ; 5.658 ; 5.658 ; 5.658 ;
+; instrP2AD[6]  ; EjumpAD[8]  ; 5.767 ; 5.767 ; 5.767 ; 5.767 ;
+; instrP2AD[6]  ; EjumpAD[9]  ; 5.901 ; 5.901 ; 5.901 ; 5.901 ;
+; instrP2AD[6]  ; EjumpAD[10] ; 5.599 ; 5.599 ; 5.599 ; 5.599 ;
+; instrP2AD[6]  ; EjumpAD[11] ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; instrP2AD[6]  ; EjumpAD[12] ; 5.983 ; 5.983 ; 5.983 ; 5.983 ;
+; instrP2AD[6]  ; EjumpAD[13] ; 5.909 ; 5.909 ; 5.909 ; 5.909 ;
+; instrP2AD[6]  ; EjumpAD[14] ; 5.750 ; 5.750 ; 5.750 ; 5.750 ;
+; instrP2AD[6]  ; EjumpAD[15] ; 5.899 ; 5.899 ; 5.899 ; 5.899 ;
+; instrP2AD[7]  ; EjumpAD[7]  ; 5.684 ; 5.684 ; 5.684 ; 5.684 ;
+; instrP2AD[7]  ; EjumpAD[8]  ; 5.898 ; 5.898 ; 5.898 ; 5.898 ;
+; instrP2AD[7]  ; EjumpAD[9]  ; 6.032 ; 6.032 ; 6.032 ; 6.032 ;
+; instrP2AD[7]  ; EjumpAD[10] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; instrP2AD[7]  ; EjumpAD[11] ; 5.862 ; 5.862 ; 5.862 ; 5.862 ;
+; instrP2AD[7]  ; EjumpAD[12] ; 6.114 ; 6.114 ; 6.114 ; 6.114 ;
+; instrP2AD[7]  ; EjumpAD[13] ; 6.040 ; 6.040 ; 6.040 ; 6.040 ;
+; instrP2AD[7]  ; EjumpAD[14] ; 5.881 ; 5.881 ; 5.881 ; 5.881 ;
+; instrP2AD[7]  ; EjumpAD[15] ; 6.030 ; 6.030 ; 6.030 ; 6.030 ;
+; instrP2AD[8]  ; EjumpAD[8]  ; 5.747 ; 5.747 ; 5.747 ; 5.747 ;
+; instrP2AD[8]  ; EjumpAD[9]  ; 5.981 ; 5.981 ; 5.981 ; 5.981 ;
+; instrP2AD[8]  ; EjumpAD[10] ; 5.679 ; 5.679 ; 5.679 ; 5.679 ;
+; instrP2AD[8]  ; EjumpAD[11] ; 5.811 ; 5.811 ; 5.811 ; 5.811 ;
+; instrP2AD[8]  ; EjumpAD[12] ; 6.063 ; 6.063 ; 6.063 ; 6.063 ;
+; instrP2AD[8]  ; EjumpAD[13] ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; instrP2AD[8]  ; EjumpAD[14] ; 5.830 ; 5.830 ; 5.830 ; 5.830 ;
+; instrP2AD[8]  ; EjumpAD[15] ; 5.979 ; 5.979 ; 5.979 ; 5.979 ;
+; instrP2AD[9]  ; EjumpAD[9]  ; 5.591 ; 5.591 ; 5.591 ; 5.591 ;
+; instrP2AD[9]  ; EjumpAD[10] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; instrP2AD[9]  ; EjumpAD[11] ; 5.524 ; 5.524 ; 5.524 ; 5.524 ;
+; instrP2AD[9]  ; EjumpAD[12] ; 5.776 ; 5.776 ; 5.776 ; 5.776 ;
+; instrP2AD[9]  ; EjumpAD[13] ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; instrP2AD[9]  ; EjumpAD[14] ; 5.543 ; 5.543 ; 5.543 ; 5.543 ;
+; instrP2AD[9]  ; EjumpAD[15] ; 5.692 ; 5.692 ; 5.692 ; 5.692 ;
+; instrP2AD[10] ; EjumpAD[10] ; 5.433 ; 5.433 ; 5.433 ; 5.433 ;
+; instrP2AD[10] ; EjumpAD[11] ; 5.668 ; 5.668 ; 5.668 ; 5.668 ;
+; instrP2AD[10] ; EjumpAD[12] ; 5.920 ; 5.920 ; 5.920 ; 5.920 ;
+; instrP2AD[10] ; EjumpAD[13] ; 5.846 ; 5.846 ; 5.846 ; 5.846 ;
+; instrP2AD[10] ; EjumpAD[14] ; 5.687 ; 5.687 ; 5.687 ; 5.687 ;
+; instrP2AD[10] ; EjumpAD[15] ; 5.836 ; 5.836 ; 5.836 ; 5.836 ;
+; instrP2AD[11] ; EjumpAD[11] ; 5.817 ; 5.817 ; 5.817 ; 5.817 ;
+; instrP2AD[11] ; EjumpAD[12] ; 6.172 ; 6.172 ; 6.172 ; 6.172 ;
+; instrP2AD[11] ; EjumpAD[13] ; 6.098 ; 6.098 ; 6.098 ; 6.098 ;
+; instrP2AD[11] ; EjumpAD[14] ; 5.939 ; 5.939 ; 5.939 ; 5.939 ;
+; instrP2AD[11] ; EjumpAD[15] ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; instrP2AD[12] ; EjumpAD[12] ; 5.884 ; 5.884 ; 5.884 ; 5.884 ;
+; instrP2AD[12] ; EjumpAD[13] ; 5.913 ; 5.913 ; 5.913 ; 5.913 ;
+; instrP2AD[12] ; EjumpAD[14] ; 5.754 ; 5.754 ; 5.754 ; 5.754 ;
+; instrP2AD[12] ; EjumpAD[15] ; 5.903 ; 5.903 ; 5.903 ; 5.903 ;
+; instrP2AD[13] ; EjumpAD[13] ; 5.438 ; 5.438 ; 5.438 ; 5.438 ;
+; instrP2AD[13] ; EjumpAD[14] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
+; instrP2AD[13] ; EjumpAD[15] ; 5.531 ; 5.531 ; 5.531 ; 5.531 ;
+; instrP2AD[14] ; EjumpAD[14] ; 5.323 ; 5.323 ; 5.323 ; 5.323 ;
+; instrP2AD[14] ; EjumpAD[15] ; 5.575 ; 5.575 ; 5.575 ; 5.575 ;
+; instrP2AD[15] ; EjumpAD[15] ; 5.462 ; 5.462 ; 5.462 ; 5.462 ;
+; jumpADR[0]    ; EjumpAD[1]  ; 5.773 ; 5.773 ; 5.773 ; 5.773 ;
+; jumpADR[0]    ; EjumpAD[2]  ; 5.914 ; 5.914 ; 5.914 ; 5.914 ;
+; jumpADR[0]    ; EjumpAD[3]  ; 5.824 ; 5.824 ; 5.824 ; 5.824 ;
+; jumpADR[0]    ; EjumpAD[4]  ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; jumpADR[0]    ; EjumpAD[5]  ; 6.029 ; 6.029 ; 6.029 ; 6.029 ;
+; jumpADR[0]    ; EjumpAD[6]  ; 6.027 ; 6.027 ; 6.027 ; 6.027 ;
+; jumpADR[0]    ; EjumpAD[7]  ; 6.185 ; 6.185 ; 6.185 ; 6.185 ;
+; jumpADR[0]    ; EjumpAD[8]  ; 6.294 ; 6.294 ; 6.294 ; 6.294 ;
+; jumpADR[0]    ; EjumpAD[9]  ; 6.428 ; 6.428 ; 6.428 ; 6.428 ;
+; jumpADR[0]    ; EjumpAD[10] ; 6.126 ; 6.126 ; 6.126 ; 6.126 ;
+; jumpADR[0]    ; EjumpAD[11] ; 6.258 ; 6.258 ; 6.258 ; 6.258 ;
+; jumpADR[0]    ; EjumpAD[12] ; 6.510 ; 6.510 ; 6.510 ; 6.510 ;
+; jumpADR[0]    ; EjumpAD[13] ; 6.436 ; 6.436 ; 6.436 ; 6.436 ;
+; jumpADR[0]    ; EjumpAD[14] ; 6.277 ; 6.277 ; 6.277 ; 6.277 ;
+; jumpADR[0]    ; EjumpAD[15] ; 6.426 ; 6.426 ; 6.426 ; 6.426 ;
+; jumpADR[1]    ; EjumpAD[2]  ; 5.770 ; 5.770 ; 5.770 ; 5.770 ;
+; jumpADR[1]    ; EjumpAD[3]  ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; jumpADR[1]    ; EjumpAD[4]  ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; jumpADR[1]    ; EjumpAD[5]  ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; jumpADR[1]    ; EjumpAD[6]  ; 5.986 ; 5.986 ; 5.986 ; 5.986 ;
+; jumpADR[1]    ; EjumpAD[7]  ; 6.144 ; 6.144 ; 6.144 ; 6.144 ;
+; jumpADR[1]    ; EjumpAD[8]  ; 6.253 ; 6.253 ; 6.253 ; 6.253 ;
+; jumpADR[1]    ; EjumpAD[9]  ; 6.387 ; 6.387 ; 6.387 ; 6.387 ;
+; jumpADR[1]    ; EjumpAD[10] ; 6.085 ; 6.085 ; 6.085 ; 6.085 ;
+; jumpADR[1]    ; EjumpAD[11] ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
+; jumpADR[1]    ; EjumpAD[12] ; 6.469 ; 6.469 ; 6.469 ; 6.469 ;
+; jumpADR[1]    ; EjumpAD[13] ; 6.395 ; 6.395 ; 6.395 ; 6.395 ;
+; jumpADR[1]    ; EjumpAD[14] ; 6.236 ; 6.236 ; 6.236 ; 6.236 ;
+; jumpADR[1]    ; EjumpAD[15] ; 6.385 ; 6.385 ; 6.385 ; 6.385 ;
+; jumpADR[2]    ; EjumpAD[3]  ; 5.477 ; 5.477 ; 5.477 ; 5.477 ;
+; jumpADR[2]    ; EjumpAD[4]  ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; jumpADR[2]    ; EjumpAD[5]  ; 5.785 ; 5.785 ; 5.785 ; 5.785 ;
+; jumpADR[2]    ; EjumpAD[6]  ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; jumpADR[2]    ; EjumpAD[7]  ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; jumpADR[2]    ; EjumpAD[8]  ; 6.050 ; 6.050 ; 6.050 ; 6.050 ;
+; jumpADR[2]    ; EjumpAD[9]  ; 6.184 ; 6.184 ; 6.184 ; 6.184 ;
+; jumpADR[2]    ; EjumpAD[10] ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
+; jumpADR[2]    ; EjumpAD[11] ; 6.014 ; 6.014 ; 6.014 ; 6.014 ;
+; jumpADR[2]    ; EjumpAD[12] ; 6.266 ; 6.266 ; 6.266 ; 6.266 ;
+; jumpADR[2]    ; EjumpAD[13] ; 6.192 ; 6.192 ; 6.192 ; 6.192 ;
+; jumpADR[2]    ; EjumpAD[14] ; 6.033 ; 6.033 ; 6.033 ; 6.033 ;
+; jumpADR[2]    ; EjumpAD[15] ; 6.182 ; 6.182 ; 6.182 ; 6.182 ;
+; jumpADR[3]    ; EjumpAD[4]  ; 5.996 ; 5.996 ; 5.996 ; 5.996 ;
+; jumpADR[3]    ; EjumpAD[5]  ; 5.914 ; 5.914 ; 5.914 ; 5.914 ;
+; jumpADR[3]    ; EjumpAD[6]  ; 5.912 ; 5.912 ; 5.912 ; 5.912 ;
+; jumpADR[3]    ; EjumpAD[7]  ; 6.070 ; 6.070 ; 6.070 ; 6.070 ;
+; jumpADR[3]    ; EjumpAD[8]  ; 6.179 ; 6.179 ; 6.179 ; 6.179 ;
+; jumpADR[3]    ; EjumpAD[9]  ; 6.313 ; 6.313 ; 6.313 ; 6.313 ;
+; jumpADR[3]    ; EjumpAD[10] ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
+; jumpADR[3]    ; EjumpAD[11] ; 6.143 ; 6.143 ; 6.143 ; 6.143 ;
+; jumpADR[3]    ; EjumpAD[12] ; 6.395 ; 6.395 ; 6.395 ; 6.395 ;
+; jumpADR[3]    ; EjumpAD[13] ; 6.321 ; 6.321 ; 6.321 ; 6.321 ;
+; jumpADR[3]    ; EjumpAD[14] ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; jumpADR[3]    ; EjumpAD[15] ; 6.311 ; 6.311 ; 6.311 ; 6.311 ;
+; jumpADR[4]    ; EjumpAD[5]  ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
+; jumpADR[4]    ; EjumpAD[6]  ; 5.690 ; 5.690 ; 5.690 ; 5.690 ;
+; jumpADR[4]    ; EjumpAD[7]  ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
+; jumpADR[4]    ; EjumpAD[8]  ; 5.957 ; 5.957 ; 5.957 ; 5.957 ;
+; jumpADR[4]    ; EjumpAD[9]  ; 6.091 ; 6.091 ; 6.091 ; 6.091 ;
+; jumpADR[4]    ; EjumpAD[10] ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
+; jumpADR[4]    ; EjumpAD[11] ; 5.921 ; 5.921 ; 5.921 ; 5.921 ;
+; jumpADR[4]    ; EjumpAD[12] ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; jumpADR[4]    ; EjumpAD[13] ; 6.099 ; 6.099 ; 6.099 ; 6.099 ;
+; jumpADR[4]    ; EjumpAD[14] ; 5.940 ; 5.940 ; 5.940 ; 5.940 ;
+; jumpADR[4]    ; EjumpAD[15] ; 6.089 ; 6.089 ; 6.089 ; 6.089 ;
+; jumpADR[5]    ; EjumpAD[6]  ; 5.600 ; 5.600 ; 5.600 ; 5.600 ;
+; jumpADR[5]    ; EjumpAD[7]  ; 5.861 ; 5.861 ; 5.861 ; 5.861 ;
+; jumpADR[5]    ; EjumpAD[8]  ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; jumpADR[5]    ; EjumpAD[9]  ; 6.104 ; 6.104 ; 6.104 ; 6.104 ;
+; jumpADR[5]    ; EjumpAD[10] ; 5.802 ; 5.802 ; 5.802 ; 5.802 ;
+; jumpADR[5]    ; EjumpAD[11] ; 5.934 ; 5.934 ; 5.934 ; 5.934 ;
+; jumpADR[5]    ; EjumpAD[12] ; 6.186 ; 6.186 ; 6.186 ; 6.186 ;
+; jumpADR[5]    ; EjumpAD[13] ; 6.112 ; 6.112 ; 6.112 ; 6.112 ;
+; jumpADR[5]    ; EjumpAD[14] ; 5.953 ; 5.953 ; 5.953 ; 5.953 ;
+; jumpADR[5]    ; EjumpAD[15] ; 6.102 ; 6.102 ; 6.102 ; 6.102 ;
+; jumpADR[6]    ; EjumpAD[7]  ; 5.690 ; 5.690 ; 5.690 ; 5.690 ;
+; jumpADR[6]    ; EjumpAD[8]  ; 5.902 ; 5.902 ; 5.902 ; 5.902 ;
+; jumpADR[6]    ; EjumpAD[9]  ; 6.036 ; 6.036 ; 6.036 ; 6.036 ;
+; jumpADR[6]    ; EjumpAD[10] ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
+; jumpADR[6]    ; EjumpAD[11] ; 5.866 ; 5.866 ; 5.866 ; 5.866 ;
+; jumpADR[6]    ; EjumpAD[12] ; 6.118 ; 6.118 ; 6.118 ; 6.118 ;
+; jumpADR[6]    ; EjumpAD[13] ; 6.044 ; 6.044 ; 6.044 ; 6.044 ;
+; jumpADR[6]    ; EjumpAD[14] ; 5.885 ; 5.885 ; 5.885 ; 5.885 ;
+; jumpADR[6]    ; EjumpAD[15] ; 6.034 ; 6.034 ; 6.034 ; 6.034 ;
+; jumpADR[7]    ; EjumpAD[8]  ; 5.649 ; 5.649 ; 5.649 ; 5.649 ;
+; jumpADR[7]    ; EjumpAD[9]  ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
+; jumpADR[7]    ; EjumpAD[10] ; 5.580 ; 5.580 ; 5.580 ; 5.580 ;
+; jumpADR[7]    ; EjumpAD[11] ; 5.712 ; 5.712 ; 5.712 ; 5.712 ;
+; jumpADR[7]    ; EjumpAD[12] ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; jumpADR[7]    ; EjumpAD[13] ; 5.890 ; 5.890 ; 5.890 ; 5.890 ;
+; jumpADR[7]    ; EjumpAD[14] ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; jumpADR[7]    ; EjumpAD[15] ; 5.880 ; 5.880 ; 5.880 ; 5.880 ;
+; jumpADR[8]    ; EjumpAD[9]  ; 5.795 ; 5.795 ; 5.795 ; 5.795 ;
+; jumpADR[8]    ; EjumpAD[10] ; 5.598 ; 5.598 ; 5.598 ; 5.598 ;
+; jumpADR[8]    ; EjumpAD[11] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; jumpADR[8]    ; EjumpAD[12] ; 5.982 ; 5.982 ; 5.982 ; 5.982 ;
+; jumpADR[8]    ; EjumpAD[13] ; 5.908 ; 5.908 ; 5.908 ; 5.908 ;
+; jumpADR[8]    ; EjumpAD[14] ; 5.749 ; 5.749 ; 5.749 ; 5.749 ;
+; jumpADR[8]    ; EjumpAD[15] ; 5.898 ; 5.898 ; 5.898 ; 5.898 ;
+; jumpADR[9]    ; EjumpAD[10] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; jumpADR[9]    ; EjumpAD[11] ; 5.570 ; 5.570 ; 5.570 ; 5.570 ;
+; jumpADR[9]    ; EjumpAD[12] ; 5.822 ; 5.822 ; 5.822 ; 5.822 ;
+; jumpADR[9]    ; EjumpAD[13] ; 5.748 ; 5.748 ; 5.748 ; 5.748 ;
+; jumpADR[9]    ; EjumpAD[14] ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
+; jumpADR[9]    ; EjumpAD[15] ; 5.738 ; 5.738 ; 5.738 ; 5.738 ;
+; jumpADR[10]   ; EjumpAD[11] ; 5.461 ; 5.461 ; 5.461 ; 5.461 ;
+; jumpADR[10]   ; EjumpAD[12] ; 5.818 ; 5.818 ; 5.818 ; 5.818 ;
+; jumpADR[10]   ; EjumpAD[13] ; 5.744 ; 5.744 ; 5.744 ; 5.744 ;
+; jumpADR[10]   ; EjumpAD[14] ; 5.585 ; 5.585 ; 5.585 ; 5.585 ;
+; jumpADR[10]   ; EjumpAD[15] ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
+; jumpADR[11]   ; EjumpAD[12] ; 5.907 ; 5.907 ; 5.907 ; 5.907 ;
+; jumpADR[11]   ; EjumpAD[13] ; 5.799 ; 5.799 ; 5.799 ; 5.799 ;
+; jumpADR[11]   ; EjumpAD[14] ; 5.605 ; 5.605 ; 5.605 ; 5.605 ;
+; jumpADR[11]   ; EjumpAD[15] ; 5.720 ; 5.720 ; 5.720 ; 5.720 ;
++---------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------+
+; Progagation Delay                                               ;
++---------------+-------------+--------+--------+--------+--------+
+; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++---------------+-------------+--------+--------+--------+--------+
+; instrP2AD[0]  ; EjumpAD[0]  ; 4.848  ;        ;        ; 4.848  ;
+; instrP2AD[1]  ; EjumpAD[1]  ; 6.461  ; 6.461  ; 6.461  ; 6.461  ;
+; instrP2AD[1]  ; EjumpAD[2]  ; 6.844  ; 6.844  ; 6.844  ; 6.844  ;
+; instrP2AD[1]  ; EjumpAD[3]  ; 6.667  ; 6.667  ; 6.667  ; 6.667  ;
+; instrP2AD[1]  ; EjumpAD[4]  ; 7.473  ; 7.473  ; 7.473  ; 7.473  ;
+; instrP2AD[1]  ; EjumpAD[5]  ; 7.069  ; 7.069  ; 7.069  ; 7.069  ;
+; instrP2AD[1]  ; EjumpAD[6]  ; 7.099  ; 7.099  ; 7.099  ; 7.099  ;
+; instrP2AD[1]  ; EjumpAD[7]  ; 7.430  ; 7.430  ; 7.430  ; 7.430  ;
+; instrP2AD[1]  ; EjumpAD[8]  ; 7.609  ; 7.609  ; 7.609  ; 7.609  ;
+; instrP2AD[1]  ; EjumpAD[9]  ; 7.904  ; 7.904  ; 7.904  ; 7.904  ;
+; instrP2AD[1]  ; EjumpAD[10] ; 7.249  ; 7.249  ; 7.249  ; 7.249  ;
+; instrP2AD[1]  ; EjumpAD[11] ; 7.539  ; 7.539  ; 7.539  ; 7.539  ;
+; instrP2AD[1]  ; EjumpAD[12] ; 8.082  ; 8.082  ; 8.082  ; 8.082  ;
+; instrP2AD[1]  ; EjumpAD[13] ; 7.913  ; 7.913  ; 7.913  ; 7.913  ;
+; instrP2AD[1]  ; EjumpAD[14] ; 7.545  ; 7.545  ; 7.545  ; 7.545  ;
+; instrP2AD[1]  ; EjumpAD[15] ; 7.853  ; 7.853  ; 7.853  ; 7.853  ;
+; instrP2AD[2]  ; EjumpAD[2]  ; 10.159 ; 10.159 ; 10.159 ; 10.159 ;
+; instrP2AD[2]  ; EjumpAD[3]  ; 10.297 ; 10.297 ; 10.297 ; 10.297 ;
+; instrP2AD[2]  ; EjumpAD[4]  ; 11.103 ; 11.103 ; 11.103 ; 11.103 ;
+; instrP2AD[2]  ; EjumpAD[5]  ; 10.699 ; 10.699 ; 10.699 ; 10.699 ;
+; instrP2AD[2]  ; EjumpAD[6]  ; 10.729 ; 10.729 ; 10.729 ; 10.729 ;
+; instrP2AD[2]  ; EjumpAD[7]  ; 11.060 ; 11.060 ; 11.060 ; 11.060 ;
+; instrP2AD[2]  ; EjumpAD[8]  ; 11.239 ; 11.239 ; 11.239 ; 11.239 ;
+; instrP2AD[2]  ; EjumpAD[9]  ; 11.534 ; 11.534 ; 11.534 ; 11.534 ;
+; instrP2AD[2]  ; EjumpAD[10] ; 10.879 ; 10.879 ; 10.879 ; 10.879 ;
+; instrP2AD[2]  ; EjumpAD[11] ; 11.169 ; 11.169 ; 11.169 ; 11.169 ;
+; instrP2AD[2]  ; EjumpAD[12] ; 11.712 ; 11.712 ; 11.712 ; 11.712 ;
+; instrP2AD[2]  ; EjumpAD[13] ; 11.543 ; 11.543 ; 11.543 ; 11.543 ;
+; instrP2AD[2]  ; EjumpAD[14] ; 11.175 ; 11.175 ; 11.175 ; 11.175 ;
+; instrP2AD[2]  ; EjumpAD[15] ; 11.483 ; 11.483 ; 11.483 ; 11.483 ;
+; instrP2AD[3]  ; EjumpAD[3]  ; 10.160 ; 10.160 ; 10.160 ; 10.160 ;
+; instrP2AD[3]  ; EjumpAD[4]  ; 11.281 ; 11.281 ; 11.281 ; 11.281 ;
+; instrP2AD[3]  ; EjumpAD[5]  ; 10.877 ; 10.877 ; 10.877 ; 10.877 ;
+; instrP2AD[3]  ; EjumpAD[6]  ; 10.907 ; 10.907 ; 10.907 ; 10.907 ;
+; instrP2AD[3]  ; EjumpAD[7]  ; 11.238 ; 11.238 ; 11.238 ; 11.238 ;
+; instrP2AD[3]  ; EjumpAD[8]  ; 11.417 ; 11.417 ; 11.417 ; 11.417 ;
+; instrP2AD[3]  ; EjumpAD[9]  ; 11.712 ; 11.712 ; 11.712 ; 11.712 ;
+; instrP2AD[3]  ; EjumpAD[10] ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
+; instrP2AD[3]  ; EjumpAD[11] ; 11.347 ; 11.347 ; 11.347 ; 11.347 ;
+; instrP2AD[3]  ; EjumpAD[12] ; 11.890 ; 11.890 ; 11.890 ; 11.890 ;
+; instrP2AD[3]  ; EjumpAD[13] ; 11.721 ; 11.721 ; 11.721 ; 11.721 ;
+; instrP2AD[3]  ; EjumpAD[14] ; 11.353 ; 11.353 ; 11.353 ; 11.353 ;
+; instrP2AD[3]  ; EjumpAD[15] ; 11.661 ; 11.661 ; 11.661 ; 11.661 ;
+; instrP2AD[4]  ; EjumpAD[4]  ; 10.895 ; 10.895 ; 10.895 ; 10.895 ;
+; instrP2AD[4]  ; EjumpAD[5]  ; 10.806 ; 10.806 ; 10.806 ; 10.806 ;
+; instrP2AD[4]  ; EjumpAD[6]  ; 10.836 ; 10.836 ; 10.836 ; 10.836 ;
+; instrP2AD[4]  ; EjumpAD[7]  ; 11.167 ; 11.167 ; 11.167 ; 11.167 ;
+; instrP2AD[4]  ; EjumpAD[8]  ; 11.346 ; 11.346 ; 11.346 ; 11.346 ;
+; instrP2AD[4]  ; EjumpAD[9]  ; 11.641 ; 11.641 ; 11.641 ; 11.641 ;
+; instrP2AD[4]  ; EjumpAD[10] ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; instrP2AD[4]  ; EjumpAD[11] ; 11.276 ; 11.276 ; 11.276 ; 11.276 ;
+; instrP2AD[4]  ; EjumpAD[12] ; 11.819 ; 11.819 ; 11.819 ; 11.819 ;
+; instrP2AD[4]  ; EjumpAD[13] ; 11.650 ; 11.650 ; 11.650 ; 11.650 ;
+; instrP2AD[4]  ; EjumpAD[14] ; 11.282 ; 11.282 ; 11.282 ; 11.282 ;
+; instrP2AD[4]  ; EjumpAD[15] ; 11.590 ; 11.590 ; 11.590 ; 11.590 ;
+; instrP2AD[5]  ; EjumpAD[5]  ; 10.203 ; 10.203 ; 10.203 ; 10.203 ;
+; instrP2AD[5]  ; EjumpAD[6]  ; 10.548 ; 10.548 ; 10.548 ; 10.548 ;
+; instrP2AD[5]  ; EjumpAD[7]  ; 10.879 ; 10.879 ; 10.879 ; 10.879 ;
+; instrP2AD[5]  ; EjumpAD[8]  ; 11.058 ; 11.058 ; 11.058 ; 11.058 ;
+; instrP2AD[5]  ; EjumpAD[9]  ; 11.353 ; 11.353 ; 11.353 ; 11.353 ;
+; instrP2AD[5]  ; EjumpAD[10] ; 10.698 ; 10.698 ; 10.698 ; 10.698 ;
+; instrP2AD[5]  ; EjumpAD[11] ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; instrP2AD[5]  ; EjumpAD[12] ; 11.531 ; 11.531 ; 11.531 ; 11.531 ;
+; instrP2AD[5]  ; EjumpAD[13] ; 11.362 ; 11.362 ; 11.362 ; 11.362 ;
+; instrP2AD[5]  ; EjumpAD[14] ; 10.994 ; 10.994 ; 10.994 ; 10.994 ;
+; instrP2AD[5]  ; EjumpAD[15] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; instrP2AD[6]  ; EjumpAD[6]  ; 9.719  ; 9.719  ; 9.719  ; 9.719  ;
+; instrP2AD[6]  ; EjumpAD[7]  ; 10.365 ; 10.365 ; 10.365 ; 10.365 ;
+; instrP2AD[6]  ; EjumpAD[8]  ; 10.544 ; 10.544 ; 10.544 ; 10.544 ;
+; instrP2AD[6]  ; EjumpAD[9]  ; 10.839 ; 10.839 ; 10.839 ; 10.839 ;
+; instrP2AD[6]  ; EjumpAD[10] ; 10.184 ; 10.184 ; 10.184 ; 10.184 ;
+; instrP2AD[6]  ; EjumpAD[11] ; 10.474 ; 10.474 ; 10.474 ; 10.474 ;
+; instrP2AD[6]  ; EjumpAD[12] ; 11.017 ; 11.017 ; 11.017 ; 11.017 ;
+; instrP2AD[6]  ; EjumpAD[13] ; 10.848 ; 10.848 ; 10.848 ; 10.848 ;
+; instrP2AD[6]  ; EjumpAD[14] ; 10.480 ; 10.480 ; 10.480 ; 10.480 ;
+; instrP2AD[6]  ; EjumpAD[15] ; 10.788 ; 10.788 ; 10.788 ; 10.788 ;
+; instrP2AD[7]  ; EjumpAD[7]  ; 10.384 ; 10.384 ; 10.384 ; 10.384 ;
+; instrP2AD[7]  ; EjumpAD[8]  ; 10.878 ; 10.878 ; 10.878 ; 10.878 ;
+; instrP2AD[7]  ; EjumpAD[9]  ; 11.173 ; 11.173 ; 11.173 ; 11.173 ;
+; instrP2AD[7]  ; EjumpAD[10] ; 10.518 ; 10.518 ; 10.518 ; 10.518 ;
+; instrP2AD[7]  ; EjumpAD[11] ; 10.808 ; 10.808 ; 10.808 ; 10.808 ;
+; instrP2AD[7]  ; EjumpAD[12] ; 11.351 ; 11.351 ; 11.351 ; 11.351 ;
+; instrP2AD[7]  ; EjumpAD[13] ; 11.182 ; 11.182 ; 11.182 ; 11.182 ;
+; instrP2AD[7]  ; EjumpAD[14] ; 10.814 ; 10.814 ; 10.814 ; 10.814 ;
+; instrP2AD[7]  ; EjumpAD[15] ; 11.122 ; 11.122 ; 11.122 ; 11.122 ;
+; instrP2AD[8]  ; EjumpAD[8]  ; 10.475 ; 10.475 ; 10.475 ; 10.475 ;
+; instrP2AD[8]  ; EjumpAD[9]  ; 11.087 ; 11.087 ; 11.087 ; 11.087 ;
+; instrP2AD[8]  ; EjumpAD[10] ; 10.432 ; 10.432 ; 10.432 ; 10.432 ;
+; instrP2AD[8]  ; EjumpAD[11] ; 10.722 ; 10.722 ; 10.722 ; 10.722 ;
+; instrP2AD[8]  ; EjumpAD[12] ; 11.265 ; 11.265 ; 11.265 ; 11.265 ;
+; instrP2AD[8]  ; EjumpAD[13] ; 11.096 ; 11.096 ; 11.096 ; 11.096 ;
+; instrP2AD[8]  ; EjumpAD[14] ; 10.728 ; 10.728 ; 10.728 ; 10.728 ;
+; instrP2AD[8]  ; EjumpAD[15] ; 11.036 ; 11.036 ; 11.036 ; 11.036 ;
+; instrP2AD[9]  ; EjumpAD[9]  ; 10.144 ; 10.144 ; 10.144 ; 10.144 ;
+; instrP2AD[9]  ; EjumpAD[10] ; 9.801  ; 9.801  ; 9.801  ; 9.801  ;
+; instrP2AD[9]  ; EjumpAD[11] ; 10.091 ; 10.091 ; 10.091 ; 10.091 ;
+; instrP2AD[9]  ; EjumpAD[12] ; 10.634 ; 10.634 ; 10.634 ; 10.634 ;
+; instrP2AD[9]  ; EjumpAD[13] ; 10.465 ; 10.465 ; 10.465 ; 10.465 ;
+; instrP2AD[9]  ; EjumpAD[14] ; 10.097 ; 10.097 ; 10.097 ; 10.097 ;
+; instrP2AD[9]  ; EjumpAD[15] ; 10.405 ; 10.405 ; 10.405 ; 10.405 ;
+; instrP2AD[10] ; EjumpAD[10] ; 9.837  ; 9.837  ; 9.837  ; 9.837  ;
+; instrP2AD[10] ; EjumpAD[11] ; 10.443 ; 10.443 ; 10.443 ; 10.443 ;
+; instrP2AD[10] ; EjumpAD[12] ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; instrP2AD[10] ; EjumpAD[13] ; 10.817 ; 10.817 ; 10.817 ; 10.817 ;
+; instrP2AD[10] ; EjumpAD[14] ; 10.449 ; 10.449 ; 10.449 ; 10.449 ;
+; instrP2AD[10] ; EjumpAD[15] ; 10.757 ; 10.757 ; 10.757 ; 10.757 ;
+; instrP2AD[11] ; EjumpAD[11] ; 10.510 ; 10.510 ; 10.510 ; 10.510 ;
+; instrP2AD[11] ; EjumpAD[12] ; 11.365 ; 11.365 ; 11.365 ; 11.365 ;
+; instrP2AD[11] ; EjumpAD[13] ; 11.196 ; 11.196 ; 11.196 ; 11.196 ;
+; instrP2AD[11] ; EjumpAD[14] ; 10.828 ; 10.828 ; 10.828 ; 10.828 ;
+; instrP2AD[11] ; EjumpAD[15] ; 11.136 ; 11.136 ; 11.136 ; 11.136 ;
+; instrP2AD[12] ; EjumpAD[12] ; 10.801 ; 10.801 ; 10.801 ; 10.801 ;
+; instrP2AD[12] ; EjumpAD[13] ; 10.948 ; 10.948 ; 10.948 ; 10.948 ;
+; instrP2AD[12] ; EjumpAD[14] ; 10.580 ; 10.580 ; 10.580 ; 10.580 ;
+; instrP2AD[12] ; EjumpAD[15] ; 10.888 ; 10.888 ; 10.888 ; 10.888 ;
+; instrP2AD[13] ; EjumpAD[13] ; 9.824  ; 9.824  ; 9.824  ; 9.824  ;
+; instrP2AD[13] ; EjumpAD[14] ; 9.768  ; 9.768  ; 9.768  ; 9.768  ;
+; instrP2AD[13] ; EjumpAD[15] ; 10.076 ; 10.076 ; 10.076 ; 10.076 ;
+; instrP2AD[14] ; EjumpAD[14] ; 9.603  ; 9.603  ; 9.603  ; 9.603  ;
+; instrP2AD[14] ; EjumpAD[15] ; 10.227 ; 10.227 ; 10.227 ; 10.227 ;
+; instrP2AD[15] ; EjumpAD[15] ; 9.848  ; 9.848  ; 9.848  ; 9.848  ;
+; jumpADR[0]    ; EjumpAD[1]  ; 10.516 ; 10.516 ; 10.516 ; 10.516 ;
+; jumpADR[0]    ; EjumpAD[2]  ; 10.903 ; 10.903 ; 10.903 ; 10.903 ;
+; jumpADR[0]    ; EjumpAD[3]  ; 10.726 ; 10.726 ; 10.726 ; 10.726 ;
+; jumpADR[0]    ; EjumpAD[4]  ; 11.532 ; 11.532 ; 11.532 ; 11.532 ;
+; jumpADR[0]    ; EjumpAD[5]  ; 11.128 ; 11.128 ; 11.128 ; 11.128 ;
+; jumpADR[0]    ; EjumpAD[6]  ; 11.158 ; 11.158 ; 11.158 ; 11.158 ;
+; jumpADR[0]    ; EjumpAD[7]  ; 11.489 ; 11.489 ; 11.489 ; 11.489 ;
+; jumpADR[0]    ; EjumpAD[8]  ; 11.668 ; 11.668 ; 11.668 ; 11.668 ;
+; jumpADR[0]    ; EjumpAD[9]  ; 11.963 ; 11.963 ; 11.963 ; 11.963 ;
+; jumpADR[0]    ; EjumpAD[10] ; 11.308 ; 11.308 ; 11.308 ; 11.308 ;
+; jumpADR[0]    ; EjumpAD[11] ; 11.598 ; 11.598 ; 11.598 ; 11.598 ;
+; jumpADR[0]    ; EjumpAD[12] ; 12.141 ; 12.141 ; 12.141 ; 12.141 ;
+; jumpADR[0]    ; EjumpAD[13] ; 11.972 ; 11.972 ; 11.972 ; 11.972 ;
+; jumpADR[0]    ; EjumpAD[14] ; 11.604 ; 11.604 ; 11.604 ; 11.604 ;
+; jumpADR[0]    ; EjumpAD[15] ; 11.912 ; 11.912 ; 11.912 ; 11.912 ;
+; jumpADR[1]    ; EjumpAD[2]  ; 10.421 ; 10.421 ; 10.421 ; 10.421 ;
+; jumpADR[1]    ; EjumpAD[3]  ; 10.560 ; 10.560 ; 10.560 ; 10.560 ;
+; jumpADR[1]    ; EjumpAD[4]  ; 11.366 ; 11.366 ; 11.366 ; 11.366 ;
+; jumpADR[1]    ; EjumpAD[5]  ; 10.962 ; 10.962 ; 10.962 ; 10.962 ;
+; jumpADR[1]    ; EjumpAD[6]  ; 10.992 ; 10.992 ; 10.992 ; 10.992 ;
+; jumpADR[1]    ; EjumpAD[7]  ; 11.323 ; 11.323 ; 11.323 ; 11.323 ;
+; jumpADR[1]    ; EjumpAD[8]  ; 11.502 ; 11.502 ; 11.502 ; 11.502 ;
+; jumpADR[1]    ; EjumpAD[9]  ; 11.797 ; 11.797 ; 11.797 ; 11.797 ;
+; jumpADR[1]    ; EjumpAD[10] ; 11.142 ; 11.142 ; 11.142 ; 11.142 ;
+; jumpADR[1]    ; EjumpAD[11] ; 11.432 ; 11.432 ; 11.432 ; 11.432 ;
+; jumpADR[1]    ; EjumpAD[12] ; 11.975 ; 11.975 ; 11.975 ; 11.975 ;
+; jumpADR[1]    ; EjumpAD[13] ; 11.806 ; 11.806 ; 11.806 ; 11.806 ;
+; jumpADR[1]    ; EjumpAD[14] ; 11.438 ; 11.438 ; 11.438 ; 11.438 ;
+; jumpADR[1]    ; EjumpAD[15] ; 11.746 ; 11.746 ; 11.746 ; 11.746 ;
+; jumpADR[2]    ; EjumpAD[3]  ; 9.911  ; 9.911  ; 9.911  ; 9.911  ;
+; jumpADR[2]    ; EjumpAD[4]  ; 11.029 ; 11.029 ; 11.029 ; 11.029 ;
+; jumpADR[2]    ; EjumpAD[5]  ; 10.625 ; 10.625 ; 10.625 ; 10.625 ;
+; jumpADR[2]    ; EjumpAD[6]  ; 10.655 ; 10.655 ; 10.655 ; 10.655 ;
+; jumpADR[2]    ; EjumpAD[7]  ; 10.986 ; 10.986 ; 10.986 ; 10.986 ;
+; jumpADR[2]    ; EjumpAD[8]  ; 11.165 ; 11.165 ; 11.165 ; 11.165 ;
+; jumpADR[2]    ; EjumpAD[9]  ; 11.460 ; 11.460 ; 11.460 ; 11.460 ;
+; jumpADR[2]    ; EjumpAD[10] ; 10.805 ; 10.805 ; 10.805 ; 10.805 ;
+; jumpADR[2]    ; EjumpAD[11] ; 11.095 ; 11.095 ; 11.095 ; 11.095 ;
+; jumpADR[2]    ; EjumpAD[12] ; 11.638 ; 11.638 ; 11.638 ; 11.638 ;
+; jumpADR[2]    ; EjumpAD[13] ; 11.469 ; 11.469 ; 11.469 ; 11.469 ;
+; jumpADR[2]    ; EjumpAD[14] ; 11.101 ; 11.101 ; 11.101 ; 11.101 ;
+; jumpADR[2]    ; EjumpAD[15] ; 11.409 ; 11.409 ; 11.409 ; 11.409 ;
+; jumpADR[3]    ; EjumpAD[4]  ; 10.920 ; 10.920 ; 10.920 ; 10.920 ;
+; jumpADR[3]    ; EjumpAD[5]  ; 10.832 ; 10.832 ; 10.832 ; 10.832 ;
+; jumpADR[3]    ; EjumpAD[6]  ; 10.862 ; 10.862 ; 10.862 ; 10.862 ;
+; jumpADR[3]    ; EjumpAD[7]  ; 11.193 ; 11.193 ; 11.193 ; 11.193 ;
+; jumpADR[3]    ; EjumpAD[8]  ; 11.372 ; 11.372 ; 11.372 ; 11.372 ;
+; jumpADR[3]    ; EjumpAD[9]  ; 11.667 ; 11.667 ; 11.667 ; 11.667 ;
+; jumpADR[3]    ; EjumpAD[10] ; 11.012 ; 11.012 ; 11.012 ; 11.012 ;
+; jumpADR[3]    ; EjumpAD[11] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; jumpADR[3]    ; EjumpAD[12] ; 11.845 ; 11.845 ; 11.845 ; 11.845 ;
+; jumpADR[3]    ; EjumpAD[13] ; 11.676 ; 11.676 ; 11.676 ; 11.676 ;
+; jumpADR[3]    ; EjumpAD[14] ; 11.308 ; 11.308 ; 11.308 ; 11.308 ;
+; jumpADR[3]    ; EjumpAD[15] ; 11.616 ; 11.616 ; 11.616 ; 11.616 ;
+; jumpADR[4]    ; EjumpAD[5]  ; 10.135 ; 10.135 ; 10.135 ; 10.135 ;
+; jumpADR[4]    ; EjumpAD[6]  ; 10.477 ; 10.477 ; 10.477 ; 10.477 ;
+; jumpADR[4]    ; EjumpAD[7]  ; 10.808 ; 10.808 ; 10.808 ; 10.808 ;
+; jumpADR[4]    ; EjumpAD[8]  ; 10.987 ; 10.987 ; 10.987 ; 10.987 ;
+; jumpADR[4]    ; EjumpAD[9]  ; 11.282 ; 11.282 ; 11.282 ; 11.282 ;
+; jumpADR[4]    ; EjumpAD[10] ; 10.627 ; 10.627 ; 10.627 ; 10.627 ;
+; jumpADR[4]    ; EjumpAD[11] ; 10.917 ; 10.917 ; 10.917 ; 10.917 ;
+; jumpADR[4]    ; EjumpAD[12] ; 11.460 ; 11.460 ; 11.460 ; 11.460 ;
+; jumpADR[4]    ; EjumpAD[13] ; 11.291 ; 11.291 ; 11.291 ; 11.291 ;
+; jumpADR[4]    ; EjumpAD[14] ; 10.923 ; 10.923 ; 10.923 ; 10.923 ;
+; jumpADR[4]    ; EjumpAD[15] ; 11.231 ; 11.231 ; 11.231 ; 11.231 ;
+; jumpADR[5]    ; EjumpAD[6]  ; 10.150 ; 10.150 ; 10.150 ; 10.150 ;
+; jumpADR[5]    ; EjumpAD[7]  ; 10.797 ; 10.797 ; 10.797 ; 10.797 ;
+; jumpADR[5]    ; EjumpAD[8]  ; 10.976 ; 10.976 ; 10.976 ; 10.976 ;
+; jumpADR[5]    ; EjumpAD[9]  ; 11.271 ; 11.271 ; 11.271 ; 11.271 ;
+; jumpADR[5]    ; EjumpAD[10] ; 10.616 ; 10.616 ; 10.616 ; 10.616 ;
+; jumpADR[5]    ; EjumpAD[11] ; 10.906 ; 10.906 ; 10.906 ; 10.906 ;
+; jumpADR[5]    ; EjumpAD[12] ; 11.449 ; 11.449 ; 11.449 ; 11.449 ;
+; jumpADR[5]    ; EjumpAD[13] ; 11.280 ; 11.280 ; 11.280 ; 11.280 ;
+; jumpADR[5]    ; EjumpAD[14] ; 10.912 ; 10.912 ; 10.912 ; 10.912 ;
+; jumpADR[5]    ; EjumpAD[15] ; 11.220 ; 11.220 ; 11.220 ; 11.220 ;
+; jumpADR[6]    ; EjumpAD[7]  ; 10.373 ; 10.373 ; 10.373 ; 10.373 ;
+; jumpADR[6]    ; EjumpAD[8]  ; 10.864 ; 10.864 ; 10.864 ; 10.864 ;
+; jumpADR[6]    ; EjumpAD[9]  ; 11.159 ; 11.159 ; 11.159 ; 11.159 ;
+; jumpADR[6]    ; EjumpAD[10] ; 10.504 ; 10.504 ; 10.504 ; 10.504 ;
+; jumpADR[6]    ; EjumpAD[11] ; 10.794 ; 10.794 ; 10.794 ; 10.794 ;
+; jumpADR[6]    ; EjumpAD[12] ; 11.337 ; 11.337 ; 11.337 ; 11.337 ;
+; jumpADR[6]    ; EjumpAD[13] ; 11.168 ; 11.168 ; 11.168 ; 11.168 ;
+; jumpADR[6]    ; EjumpAD[14] ; 10.800 ; 10.800 ; 10.800 ; 10.800 ;
+; jumpADR[6]    ; EjumpAD[15] ; 11.108 ; 11.108 ; 11.108 ; 11.108 ;
+; jumpADR[7]    ; EjumpAD[8]  ; 10.227 ; 10.227 ; 10.227 ; 10.227 ;
+; jumpADR[7]    ; EjumpAD[9]  ; 10.842 ; 10.842 ; 10.842 ; 10.842 ;
+; jumpADR[7]    ; EjumpAD[10] ; 10.187 ; 10.187 ; 10.187 ; 10.187 ;
+; jumpADR[7]    ; EjumpAD[11] ; 10.477 ; 10.477 ; 10.477 ; 10.477 ;
+; jumpADR[7]    ; EjumpAD[12] ; 11.020 ; 11.020 ; 11.020 ; 11.020 ;
+; jumpADR[7]    ; EjumpAD[13] ; 10.851 ; 10.851 ; 10.851 ; 10.851 ;
+; jumpADR[7]    ; EjumpAD[14] ; 10.483 ; 10.483 ; 10.483 ; 10.483 ;
+; jumpADR[7]    ; EjumpAD[15] ; 10.791 ; 10.791 ; 10.791 ; 10.791 ;
+; jumpADR[8]    ; EjumpAD[9]  ; 10.626 ; 10.626 ; 10.626 ; 10.626 ;
+; jumpADR[8]    ; EjumpAD[10] ; 10.286 ; 10.286 ; 10.286 ; 10.286 ;
+; jumpADR[8]    ; EjumpAD[11] ; 10.576 ; 10.576 ; 10.576 ; 10.576 ;
+; jumpADR[8]    ; EjumpAD[12] ; 11.119 ; 11.119 ; 11.119 ; 11.119 ;
+; jumpADR[8]    ; EjumpAD[13] ; 10.950 ; 10.950 ; 10.950 ; 10.950 ;
+; jumpADR[8]    ; EjumpAD[14] ; 10.582 ; 10.582 ; 10.582 ; 10.582 ;
+; jumpADR[8]    ; EjumpAD[15] ; 10.890 ; 10.890 ; 10.890 ; 10.890 ;
+; jumpADR[9]    ; EjumpAD[10] ; 9.637  ; 9.637  ; 9.637  ; 9.637  ;
+; jumpADR[9]    ; EjumpAD[11] ; 10.242 ; 10.242 ; 10.242 ; 10.242 ;
+; jumpADR[9]    ; EjumpAD[12] ; 10.785 ; 10.785 ; 10.785 ; 10.785 ;
+; jumpADR[9]    ; EjumpAD[13] ; 10.616 ; 10.616 ; 10.616 ; 10.616 ;
+; jumpADR[9]    ; EjumpAD[14] ; 10.248 ; 10.248 ; 10.248 ; 10.248 ;
+; jumpADR[9]    ; EjumpAD[15] ; 10.556 ; 10.556 ; 10.556 ; 10.556 ;
+; jumpADR[10]   ; EjumpAD[11] ; 9.903  ; 9.903  ; 9.903  ; 9.903  ;
+; jumpADR[10]   ; EjumpAD[12] ; 10.761 ; 10.761 ; 10.761 ; 10.761 ;
+; jumpADR[10]   ; EjumpAD[13] ; 10.592 ; 10.592 ; 10.592 ; 10.592 ;
+; jumpADR[10]   ; EjumpAD[14] ; 10.224 ; 10.224 ; 10.224 ; 10.224 ;
+; jumpADR[10]   ; EjumpAD[15] ; 10.532 ; 10.532 ; 10.532 ; 10.532 ;
+; jumpADR[11]   ; EjumpAD[12] ; 10.858 ; 10.858 ; 10.858 ; 10.858 ;
+; jumpADR[11]   ; EjumpAD[13] ; 11.004 ; 11.004 ; 11.004 ; 11.004 ;
+; jumpADR[11]   ; EjumpAD[14] ; 10.636 ; 10.636 ; 10.636 ; 10.636 ;
+; jumpADR[11]   ; EjumpAD[15] ; 10.944 ; 10.944 ; 10.944 ; 10.944 ;
++---------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------+
+; Minimum Progagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; instrP2AD[0]  ; EjumpAD[0]  ; 2.598 ;       ;       ; 2.598 ;
+; instrP2AD[1]  ; EjumpAD[1]  ; 3.318 ; 3.318 ; 3.318 ; 3.318 ;
+; instrP2AD[1]  ; EjumpAD[2]  ; 3.454 ; 3.454 ; 3.454 ; 3.454 ;
+; instrP2AD[1]  ; EjumpAD[3]  ; 3.364 ; 3.364 ; 3.364 ; 3.364 ;
+; instrP2AD[1]  ; EjumpAD[4]  ; 3.754 ; 3.754 ; 3.754 ; 3.754 ;
+; instrP2AD[1]  ; EjumpAD[5]  ; 3.569 ; 3.569 ; 3.569 ; 3.569 ;
+; instrP2AD[1]  ; EjumpAD[6]  ; 3.567 ; 3.567 ; 3.567 ; 3.567 ;
+; instrP2AD[1]  ; EjumpAD[7]  ; 3.725 ; 3.725 ; 3.725 ; 3.725 ;
+; instrP2AD[1]  ; EjumpAD[8]  ; 3.834 ; 3.834 ; 3.834 ; 3.834 ;
+; instrP2AD[1]  ; EjumpAD[9]  ; 3.968 ; 3.968 ; 3.968 ; 3.968 ;
+; instrP2AD[1]  ; EjumpAD[10] ; 3.666 ; 3.666 ; 3.666 ; 3.666 ;
+; instrP2AD[1]  ; EjumpAD[11] ; 3.798 ; 3.798 ; 3.798 ; 3.798 ;
+; instrP2AD[1]  ; EjumpAD[12] ; 4.050 ; 4.050 ; 4.050 ; 4.050 ;
+; instrP2AD[1]  ; EjumpAD[13] ; 3.976 ; 3.976 ; 3.976 ; 3.976 ;
+; instrP2AD[1]  ; EjumpAD[14] ; 3.817 ; 3.817 ; 3.817 ; 3.817 ;
+; instrP2AD[1]  ; EjumpAD[15] ; 3.966 ; 3.966 ; 3.966 ; 3.966 ;
+; instrP2AD[2]  ; EjumpAD[2]  ; 5.596 ; 5.596 ; 5.596 ; 5.596 ;
+; instrP2AD[2]  ; EjumpAD[3]  ; 5.611 ; 5.611 ; 5.611 ; 5.611 ;
+; instrP2AD[2]  ; EjumpAD[4]  ; 6.001 ; 6.001 ; 6.001 ; 6.001 ;
+; instrP2AD[2]  ; EjumpAD[5]  ; 5.816 ; 5.816 ; 5.816 ; 5.816 ;
+; instrP2AD[2]  ; EjumpAD[6]  ; 5.814 ; 5.814 ; 5.814 ; 5.814 ;
+; instrP2AD[2]  ; EjumpAD[7]  ; 5.972 ; 5.972 ; 5.972 ; 5.972 ;
+; instrP2AD[2]  ; EjumpAD[8]  ; 6.081 ; 6.081 ; 6.081 ; 6.081 ;
+; instrP2AD[2]  ; EjumpAD[9]  ; 6.215 ; 6.215 ; 6.215 ; 6.215 ;
+; instrP2AD[2]  ; EjumpAD[10] ; 5.913 ; 5.913 ; 5.913 ; 5.913 ;
+; instrP2AD[2]  ; EjumpAD[11] ; 6.045 ; 6.045 ; 6.045 ; 6.045 ;
+; instrP2AD[2]  ; EjumpAD[12] ; 6.297 ; 6.297 ; 6.297 ; 6.297 ;
+; instrP2AD[2]  ; EjumpAD[13] ; 6.223 ; 6.223 ; 6.223 ; 6.223 ;
+; instrP2AD[2]  ; EjumpAD[14] ; 6.064 ; 6.064 ; 6.064 ; 6.064 ;
+; instrP2AD[2]  ; EjumpAD[15] ; 6.213 ; 6.213 ; 6.213 ; 6.213 ;
+; instrP2AD[3]  ; EjumpAD[3]  ; 5.578 ; 5.578 ; 5.578 ; 5.578 ;
+; instrP2AD[3]  ; EjumpAD[4]  ; 6.073 ; 6.073 ; 6.073 ; 6.073 ;
+; instrP2AD[3]  ; EjumpAD[5]  ; 5.888 ; 5.888 ; 5.888 ; 5.888 ;
+; instrP2AD[3]  ; EjumpAD[6]  ; 5.886 ; 5.886 ; 5.886 ; 5.886 ;
+; instrP2AD[3]  ; EjumpAD[7]  ; 6.044 ; 6.044 ; 6.044 ; 6.044 ;
+; instrP2AD[3]  ; EjumpAD[8]  ; 6.153 ; 6.153 ; 6.153 ; 6.153 ;
+; instrP2AD[3]  ; EjumpAD[9]  ; 6.287 ; 6.287 ; 6.287 ; 6.287 ;
+; instrP2AD[3]  ; EjumpAD[10] ; 5.985 ; 5.985 ; 5.985 ; 5.985 ;
+; instrP2AD[3]  ; EjumpAD[11] ; 6.117 ; 6.117 ; 6.117 ; 6.117 ;
+; instrP2AD[3]  ; EjumpAD[12] ; 6.369 ; 6.369 ; 6.369 ; 6.369 ;
+; instrP2AD[3]  ; EjumpAD[13] ; 6.295 ; 6.295 ; 6.295 ; 6.295 ;
+; instrP2AD[3]  ; EjumpAD[14] ; 6.136 ; 6.136 ; 6.136 ; 6.136 ;
+; instrP2AD[3]  ; EjumpAD[15] ; 6.285 ; 6.285 ; 6.285 ; 6.285 ;
+; instrP2AD[4]  ; EjumpAD[4]  ; 5.935 ; 5.935 ; 5.935 ; 5.935 ;
+; instrP2AD[4]  ; EjumpAD[5]  ; 5.855 ; 5.855 ; 5.855 ; 5.855 ;
+; instrP2AD[4]  ; EjumpAD[6]  ; 5.853 ; 5.853 ; 5.853 ; 5.853 ;
+; instrP2AD[4]  ; EjumpAD[7]  ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
+; instrP2AD[4]  ; EjumpAD[8]  ; 6.120 ; 6.120 ; 6.120 ; 6.120 ;
+; instrP2AD[4]  ; EjumpAD[9]  ; 6.254 ; 6.254 ; 6.254 ; 6.254 ;
+; instrP2AD[4]  ; EjumpAD[10] ; 5.952 ; 5.952 ; 5.952 ; 5.952 ;
+; instrP2AD[4]  ; EjumpAD[11] ; 6.084 ; 6.084 ; 6.084 ; 6.084 ;
+; instrP2AD[4]  ; EjumpAD[12] ; 6.336 ; 6.336 ; 6.336 ; 6.336 ;
+; instrP2AD[4]  ; EjumpAD[13] ; 6.262 ; 6.262 ; 6.262 ; 6.262 ;
+; instrP2AD[4]  ; EjumpAD[14] ; 6.103 ; 6.103 ; 6.103 ; 6.103 ;
+; instrP2AD[4]  ; EjumpAD[15] ; 6.252 ; 6.252 ; 6.252 ; 6.252 ;
+; instrP2AD[5]  ; EjumpAD[5]  ; 5.628 ; 5.628 ; 5.628 ; 5.628 ;
+; instrP2AD[5]  ; EjumpAD[6]  ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; instrP2AD[5]  ; EjumpAD[7]  ; 5.889 ; 5.889 ; 5.889 ; 5.889 ;
+; instrP2AD[5]  ; EjumpAD[8]  ; 5.998 ; 5.998 ; 5.998 ; 5.998 ;
+; instrP2AD[5]  ; EjumpAD[9]  ; 6.132 ; 6.132 ; 6.132 ; 6.132 ;
+; instrP2AD[5]  ; EjumpAD[10] ; 5.830 ; 5.830 ; 5.830 ; 5.830 ;
+; instrP2AD[5]  ; EjumpAD[11] ; 5.962 ; 5.962 ; 5.962 ; 5.962 ;
+; instrP2AD[5]  ; EjumpAD[12] ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; instrP2AD[5]  ; EjumpAD[13] ; 6.140 ; 6.140 ; 6.140 ; 6.140 ;
+; instrP2AD[5]  ; EjumpAD[14] ; 5.981 ; 5.981 ; 5.981 ; 5.981 ;
+; instrP2AD[5]  ; EjumpAD[15] ; 6.130 ; 6.130 ; 6.130 ; 6.130 ;
+; instrP2AD[6]  ; EjumpAD[6]  ; 5.395 ; 5.395 ; 5.395 ; 5.395 ;
+; instrP2AD[6]  ; EjumpAD[7]  ; 5.658 ; 5.658 ; 5.658 ; 5.658 ;
+; instrP2AD[6]  ; EjumpAD[8]  ; 5.767 ; 5.767 ; 5.767 ; 5.767 ;
+; instrP2AD[6]  ; EjumpAD[9]  ; 5.901 ; 5.901 ; 5.901 ; 5.901 ;
+; instrP2AD[6]  ; EjumpAD[10] ; 5.599 ; 5.599 ; 5.599 ; 5.599 ;
+; instrP2AD[6]  ; EjumpAD[11] ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; instrP2AD[6]  ; EjumpAD[12] ; 5.983 ; 5.983 ; 5.983 ; 5.983 ;
+; instrP2AD[6]  ; EjumpAD[13] ; 5.909 ; 5.909 ; 5.909 ; 5.909 ;
+; instrP2AD[6]  ; EjumpAD[14] ; 5.750 ; 5.750 ; 5.750 ; 5.750 ;
+; instrP2AD[6]  ; EjumpAD[15] ; 5.899 ; 5.899 ; 5.899 ; 5.899 ;
+; instrP2AD[7]  ; EjumpAD[7]  ; 5.684 ; 5.684 ; 5.684 ; 5.684 ;
+; instrP2AD[7]  ; EjumpAD[8]  ; 5.898 ; 5.898 ; 5.898 ; 5.898 ;
+; instrP2AD[7]  ; EjumpAD[9]  ; 6.032 ; 6.032 ; 6.032 ; 6.032 ;
+; instrP2AD[7]  ; EjumpAD[10] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; instrP2AD[7]  ; EjumpAD[11] ; 5.862 ; 5.862 ; 5.862 ; 5.862 ;
+; instrP2AD[7]  ; EjumpAD[12] ; 6.114 ; 6.114 ; 6.114 ; 6.114 ;
+; instrP2AD[7]  ; EjumpAD[13] ; 6.040 ; 6.040 ; 6.040 ; 6.040 ;
+; instrP2AD[7]  ; EjumpAD[14] ; 5.881 ; 5.881 ; 5.881 ; 5.881 ;
+; instrP2AD[7]  ; EjumpAD[15] ; 6.030 ; 6.030 ; 6.030 ; 6.030 ;
+; instrP2AD[8]  ; EjumpAD[8]  ; 5.747 ; 5.747 ; 5.747 ; 5.747 ;
+; instrP2AD[8]  ; EjumpAD[9]  ; 5.981 ; 5.981 ; 5.981 ; 5.981 ;
+; instrP2AD[8]  ; EjumpAD[10] ; 5.679 ; 5.679 ; 5.679 ; 5.679 ;
+; instrP2AD[8]  ; EjumpAD[11] ; 5.811 ; 5.811 ; 5.811 ; 5.811 ;
+; instrP2AD[8]  ; EjumpAD[12] ; 6.063 ; 6.063 ; 6.063 ; 6.063 ;
+; instrP2AD[8]  ; EjumpAD[13] ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; instrP2AD[8]  ; EjumpAD[14] ; 5.830 ; 5.830 ; 5.830 ; 5.830 ;
+; instrP2AD[8]  ; EjumpAD[15] ; 5.979 ; 5.979 ; 5.979 ; 5.979 ;
+; instrP2AD[9]  ; EjumpAD[9]  ; 5.591 ; 5.591 ; 5.591 ; 5.591 ;
+; instrP2AD[9]  ; EjumpAD[10] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; instrP2AD[9]  ; EjumpAD[11] ; 5.524 ; 5.524 ; 5.524 ; 5.524 ;
+; instrP2AD[9]  ; EjumpAD[12] ; 5.776 ; 5.776 ; 5.776 ; 5.776 ;
+; instrP2AD[9]  ; EjumpAD[13] ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; instrP2AD[9]  ; EjumpAD[14] ; 5.543 ; 5.543 ; 5.543 ; 5.543 ;
+; instrP2AD[9]  ; EjumpAD[15] ; 5.692 ; 5.692 ; 5.692 ; 5.692 ;
+; instrP2AD[10] ; EjumpAD[10] ; 5.433 ; 5.433 ; 5.433 ; 5.433 ;
+; instrP2AD[10] ; EjumpAD[11] ; 5.668 ; 5.668 ; 5.668 ; 5.668 ;
+; instrP2AD[10] ; EjumpAD[12] ; 5.920 ; 5.920 ; 5.920 ; 5.920 ;
+; instrP2AD[10] ; EjumpAD[13] ; 5.846 ; 5.846 ; 5.846 ; 5.846 ;
+; instrP2AD[10] ; EjumpAD[14] ; 5.687 ; 5.687 ; 5.687 ; 5.687 ;
+; instrP2AD[10] ; EjumpAD[15] ; 5.836 ; 5.836 ; 5.836 ; 5.836 ;
+; instrP2AD[11] ; EjumpAD[11] ; 5.817 ; 5.817 ; 5.817 ; 5.817 ;
+; instrP2AD[11] ; EjumpAD[12] ; 6.172 ; 6.172 ; 6.172 ; 6.172 ;
+; instrP2AD[11] ; EjumpAD[13] ; 6.098 ; 6.098 ; 6.098 ; 6.098 ;
+; instrP2AD[11] ; EjumpAD[14] ; 5.939 ; 5.939 ; 5.939 ; 5.939 ;
+; instrP2AD[11] ; EjumpAD[15] ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; instrP2AD[12] ; EjumpAD[12] ; 5.884 ; 5.884 ; 5.884 ; 5.884 ;
+; instrP2AD[12] ; EjumpAD[13] ; 5.913 ; 5.913 ; 5.913 ; 5.913 ;
+; instrP2AD[12] ; EjumpAD[14] ; 5.754 ; 5.754 ; 5.754 ; 5.754 ;
+; instrP2AD[12] ; EjumpAD[15] ; 5.903 ; 5.903 ; 5.903 ; 5.903 ;
+; instrP2AD[13] ; EjumpAD[13] ; 5.438 ; 5.438 ; 5.438 ; 5.438 ;
+; instrP2AD[13] ; EjumpAD[14] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
+; instrP2AD[13] ; EjumpAD[15] ; 5.531 ; 5.531 ; 5.531 ; 5.531 ;
+; instrP2AD[14] ; EjumpAD[14] ; 5.323 ; 5.323 ; 5.323 ; 5.323 ;
+; instrP2AD[14] ; EjumpAD[15] ; 5.575 ; 5.575 ; 5.575 ; 5.575 ;
+; instrP2AD[15] ; EjumpAD[15] ; 5.462 ; 5.462 ; 5.462 ; 5.462 ;
+; jumpADR[0]    ; EjumpAD[1]  ; 5.773 ; 5.773 ; 5.773 ; 5.773 ;
+; jumpADR[0]    ; EjumpAD[2]  ; 5.914 ; 5.914 ; 5.914 ; 5.914 ;
+; jumpADR[0]    ; EjumpAD[3]  ; 5.824 ; 5.824 ; 5.824 ; 5.824 ;
+; jumpADR[0]    ; EjumpAD[4]  ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; jumpADR[0]    ; EjumpAD[5]  ; 6.029 ; 6.029 ; 6.029 ; 6.029 ;
+; jumpADR[0]    ; EjumpAD[6]  ; 6.027 ; 6.027 ; 6.027 ; 6.027 ;
+; jumpADR[0]    ; EjumpAD[7]  ; 6.185 ; 6.185 ; 6.185 ; 6.185 ;
+; jumpADR[0]    ; EjumpAD[8]  ; 6.294 ; 6.294 ; 6.294 ; 6.294 ;
+; jumpADR[0]    ; EjumpAD[9]  ; 6.428 ; 6.428 ; 6.428 ; 6.428 ;
+; jumpADR[0]    ; EjumpAD[10] ; 6.126 ; 6.126 ; 6.126 ; 6.126 ;
+; jumpADR[0]    ; EjumpAD[11] ; 6.258 ; 6.258 ; 6.258 ; 6.258 ;
+; jumpADR[0]    ; EjumpAD[12] ; 6.510 ; 6.510 ; 6.510 ; 6.510 ;
+; jumpADR[0]    ; EjumpAD[13] ; 6.436 ; 6.436 ; 6.436 ; 6.436 ;
+; jumpADR[0]    ; EjumpAD[14] ; 6.277 ; 6.277 ; 6.277 ; 6.277 ;
+; jumpADR[0]    ; EjumpAD[15] ; 6.426 ; 6.426 ; 6.426 ; 6.426 ;
+; jumpADR[1]    ; EjumpAD[2]  ; 5.770 ; 5.770 ; 5.770 ; 5.770 ;
+; jumpADR[1]    ; EjumpAD[3]  ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; jumpADR[1]    ; EjumpAD[4]  ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; jumpADR[1]    ; EjumpAD[5]  ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; jumpADR[1]    ; EjumpAD[6]  ; 5.986 ; 5.986 ; 5.986 ; 5.986 ;
+; jumpADR[1]    ; EjumpAD[7]  ; 6.144 ; 6.144 ; 6.144 ; 6.144 ;
+; jumpADR[1]    ; EjumpAD[8]  ; 6.253 ; 6.253 ; 6.253 ; 6.253 ;
+; jumpADR[1]    ; EjumpAD[9]  ; 6.387 ; 6.387 ; 6.387 ; 6.387 ;
+; jumpADR[1]    ; EjumpAD[10] ; 6.085 ; 6.085 ; 6.085 ; 6.085 ;
+; jumpADR[1]    ; EjumpAD[11] ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
+; jumpADR[1]    ; EjumpAD[12] ; 6.469 ; 6.469 ; 6.469 ; 6.469 ;
+; jumpADR[1]    ; EjumpAD[13] ; 6.395 ; 6.395 ; 6.395 ; 6.395 ;
+; jumpADR[1]    ; EjumpAD[14] ; 6.236 ; 6.236 ; 6.236 ; 6.236 ;
+; jumpADR[1]    ; EjumpAD[15] ; 6.385 ; 6.385 ; 6.385 ; 6.385 ;
+; jumpADR[2]    ; EjumpAD[3]  ; 5.477 ; 5.477 ; 5.477 ; 5.477 ;
+; jumpADR[2]    ; EjumpAD[4]  ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; jumpADR[2]    ; EjumpAD[5]  ; 5.785 ; 5.785 ; 5.785 ; 5.785 ;
+; jumpADR[2]    ; EjumpAD[6]  ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; jumpADR[2]    ; EjumpAD[7]  ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; jumpADR[2]    ; EjumpAD[8]  ; 6.050 ; 6.050 ; 6.050 ; 6.050 ;
+; jumpADR[2]    ; EjumpAD[9]  ; 6.184 ; 6.184 ; 6.184 ; 6.184 ;
+; jumpADR[2]    ; EjumpAD[10] ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
+; jumpADR[2]    ; EjumpAD[11] ; 6.014 ; 6.014 ; 6.014 ; 6.014 ;
+; jumpADR[2]    ; EjumpAD[12] ; 6.266 ; 6.266 ; 6.266 ; 6.266 ;
+; jumpADR[2]    ; EjumpAD[13] ; 6.192 ; 6.192 ; 6.192 ; 6.192 ;
+; jumpADR[2]    ; EjumpAD[14] ; 6.033 ; 6.033 ; 6.033 ; 6.033 ;
+; jumpADR[2]    ; EjumpAD[15] ; 6.182 ; 6.182 ; 6.182 ; 6.182 ;
+; jumpADR[3]    ; EjumpAD[4]  ; 5.996 ; 5.996 ; 5.996 ; 5.996 ;
+; jumpADR[3]    ; EjumpAD[5]  ; 5.914 ; 5.914 ; 5.914 ; 5.914 ;
+; jumpADR[3]    ; EjumpAD[6]  ; 5.912 ; 5.912 ; 5.912 ; 5.912 ;
+; jumpADR[3]    ; EjumpAD[7]  ; 6.070 ; 6.070 ; 6.070 ; 6.070 ;
+; jumpADR[3]    ; EjumpAD[8]  ; 6.179 ; 6.179 ; 6.179 ; 6.179 ;
+; jumpADR[3]    ; EjumpAD[9]  ; 6.313 ; 6.313 ; 6.313 ; 6.313 ;
+; jumpADR[3]    ; EjumpAD[10] ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
+; jumpADR[3]    ; EjumpAD[11] ; 6.143 ; 6.143 ; 6.143 ; 6.143 ;
+; jumpADR[3]    ; EjumpAD[12] ; 6.395 ; 6.395 ; 6.395 ; 6.395 ;
+; jumpADR[3]    ; EjumpAD[13] ; 6.321 ; 6.321 ; 6.321 ; 6.321 ;
+; jumpADR[3]    ; EjumpAD[14] ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; jumpADR[3]    ; EjumpAD[15] ; 6.311 ; 6.311 ; 6.311 ; 6.311 ;
+; jumpADR[4]    ; EjumpAD[5]  ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
+; jumpADR[4]    ; EjumpAD[6]  ; 5.690 ; 5.690 ; 5.690 ; 5.690 ;
+; jumpADR[4]    ; EjumpAD[7]  ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
+; jumpADR[4]    ; EjumpAD[8]  ; 5.957 ; 5.957 ; 5.957 ; 5.957 ;
+; jumpADR[4]    ; EjumpAD[9]  ; 6.091 ; 6.091 ; 6.091 ; 6.091 ;
+; jumpADR[4]    ; EjumpAD[10] ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
+; jumpADR[4]    ; EjumpAD[11] ; 5.921 ; 5.921 ; 5.921 ; 5.921 ;
+; jumpADR[4]    ; EjumpAD[12] ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; jumpADR[4]    ; EjumpAD[13] ; 6.099 ; 6.099 ; 6.099 ; 6.099 ;
+; jumpADR[4]    ; EjumpAD[14] ; 5.940 ; 5.940 ; 5.940 ; 5.940 ;
+; jumpADR[4]    ; EjumpAD[15] ; 6.089 ; 6.089 ; 6.089 ; 6.089 ;
+; jumpADR[5]    ; EjumpAD[6]  ; 5.600 ; 5.600 ; 5.600 ; 5.600 ;
+; jumpADR[5]    ; EjumpAD[7]  ; 5.861 ; 5.861 ; 5.861 ; 5.861 ;
+; jumpADR[5]    ; EjumpAD[8]  ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; jumpADR[5]    ; EjumpAD[9]  ; 6.104 ; 6.104 ; 6.104 ; 6.104 ;
+; jumpADR[5]    ; EjumpAD[10] ; 5.802 ; 5.802 ; 5.802 ; 5.802 ;
+; jumpADR[5]    ; EjumpAD[11] ; 5.934 ; 5.934 ; 5.934 ; 5.934 ;
+; jumpADR[5]    ; EjumpAD[12] ; 6.186 ; 6.186 ; 6.186 ; 6.186 ;
+; jumpADR[5]    ; EjumpAD[13] ; 6.112 ; 6.112 ; 6.112 ; 6.112 ;
+; jumpADR[5]    ; EjumpAD[14] ; 5.953 ; 5.953 ; 5.953 ; 5.953 ;
+; jumpADR[5]    ; EjumpAD[15] ; 6.102 ; 6.102 ; 6.102 ; 6.102 ;
+; jumpADR[6]    ; EjumpAD[7]  ; 5.690 ; 5.690 ; 5.690 ; 5.690 ;
+; jumpADR[6]    ; EjumpAD[8]  ; 5.902 ; 5.902 ; 5.902 ; 5.902 ;
+; jumpADR[6]    ; EjumpAD[9]  ; 6.036 ; 6.036 ; 6.036 ; 6.036 ;
+; jumpADR[6]    ; EjumpAD[10] ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
+; jumpADR[6]    ; EjumpAD[11] ; 5.866 ; 5.866 ; 5.866 ; 5.866 ;
+; jumpADR[6]    ; EjumpAD[12] ; 6.118 ; 6.118 ; 6.118 ; 6.118 ;
+; jumpADR[6]    ; EjumpAD[13] ; 6.044 ; 6.044 ; 6.044 ; 6.044 ;
+; jumpADR[6]    ; EjumpAD[14] ; 5.885 ; 5.885 ; 5.885 ; 5.885 ;
+; jumpADR[6]    ; EjumpAD[15] ; 6.034 ; 6.034 ; 6.034 ; 6.034 ;
+; jumpADR[7]    ; EjumpAD[8]  ; 5.649 ; 5.649 ; 5.649 ; 5.649 ;
+; jumpADR[7]    ; EjumpAD[9]  ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
+; jumpADR[7]    ; EjumpAD[10] ; 5.580 ; 5.580 ; 5.580 ; 5.580 ;
+; jumpADR[7]    ; EjumpAD[11] ; 5.712 ; 5.712 ; 5.712 ; 5.712 ;
+; jumpADR[7]    ; EjumpAD[12] ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; jumpADR[7]    ; EjumpAD[13] ; 5.890 ; 5.890 ; 5.890 ; 5.890 ;
+; jumpADR[7]    ; EjumpAD[14] ; 5.731 ; 5.731 ; 5.731 ; 5.731 ;
+; jumpADR[7]    ; EjumpAD[15] ; 5.880 ; 5.880 ; 5.880 ; 5.880 ;
+; jumpADR[8]    ; EjumpAD[9]  ; 5.795 ; 5.795 ; 5.795 ; 5.795 ;
+; jumpADR[8]    ; EjumpAD[10] ; 5.598 ; 5.598 ; 5.598 ; 5.598 ;
+; jumpADR[8]    ; EjumpAD[11] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; jumpADR[8]    ; EjumpAD[12] ; 5.982 ; 5.982 ; 5.982 ; 5.982 ;
+; jumpADR[8]    ; EjumpAD[13] ; 5.908 ; 5.908 ; 5.908 ; 5.908 ;
+; jumpADR[8]    ; EjumpAD[14] ; 5.749 ; 5.749 ; 5.749 ; 5.749 ;
+; jumpADR[8]    ; EjumpAD[15] ; 5.898 ; 5.898 ; 5.898 ; 5.898 ;
+; jumpADR[9]    ; EjumpAD[10] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; jumpADR[9]    ; EjumpAD[11] ; 5.570 ; 5.570 ; 5.570 ; 5.570 ;
+; jumpADR[9]    ; EjumpAD[12] ; 5.822 ; 5.822 ; 5.822 ; 5.822 ;
+; jumpADR[9]    ; EjumpAD[13] ; 5.748 ; 5.748 ; 5.748 ; 5.748 ;
+; jumpADR[9]    ; EjumpAD[14] ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
+; jumpADR[9]    ; EjumpAD[15] ; 5.738 ; 5.738 ; 5.738 ; 5.738 ;
+; jumpADR[10]   ; EjumpAD[11] ; 5.461 ; 5.461 ; 5.461 ; 5.461 ;
+; jumpADR[10]   ; EjumpAD[12] ; 5.818 ; 5.818 ; 5.818 ; 5.818 ;
+; jumpADR[10]   ; EjumpAD[13] ; 5.744 ; 5.744 ; 5.744 ; 5.744 ;
+; jumpADR[10]   ; EjumpAD[14] ; 5.585 ; 5.585 ; 5.585 ; 5.585 ;
+; jumpADR[10]   ; EjumpAD[15] ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
+; jumpADR[11]   ; EjumpAD[12] ; 5.907 ; 5.907 ; 5.907 ; 5.907 ;
+; jumpADR[11]   ; EjumpAD[13] ; 5.799 ; 5.799 ; 5.799 ; 5.799 ;
+; jumpADR[11]   ; EjumpAD[14] ; 5.605 ; 5.605 ; 5.605 ; 5.605 ;
+; jumpADR[11]   ; EjumpAD[15] ; 5.720 ; 5.720 ; 5.720 ; 5.720 ;
++---------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 28    ; 28   ;
+; Unconstrained Input Port Paths  ; 235   ; 235  ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 235   ; 235  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 20 09:54:04 2021
+Info: Command: quartus_sta JumpAD -c JumpAD
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'JumpAD.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4536 megabytes
+    Info: Processing ended: Thu May 20 09:54:05 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

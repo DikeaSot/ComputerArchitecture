@@ -1,0 +1,29 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'IF_Flush'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Slow Model Hold 'IF_Flush'
+Slack : -0.928
+TNS   : -25.286
+
+Type  : Slow Model Minimum Pulse Width 'IF_Flush'
+Slack : -1.222
+TNS   : -1.222
+
+Type  : Fast Model Setup 'IF_Flush'
+Slack : 0.613
+TNS   : 0.000
+
+Type  : Fast Model Hold 'IF_Flush'
+Slack : -0.731
+TNS   : -20.114
+
+Type  : Fast Model Minimum Pulse Width 'IF_Flush'
+Slack : -1.222
+TNS   : -1.222
+
+------------------------------------------------------------

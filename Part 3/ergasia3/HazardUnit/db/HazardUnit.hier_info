@@ -1,0 +1,13 @@
+|HazardUnit
+isJR => process_0~0.IN0
+isJump => process_0~0.IN1
+isJump => wasJumpOut.DATAIN
+wasJump => process_0~1.IN1
+mustBranch => process_0~2.IN1
+mustBranch => JRopcode~0.DATAA
+flush <= process_0~2.DB_MAX_OUTPUT_PORT_TYPE
+wasJumpOut <= isJump.DB_MAX_OUTPUT_PORT_TYPE
+JRopcode[0] <= process_0~0.DB_MAX_OUTPUT_PORT_TYPE
+JRopcode[1] <= JRopcode~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

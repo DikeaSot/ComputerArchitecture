@@ -1,0 +1,1306 @@
+TimeQuest Timing Analyzer report for Register_ID_EX
+Thu May 27 10:55:11 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Register_ID_EX                                                    ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------------------+
+; Propagation Delay                                                      ;
++-------------------+------------------------+--------+----+----+--------+
+; Input Port        ; Output Port            ; RR     ; RF ; FR ; FF     ;
++-------------------+------------------------+--------+----+----+--------+
+; ALUFunc[0]        ; ALUFunc_IDEX[0]        ; 9.892  ;    ;    ; 9.892  ;
+; ALUFunc[1]        ; ALUFunc_IDEX[1]        ; 9.105  ;    ;    ; 9.105  ;
+; ALUFunc[2]        ; ALUFunc_IDEX[2]        ; 10.595 ;    ;    ; 10.595 ;
+; ALUFunc[3]        ; ALUFunc_IDEX[3]        ; 8.961  ;    ;    ; 8.961  ;
+; R1AD[0]           ; R1AD_IDEX[0]           ; 9.907  ;    ;    ; 9.907  ;
+; R1AD[1]           ; R1AD_IDEX[1]           ; 9.732  ;    ;    ; 9.732  ;
+; R1AD[2]           ; R1AD_IDEX[2]           ; 8.892  ;    ;    ; 8.892  ;
+; R1Reg[0]          ; R1Reg_IDEX[0]          ; 9.482  ;    ;    ; 9.482  ;
+; R1Reg[1]          ; R1Reg_IDEX[1]          ; 9.750  ;    ;    ; 9.750  ;
+; R1Reg[2]          ; R1Reg_IDEX[2]          ; 8.986  ;    ;    ; 8.986  ;
+; R1Reg[3]          ; R1Reg_IDEX[3]          ; 9.856  ;    ;    ; 9.856  ;
+; R1Reg[4]          ; R1Reg_IDEX[4]          ; 9.706  ;    ;    ; 9.706  ;
+; R1Reg[5]          ; R1Reg_IDEX[5]          ; 9.946  ;    ;    ; 9.946  ;
+; R1Reg[6]          ; R1Reg_IDEX[6]          ; 9.310  ;    ;    ; 9.310  ;
+; R1Reg[7]          ; R1Reg_IDEX[7]          ; 9.812  ;    ;    ; 9.812  ;
+; R1Reg[8]          ; R1Reg_IDEX[8]          ; 9.630  ;    ;    ; 9.630  ;
+; R1Reg[9]          ; R1Reg_IDEX[9]          ; 10.342 ;    ;    ; 10.342 ;
+; R1Reg[10]         ; R1Reg_IDEX[10]         ; 8.879  ;    ;    ; 8.879  ;
+; R1Reg[11]         ; R1Reg_IDEX[11]         ; 9.152  ;    ;    ; 9.152  ;
+; R1Reg[12]         ; R1Reg_IDEX[12]         ; 9.487  ;    ;    ; 9.487  ;
+; R1Reg[13]         ; R1Reg_IDEX[13]         ; 9.460  ;    ;    ; 9.460  ;
+; R1Reg[14]         ; R1Reg_IDEX[14]         ; 9.718  ;    ;    ; 9.718  ;
+; R1Reg[15]         ; R1Reg_IDEX[15]         ; 9.320  ;    ;    ; 9.320  ;
+; R2AD[0]           ; R2AD_IDEX[0]           ; 9.579  ;    ;    ; 9.579  ;
+; R2AD[1]           ; R2AD_IDEX[1]           ; 9.768  ;    ;    ; 9.768  ;
+; R2AD[2]           ; R2AD_IDEX[2]           ; 9.129  ;    ;    ; 9.129  ;
+; R2Reg[0]          ; R2Reg_IDEX[0]          ; 9.371  ;    ;    ; 9.371  ;
+; R2Reg[1]          ; R2Reg_IDEX[1]          ; 9.735  ;    ;    ; 9.735  ;
+; R2Reg[2]          ; R2Reg_IDEX[2]          ; 9.340  ;    ;    ; 9.340  ;
+; R2Reg[3]          ; R2Reg_IDEX[3]          ; 9.635  ;    ;    ; 9.635  ;
+; R2Reg[4]          ; R2Reg_IDEX[4]          ; 9.554  ;    ;    ; 9.554  ;
+; R2Reg[5]          ; R2Reg_IDEX[5]          ; 9.997  ;    ;    ; 9.997  ;
+; R2Reg[6]          ; R2Reg_IDEX[6]          ; 9.157  ;    ;    ; 9.157  ;
+; R2Reg[7]          ; R2Reg_IDEX[7]          ; 9.625  ;    ;    ; 9.625  ;
+; R2Reg[8]          ; R2Reg_IDEX[8]          ; 8.747  ;    ;    ; 8.747  ;
+; R2Reg[9]          ; R2Reg_IDEX[9]          ; 9.728  ;    ;    ; 9.728  ;
+; R2Reg[10]         ; R2Reg_IDEX[10]         ; 9.581  ;    ;    ; 9.581  ;
+; R2Reg[11]         ; R2Reg_IDEX[11]         ; 9.440  ;    ;    ; 9.440  ;
+; R2Reg[12]         ; R2Reg_IDEX[12]         ; 9.264  ;    ;    ; 9.264  ;
+; R2Reg[13]         ; R2Reg_IDEX[13]         ; 9.148  ;    ;    ; 9.148  ;
+; R2Reg[14]         ; R2Reg_IDEX[14]         ; 10.443 ;    ;    ; 10.443 ;
+; R2Reg[15]         ; R2Reg_IDEX[15]         ; 9.575  ;    ;    ; 9.575  ;
+; clock             ; ALUFunc_IDEX[0]        ; 6.720  ;    ;    ; 6.720  ;
+; clock             ; ALUFunc_IDEX[1]        ; 6.791  ;    ;    ; 6.791  ;
+; clock             ; ALUFunc_IDEX[2]        ; 7.198  ;    ;    ; 7.198  ;
+; clock             ; ALUFunc_IDEX[3]        ; 7.408  ;    ;    ; 7.408  ;
+; clock             ; R1AD_IDEX[0]           ; 6.719  ;    ;    ; 6.719  ;
+; clock             ; R1AD_IDEX[1]           ; 6.869  ;    ;    ; 6.869  ;
+; clock             ; R1AD_IDEX[2]           ; 6.905  ;    ;    ; 6.905  ;
+; clock             ; R1Reg_IDEX[0]          ; 7.593  ;    ;    ; 7.593  ;
+; clock             ; R1Reg_IDEX[1]          ; 7.135  ;    ;    ; 7.135  ;
+; clock             ; R1Reg_IDEX[2]          ; 6.735  ;    ;    ; 6.735  ;
+; clock             ; R1Reg_IDEX[3]          ; 6.949  ;    ;    ; 6.949  ;
+; clock             ; R1Reg_IDEX[4]          ; 6.935  ;    ;    ; 6.935  ;
+; clock             ; R1Reg_IDEX[5]          ; 6.880  ;    ;    ; 6.880  ;
+; clock             ; R1Reg_IDEX[6]          ; 7.719  ;    ;    ; 7.719  ;
+; clock             ; R1Reg_IDEX[7]          ; 7.138  ;    ;    ; 7.138  ;
+; clock             ; R1Reg_IDEX[8]          ; 7.059  ;    ;    ; 7.059  ;
+; clock             ; R1Reg_IDEX[9]          ; 7.208  ;    ;    ; 7.208  ;
+; clock             ; R1Reg_IDEX[10]         ; 6.930  ;    ;    ; 6.930  ;
+; clock             ; R1Reg_IDEX[11]         ; 6.887  ;    ;    ; 6.887  ;
+; clock             ; R1Reg_IDEX[12]         ; 6.900  ;    ;    ; 6.900  ;
+; clock             ; R1Reg_IDEX[13]         ; 6.907  ;    ;    ; 6.907  ;
+; clock             ; R1Reg_IDEX[14]         ; 7.122  ;    ;    ; 7.122  ;
+; clock             ; R1Reg_IDEX[15]         ; 7.096  ;    ;    ; 7.096  ;
+; clock             ; R2AD_IDEX[0]           ; 6.489  ;    ;    ; 6.489  ;
+; clock             ; R2AD_IDEX[1]           ; 6.890  ;    ;    ; 6.890  ;
+; clock             ; R2AD_IDEX[2]           ; 6.864  ;    ;    ; 6.864  ;
+; clock             ; R2Reg_IDEX[0]          ; 7.746  ;    ;    ; 7.746  ;
+; clock             ; R2Reg_IDEX[1]          ; 6.644  ;    ;    ; 6.644  ;
+; clock             ; R2Reg_IDEX[2]          ; 6.787  ;    ;    ; 6.787  ;
+; clock             ; R2Reg_IDEX[3]          ; 6.955  ;    ;    ; 6.955  ;
+; clock             ; R2Reg_IDEX[4]          ; 7.055  ;    ;    ; 7.055  ;
+; clock             ; R2Reg_IDEX[5]          ; 7.381  ;    ;    ; 7.381  ;
+; clock             ; R2Reg_IDEX[6]          ; 6.882  ;    ;    ; 6.882  ;
+; clock             ; R2Reg_IDEX[7]          ; 6.484  ;    ;    ; 6.484  ;
+; clock             ; R2Reg_IDEX[8]          ; 6.732  ;    ;    ; 6.732  ;
+; clock             ; R2Reg_IDEX[9]          ; 6.867  ;    ;    ; 6.867  ;
+; clock             ; R2Reg_IDEX[10]         ; 7.117  ;    ;    ; 7.117  ;
+; clock             ; R2Reg_IDEX[11]         ; 7.593  ;    ;    ; 7.593  ;
+; clock             ; R2Reg_IDEX[12]         ; 6.773  ;    ;    ; 6.773  ;
+; clock             ; R2Reg_IDEX[13]         ; 7.576  ;    ;    ; 7.576  ;
+; clock             ; R2Reg_IDEX[14]         ; 7.247  ;    ;    ; 7.247  ;
+; clock             ; R2Reg_IDEX[15]         ; 6.712  ;    ;    ; 6.712  ;
+; clock             ; immediate16_IDEX[0]    ; 6.439  ;    ;    ; 6.439  ;
+; clock             ; immediate16_IDEX[1]    ; 6.893  ;    ;    ; 6.893  ;
+; clock             ; immediate16_IDEX[2]    ; 7.263  ;    ;    ; 7.263  ;
+; clock             ; immediate16_IDEX[3]    ; 6.893  ;    ;    ; 6.893  ;
+; clock             ; immediate16_IDEX[4]    ; 6.975  ;    ;    ; 6.975  ;
+; clock             ; immediate16_IDEX[5]    ; 6.774  ;    ;    ; 6.774  ;
+; clock             ; immediate16_IDEX[6]    ; 6.598  ;    ;    ; 6.598  ;
+; clock             ; immediate16_IDEX[7]    ; 7.552  ;    ;    ; 7.552  ;
+; clock             ; immediate16_IDEX[8]    ; 6.873  ;    ;    ; 6.873  ;
+; clock             ; immediate16_IDEX[9]    ; 6.708  ;    ;    ; 6.708  ;
+; clock             ; immediate16_IDEX[10]   ; 6.989  ;    ;    ; 6.989  ;
+; clock             ; immediate16_IDEX[11]   ; 6.967  ;    ;    ; 6.967  ;
+; clock             ; immediate16_IDEX[12]   ; 7.117  ;    ;    ; 7.117  ;
+; clock             ; immediate16_IDEX[13]   ; 6.891  ;    ;    ; 6.891  ;
+; clock             ; immediate16_IDEX[14]   ; 6.701  ;    ;    ; 6.701  ;
+; clock             ; immediate16_IDEX[15]   ; 6.868  ;    ;    ; 6.868  ;
+; clock             ; isBranch_IDEX          ; 6.712  ;    ;    ; 6.712  ;
+; clock             ; isEOR_IDEX             ; 7.560  ;    ;    ; 7.560  ;
+; clock             ; isJR_IDEX              ; 7.736  ;    ;    ; 7.736  ;
+; clock             ; isJump_IDEX            ; 7.153  ;    ;    ; 7.153  ;
+; clock             ; isLW_IDEX              ; 6.967  ;    ;    ; 6.967  ;
+; clock             ; isMFPC_IDEX            ; 6.895  ;    ;    ; 6.895  ;
+; clock             ; isPrintDigit_IDEX      ; 7.350  ;    ;    ; 7.350  ;
+; clock             ; isR_IDEX               ; 6.879  ;    ;    ; 6.879  ;
+; clock             ; isReadDigit_IDEX       ; 8.085  ;    ;    ; 8.085  ;
+; clock             ; isSW_IDEX              ; 7.609  ;    ;    ; 7.609  ;
+; clock             ; jumpShortAddr_IDEX[0]  ; 6.511  ;    ;    ; 6.511  ;
+; clock             ; jumpShortAddr_IDEX[1]  ; 6.866  ;    ;    ; 6.866  ;
+; clock             ; jumpShortAddr_IDEX[2]  ; 7.445  ;    ;    ; 7.445  ;
+; clock             ; jumpShortAddr_IDEX[3]  ; 7.263  ;    ;    ; 7.263  ;
+; clock             ; jumpShortAddr_IDEX[4]  ; 6.450  ;    ;    ; 6.450  ;
+; clock             ; jumpShortAddr_IDEX[5]  ; 6.897  ;    ;    ; 6.897  ;
+; clock             ; jumpShortAddr_IDEX[6]  ; 7.768  ;    ;    ; 7.768  ;
+; clock             ; jumpShortAddr_IDEX[7]  ; 6.729  ;    ;    ; 6.729  ;
+; clock             ; jumpShortAddr_IDEX[8]  ; 7.748  ;    ;    ; 7.748  ;
+; clock             ; jumpShortAddr_IDEX[9]  ; 6.940  ;    ;    ; 6.940  ;
+; clock             ; jumpShortAddr_IDEX[10] ; 7.024  ;    ;    ; 7.024  ;
+; clock             ; jumpShortAddr_IDEX[11] ; 6.929  ;    ;    ; 6.929  ;
+; clock             ; wasJumpOut_IDEX        ; 6.734  ;    ;    ; 6.734  ;
+; immediate16[0]    ; immediate16_IDEX[0]    ; 8.701  ;    ;    ; 8.701  ;
+; immediate16[1]    ; immediate16_IDEX[1]    ; 8.898  ;    ;    ; 8.898  ;
+; immediate16[2]    ; immediate16_IDEX[2]    ; 9.213  ;    ;    ; 9.213  ;
+; immediate16[3]    ; immediate16_IDEX[3]    ; 9.476  ;    ;    ; 9.476  ;
+; immediate16[4]    ; immediate16_IDEX[4]    ; 9.713  ;    ;    ; 9.713  ;
+; immediate16[5]    ; immediate16_IDEX[5]    ; 9.890  ;    ;    ; 9.890  ;
+; immediate16[6]    ; immediate16_IDEX[6]    ; 8.897  ;    ;    ; 8.897  ;
+; immediate16[7]    ; immediate16_IDEX[7]    ; 9.525  ;    ;    ; 9.525  ;
+; immediate16[8]    ; immediate16_IDEX[8]    ; 9.139  ;    ;    ; 9.139  ;
+; immediate16[9]    ; immediate16_IDEX[9]    ; 9.870  ;    ;    ; 9.870  ;
+; immediate16[10]   ; immediate16_IDEX[10]   ; 10.034 ;    ;    ; 10.034 ;
+; immediate16[11]   ; immediate16_IDEX[11]   ; 10.064 ;    ;    ; 10.064 ;
+; immediate16[12]   ; immediate16_IDEX[12]   ; 9.976  ;    ;    ; 9.976  ;
+; immediate16[13]   ; immediate16_IDEX[13]   ; 9.274  ;    ;    ; 9.274  ;
+; immediate16[14]   ; immediate16_IDEX[14]   ; 9.389  ;    ;    ; 9.389  ;
+; immediate16[15]   ; immediate16_IDEX[15]   ; 9.874  ;    ;    ; 9.874  ;
+; isBranch          ; isBranch_IDEX          ; 10.118 ;    ;    ; 10.118 ;
+; isEOR             ; isEOR_IDEX             ; 7.043  ;    ;    ; 7.043  ;
+; isJR              ; isJR_IDEX              ; 9.345  ;    ;    ; 9.345  ;
+; isJump            ; isJump_IDEX            ; 9.776  ;    ;    ; 9.776  ;
+; isLW              ; isLW_IDEX              ; 10.213 ;    ;    ; 10.213 ;
+; isMFPC            ; isMFPC_IDEX            ; 9.929  ;    ;    ; 9.929  ;
+; isPrintDigit      ; isPrintDigit_IDEX      ; 10.041 ;    ;    ; 10.041 ;
+; isR               ; isR_IDEX               ; 9.535  ;    ;    ; 9.535  ;
+; isReadDigit       ; isReadDigit_IDEX       ; 10.005 ;    ;    ; 10.005 ;
+; isSW              ; isSW_IDEX              ; 9.478  ;    ;    ; 9.478  ;
+; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]  ; 9.664  ;    ;    ; 9.664  ;
+; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]  ; 9.490  ;    ;    ; 9.490  ;
+; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]  ; 9.339  ;    ;    ; 9.339  ;
+; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]  ; 9.156  ;    ;    ; 9.156  ;
+; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]  ; 9.591  ;    ;    ; 9.591  ;
+; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]  ; 9.794  ;    ;    ; 9.794  ;
+; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]  ; 9.365  ;    ;    ; 9.365  ;
+; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]  ; 10.037 ;    ;    ; 10.037 ;
+; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]  ; 9.327  ;    ;    ; 9.327  ;
+; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]  ; 10.073 ;    ;    ; 10.073 ;
+; jumpShortAddr[10] ; jumpShortAddr_IDEX[10] ; 10.647 ;    ;    ; 10.647 ;
+; jumpShortAddr[11] ; jumpShortAddr_IDEX[11] ; 9.215  ;    ;    ; 9.215  ;
+; wasJumpOut        ; wasJumpOut_IDEX        ; 9.593  ;    ;    ; 9.593  ;
++-------------------+------------------------+--------+----+----+--------+
+
+
++------------------------------------------------------------------------+
+; Minimum Propagation Delay                                              ;
++-------------------+------------------------+--------+----+----+--------+
+; Input Port        ; Output Port            ; RR     ; RF ; FR ; FF     ;
++-------------------+------------------------+--------+----+----+--------+
+; ALUFunc[0]        ; ALUFunc_IDEX[0]        ; 9.892  ;    ;    ; 9.892  ;
+; ALUFunc[1]        ; ALUFunc_IDEX[1]        ; 9.105  ;    ;    ; 9.105  ;
+; ALUFunc[2]        ; ALUFunc_IDEX[2]        ; 10.595 ;    ;    ; 10.595 ;
+; ALUFunc[3]        ; ALUFunc_IDEX[3]        ; 8.961  ;    ;    ; 8.961  ;
+; R1AD[0]           ; R1AD_IDEX[0]           ; 9.907  ;    ;    ; 9.907  ;
+; R1AD[1]           ; R1AD_IDEX[1]           ; 9.732  ;    ;    ; 9.732  ;
+; R1AD[2]           ; R1AD_IDEX[2]           ; 8.892  ;    ;    ; 8.892  ;
+; R1Reg[0]          ; R1Reg_IDEX[0]          ; 9.482  ;    ;    ; 9.482  ;
+; R1Reg[1]          ; R1Reg_IDEX[1]          ; 9.750  ;    ;    ; 9.750  ;
+; R1Reg[2]          ; R1Reg_IDEX[2]          ; 8.986  ;    ;    ; 8.986  ;
+; R1Reg[3]          ; R1Reg_IDEX[3]          ; 9.856  ;    ;    ; 9.856  ;
+; R1Reg[4]          ; R1Reg_IDEX[4]          ; 9.706  ;    ;    ; 9.706  ;
+; R1Reg[5]          ; R1Reg_IDEX[5]          ; 9.946  ;    ;    ; 9.946  ;
+; R1Reg[6]          ; R1Reg_IDEX[6]          ; 9.310  ;    ;    ; 9.310  ;
+; R1Reg[7]          ; R1Reg_IDEX[7]          ; 9.812  ;    ;    ; 9.812  ;
+; R1Reg[8]          ; R1Reg_IDEX[8]          ; 9.630  ;    ;    ; 9.630  ;
+; R1Reg[9]          ; R1Reg_IDEX[9]          ; 10.342 ;    ;    ; 10.342 ;
+; R1Reg[10]         ; R1Reg_IDEX[10]         ; 8.879  ;    ;    ; 8.879  ;
+; R1Reg[11]         ; R1Reg_IDEX[11]         ; 9.152  ;    ;    ; 9.152  ;
+; R1Reg[12]         ; R1Reg_IDEX[12]         ; 9.487  ;    ;    ; 9.487  ;
+; R1Reg[13]         ; R1Reg_IDEX[13]         ; 9.460  ;    ;    ; 9.460  ;
+; R1Reg[14]         ; R1Reg_IDEX[14]         ; 9.718  ;    ;    ; 9.718  ;
+; R1Reg[15]         ; R1Reg_IDEX[15]         ; 9.320  ;    ;    ; 9.320  ;
+; R2AD[0]           ; R2AD_IDEX[0]           ; 9.579  ;    ;    ; 9.579  ;
+; R2AD[1]           ; R2AD_IDEX[1]           ; 9.768  ;    ;    ; 9.768  ;
+; R2AD[2]           ; R2AD_IDEX[2]           ; 9.129  ;    ;    ; 9.129  ;
+; R2Reg[0]          ; R2Reg_IDEX[0]          ; 9.371  ;    ;    ; 9.371  ;
+; R2Reg[1]          ; R2Reg_IDEX[1]          ; 9.735  ;    ;    ; 9.735  ;
+; R2Reg[2]          ; R2Reg_IDEX[2]          ; 9.340  ;    ;    ; 9.340  ;
+; R2Reg[3]          ; R2Reg_IDEX[3]          ; 9.635  ;    ;    ; 9.635  ;
+; R2Reg[4]          ; R2Reg_IDEX[4]          ; 9.554  ;    ;    ; 9.554  ;
+; R2Reg[5]          ; R2Reg_IDEX[5]          ; 9.997  ;    ;    ; 9.997  ;
+; R2Reg[6]          ; R2Reg_IDEX[6]          ; 9.157  ;    ;    ; 9.157  ;
+; R2Reg[7]          ; R2Reg_IDEX[7]          ; 9.625  ;    ;    ; 9.625  ;
+; R2Reg[8]          ; R2Reg_IDEX[8]          ; 8.747  ;    ;    ; 8.747  ;
+; R2Reg[9]          ; R2Reg_IDEX[9]          ; 9.728  ;    ;    ; 9.728  ;
+; R2Reg[10]         ; R2Reg_IDEX[10]         ; 9.581  ;    ;    ; 9.581  ;
+; R2Reg[11]         ; R2Reg_IDEX[11]         ; 9.440  ;    ;    ; 9.440  ;
+; R2Reg[12]         ; R2Reg_IDEX[12]         ; 9.264  ;    ;    ; 9.264  ;
+; R2Reg[13]         ; R2Reg_IDEX[13]         ; 9.148  ;    ;    ; 9.148  ;
+; R2Reg[14]         ; R2Reg_IDEX[14]         ; 10.443 ;    ;    ; 10.443 ;
+; R2Reg[15]         ; R2Reg_IDEX[15]         ; 9.575  ;    ;    ; 9.575  ;
+; clock             ; ALUFunc_IDEX[0]        ; 6.720  ;    ;    ; 6.720  ;
+; clock             ; ALUFunc_IDEX[1]        ; 6.791  ;    ;    ; 6.791  ;
+; clock             ; ALUFunc_IDEX[2]        ; 7.198  ;    ;    ; 7.198  ;
+; clock             ; ALUFunc_IDEX[3]        ; 7.408  ;    ;    ; 7.408  ;
+; clock             ; R1AD_IDEX[0]           ; 6.719  ;    ;    ; 6.719  ;
+; clock             ; R1AD_IDEX[1]           ; 6.869  ;    ;    ; 6.869  ;
+; clock             ; R1AD_IDEX[2]           ; 6.905  ;    ;    ; 6.905  ;
+; clock             ; R1Reg_IDEX[0]          ; 7.593  ;    ;    ; 7.593  ;
+; clock             ; R1Reg_IDEX[1]          ; 7.135  ;    ;    ; 7.135  ;
+; clock             ; R1Reg_IDEX[2]          ; 6.735  ;    ;    ; 6.735  ;
+; clock             ; R1Reg_IDEX[3]          ; 6.949  ;    ;    ; 6.949  ;
+; clock             ; R1Reg_IDEX[4]          ; 6.935  ;    ;    ; 6.935  ;
+; clock             ; R1Reg_IDEX[5]          ; 6.880  ;    ;    ; 6.880  ;
+; clock             ; R1Reg_IDEX[6]          ; 7.719  ;    ;    ; 7.719  ;
+; clock             ; R1Reg_IDEX[7]          ; 7.138  ;    ;    ; 7.138  ;
+; clock             ; R1Reg_IDEX[8]          ; 7.059  ;    ;    ; 7.059  ;
+; clock             ; R1Reg_IDEX[9]          ; 7.208  ;    ;    ; 7.208  ;
+; clock             ; R1Reg_IDEX[10]         ; 6.930  ;    ;    ; 6.930  ;
+; clock             ; R1Reg_IDEX[11]         ; 6.887  ;    ;    ; 6.887  ;
+; clock             ; R1Reg_IDEX[12]         ; 6.900  ;    ;    ; 6.900  ;
+; clock             ; R1Reg_IDEX[13]         ; 6.907  ;    ;    ; 6.907  ;
+; clock             ; R1Reg_IDEX[14]         ; 7.122  ;    ;    ; 7.122  ;
+; clock             ; R1Reg_IDEX[15]         ; 7.096  ;    ;    ; 7.096  ;
+; clock             ; R2AD_IDEX[0]           ; 6.489  ;    ;    ; 6.489  ;
+; clock             ; R2AD_IDEX[1]           ; 6.890  ;    ;    ; 6.890  ;
+; clock             ; R2AD_IDEX[2]           ; 6.864  ;    ;    ; 6.864  ;
+; clock             ; R2Reg_IDEX[0]          ; 7.746  ;    ;    ; 7.746  ;
+; clock             ; R2Reg_IDEX[1]          ; 6.644  ;    ;    ; 6.644  ;
+; clock             ; R2Reg_IDEX[2]          ; 6.787  ;    ;    ; 6.787  ;
+; clock             ; R2Reg_IDEX[3]          ; 6.955  ;    ;    ; 6.955  ;
+; clock             ; R2Reg_IDEX[4]          ; 7.055  ;    ;    ; 7.055  ;
+; clock             ; R2Reg_IDEX[5]          ; 7.381  ;    ;    ; 7.381  ;
+; clock             ; R2Reg_IDEX[6]          ; 6.882  ;    ;    ; 6.882  ;
+; clock             ; R2Reg_IDEX[7]          ; 6.484  ;    ;    ; 6.484  ;
+; clock             ; R2Reg_IDEX[8]          ; 6.732  ;    ;    ; 6.732  ;
+; clock             ; R2Reg_IDEX[9]          ; 6.867  ;    ;    ; 6.867  ;
+; clock             ; R2Reg_IDEX[10]         ; 7.117  ;    ;    ; 7.117  ;
+; clock             ; R2Reg_IDEX[11]         ; 7.593  ;    ;    ; 7.593  ;
+; clock             ; R2Reg_IDEX[12]         ; 6.773  ;    ;    ; 6.773  ;
+; clock             ; R2Reg_IDEX[13]         ; 7.576  ;    ;    ; 7.576  ;
+; clock             ; R2Reg_IDEX[14]         ; 7.247  ;    ;    ; 7.247  ;
+; clock             ; R2Reg_IDEX[15]         ; 6.712  ;    ;    ; 6.712  ;
+; clock             ; immediate16_IDEX[0]    ; 6.439  ;    ;    ; 6.439  ;
+; clock             ; immediate16_IDEX[1]    ; 6.893  ;    ;    ; 6.893  ;
+; clock             ; immediate16_IDEX[2]    ; 7.263  ;    ;    ; 7.263  ;
+; clock             ; immediate16_IDEX[3]    ; 6.893  ;    ;    ; 6.893  ;
+; clock             ; immediate16_IDEX[4]    ; 6.975  ;    ;    ; 6.975  ;
+; clock             ; immediate16_IDEX[5]    ; 6.774  ;    ;    ; 6.774  ;
+; clock             ; immediate16_IDEX[6]    ; 6.598  ;    ;    ; 6.598  ;
+; clock             ; immediate16_IDEX[7]    ; 7.552  ;    ;    ; 7.552  ;
+; clock             ; immediate16_IDEX[8]    ; 6.873  ;    ;    ; 6.873  ;
+; clock             ; immediate16_IDEX[9]    ; 6.708  ;    ;    ; 6.708  ;
+; clock             ; immediate16_IDEX[10]   ; 6.989  ;    ;    ; 6.989  ;
+; clock             ; immediate16_IDEX[11]   ; 6.967  ;    ;    ; 6.967  ;
+; clock             ; immediate16_IDEX[12]   ; 7.117  ;    ;    ; 7.117  ;
+; clock             ; immediate16_IDEX[13]   ; 6.891  ;    ;    ; 6.891  ;
+; clock             ; immediate16_IDEX[14]   ; 6.701  ;    ;    ; 6.701  ;
+; clock             ; immediate16_IDEX[15]   ; 6.868  ;    ;    ; 6.868  ;
+; clock             ; isBranch_IDEX          ; 6.712  ;    ;    ; 6.712  ;
+; clock             ; isEOR_IDEX             ; 7.560  ;    ;    ; 7.560  ;
+; clock             ; isJR_IDEX              ; 7.736  ;    ;    ; 7.736  ;
+; clock             ; isJump_IDEX            ; 7.153  ;    ;    ; 7.153  ;
+; clock             ; isLW_IDEX              ; 6.967  ;    ;    ; 6.967  ;
+; clock             ; isMFPC_IDEX            ; 6.895  ;    ;    ; 6.895  ;
+; clock             ; isPrintDigit_IDEX      ; 7.350  ;    ;    ; 7.350  ;
+; clock             ; isR_IDEX               ; 6.879  ;    ;    ; 6.879  ;
+; clock             ; isReadDigit_IDEX       ; 8.085  ;    ;    ; 8.085  ;
+; clock             ; isSW_IDEX              ; 7.609  ;    ;    ; 7.609  ;
+; clock             ; jumpShortAddr_IDEX[0]  ; 6.511  ;    ;    ; 6.511  ;
+; clock             ; jumpShortAddr_IDEX[1]  ; 6.866  ;    ;    ; 6.866  ;
+; clock             ; jumpShortAddr_IDEX[2]  ; 7.445  ;    ;    ; 7.445  ;
+; clock             ; jumpShortAddr_IDEX[3]  ; 7.263  ;    ;    ; 7.263  ;
+; clock             ; jumpShortAddr_IDEX[4]  ; 6.450  ;    ;    ; 6.450  ;
+; clock             ; jumpShortAddr_IDEX[5]  ; 6.897  ;    ;    ; 6.897  ;
+; clock             ; jumpShortAddr_IDEX[6]  ; 7.768  ;    ;    ; 7.768  ;
+; clock             ; jumpShortAddr_IDEX[7]  ; 6.729  ;    ;    ; 6.729  ;
+; clock             ; jumpShortAddr_IDEX[8]  ; 7.748  ;    ;    ; 7.748  ;
+; clock             ; jumpShortAddr_IDEX[9]  ; 6.940  ;    ;    ; 6.940  ;
+; clock             ; jumpShortAddr_IDEX[10] ; 7.024  ;    ;    ; 7.024  ;
+; clock             ; jumpShortAddr_IDEX[11] ; 6.929  ;    ;    ; 6.929  ;
+; clock             ; wasJumpOut_IDEX        ; 6.734  ;    ;    ; 6.734  ;
+; immediate16[0]    ; immediate16_IDEX[0]    ; 8.701  ;    ;    ; 8.701  ;
+; immediate16[1]    ; immediate16_IDEX[1]    ; 8.898  ;    ;    ; 8.898  ;
+; immediate16[2]    ; immediate16_IDEX[2]    ; 9.213  ;    ;    ; 9.213  ;
+; immediate16[3]    ; immediate16_IDEX[3]    ; 9.476  ;    ;    ; 9.476  ;
+; immediate16[4]    ; immediate16_IDEX[4]    ; 9.713  ;    ;    ; 9.713  ;
+; immediate16[5]    ; immediate16_IDEX[5]    ; 9.890  ;    ;    ; 9.890  ;
+; immediate16[6]    ; immediate16_IDEX[6]    ; 8.897  ;    ;    ; 8.897  ;
+; immediate16[7]    ; immediate16_IDEX[7]    ; 9.525  ;    ;    ; 9.525  ;
+; immediate16[8]    ; immediate16_IDEX[8]    ; 9.139  ;    ;    ; 9.139  ;
+; immediate16[9]    ; immediate16_IDEX[9]    ; 9.870  ;    ;    ; 9.870  ;
+; immediate16[10]   ; immediate16_IDEX[10]   ; 10.034 ;    ;    ; 10.034 ;
+; immediate16[11]   ; immediate16_IDEX[11]   ; 10.064 ;    ;    ; 10.064 ;
+; immediate16[12]   ; immediate16_IDEX[12]   ; 9.976  ;    ;    ; 9.976  ;
+; immediate16[13]   ; immediate16_IDEX[13]   ; 9.274  ;    ;    ; 9.274  ;
+; immediate16[14]   ; immediate16_IDEX[14]   ; 9.389  ;    ;    ; 9.389  ;
+; immediate16[15]   ; immediate16_IDEX[15]   ; 9.874  ;    ;    ; 9.874  ;
+; isBranch          ; isBranch_IDEX          ; 10.118 ;    ;    ; 10.118 ;
+; isEOR             ; isEOR_IDEX             ; 7.043  ;    ;    ; 7.043  ;
+; isJR              ; isJR_IDEX              ; 9.345  ;    ;    ; 9.345  ;
+; isJump            ; isJump_IDEX            ; 9.776  ;    ;    ; 9.776  ;
+; isLW              ; isLW_IDEX              ; 10.213 ;    ;    ; 10.213 ;
+; isMFPC            ; isMFPC_IDEX            ; 9.929  ;    ;    ; 9.929  ;
+; isPrintDigit      ; isPrintDigit_IDEX      ; 10.041 ;    ;    ; 10.041 ;
+; isR               ; isR_IDEX               ; 9.535  ;    ;    ; 9.535  ;
+; isReadDigit       ; isReadDigit_IDEX       ; 10.005 ;    ;    ; 10.005 ;
+; isSW              ; isSW_IDEX              ; 9.478  ;    ;    ; 9.478  ;
+; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]  ; 9.664  ;    ;    ; 9.664  ;
+; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]  ; 9.490  ;    ;    ; 9.490  ;
+; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]  ; 9.339  ;    ;    ; 9.339  ;
+; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]  ; 9.156  ;    ;    ; 9.156  ;
+; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]  ; 9.591  ;    ;    ; 9.591  ;
+; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]  ; 9.794  ;    ;    ; 9.794  ;
+; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]  ; 9.365  ;    ;    ; 9.365  ;
+; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]  ; 10.037 ;    ;    ; 10.037 ;
+; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]  ; 9.327  ;    ;    ; 9.327  ;
+; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]  ; 10.073 ;    ;    ; 10.073 ;
+; jumpShortAddr[10] ; jumpShortAddr_IDEX[10] ; 10.647 ;    ;    ; 10.647 ;
+; jumpShortAddr[11] ; jumpShortAddr_IDEX[11] ; 9.215  ;    ;    ; 9.215  ;
+; wasJumpOut        ; wasJumpOut_IDEX        ; 9.593  ;    ;    ; 9.593  ;
++-------------------+------------------------+--------+----+----+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------------+
+; Propagation Delay                                                    ;
++-------------------+------------------------+-------+----+----+-------+
+; Input Port        ; Output Port            ; RR    ; RF ; FR ; FF    ;
++-------------------+------------------------+-------+----+----+-------+
+; ALUFunc[0]        ; ALUFunc_IDEX[0]        ; 5.482 ;    ;    ; 5.482 ;
+; ALUFunc[1]        ; ALUFunc_IDEX[1]        ; 5.140 ;    ;    ; 5.140 ;
+; ALUFunc[2]        ; ALUFunc_IDEX[2]        ; 5.804 ;    ;    ; 5.804 ;
+; ALUFunc[3]        ; ALUFunc_IDEX[3]        ; 5.047 ;    ;    ; 5.047 ;
+; R1AD[0]           ; R1AD_IDEX[0]           ; 5.468 ;    ;    ; 5.468 ;
+; R1AD[1]           ; R1AD_IDEX[1]           ; 5.418 ;    ;    ; 5.418 ;
+; R1AD[2]           ; R1AD_IDEX[2]           ; 5.027 ;    ;    ; 5.027 ;
+; R1Reg[0]          ; R1Reg_IDEX[0]          ; 5.287 ;    ;    ; 5.287 ;
+; R1Reg[1]          ; R1Reg_IDEX[1]          ; 5.452 ;    ;    ; 5.452 ;
+; R1Reg[2]          ; R1Reg_IDEX[2]          ; 5.093 ;    ;    ; 5.093 ;
+; R1Reg[3]          ; R1Reg_IDEX[3]          ; 5.443 ;    ;    ; 5.443 ;
+; R1Reg[4]          ; R1Reg_IDEX[4]          ; 5.400 ;    ;    ; 5.400 ;
+; R1Reg[5]          ; R1Reg_IDEX[5]          ; 5.448 ;    ;    ; 5.448 ;
+; R1Reg[6]          ; R1Reg_IDEX[6]          ; 5.233 ;    ;    ; 5.233 ;
+; R1Reg[7]          ; R1Reg_IDEX[7]          ; 5.488 ;    ;    ; 5.488 ;
+; R1Reg[8]          ; R1Reg_IDEX[8]          ; 5.347 ;    ;    ; 5.347 ;
+; R1Reg[9]          ; R1Reg_IDEX[9]          ; 5.694 ;    ;    ; 5.694 ;
+; R1Reg[10]         ; R1Reg_IDEX[10]         ; 5.020 ;    ;    ; 5.020 ;
+; R1Reg[11]         ; R1Reg_IDEX[11]         ; 5.132 ;    ;    ; 5.132 ;
+; R1Reg[12]         ; R1Reg_IDEX[12]         ; 5.312 ;    ;    ; 5.312 ;
+; R1Reg[13]         ; R1Reg_IDEX[13]         ; 5.285 ;    ;    ; 5.285 ;
+; R1Reg[14]         ; R1Reg_IDEX[14]         ; 5.414 ;    ;    ; 5.414 ;
+; R1Reg[15]         ; R1Reg_IDEX[15]         ; 5.235 ;    ;    ; 5.235 ;
+; R2AD[0]           ; R2AD_IDEX[0]           ; 5.349 ;    ;    ; 5.349 ;
+; R2AD[1]           ; R2AD_IDEX[1]           ; 5.439 ;    ;    ; 5.439 ;
+; R2AD[2]           ; R2AD_IDEX[2]           ; 5.107 ;    ;    ; 5.107 ;
+; R2Reg[0]          ; R2Reg_IDEX[0]          ; 5.294 ;    ;    ; 5.294 ;
+; R2Reg[1]          ; R2Reg_IDEX[1]          ; 5.419 ;    ;    ; 5.419 ;
+; R2Reg[2]          ; R2Reg_IDEX[2]          ; 5.213 ;    ;    ; 5.213 ;
+; R2Reg[3]          ; R2Reg_IDEX[3]          ; 5.352 ;    ;    ; 5.352 ;
+; R2Reg[4]          ; R2Reg_IDEX[4]          ; 5.307 ;    ;    ; 5.307 ;
+; R2Reg[5]          ; R2Reg_IDEX[5]          ; 5.564 ;    ;    ; 5.564 ;
+; R2Reg[6]          ; R2Reg_IDEX[6]          ; 5.137 ;    ;    ; 5.137 ;
+; R2Reg[7]          ; R2Reg_IDEX[7]          ; 5.359 ;    ;    ; 5.359 ;
+; R2Reg[8]          ; R2Reg_IDEX[8]          ; 4.950 ;    ;    ; 4.950 ;
+; R2Reg[9]          ; R2Reg_IDEX[9]          ; 5.361 ;    ;    ; 5.361 ;
+; R2Reg[10]         ; R2Reg_IDEX[10]         ; 5.359 ;    ;    ; 5.359 ;
+; R2Reg[11]         ; R2Reg_IDEX[11]         ; 5.262 ;    ;    ; 5.262 ;
+; R2Reg[12]         ; R2Reg_IDEX[12]         ; 5.171 ;    ;    ; 5.171 ;
+; R2Reg[13]         ; R2Reg_IDEX[13]         ; 5.141 ;    ;    ; 5.141 ;
+; R2Reg[14]         ; R2Reg_IDEX[14]         ; 5.737 ;    ;    ; 5.737 ;
+; R2Reg[15]         ; R2Reg_IDEX[15]         ; 5.322 ;    ;    ; 5.322 ;
+; clock             ; ALUFunc_IDEX[0]        ; 3.523 ;    ;    ; 3.523 ;
+; clock             ; ALUFunc_IDEX[1]        ; 3.589 ;    ;    ; 3.589 ;
+; clock             ; ALUFunc_IDEX[2]        ; 3.786 ;    ;    ; 3.786 ;
+; clock             ; ALUFunc_IDEX[3]        ; 3.955 ;    ;    ; 3.955 ;
+; clock             ; R1AD_IDEX[0]           ; 3.552 ;    ;    ; 3.552 ;
+; clock             ; R1AD_IDEX[1]           ; 3.646 ;    ;    ; 3.646 ;
+; clock             ; R1AD_IDEX[2]           ; 3.661 ;    ;    ; 3.661 ;
+; clock             ; R1Reg_IDEX[0]          ; 4.076 ;    ;    ; 4.076 ;
+; clock             ; R1Reg_IDEX[1]          ; 3.803 ;    ;    ; 3.803 ;
+; clock             ; R1Reg_IDEX[2]          ; 3.606 ;    ;    ; 3.606 ;
+; clock             ; R1Reg_IDEX[3]          ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[4]          ; 3.683 ;    ;    ; 3.683 ;
+; clock             ; R1Reg_IDEX[5]          ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; R1Reg_IDEX[6]          ; 4.104 ;    ;    ; 4.104 ;
+; clock             ; R1Reg_IDEX[7]          ; 3.806 ;    ;    ; 3.806 ;
+; clock             ; R1Reg_IDEX[8]          ; 3.721 ;    ;    ; 3.721 ;
+; clock             ; R1Reg_IDEX[9]          ; 3.798 ;    ;    ; 3.798 ;
+; clock             ; R1Reg_IDEX[10]         ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[11]         ; 3.649 ;    ;    ; 3.649 ;
+; clock             ; R1Reg_IDEX[12]         ; 3.649 ;    ;    ; 3.649 ;
+; clock             ; R1Reg_IDEX[13]         ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[14]         ; 3.737 ;    ;    ; 3.737 ;
+; clock             ; R1Reg_IDEX[15]         ; 3.723 ;    ;    ; 3.723 ;
+; clock             ; R2AD_IDEX[0]           ; 3.410 ;    ;    ; 3.410 ;
+; clock             ; R2AD_IDEX[1]           ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; R2AD_IDEX[2]           ; 3.620 ;    ;    ; 3.620 ;
+; clock             ; R2Reg_IDEX[0]          ; 4.130 ;    ;    ; 4.130 ;
+; clock             ; R2Reg_IDEX[1]          ; 3.453 ;    ;    ; 3.453 ;
+; clock             ; R2Reg_IDEX[2]          ; 3.604 ;    ;    ; 3.604 ;
+; clock             ; R2Reg_IDEX[3]          ; 3.667 ;    ;    ; 3.667 ;
+; clock             ; R2Reg_IDEX[4]          ; 3.684 ;    ;    ; 3.684 ;
+; clock             ; R2Reg_IDEX[5]          ; 3.858 ;    ;    ; 3.858 ;
+; clock             ; R2Reg_IDEX[6]          ; 3.640 ;    ;    ; 3.640 ;
+; clock             ; R2Reg_IDEX[7]          ; 3.410 ;    ;    ; 3.410 ;
+; clock             ; R2Reg_IDEX[8]          ; 3.556 ;    ;    ; 3.556 ;
+; clock             ; R2Reg_IDEX[9]          ; 3.608 ;    ;    ; 3.608 ;
+; clock             ; R2Reg_IDEX[10]         ; 3.733 ;    ;    ; 3.733 ;
+; clock             ; R2Reg_IDEX[11]         ; 4.069 ;    ;    ; 4.069 ;
+; clock             ; R2Reg_IDEX[12]         ; 3.563 ;    ;    ; 3.563 ;
+; clock             ; R2Reg_IDEX[13]         ; 4.056 ;    ;    ; 4.056 ;
+; clock             ; R2Reg_IDEX[14]         ; 3.814 ;    ;    ; 3.814 ;
+; clock             ; R2Reg_IDEX[15]         ; 3.516 ;    ;    ; 3.516 ;
+; clock             ; immediate16_IDEX[0]    ; 3.364 ;    ;    ; 3.364 ;
+; clock             ; immediate16_IDEX[1]    ; 3.651 ;    ;    ; 3.651 ;
+; clock             ; immediate16_IDEX[2]    ; 3.901 ;    ;    ; 3.901 ;
+; clock             ; immediate16_IDEX[3]    ; 3.642 ;    ;    ; 3.642 ;
+; clock             ; immediate16_IDEX[4]    ; 3.675 ;    ;    ; 3.675 ;
+; clock             ; immediate16_IDEX[5]    ; 3.604 ;    ;    ; 3.604 ;
+; clock             ; immediate16_IDEX[6]    ; 3.506 ;    ;    ; 3.506 ;
+; clock             ; immediate16_IDEX[7]    ; 4.023 ;    ;    ; 4.023 ;
+; clock             ; immediate16_IDEX[8]    ; 3.618 ;    ;    ; 3.618 ;
+; clock             ; immediate16_IDEX[9]    ; 3.514 ;    ;    ; 3.514 ;
+; clock             ; immediate16_IDEX[10]   ; 3.657 ;    ;    ; 3.657 ;
+; clock             ; immediate16_IDEX[11]   ; 3.636 ;    ;    ; 3.636 ;
+; clock             ; immediate16_IDEX[12]   ; 3.737 ;    ;    ; 3.737 ;
+; clock             ; immediate16_IDEX[13]   ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; immediate16_IDEX[14]   ; 3.507 ;    ;    ; 3.507 ;
+; clock             ; immediate16_IDEX[15]   ; 3.615 ;    ;    ; 3.615 ;
+; clock             ; isBranch_IDEX          ; 3.512 ;    ;    ; 3.512 ;
+; clock             ; isEOR_IDEX             ; 4.044 ;    ;    ; 4.044 ;
+; clock             ; isJR_IDEX              ; 4.117 ;    ;    ; 4.117 ;
+; clock             ; isJump_IDEX            ; 3.811 ;    ;    ; 3.811 ;
+; clock             ; isLW_IDEX              ; 3.679 ;    ;    ; 3.679 ;
+; clock             ; isMFPC_IDEX            ; 3.644 ;    ;    ; 3.644 ;
+; clock             ; isPrintDigit_IDEX      ; 3.843 ;    ;    ; 3.843 ;
+; clock             ; isR_IDEX               ; 3.627 ;    ;    ; 3.627 ;
+; clock             ; isReadDigit_IDEX       ; 4.307 ;    ;    ; 4.307 ;
+; clock             ; isSW_IDEX              ; 4.084 ;    ;    ; 4.084 ;
+; clock             ; jumpShortAddr_IDEX[0]  ; 3.439 ;    ;    ; 3.439 ;
+; clock             ; jumpShortAddr_IDEX[1]  ; 3.614 ;    ;    ; 3.614 ;
+; clock             ; jumpShortAddr_IDEX[2]  ; 3.994 ;    ;    ; 3.994 ;
+; clock             ; jumpShortAddr_IDEX[3]  ; 3.901 ;    ;    ; 3.901 ;
+; clock             ; jumpShortAddr_IDEX[4]  ; 3.374 ;    ;    ; 3.374 ;
+; clock             ; jumpShortAddr_IDEX[5]  ; 3.634 ;    ;    ; 3.634 ;
+; clock             ; jumpShortAddr_IDEX[6]  ; 4.144 ;    ;    ; 4.144 ;
+; clock             ; jumpShortAddr_IDEX[7]  ; 3.534 ;    ;    ; 3.534 ;
+; clock             ; jumpShortAddr_IDEX[8]  ; 4.132 ;    ;    ; 4.132 ;
+; clock             ; jumpShortAddr_IDEX[9]  ; 3.620 ;    ;    ; 3.620 ;
+; clock             ; jumpShortAddr_IDEX[10] ; 3.673 ;    ;    ; 3.673 ;
+; clock             ; jumpShortAddr_IDEX[11] ; 3.679 ;    ;    ; 3.679 ;
+; clock             ; wasJumpOut_IDEX        ; 3.532 ;    ;    ; 3.532 ;
+; immediate16[0]    ; immediate16_IDEX[0]    ; 4.969 ;    ;    ; 4.969 ;
+; immediate16[1]    ; immediate16_IDEX[1]    ; 5.030 ;    ;    ; 5.030 ;
+; immediate16[2]    ; immediate16_IDEX[2]    ; 5.171 ;    ;    ; 5.171 ;
+; immediate16[3]    ; immediate16_IDEX[3]    ; 5.277 ;    ;    ; 5.277 ;
+; immediate16[4]    ; immediate16_IDEX[4]    ; 5.394 ;    ;    ; 5.394 ;
+; immediate16[5]    ; immediate16_IDEX[5]    ; 5.484 ;    ;    ; 5.484 ;
+; immediate16[6]    ; immediate16_IDEX[6]    ; 5.020 ;    ;    ; 5.020 ;
+; immediate16[7]    ; immediate16_IDEX[7]    ; 5.315 ;    ;    ; 5.315 ;
+; immediate16[8]    ; immediate16_IDEX[8]    ; 5.130 ;    ;    ; 5.130 ;
+; immediate16[9]    ; immediate16_IDEX[9]    ; 5.467 ;    ;    ; 5.467 ;
+; immediate16[10]   ; immediate16_IDEX[10]   ; 5.567 ;    ;    ; 5.567 ;
+; immediate16[11]   ; immediate16_IDEX[11]   ; 5.550 ;    ;    ; 5.550 ;
+; immediate16[12]   ; immediate16_IDEX[12]   ; 5.541 ;    ;    ; 5.541 ;
+; immediate16[13]   ; immediate16_IDEX[13]   ; 5.209 ;    ;    ; 5.209 ;
+; immediate16[14]   ; immediate16_IDEX[14]   ; 5.254 ;    ;    ; 5.254 ;
+; immediate16[15]   ; immediate16_IDEX[15]   ; 5.418 ;    ;    ; 5.418 ;
+; isBranch          ; isBranch_IDEX          ; 5.587 ;    ;    ; 5.587 ;
+; isEOR             ; isEOR_IDEX             ; 3.706 ;    ;    ; 3.706 ;
+; isJR              ; isJR_IDEX              ; 5.265 ;    ;    ; 5.265 ;
+; isJump            ; isJump_IDEX            ; 5.469 ;    ;    ; 5.469 ;
+; isLW              ; isLW_IDEX              ; 5.648 ;    ;    ; 5.648 ;
+; isMFPC            ; isMFPC_IDEX            ; 5.453 ;    ;    ; 5.453 ;
+; isPrintDigit      ; isPrintDigit_IDEX      ; 5.592 ;    ;    ; 5.592 ;
+; isR               ; isR_IDEX               ; 5.306 ;    ;    ; 5.306 ;
+; isReadDigit       ; isReadDigit_IDEX       ; 5.546 ;    ;    ; 5.546 ;
+; isSW              ; isSW_IDEX              ; 5.298 ;    ;    ; 5.298 ;
+; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]  ; 5.385 ;    ;    ; 5.385 ;
+; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]  ; 5.294 ;    ;    ; 5.294 ;
+; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]  ; 5.228 ;    ;    ; 5.228 ;
+; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]  ; 5.140 ;    ;    ; 5.140 ;
+; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]  ; 5.315 ;    ;    ; 5.315 ;
+; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]  ; 5.415 ;    ;    ; 5.415 ;
+; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]  ; 5.277 ;    ;    ; 5.277 ;
+; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]  ; 5.534 ;    ;    ; 5.534 ;
+; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]  ; 5.253 ;    ;    ; 5.253 ;
+; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]  ; 5.555 ;    ;    ; 5.555 ;
+; jumpShortAddr[10] ; jumpShortAddr_IDEX[10] ; 5.821 ;    ;    ; 5.821 ;
+; jumpShortAddr[11] ; jumpShortAddr_IDEX[11] ; 5.188 ;    ;    ; 5.188 ;
+; wasJumpOut        ; wasJumpOut_IDEX        ; 5.333 ;    ;    ; 5.333 ;
++-------------------+------------------------+-------+----+----+-------+
+
+
++----------------------------------------------------------------------+
+; Minimum Propagation Delay                                            ;
++-------------------+------------------------+-------+----+----+-------+
+; Input Port        ; Output Port            ; RR    ; RF ; FR ; FF    ;
++-------------------+------------------------+-------+----+----+-------+
+; ALUFunc[0]        ; ALUFunc_IDEX[0]        ; 5.482 ;    ;    ; 5.482 ;
+; ALUFunc[1]        ; ALUFunc_IDEX[1]        ; 5.140 ;    ;    ; 5.140 ;
+; ALUFunc[2]        ; ALUFunc_IDEX[2]        ; 5.804 ;    ;    ; 5.804 ;
+; ALUFunc[3]        ; ALUFunc_IDEX[3]        ; 5.047 ;    ;    ; 5.047 ;
+; R1AD[0]           ; R1AD_IDEX[0]           ; 5.468 ;    ;    ; 5.468 ;
+; R1AD[1]           ; R1AD_IDEX[1]           ; 5.418 ;    ;    ; 5.418 ;
+; R1AD[2]           ; R1AD_IDEX[2]           ; 5.027 ;    ;    ; 5.027 ;
+; R1Reg[0]          ; R1Reg_IDEX[0]          ; 5.287 ;    ;    ; 5.287 ;
+; R1Reg[1]          ; R1Reg_IDEX[1]          ; 5.452 ;    ;    ; 5.452 ;
+; R1Reg[2]          ; R1Reg_IDEX[2]          ; 5.093 ;    ;    ; 5.093 ;
+; R1Reg[3]          ; R1Reg_IDEX[3]          ; 5.443 ;    ;    ; 5.443 ;
+; R1Reg[4]          ; R1Reg_IDEX[4]          ; 5.400 ;    ;    ; 5.400 ;
+; R1Reg[5]          ; R1Reg_IDEX[5]          ; 5.448 ;    ;    ; 5.448 ;
+; R1Reg[6]          ; R1Reg_IDEX[6]          ; 5.233 ;    ;    ; 5.233 ;
+; R1Reg[7]          ; R1Reg_IDEX[7]          ; 5.488 ;    ;    ; 5.488 ;
+; R1Reg[8]          ; R1Reg_IDEX[8]          ; 5.347 ;    ;    ; 5.347 ;
+; R1Reg[9]          ; R1Reg_IDEX[9]          ; 5.694 ;    ;    ; 5.694 ;
+; R1Reg[10]         ; R1Reg_IDEX[10]         ; 5.020 ;    ;    ; 5.020 ;
+; R1Reg[11]         ; R1Reg_IDEX[11]         ; 5.132 ;    ;    ; 5.132 ;
+; R1Reg[12]         ; R1Reg_IDEX[12]         ; 5.312 ;    ;    ; 5.312 ;
+; R1Reg[13]         ; R1Reg_IDEX[13]         ; 5.285 ;    ;    ; 5.285 ;
+; R1Reg[14]         ; R1Reg_IDEX[14]         ; 5.414 ;    ;    ; 5.414 ;
+; R1Reg[15]         ; R1Reg_IDEX[15]         ; 5.235 ;    ;    ; 5.235 ;
+; R2AD[0]           ; R2AD_IDEX[0]           ; 5.349 ;    ;    ; 5.349 ;
+; R2AD[1]           ; R2AD_IDEX[1]           ; 5.439 ;    ;    ; 5.439 ;
+; R2AD[2]           ; R2AD_IDEX[2]           ; 5.107 ;    ;    ; 5.107 ;
+; R2Reg[0]          ; R2Reg_IDEX[0]          ; 5.294 ;    ;    ; 5.294 ;
+; R2Reg[1]          ; R2Reg_IDEX[1]          ; 5.419 ;    ;    ; 5.419 ;
+; R2Reg[2]          ; R2Reg_IDEX[2]          ; 5.213 ;    ;    ; 5.213 ;
+; R2Reg[3]          ; R2Reg_IDEX[3]          ; 5.352 ;    ;    ; 5.352 ;
+; R2Reg[4]          ; R2Reg_IDEX[4]          ; 5.307 ;    ;    ; 5.307 ;
+; R2Reg[5]          ; R2Reg_IDEX[5]          ; 5.564 ;    ;    ; 5.564 ;
+; R2Reg[6]          ; R2Reg_IDEX[6]          ; 5.137 ;    ;    ; 5.137 ;
+; R2Reg[7]          ; R2Reg_IDEX[7]          ; 5.359 ;    ;    ; 5.359 ;
+; R2Reg[8]          ; R2Reg_IDEX[8]          ; 4.950 ;    ;    ; 4.950 ;
+; R2Reg[9]          ; R2Reg_IDEX[9]          ; 5.361 ;    ;    ; 5.361 ;
+; R2Reg[10]         ; R2Reg_IDEX[10]         ; 5.359 ;    ;    ; 5.359 ;
+; R2Reg[11]         ; R2Reg_IDEX[11]         ; 5.262 ;    ;    ; 5.262 ;
+; R2Reg[12]         ; R2Reg_IDEX[12]         ; 5.171 ;    ;    ; 5.171 ;
+; R2Reg[13]         ; R2Reg_IDEX[13]         ; 5.141 ;    ;    ; 5.141 ;
+; R2Reg[14]         ; R2Reg_IDEX[14]         ; 5.737 ;    ;    ; 5.737 ;
+; R2Reg[15]         ; R2Reg_IDEX[15]         ; 5.322 ;    ;    ; 5.322 ;
+; clock             ; ALUFunc_IDEX[0]        ; 3.523 ;    ;    ; 3.523 ;
+; clock             ; ALUFunc_IDEX[1]        ; 3.589 ;    ;    ; 3.589 ;
+; clock             ; ALUFunc_IDEX[2]        ; 3.786 ;    ;    ; 3.786 ;
+; clock             ; ALUFunc_IDEX[3]        ; 3.955 ;    ;    ; 3.955 ;
+; clock             ; R1AD_IDEX[0]           ; 3.552 ;    ;    ; 3.552 ;
+; clock             ; R1AD_IDEX[1]           ; 3.646 ;    ;    ; 3.646 ;
+; clock             ; R1AD_IDEX[2]           ; 3.661 ;    ;    ; 3.661 ;
+; clock             ; R1Reg_IDEX[0]          ; 4.076 ;    ;    ; 4.076 ;
+; clock             ; R1Reg_IDEX[1]          ; 3.803 ;    ;    ; 3.803 ;
+; clock             ; R1Reg_IDEX[2]          ; 3.606 ;    ;    ; 3.606 ;
+; clock             ; R1Reg_IDEX[3]          ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[4]          ; 3.683 ;    ;    ; 3.683 ;
+; clock             ; R1Reg_IDEX[5]          ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; R1Reg_IDEX[6]          ; 4.104 ;    ;    ; 4.104 ;
+; clock             ; R1Reg_IDEX[7]          ; 3.806 ;    ;    ; 3.806 ;
+; clock             ; R1Reg_IDEX[8]          ; 3.721 ;    ;    ; 3.721 ;
+; clock             ; R1Reg_IDEX[9]          ; 3.798 ;    ;    ; 3.798 ;
+; clock             ; R1Reg_IDEX[10]         ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[11]         ; 3.649 ;    ;    ; 3.649 ;
+; clock             ; R1Reg_IDEX[12]         ; 3.649 ;    ;    ; 3.649 ;
+; clock             ; R1Reg_IDEX[13]         ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[14]         ; 3.737 ;    ;    ; 3.737 ;
+; clock             ; R1Reg_IDEX[15]         ; 3.723 ;    ;    ; 3.723 ;
+; clock             ; R2AD_IDEX[0]           ; 3.410 ;    ;    ; 3.410 ;
+; clock             ; R2AD_IDEX[1]           ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; R2AD_IDEX[2]           ; 3.620 ;    ;    ; 3.620 ;
+; clock             ; R2Reg_IDEX[0]          ; 4.130 ;    ;    ; 4.130 ;
+; clock             ; R2Reg_IDEX[1]          ; 3.453 ;    ;    ; 3.453 ;
+; clock             ; R2Reg_IDEX[2]          ; 3.604 ;    ;    ; 3.604 ;
+; clock             ; R2Reg_IDEX[3]          ; 3.667 ;    ;    ; 3.667 ;
+; clock             ; R2Reg_IDEX[4]          ; 3.684 ;    ;    ; 3.684 ;
+; clock             ; R2Reg_IDEX[5]          ; 3.858 ;    ;    ; 3.858 ;
+; clock             ; R2Reg_IDEX[6]          ; 3.640 ;    ;    ; 3.640 ;
+; clock             ; R2Reg_IDEX[7]          ; 3.410 ;    ;    ; 3.410 ;
+; clock             ; R2Reg_IDEX[8]          ; 3.556 ;    ;    ; 3.556 ;
+; clock             ; R2Reg_IDEX[9]          ; 3.608 ;    ;    ; 3.608 ;
+; clock             ; R2Reg_IDEX[10]         ; 3.733 ;    ;    ; 3.733 ;
+; clock             ; R2Reg_IDEX[11]         ; 4.069 ;    ;    ; 4.069 ;
+; clock             ; R2Reg_IDEX[12]         ; 3.563 ;    ;    ; 3.563 ;
+; clock             ; R2Reg_IDEX[13]         ; 4.056 ;    ;    ; 4.056 ;
+; clock             ; R2Reg_IDEX[14]         ; 3.814 ;    ;    ; 3.814 ;
+; clock             ; R2Reg_IDEX[15]         ; 3.516 ;    ;    ; 3.516 ;
+; clock             ; immediate16_IDEX[0]    ; 3.364 ;    ;    ; 3.364 ;
+; clock             ; immediate16_IDEX[1]    ; 3.651 ;    ;    ; 3.651 ;
+; clock             ; immediate16_IDEX[2]    ; 3.901 ;    ;    ; 3.901 ;
+; clock             ; immediate16_IDEX[3]    ; 3.642 ;    ;    ; 3.642 ;
+; clock             ; immediate16_IDEX[4]    ; 3.675 ;    ;    ; 3.675 ;
+; clock             ; immediate16_IDEX[5]    ; 3.604 ;    ;    ; 3.604 ;
+; clock             ; immediate16_IDEX[6]    ; 3.506 ;    ;    ; 3.506 ;
+; clock             ; immediate16_IDEX[7]    ; 4.023 ;    ;    ; 4.023 ;
+; clock             ; immediate16_IDEX[8]    ; 3.618 ;    ;    ; 3.618 ;
+; clock             ; immediate16_IDEX[9]    ; 3.514 ;    ;    ; 3.514 ;
+; clock             ; immediate16_IDEX[10]   ; 3.657 ;    ;    ; 3.657 ;
+; clock             ; immediate16_IDEX[11]   ; 3.636 ;    ;    ; 3.636 ;
+; clock             ; immediate16_IDEX[12]   ; 3.737 ;    ;    ; 3.737 ;
+; clock             ; immediate16_IDEX[13]   ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; immediate16_IDEX[14]   ; 3.507 ;    ;    ; 3.507 ;
+; clock             ; immediate16_IDEX[15]   ; 3.615 ;    ;    ; 3.615 ;
+; clock             ; isBranch_IDEX          ; 3.512 ;    ;    ; 3.512 ;
+; clock             ; isEOR_IDEX             ; 4.044 ;    ;    ; 4.044 ;
+; clock             ; isJR_IDEX              ; 4.117 ;    ;    ; 4.117 ;
+; clock             ; isJump_IDEX            ; 3.811 ;    ;    ; 3.811 ;
+; clock             ; isLW_IDEX              ; 3.679 ;    ;    ; 3.679 ;
+; clock             ; isMFPC_IDEX            ; 3.644 ;    ;    ; 3.644 ;
+; clock             ; isPrintDigit_IDEX      ; 3.843 ;    ;    ; 3.843 ;
+; clock             ; isR_IDEX               ; 3.627 ;    ;    ; 3.627 ;
+; clock             ; isReadDigit_IDEX       ; 4.307 ;    ;    ; 4.307 ;
+; clock             ; isSW_IDEX              ; 4.084 ;    ;    ; 4.084 ;
+; clock             ; jumpShortAddr_IDEX[0]  ; 3.439 ;    ;    ; 3.439 ;
+; clock             ; jumpShortAddr_IDEX[1]  ; 3.614 ;    ;    ; 3.614 ;
+; clock             ; jumpShortAddr_IDEX[2]  ; 3.994 ;    ;    ; 3.994 ;
+; clock             ; jumpShortAddr_IDEX[3]  ; 3.901 ;    ;    ; 3.901 ;
+; clock             ; jumpShortAddr_IDEX[4]  ; 3.374 ;    ;    ; 3.374 ;
+; clock             ; jumpShortAddr_IDEX[5]  ; 3.634 ;    ;    ; 3.634 ;
+; clock             ; jumpShortAddr_IDEX[6]  ; 4.144 ;    ;    ; 4.144 ;
+; clock             ; jumpShortAddr_IDEX[7]  ; 3.534 ;    ;    ; 3.534 ;
+; clock             ; jumpShortAddr_IDEX[8]  ; 4.132 ;    ;    ; 4.132 ;
+; clock             ; jumpShortAddr_IDEX[9]  ; 3.620 ;    ;    ; 3.620 ;
+; clock             ; jumpShortAddr_IDEX[10] ; 3.673 ;    ;    ; 3.673 ;
+; clock             ; jumpShortAddr_IDEX[11] ; 3.679 ;    ;    ; 3.679 ;
+; clock             ; wasJumpOut_IDEX        ; 3.532 ;    ;    ; 3.532 ;
+; immediate16[0]    ; immediate16_IDEX[0]    ; 4.969 ;    ;    ; 4.969 ;
+; immediate16[1]    ; immediate16_IDEX[1]    ; 5.030 ;    ;    ; 5.030 ;
+; immediate16[2]    ; immediate16_IDEX[2]    ; 5.171 ;    ;    ; 5.171 ;
+; immediate16[3]    ; immediate16_IDEX[3]    ; 5.277 ;    ;    ; 5.277 ;
+; immediate16[4]    ; immediate16_IDEX[4]    ; 5.394 ;    ;    ; 5.394 ;
+; immediate16[5]    ; immediate16_IDEX[5]    ; 5.484 ;    ;    ; 5.484 ;
+; immediate16[6]    ; immediate16_IDEX[6]    ; 5.020 ;    ;    ; 5.020 ;
+; immediate16[7]    ; immediate16_IDEX[7]    ; 5.315 ;    ;    ; 5.315 ;
+; immediate16[8]    ; immediate16_IDEX[8]    ; 5.130 ;    ;    ; 5.130 ;
+; immediate16[9]    ; immediate16_IDEX[9]    ; 5.467 ;    ;    ; 5.467 ;
+; immediate16[10]   ; immediate16_IDEX[10]   ; 5.567 ;    ;    ; 5.567 ;
+; immediate16[11]   ; immediate16_IDEX[11]   ; 5.550 ;    ;    ; 5.550 ;
+; immediate16[12]   ; immediate16_IDEX[12]   ; 5.541 ;    ;    ; 5.541 ;
+; immediate16[13]   ; immediate16_IDEX[13]   ; 5.209 ;    ;    ; 5.209 ;
+; immediate16[14]   ; immediate16_IDEX[14]   ; 5.254 ;    ;    ; 5.254 ;
+; immediate16[15]   ; immediate16_IDEX[15]   ; 5.418 ;    ;    ; 5.418 ;
+; isBranch          ; isBranch_IDEX          ; 5.587 ;    ;    ; 5.587 ;
+; isEOR             ; isEOR_IDEX             ; 3.706 ;    ;    ; 3.706 ;
+; isJR              ; isJR_IDEX              ; 5.265 ;    ;    ; 5.265 ;
+; isJump            ; isJump_IDEX            ; 5.469 ;    ;    ; 5.469 ;
+; isLW              ; isLW_IDEX              ; 5.648 ;    ;    ; 5.648 ;
+; isMFPC            ; isMFPC_IDEX            ; 5.453 ;    ;    ; 5.453 ;
+; isPrintDigit      ; isPrintDigit_IDEX      ; 5.592 ;    ;    ; 5.592 ;
+; isR               ; isR_IDEX               ; 5.306 ;    ;    ; 5.306 ;
+; isReadDigit       ; isReadDigit_IDEX       ; 5.546 ;    ;    ; 5.546 ;
+; isSW              ; isSW_IDEX              ; 5.298 ;    ;    ; 5.298 ;
+; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]  ; 5.385 ;    ;    ; 5.385 ;
+; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]  ; 5.294 ;    ;    ; 5.294 ;
+; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]  ; 5.228 ;    ;    ; 5.228 ;
+; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]  ; 5.140 ;    ;    ; 5.140 ;
+; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]  ; 5.315 ;    ;    ; 5.315 ;
+; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]  ; 5.415 ;    ;    ; 5.415 ;
+; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]  ; 5.277 ;    ;    ; 5.277 ;
+; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]  ; 5.534 ;    ;    ; 5.534 ;
+; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]  ; 5.253 ;    ;    ; 5.253 ;
+; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]  ; 5.555 ;    ;    ; 5.555 ;
+; jumpShortAddr[10] ; jumpShortAddr_IDEX[10] ; 5.821 ;    ;    ; 5.821 ;
+; jumpShortAddr[11] ; jumpShortAddr_IDEX[11] ; 5.188 ;    ;    ; 5.188 ;
+; wasJumpOut        ; wasJumpOut_IDEX        ; 5.333 ;    ;    ; 5.333 ;
++-------------------+------------------------+-------+----+----+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------+
+; Progagation Delay                                                      ;
++-------------------+------------------------+--------+----+----+--------+
+; Input Port        ; Output Port            ; RR     ; RF ; FR ; FF     ;
++-------------------+------------------------+--------+----+----+--------+
+; ALUFunc[0]        ; ALUFunc_IDEX[0]        ; 9.892  ;    ;    ; 9.892  ;
+; ALUFunc[1]        ; ALUFunc_IDEX[1]        ; 9.105  ;    ;    ; 9.105  ;
+; ALUFunc[2]        ; ALUFunc_IDEX[2]        ; 10.595 ;    ;    ; 10.595 ;
+; ALUFunc[3]        ; ALUFunc_IDEX[3]        ; 8.961  ;    ;    ; 8.961  ;
+; R1AD[0]           ; R1AD_IDEX[0]           ; 9.907  ;    ;    ; 9.907  ;
+; R1AD[1]           ; R1AD_IDEX[1]           ; 9.732  ;    ;    ; 9.732  ;
+; R1AD[2]           ; R1AD_IDEX[2]           ; 8.892  ;    ;    ; 8.892  ;
+; R1Reg[0]          ; R1Reg_IDEX[0]          ; 9.482  ;    ;    ; 9.482  ;
+; R1Reg[1]          ; R1Reg_IDEX[1]          ; 9.750  ;    ;    ; 9.750  ;
+; R1Reg[2]          ; R1Reg_IDEX[2]          ; 8.986  ;    ;    ; 8.986  ;
+; R1Reg[3]          ; R1Reg_IDEX[3]          ; 9.856  ;    ;    ; 9.856  ;
+; R1Reg[4]          ; R1Reg_IDEX[4]          ; 9.706  ;    ;    ; 9.706  ;
+; R1Reg[5]          ; R1Reg_IDEX[5]          ; 9.946  ;    ;    ; 9.946  ;
+; R1Reg[6]          ; R1Reg_IDEX[6]          ; 9.310  ;    ;    ; 9.310  ;
+; R1Reg[7]          ; R1Reg_IDEX[7]          ; 9.812  ;    ;    ; 9.812  ;
+; R1Reg[8]          ; R1Reg_IDEX[8]          ; 9.630  ;    ;    ; 9.630  ;
+; R1Reg[9]          ; R1Reg_IDEX[9]          ; 10.342 ;    ;    ; 10.342 ;
+; R1Reg[10]         ; R1Reg_IDEX[10]         ; 8.879  ;    ;    ; 8.879  ;
+; R1Reg[11]         ; R1Reg_IDEX[11]         ; 9.152  ;    ;    ; 9.152  ;
+; R1Reg[12]         ; R1Reg_IDEX[12]         ; 9.487  ;    ;    ; 9.487  ;
+; R1Reg[13]         ; R1Reg_IDEX[13]         ; 9.460  ;    ;    ; 9.460  ;
+; R1Reg[14]         ; R1Reg_IDEX[14]         ; 9.718  ;    ;    ; 9.718  ;
+; R1Reg[15]         ; R1Reg_IDEX[15]         ; 9.320  ;    ;    ; 9.320  ;
+; R2AD[0]           ; R2AD_IDEX[0]           ; 9.579  ;    ;    ; 9.579  ;
+; R2AD[1]           ; R2AD_IDEX[1]           ; 9.768  ;    ;    ; 9.768  ;
+; R2AD[2]           ; R2AD_IDEX[2]           ; 9.129  ;    ;    ; 9.129  ;
+; R2Reg[0]          ; R2Reg_IDEX[0]          ; 9.371  ;    ;    ; 9.371  ;
+; R2Reg[1]          ; R2Reg_IDEX[1]          ; 9.735  ;    ;    ; 9.735  ;
+; R2Reg[2]          ; R2Reg_IDEX[2]          ; 9.340  ;    ;    ; 9.340  ;
+; R2Reg[3]          ; R2Reg_IDEX[3]          ; 9.635  ;    ;    ; 9.635  ;
+; R2Reg[4]          ; R2Reg_IDEX[4]          ; 9.554  ;    ;    ; 9.554  ;
+; R2Reg[5]          ; R2Reg_IDEX[5]          ; 9.997  ;    ;    ; 9.997  ;
+; R2Reg[6]          ; R2Reg_IDEX[6]          ; 9.157  ;    ;    ; 9.157  ;
+; R2Reg[7]          ; R2Reg_IDEX[7]          ; 9.625  ;    ;    ; 9.625  ;
+; R2Reg[8]          ; R2Reg_IDEX[8]          ; 8.747  ;    ;    ; 8.747  ;
+; R2Reg[9]          ; R2Reg_IDEX[9]          ; 9.728  ;    ;    ; 9.728  ;
+; R2Reg[10]         ; R2Reg_IDEX[10]         ; 9.581  ;    ;    ; 9.581  ;
+; R2Reg[11]         ; R2Reg_IDEX[11]         ; 9.440  ;    ;    ; 9.440  ;
+; R2Reg[12]         ; R2Reg_IDEX[12]         ; 9.264  ;    ;    ; 9.264  ;
+; R2Reg[13]         ; R2Reg_IDEX[13]         ; 9.148  ;    ;    ; 9.148  ;
+; R2Reg[14]         ; R2Reg_IDEX[14]         ; 10.443 ;    ;    ; 10.443 ;
+; R2Reg[15]         ; R2Reg_IDEX[15]         ; 9.575  ;    ;    ; 9.575  ;
+; clock             ; ALUFunc_IDEX[0]        ; 6.720  ;    ;    ; 6.720  ;
+; clock             ; ALUFunc_IDEX[1]        ; 6.791  ;    ;    ; 6.791  ;
+; clock             ; ALUFunc_IDEX[2]        ; 7.198  ;    ;    ; 7.198  ;
+; clock             ; ALUFunc_IDEX[3]        ; 7.408  ;    ;    ; 7.408  ;
+; clock             ; R1AD_IDEX[0]           ; 6.719  ;    ;    ; 6.719  ;
+; clock             ; R1AD_IDEX[1]           ; 6.869  ;    ;    ; 6.869  ;
+; clock             ; R1AD_IDEX[2]           ; 6.905  ;    ;    ; 6.905  ;
+; clock             ; R1Reg_IDEX[0]          ; 7.593  ;    ;    ; 7.593  ;
+; clock             ; R1Reg_IDEX[1]          ; 7.135  ;    ;    ; 7.135  ;
+; clock             ; R1Reg_IDEX[2]          ; 6.735  ;    ;    ; 6.735  ;
+; clock             ; R1Reg_IDEX[3]          ; 6.949  ;    ;    ; 6.949  ;
+; clock             ; R1Reg_IDEX[4]          ; 6.935  ;    ;    ; 6.935  ;
+; clock             ; R1Reg_IDEX[5]          ; 6.880  ;    ;    ; 6.880  ;
+; clock             ; R1Reg_IDEX[6]          ; 7.719  ;    ;    ; 7.719  ;
+; clock             ; R1Reg_IDEX[7]          ; 7.138  ;    ;    ; 7.138  ;
+; clock             ; R1Reg_IDEX[8]          ; 7.059  ;    ;    ; 7.059  ;
+; clock             ; R1Reg_IDEX[9]          ; 7.208  ;    ;    ; 7.208  ;
+; clock             ; R1Reg_IDEX[10]         ; 6.930  ;    ;    ; 6.930  ;
+; clock             ; R1Reg_IDEX[11]         ; 6.887  ;    ;    ; 6.887  ;
+; clock             ; R1Reg_IDEX[12]         ; 6.900  ;    ;    ; 6.900  ;
+; clock             ; R1Reg_IDEX[13]         ; 6.907  ;    ;    ; 6.907  ;
+; clock             ; R1Reg_IDEX[14]         ; 7.122  ;    ;    ; 7.122  ;
+; clock             ; R1Reg_IDEX[15]         ; 7.096  ;    ;    ; 7.096  ;
+; clock             ; R2AD_IDEX[0]           ; 6.489  ;    ;    ; 6.489  ;
+; clock             ; R2AD_IDEX[1]           ; 6.890  ;    ;    ; 6.890  ;
+; clock             ; R2AD_IDEX[2]           ; 6.864  ;    ;    ; 6.864  ;
+; clock             ; R2Reg_IDEX[0]          ; 7.746  ;    ;    ; 7.746  ;
+; clock             ; R2Reg_IDEX[1]          ; 6.644  ;    ;    ; 6.644  ;
+; clock             ; R2Reg_IDEX[2]          ; 6.787  ;    ;    ; 6.787  ;
+; clock             ; R2Reg_IDEX[3]          ; 6.955  ;    ;    ; 6.955  ;
+; clock             ; R2Reg_IDEX[4]          ; 7.055  ;    ;    ; 7.055  ;
+; clock             ; R2Reg_IDEX[5]          ; 7.381  ;    ;    ; 7.381  ;
+; clock             ; R2Reg_IDEX[6]          ; 6.882  ;    ;    ; 6.882  ;
+; clock             ; R2Reg_IDEX[7]          ; 6.484  ;    ;    ; 6.484  ;
+; clock             ; R2Reg_IDEX[8]          ; 6.732  ;    ;    ; 6.732  ;
+; clock             ; R2Reg_IDEX[9]          ; 6.867  ;    ;    ; 6.867  ;
+; clock             ; R2Reg_IDEX[10]         ; 7.117  ;    ;    ; 7.117  ;
+; clock             ; R2Reg_IDEX[11]         ; 7.593  ;    ;    ; 7.593  ;
+; clock             ; R2Reg_IDEX[12]         ; 6.773  ;    ;    ; 6.773  ;
+; clock             ; R2Reg_IDEX[13]         ; 7.576  ;    ;    ; 7.576  ;
+; clock             ; R2Reg_IDEX[14]         ; 7.247  ;    ;    ; 7.247  ;
+; clock             ; R2Reg_IDEX[15]         ; 6.712  ;    ;    ; 6.712  ;
+; clock             ; immediate16_IDEX[0]    ; 6.439  ;    ;    ; 6.439  ;
+; clock             ; immediate16_IDEX[1]    ; 6.893  ;    ;    ; 6.893  ;
+; clock             ; immediate16_IDEX[2]    ; 7.263  ;    ;    ; 7.263  ;
+; clock             ; immediate16_IDEX[3]    ; 6.893  ;    ;    ; 6.893  ;
+; clock             ; immediate16_IDEX[4]    ; 6.975  ;    ;    ; 6.975  ;
+; clock             ; immediate16_IDEX[5]    ; 6.774  ;    ;    ; 6.774  ;
+; clock             ; immediate16_IDEX[6]    ; 6.598  ;    ;    ; 6.598  ;
+; clock             ; immediate16_IDEX[7]    ; 7.552  ;    ;    ; 7.552  ;
+; clock             ; immediate16_IDEX[8]    ; 6.873  ;    ;    ; 6.873  ;
+; clock             ; immediate16_IDEX[9]    ; 6.708  ;    ;    ; 6.708  ;
+; clock             ; immediate16_IDEX[10]   ; 6.989  ;    ;    ; 6.989  ;
+; clock             ; immediate16_IDEX[11]   ; 6.967  ;    ;    ; 6.967  ;
+; clock             ; immediate16_IDEX[12]   ; 7.117  ;    ;    ; 7.117  ;
+; clock             ; immediate16_IDEX[13]   ; 6.891  ;    ;    ; 6.891  ;
+; clock             ; immediate16_IDEX[14]   ; 6.701  ;    ;    ; 6.701  ;
+; clock             ; immediate16_IDEX[15]   ; 6.868  ;    ;    ; 6.868  ;
+; clock             ; isBranch_IDEX          ; 6.712  ;    ;    ; 6.712  ;
+; clock             ; isEOR_IDEX             ; 7.560  ;    ;    ; 7.560  ;
+; clock             ; isJR_IDEX              ; 7.736  ;    ;    ; 7.736  ;
+; clock             ; isJump_IDEX            ; 7.153  ;    ;    ; 7.153  ;
+; clock             ; isLW_IDEX              ; 6.967  ;    ;    ; 6.967  ;
+; clock             ; isMFPC_IDEX            ; 6.895  ;    ;    ; 6.895  ;
+; clock             ; isPrintDigit_IDEX      ; 7.350  ;    ;    ; 7.350  ;
+; clock             ; isR_IDEX               ; 6.879  ;    ;    ; 6.879  ;
+; clock             ; isReadDigit_IDEX       ; 8.085  ;    ;    ; 8.085  ;
+; clock             ; isSW_IDEX              ; 7.609  ;    ;    ; 7.609  ;
+; clock             ; jumpShortAddr_IDEX[0]  ; 6.511  ;    ;    ; 6.511  ;
+; clock             ; jumpShortAddr_IDEX[1]  ; 6.866  ;    ;    ; 6.866  ;
+; clock             ; jumpShortAddr_IDEX[2]  ; 7.445  ;    ;    ; 7.445  ;
+; clock             ; jumpShortAddr_IDEX[3]  ; 7.263  ;    ;    ; 7.263  ;
+; clock             ; jumpShortAddr_IDEX[4]  ; 6.450  ;    ;    ; 6.450  ;
+; clock             ; jumpShortAddr_IDEX[5]  ; 6.897  ;    ;    ; 6.897  ;
+; clock             ; jumpShortAddr_IDEX[6]  ; 7.768  ;    ;    ; 7.768  ;
+; clock             ; jumpShortAddr_IDEX[7]  ; 6.729  ;    ;    ; 6.729  ;
+; clock             ; jumpShortAddr_IDEX[8]  ; 7.748  ;    ;    ; 7.748  ;
+; clock             ; jumpShortAddr_IDEX[9]  ; 6.940  ;    ;    ; 6.940  ;
+; clock             ; jumpShortAddr_IDEX[10] ; 7.024  ;    ;    ; 7.024  ;
+; clock             ; jumpShortAddr_IDEX[11] ; 6.929  ;    ;    ; 6.929  ;
+; clock             ; wasJumpOut_IDEX        ; 6.734  ;    ;    ; 6.734  ;
+; immediate16[0]    ; immediate16_IDEX[0]    ; 8.701  ;    ;    ; 8.701  ;
+; immediate16[1]    ; immediate16_IDEX[1]    ; 8.898  ;    ;    ; 8.898  ;
+; immediate16[2]    ; immediate16_IDEX[2]    ; 9.213  ;    ;    ; 9.213  ;
+; immediate16[3]    ; immediate16_IDEX[3]    ; 9.476  ;    ;    ; 9.476  ;
+; immediate16[4]    ; immediate16_IDEX[4]    ; 9.713  ;    ;    ; 9.713  ;
+; immediate16[5]    ; immediate16_IDEX[5]    ; 9.890  ;    ;    ; 9.890  ;
+; immediate16[6]    ; immediate16_IDEX[6]    ; 8.897  ;    ;    ; 8.897  ;
+; immediate16[7]    ; immediate16_IDEX[7]    ; 9.525  ;    ;    ; 9.525  ;
+; immediate16[8]    ; immediate16_IDEX[8]    ; 9.139  ;    ;    ; 9.139  ;
+; immediate16[9]    ; immediate16_IDEX[9]    ; 9.870  ;    ;    ; 9.870  ;
+; immediate16[10]   ; immediate16_IDEX[10]   ; 10.034 ;    ;    ; 10.034 ;
+; immediate16[11]   ; immediate16_IDEX[11]   ; 10.064 ;    ;    ; 10.064 ;
+; immediate16[12]   ; immediate16_IDEX[12]   ; 9.976  ;    ;    ; 9.976  ;
+; immediate16[13]   ; immediate16_IDEX[13]   ; 9.274  ;    ;    ; 9.274  ;
+; immediate16[14]   ; immediate16_IDEX[14]   ; 9.389  ;    ;    ; 9.389  ;
+; immediate16[15]   ; immediate16_IDEX[15]   ; 9.874  ;    ;    ; 9.874  ;
+; isBranch          ; isBranch_IDEX          ; 10.118 ;    ;    ; 10.118 ;
+; isEOR             ; isEOR_IDEX             ; 7.043  ;    ;    ; 7.043  ;
+; isJR              ; isJR_IDEX              ; 9.345  ;    ;    ; 9.345  ;
+; isJump            ; isJump_IDEX            ; 9.776  ;    ;    ; 9.776  ;
+; isLW              ; isLW_IDEX              ; 10.213 ;    ;    ; 10.213 ;
+; isMFPC            ; isMFPC_IDEX            ; 9.929  ;    ;    ; 9.929  ;
+; isPrintDigit      ; isPrintDigit_IDEX      ; 10.041 ;    ;    ; 10.041 ;
+; isR               ; isR_IDEX               ; 9.535  ;    ;    ; 9.535  ;
+; isReadDigit       ; isReadDigit_IDEX       ; 10.005 ;    ;    ; 10.005 ;
+; isSW              ; isSW_IDEX              ; 9.478  ;    ;    ; 9.478  ;
+; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]  ; 9.664  ;    ;    ; 9.664  ;
+; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]  ; 9.490  ;    ;    ; 9.490  ;
+; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]  ; 9.339  ;    ;    ; 9.339  ;
+; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]  ; 9.156  ;    ;    ; 9.156  ;
+; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]  ; 9.591  ;    ;    ; 9.591  ;
+; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]  ; 9.794  ;    ;    ; 9.794  ;
+; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]  ; 9.365  ;    ;    ; 9.365  ;
+; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]  ; 10.037 ;    ;    ; 10.037 ;
+; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]  ; 9.327  ;    ;    ; 9.327  ;
+; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]  ; 10.073 ;    ;    ; 10.073 ;
+; jumpShortAddr[10] ; jumpShortAddr_IDEX[10] ; 10.647 ;    ;    ; 10.647 ;
+; jumpShortAddr[11] ; jumpShortAddr_IDEX[11] ; 9.215  ;    ;    ; 9.215  ;
+; wasJumpOut        ; wasJumpOut_IDEX        ; 9.593  ;    ;    ; 9.593  ;
++-------------------+------------------------+--------+----+----+--------+
+
+
++----------------------------------------------------------------------+
+; Minimum Progagation Delay                                            ;
++-------------------+------------------------+-------+----+----+-------+
+; Input Port        ; Output Port            ; RR    ; RF ; FR ; FF    ;
++-------------------+------------------------+-------+----+----+-------+
+; ALUFunc[0]        ; ALUFunc_IDEX[0]        ; 5.482 ;    ;    ; 5.482 ;
+; ALUFunc[1]        ; ALUFunc_IDEX[1]        ; 5.140 ;    ;    ; 5.140 ;
+; ALUFunc[2]        ; ALUFunc_IDEX[2]        ; 5.804 ;    ;    ; 5.804 ;
+; ALUFunc[3]        ; ALUFunc_IDEX[3]        ; 5.047 ;    ;    ; 5.047 ;
+; R1AD[0]           ; R1AD_IDEX[0]           ; 5.468 ;    ;    ; 5.468 ;
+; R1AD[1]           ; R1AD_IDEX[1]           ; 5.418 ;    ;    ; 5.418 ;
+; R1AD[2]           ; R1AD_IDEX[2]           ; 5.027 ;    ;    ; 5.027 ;
+; R1Reg[0]          ; R1Reg_IDEX[0]          ; 5.287 ;    ;    ; 5.287 ;
+; R1Reg[1]          ; R1Reg_IDEX[1]          ; 5.452 ;    ;    ; 5.452 ;
+; R1Reg[2]          ; R1Reg_IDEX[2]          ; 5.093 ;    ;    ; 5.093 ;
+; R1Reg[3]          ; R1Reg_IDEX[3]          ; 5.443 ;    ;    ; 5.443 ;
+; R1Reg[4]          ; R1Reg_IDEX[4]          ; 5.400 ;    ;    ; 5.400 ;
+; R1Reg[5]          ; R1Reg_IDEX[5]          ; 5.448 ;    ;    ; 5.448 ;
+; R1Reg[6]          ; R1Reg_IDEX[6]          ; 5.233 ;    ;    ; 5.233 ;
+; R1Reg[7]          ; R1Reg_IDEX[7]          ; 5.488 ;    ;    ; 5.488 ;
+; R1Reg[8]          ; R1Reg_IDEX[8]          ; 5.347 ;    ;    ; 5.347 ;
+; R1Reg[9]          ; R1Reg_IDEX[9]          ; 5.694 ;    ;    ; 5.694 ;
+; R1Reg[10]         ; R1Reg_IDEX[10]         ; 5.020 ;    ;    ; 5.020 ;
+; R1Reg[11]         ; R1Reg_IDEX[11]         ; 5.132 ;    ;    ; 5.132 ;
+; R1Reg[12]         ; R1Reg_IDEX[12]         ; 5.312 ;    ;    ; 5.312 ;
+; R1Reg[13]         ; R1Reg_IDEX[13]         ; 5.285 ;    ;    ; 5.285 ;
+; R1Reg[14]         ; R1Reg_IDEX[14]         ; 5.414 ;    ;    ; 5.414 ;
+; R1Reg[15]         ; R1Reg_IDEX[15]         ; 5.235 ;    ;    ; 5.235 ;
+; R2AD[0]           ; R2AD_IDEX[0]           ; 5.349 ;    ;    ; 5.349 ;
+; R2AD[1]           ; R2AD_IDEX[1]           ; 5.439 ;    ;    ; 5.439 ;
+; R2AD[2]           ; R2AD_IDEX[2]           ; 5.107 ;    ;    ; 5.107 ;
+; R2Reg[0]          ; R2Reg_IDEX[0]          ; 5.294 ;    ;    ; 5.294 ;
+; R2Reg[1]          ; R2Reg_IDEX[1]          ; 5.419 ;    ;    ; 5.419 ;
+; R2Reg[2]          ; R2Reg_IDEX[2]          ; 5.213 ;    ;    ; 5.213 ;
+; R2Reg[3]          ; R2Reg_IDEX[3]          ; 5.352 ;    ;    ; 5.352 ;
+; R2Reg[4]          ; R2Reg_IDEX[4]          ; 5.307 ;    ;    ; 5.307 ;
+; R2Reg[5]          ; R2Reg_IDEX[5]          ; 5.564 ;    ;    ; 5.564 ;
+; R2Reg[6]          ; R2Reg_IDEX[6]          ; 5.137 ;    ;    ; 5.137 ;
+; R2Reg[7]          ; R2Reg_IDEX[7]          ; 5.359 ;    ;    ; 5.359 ;
+; R2Reg[8]          ; R2Reg_IDEX[8]          ; 4.950 ;    ;    ; 4.950 ;
+; R2Reg[9]          ; R2Reg_IDEX[9]          ; 5.361 ;    ;    ; 5.361 ;
+; R2Reg[10]         ; R2Reg_IDEX[10]         ; 5.359 ;    ;    ; 5.359 ;
+; R2Reg[11]         ; R2Reg_IDEX[11]         ; 5.262 ;    ;    ; 5.262 ;
+; R2Reg[12]         ; R2Reg_IDEX[12]         ; 5.171 ;    ;    ; 5.171 ;
+; R2Reg[13]         ; R2Reg_IDEX[13]         ; 5.141 ;    ;    ; 5.141 ;
+; R2Reg[14]         ; R2Reg_IDEX[14]         ; 5.737 ;    ;    ; 5.737 ;
+; R2Reg[15]         ; R2Reg_IDEX[15]         ; 5.322 ;    ;    ; 5.322 ;
+; clock             ; ALUFunc_IDEX[0]        ; 3.523 ;    ;    ; 3.523 ;
+; clock             ; ALUFunc_IDEX[1]        ; 3.589 ;    ;    ; 3.589 ;
+; clock             ; ALUFunc_IDEX[2]        ; 3.786 ;    ;    ; 3.786 ;
+; clock             ; ALUFunc_IDEX[3]        ; 3.955 ;    ;    ; 3.955 ;
+; clock             ; R1AD_IDEX[0]           ; 3.552 ;    ;    ; 3.552 ;
+; clock             ; R1AD_IDEX[1]           ; 3.646 ;    ;    ; 3.646 ;
+; clock             ; R1AD_IDEX[2]           ; 3.661 ;    ;    ; 3.661 ;
+; clock             ; R1Reg_IDEX[0]          ; 4.076 ;    ;    ; 4.076 ;
+; clock             ; R1Reg_IDEX[1]          ; 3.803 ;    ;    ; 3.803 ;
+; clock             ; R1Reg_IDEX[2]          ; 3.606 ;    ;    ; 3.606 ;
+; clock             ; R1Reg_IDEX[3]          ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[4]          ; 3.683 ;    ;    ; 3.683 ;
+; clock             ; R1Reg_IDEX[5]          ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; R1Reg_IDEX[6]          ; 4.104 ;    ;    ; 4.104 ;
+; clock             ; R1Reg_IDEX[7]          ; 3.806 ;    ;    ; 3.806 ;
+; clock             ; R1Reg_IDEX[8]          ; 3.721 ;    ;    ; 3.721 ;
+; clock             ; R1Reg_IDEX[9]          ; 3.798 ;    ;    ; 3.798 ;
+; clock             ; R1Reg_IDEX[10]         ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[11]         ; 3.649 ;    ;    ; 3.649 ;
+; clock             ; R1Reg_IDEX[12]         ; 3.649 ;    ;    ; 3.649 ;
+; clock             ; R1Reg_IDEX[13]         ; 3.660 ;    ;    ; 3.660 ;
+; clock             ; R1Reg_IDEX[14]         ; 3.737 ;    ;    ; 3.737 ;
+; clock             ; R1Reg_IDEX[15]         ; 3.723 ;    ;    ; 3.723 ;
+; clock             ; R2AD_IDEX[0]           ; 3.410 ;    ;    ; 3.410 ;
+; clock             ; R2AD_IDEX[1]           ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; R2AD_IDEX[2]           ; 3.620 ;    ;    ; 3.620 ;
+; clock             ; R2Reg_IDEX[0]          ; 4.130 ;    ;    ; 4.130 ;
+; clock             ; R2Reg_IDEX[1]          ; 3.453 ;    ;    ; 3.453 ;
+; clock             ; R2Reg_IDEX[2]          ; 3.604 ;    ;    ; 3.604 ;
+; clock             ; R2Reg_IDEX[3]          ; 3.667 ;    ;    ; 3.667 ;
+; clock             ; R2Reg_IDEX[4]          ; 3.684 ;    ;    ; 3.684 ;
+; clock             ; R2Reg_IDEX[5]          ; 3.858 ;    ;    ; 3.858 ;
+; clock             ; R2Reg_IDEX[6]          ; 3.640 ;    ;    ; 3.640 ;
+; clock             ; R2Reg_IDEX[7]          ; 3.410 ;    ;    ; 3.410 ;
+; clock             ; R2Reg_IDEX[8]          ; 3.556 ;    ;    ; 3.556 ;
+; clock             ; R2Reg_IDEX[9]          ; 3.608 ;    ;    ; 3.608 ;
+; clock             ; R2Reg_IDEX[10]         ; 3.733 ;    ;    ; 3.733 ;
+; clock             ; R2Reg_IDEX[11]         ; 4.069 ;    ;    ; 4.069 ;
+; clock             ; R2Reg_IDEX[12]         ; 3.563 ;    ;    ; 3.563 ;
+; clock             ; R2Reg_IDEX[13]         ; 4.056 ;    ;    ; 4.056 ;
+; clock             ; R2Reg_IDEX[14]         ; 3.814 ;    ;    ; 3.814 ;
+; clock             ; R2Reg_IDEX[15]         ; 3.516 ;    ;    ; 3.516 ;
+; clock             ; immediate16_IDEX[0]    ; 3.364 ;    ;    ; 3.364 ;
+; clock             ; immediate16_IDEX[1]    ; 3.651 ;    ;    ; 3.651 ;
+; clock             ; immediate16_IDEX[2]    ; 3.901 ;    ;    ; 3.901 ;
+; clock             ; immediate16_IDEX[3]    ; 3.642 ;    ;    ; 3.642 ;
+; clock             ; immediate16_IDEX[4]    ; 3.675 ;    ;    ; 3.675 ;
+; clock             ; immediate16_IDEX[5]    ; 3.604 ;    ;    ; 3.604 ;
+; clock             ; immediate16_IDEX[6]    ; 3.506 ;    ;    ; 3.506 ;
+; clock             ; immediate16_IDEX[7]    ; 4.023 ;    ;    ; 4.023 ;
+; clock             ; immediate16_IDEX[8]    ; 3.618 ;    ;    ; 3.618 ;
+; clock             ; immediate16_IDEX[9]    ; 3.514 ;    ;    ; 3.514 ;
+; clock             ; immediate16_IDEX[10]   ; 3.657 ;    ;    ; 3.657 ;
+; clock             ; immediate16_IDEX[11]   ; 3.636 ;    ;    ; 3.636 ;
+; clock             ; immediate16_IDEX[12]   ; 3.737 ;    ;    ; 3.737 ;
+; clock             ; immediate16_IDEX[13]   ; 3.628 ;    ;    ; 3.628 ;
+; clock             ; immediate16_IDEX[14]   ; 3.507 ;    ;    ; 3.507 ;
+; clock             ; immediate16_IDEX[15]   ; 3.615 ;    ;    ; 3.615 ;
+; clock             ; isBranch_IDEX          ; 3.512 ;    ;    ; 3.512 ;
+; clock             ; isEOR_IDEX             ; 4.044 ;    ;    ; 4.044 ;
+; clock             ; isJR_IDEX              ; 4.117 ;    ;    ; 4.117 ;
+; clock             ; isJump_IDEX            ; 3.811 ;    ;    ; 3.811 ;
+; clock             ; isLW_IDEX              ; 3.679 ;    ;    ; 3.679 ;
+; clock             ; isMFPC_IDEX            ; 3.644 ;    ;    ; 3.644 ;
+; clock             ; isPrintDigit_IDEX      ; 3.843 ;    ;    ; 3.843 ;
+; clock             ; isR_IDEX               ; 3.627 ;    ;    ; 3.627 ;
+; clock             ; isReadDigit_IDEX       ; 4.307 ;    ;    ; 4.307 ;
+; clock             ; isSW_IDEX              ; 4.084 ;    ;    ; 4.084 ;
+; clock             ; jumpShortAddr_IDEX[0]  ; 3.439 ;    ;    ; 3.439 ;
+; clock             ; jumpShortAddr_IDEX[1]  ; 3.614 ;    ;    ; 3.614 ;
+; clock             ; jumpShortAddr_IDEX[2]  ; 3.994 ;    ;    ; 3.994 ;
+; clock             ; jumpShortAddr_IDEX[3]  ; 3.901 ;    ;    ; 3.901 ;
+; clock             ; jumpShortAddr_IDEX[4]  ; 3.374 ;    ;    ; 3.374 ;
+; clock             ; jumpShortAddr_IDEX[5]  ; 3.634 ;    ;    ; 3.634 ;
+; clock             ; jumpShortAddr_IDEX[6]  ; 4.144 ;    ;    ; 4.144 ;
+; clock             ; jumpShortAddr_IDEX[7]  ; 3.534 ;    ;    ; 3.534 ;
+; clock             ; jumpShortAddr_IDEX[8]  ; 4.132 ;    ;    ; 4.132 ;
+; clock             ; jumpShortAddr_IDEX[9]  ; 3.620 ;    ;    ; 3.620 ;
+; clock             ; jumpShortAddr_IDEX[10] ; 3.673 ;    ;    ; 3.673 ;
+; clock             ; jumpShortAddr_IDEX[11] ; 3.679 ;    ;    ; 3.679 ;
+; clock             ; wasJumpOut_IDEX        ; 3.532 ;    ;    ; 3.532 ;
+; immediate16[0]    ; immediate16_IDEX[0]    ; 4.969 ;    ;    ; 4.969 ;
+; immediate16[1]    ; immediate16_IDEX[1]    ; 5.030 ;    ;    ; 5.030 ;
+; immediate16[2]    ; immediate16_IDEX[2]    ; 5.171 ;    ;    ; 5.171 ;
+; immediate16[3]    ; immediate16_IDEX[3]    ; 5.277 ;    ;    ; 5.277 ;
+; immediate16[4]    ; immediate16_IDEX[4]    ; 5.394 ;    ;    ; 5.394 ;
+; immediate16[5]    ; immediate16_IDEX[5]    ; 5.484 ;    ;    ; 5.484 ;
+; immediate16[6]    ; immediate16_IDEX[6]    ; 5.020 ;    ;    ; 5.020 ;
+; immediate16[7]    ; immediate16_IDEX[7]    ; 5.315 ;    ;    ; 5.315 ;
+; immediate16[8]    ; immediate16_IDEX[8]    ; 5.130 ;    ;    ; 5.130 ;
+; immediate16[9]    ; immediate16_IDEX[9]    ; 5.467 ;    ;    ; 5.467 ;
+; immediate16[10]   ; immediate16_IDEX[10]   ; 5.567 ;    ;    ; 5.567 ;
+; immediate16[11]   ; immediate16_IDEX[11]   ; 5.550 ;    ;    ; 5.550 ;
+; immediate16[12]   ; immediate16_IDEX[12]   ; 5.541 ;    ;    ; 5.541 ;
+; immediate16[13]   ; immediate16_IDEX[13]   ; 5.209 ;    ;    ; 5.209 ;
+; immediate16[14]   ; immediate16_IDEX[14]   ; 5.254 ;    ;    ; 5.254 ;
+; immediate16[15]   ; immediate16_IDEX[15]   ; 5.418 ;    ;    ; 5.418 ;
+; isBranch          ; isBranch_IDEX          ; 5.587 ;    ;    ; 5.587 ;
+; isEOR             ; isEOR_IDEX             ; 3.706 ;    ;    ; 3.706 ;
+; isJR              ; isJR_IDEX              ; 5.265 ;    ;    ; 5.265 ;
+; isJump            ; isJump_IDEX            ; 5.469 ;    ;    ; 5.469 ;
+; isLW              ; isLW_IDEX              ; 5.648 ;    ;    ; 5.648 ;
+; isMFPC            ; isMFPC_IDEX            ; 5.453 ;    ;    ; 5.453 ;
+; isPrintDigit      ; isPrintDigit_IDEX      ; 5.592 ;    ;    ; 5.592 ;
+; isR               ; isR_IDEX               ; 5.306 ;    ;    ; 5.306 ;
+; isReadDigit       ; isReadDigit_IDEX       ; 5.546 ;    ;    ; 5.546 ;
+; isSW              ; isSW_IDEX              ; 5.298 ;    ;    ; 5.298 ;
+; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]  ; 5.385 ;    ;    ; 5.385 ;
+; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]  ; 5.294 ;    ;    ; 5.294 ;
+; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]  ; 5.228 ;    ;    ; 5.228 ;
+; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]  ; 5.140 ;    ;    ; 5.140 ;
+; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]  ; 5.315 ;    ;    ; 5.315 ;
+; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]  ; 5.415 ;    ;    ; 5.415 ;
+; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]  ; 5.277 ;    ;    ; 5.277 ;
+; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]  ; 5.534 ;    ;    ; 5.534 ;
+; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]  ; 5.253 ;    ;    ; 5.253 ;
+; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]  ; 5.555 ;    ;    ; 5.555 ;
+; jumpShortAddr[10] ; jumpShortAddr_IDEX[10] ; 5.821 ;    ;    ; 5.821 ;
+; jumpShortAddr[11] ; jumpShortAddr_IDEX[11] ; 5.188 ;    ;    ; 5.188 ;
+; wasJumpOut        ; wasJumpOut_IDEX        ; 5.333 ;    ;    ; 5.333 ;
++-------------------+------------------------+-------+----+----+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 82    ; 82   ;
+; Unconstrained Input Port Paths  ; 162   ; 162  ;
+; Unconstrained Output Ports      ; 81    ; 81   ;
+; Unconstrained Output Port Paths ; 162   ; 162  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 27 10:55:10 2021
+Info: Command: quartus_sta Register_ID_EX -c Register_ID_EX
+Info: qsta_default_script.tcl version: #1
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Register_ID_EX.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4540 megabytes
+    Info: Processing ended: Thu May 27 10:55:11 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

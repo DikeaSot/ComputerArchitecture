@@ -1,0 +1,7 @@
+|GatedClockDFF
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

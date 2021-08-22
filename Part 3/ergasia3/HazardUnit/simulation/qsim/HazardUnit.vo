@@ -1,0 +1,417 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "06/04/2021 12:19:29"
+
+// 
+// Device: Altera EP2C35F672C6 Package FBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module hazardUnit (
+	isJR,
+	isJump,
+	wasJump,
+	mustBranch,
+	flush,
+	wasJumpOut,
+	JRopcode);
+input 	isJR;
+input 	isJump;
+input 	wasJump;
+input 	mustBranch;
+output 	flush;
+output 	wasJumpOut;
+output 	[1:0] JRopcode;
+
+// Design Ports Information
+// flush	=>  Location: PIN_F12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// wasJumpOut	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// JRopcode[0]	=>  Location: PIN_J11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// JRopcode[1]	=>  Location: PIN_G12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// isJR	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// isJump	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// wasJump	=>  Location: PIN_C12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// mustBranch	=>  Location: PIN_J10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \mustBranch~combout ;
+wire \wasJump~combout ;
+wire \isJR~combout ;
+wire \isJump~combout ;
+wire \process_0~0_combout ;
+wire \process_0~1_combout ;
+wire \JRopcode~0_combout ;
+
+
+// Location: PIN_J10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \mustBranch~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\mustBranch~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(mustBranch));
+// synopsys translate_off
+defparam \mustBranch~I .input_async_reset = "none";
+defparam \mustBranch~I .input_power_up = "low";
+defparam \mustBranch~I .input_register_mode = "none";
+defparam \mustBranch~I .input_sync_reset = "none";
+defparam \mustBranch~I .oe_async_reset = "none";
+defparam \mustBranch~I .oe_power_up = "low";
+defparam \mustBranch~I .oe_register_mode = "none";
+defparam \mustBranch~I .oe_sync_reset = "none";
+defparam \mustBranch~I .operation_mode = "input";
+defparam \mustBranch~I .output_async_reset = "none";
+defparam \mustBranch~I .output_power_up = "low";
+defparam \mustBranch~I .output_register_mode = "none";
+defparam \mustBranch~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_C12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \wasJump~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\wasJump~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(wasJump));
+// synopsys translate_off
+defparam \wasJump~I .input_async_reset = "none";
+defparam \wasJump~I .input_power_up = "low";
+defparam \wasJump~I .input_register_mode = "none";
+defparam \wasJump~I .input_sync_reset = "none";
+defparam \wasJump~I .oe_async_reset = "none";
+defparam \wasJump~I .oe_power_up = "low";
+defparam \wasJump~I .oe_register_mode = "none";
+defparam \wasJump~I .oe_sync_reset = "none";
+defparam \wasJump~I .operation_mode = "input";
+defparam \wasJump~I .output_async_reset = "none";
+defparam \wasJump~I .output_power_up = "low";
+defparam \wasJump~I .output_register_mode = "none";
+defparam \wasJump~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \isJR~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\isJR~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(isJR));
+// synopsys translate_off
+defparam \isJR~I .input_async_reset = "none";
+defparam \isJR~I .input_power_up = "low";
+defparam \isJR~I .input_register_mode = "none";
+defparam \isJR~I .input_sync_reset = "none";
+defparam \isJR~I .oe_async_reset = "none";
+defparam \isJR~I .oe_power_up = "low";
+defparam \isJR~I .oe_register_mode = "none";
+defparam \isJR~I .oe_sync_reset = "none";
+defparam \isJR~I .operation_mode = "input";
+defparam \isJR~I .output_async_reset = "none";
+defparam \isJR~I .output_power_up = "low";
+defparam \isJR~I .output_register_mode = "none";
+defparam \isJR~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \isJump~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\isJump~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(isJump));
+// synopsys translate_off
+defparam \isJump~I .input_async_reset = "none";
+defparam \isJump~I .input_power_up = "low";
+defparam \isJump~I .input_register_mode = "none";
+defparam \isJump~I .input_sync_reset = "none";
+defparam \isJump~I .oe_async_reset = "none";
+defparam \isJump~I .oe_power_up = "low";
+defparam \isJump~I .oe_register_mode = "none";
+defparam \isJump~I .oe_sync_reset = "none";
+defparam \isJump~I .operation_mode = "input";
+defparam \isJump~I .output_async_reset = "none";
+defparam \isJump~I .output_power_up = "low";
+defparam \isJump~I .output_register_mode = "none";
+defparam \isJump~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y35_N0
+cycloneii_lcell_comb \process_0~0 (
+// Equation(s):
+// \process_0~0_combout  = (\mustBranch~combout ) # ((\wasJump~combout ) # ((\isJR~combout ) # (\isJump~combout )))
+
+	.dataa(\mustBranch~combout ),
+	.datab(\wasJump~combout ),
+	.datac(\isJR~combout ),
+	.datad(\isJump~combout ),
+	.cin(gnd),
+	.combout(\process_0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \process_0~0 .lut_mask = 16'hFFFE;
+defparam \process_0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y35_N18
+cycloneii_lcell_comb \process_0~1 (
+// Equation(s):
+// \process_0~1_combout  = (\isJR~combout ) # (\isJump~combout )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\isJR~combout ),
+	.datad(\isJump~combout ),
+	.cin(gnd),
+	.combout(\process_0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \process_0~1 .lut_mask = 16'hFFF0;
+defparam \process_0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y35_N20
+cycloneii_lcell_comb \JRopcode~0 (
+// Equation(s):
+// \JRopcode~0_combout  = (!\isJR~combout  & (\mustBranch~combout  & !\isJump~combout ))
+
+	.dataa(vcc),
+	.datab(\isJR~combout ),
+	.datac(\mustBranch~combout ),
+	.datad(\isJump~combout ),
+	.cin(gnd),
+	.combout(\JRopcode~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \JRopcode~0 .lut_mask = 16'h0030;
+defparam \JRopcode~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_F12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \flush~I (
+	.datain(\process_0~0_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(flush));
+// synopsys translate_off
+defparam \flush~I .input_async_reset = "none";
+defparam \flush~I .input_power_up = "low";
+defparam \flush~I .input_register_mode = "none";
+defparam \flush~I .input_sync_reset = "none";
+defparam \flush~I .oe_async_reset = "none";
+defparam \flush~I .oe_power_up = "low";
+defparam \flush~I .oe_register_mode = "none";
+defparam \flush~I .oe_sync_reset = "none";
+defparam \flush~I .operation_mode = "output";
+defparam \flush~I .output_async_reset = "none";
+defparam \flush~I .output_power_up = "low";
+defparam \flush~I .output_register_mode = "none";
+defparam \flush~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \wasJumpOut~I (
+	.datain(\isJump~combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(wasJumpOut));
+// synopsys translate_off
+defparam \wasJumpOut~I .input_async_reset = "none";
+defparam \wasJumpOut~I .input_power_up = "low";
+defparam \wasJumpOut~I .input_register_mode = "none";
+defparam \wasJumpOut~I .input_sync_reset = "none";
+defparam \wasJumpOut~I .oe_async_reset = "none";
+defparam \wasJumpOut~I .oe_power_up = "low";
+defparam \wasJumpOut~I .oe_register_mode = "none";
+defparam \wasJumpOut~I .oe_sync_reset = "none";
+defparam \wasJumpOut~I .operation_mode = "output";
+defparam \wasJumpOut~I .output_async_reset = "none";
+defparam \wasJumpOut~I .output_power_up = "low";
+defparam \wasJumpOut~I .output_register_mode = "none";
+defparam \wasJumpOut~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_J11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \JRopcode[0]~I (
+	.datain(\process_0~1_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(JRopcode[0]));
+// synopsys translate_off
+defparam \JRopcode[0]~I .input_async_reset = "none";
+defparam \JRopcode[0]~I .input_power_up = "low";
+defparam \JRopcode[0]~I .input_register_mode = "none";
+defparam \JRopcode[0]~I .input_sync_reset = "none";
+defparam \JRopcode[0]~I .oe_async_reset = "none";
+defparam \JRopcode[0]~I .oe_power_up = "low";
+defparam \JRopcode[0]~I .oe_register_mode = "none";
+defparam \JRopcode[0]~I .oe_sync_reset = "none";
+defparam \JRopcode[0]~I .operation_mode = "output";
+defparam \JRopcode[0]~I .output_async_reset = "none";
+defparam \JRopcode[0]~I .output_power_up = "low";
+defparam \JRopcode[0]~I .output_register_mode = "none";
+defparam \JRopcode[0]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_G12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \JRopcode[1]~I (
+	.datain(\JRopcode~0_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(JRopcode[1]));
+// synopsys translate_off
+defparam \JRopcode[1]~I .input_async_reset = "none";
+defparam \JRopcode[1]~I .input_power_up = "low";
+defparam \JRopcode[1]~I .input_register_mode = "none";
+defparam \JRopcode[1]~I .input_sync_reset = "none";
+defparam \JRopcode[1]~I .oe_async_reset = "none";
+defparam \JRopcode[1]~I .oe_power_up = "low";
+defparam \JRopcode[1]~I .oe_register_mode = "none";
+defparam \JRopcode[1]~I .oe_sync_reset = "none";
+defparam \JRopcode[1]~I .operation_mode = "output";
+defparam \JRopcode[1]~I .output_async_reset = "none";
+defparam \JRopcode[1]~I .output_power_up = "low";
+defparam \JRopcode[1]~I .output_register_mode = "none";
+defparam \JRopcode[1]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+endmodule

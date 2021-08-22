@@ -1,0 +1,795 @@
+|FullAdder16
+in1[0] => fulladder:V0.in1
+in1[1] => fulladder:V1.in1
+in1[2] => fulladder:V2.in1
+in1[3] => fulladder:V3.in1
+in1[4] => fulladder:V4.in1
+in1[5] => fulladder:V5.in1
+in1[6] => fulladder:V6.in1
+in1[7] => fulladder:V7.in1
+in1[8] => fulladder:V8.in1
+in1[9] => fulladder:V9.in1
+in1[10] => fulladder:V10.in1
+in1[11] => fulladder:V11.in1
+in1[12] => fulladder:V12.in1
+in1[13] => fulladder:V13.in1
+in1[14] => fulladder:V14.in1
+in1[15] => fulladder:V15.in1
+in2[0] => fulladder:V0.in2
+in2[1] => fulladder:V1.in2
+in2[2] => fulladder:V2.in2
+in2[3] => fulladder:V3.in2
+in2[4] => fulladder:V4.in2
+in2[5] => fulladder:V5.in2
+in2[6] => fulladder:V6.in2
+in2[7] => fulladder:V7.in2
+in2[8] => fulladder:V8.in2
+in2[9] => fulladder:V9.in2
+in2[10] => fulladder:V10.in2
+in2[11] => fulladder:V11.in2
+in2[12] => fulladder:V12.in2
+in2[13] => fulladder:V13.in2
+in2[14] => fulladder:V14.in2
+in2[15] => fulladder:V15.in2
+carry_in => fulladder:V0.carry_in
+sum[0] <= fulladder:V0.sum
+sum[1] <= fulladder:V1.sum
+sum[2] <= fulladder:V2.sum
+sum[3] <= fulladder:V3.sum
+sum[4] <= fulladder:V4.sum
+sum[5] <= fulladder:V5.sum
+sum[6] <= fulladder:V6.sum
+sum[7] <= fulladder:V7.sum
+sum[8] <= fulladder:V8.sum
+sum[9] <= fulladder:V9.sum
+sum[10] <= fulladder:V10.sum
+sum[11] <= fulladder:V11.sum
+sum[12] <= fulladder:V12.sum
+sum[13] <= fulladder:V13.sum
+sum[14] <= fulladder:V14.sum
+sum[15] <= fulladder:V15.sum
+carry_out <= myXOR:Overflow.out1
+
+
+|FullAdder16|fulladder:V0
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V0|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V0|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V0|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V0|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V0|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V1
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V1|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V1|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V1|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V1|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V1|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V2
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V2|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V2|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V2|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V2|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V2|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V3
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V3|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V3|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V3|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V3|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V3|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V4
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V4|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V4|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V4|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V4|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V4|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V5
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V5|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V5|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V5|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V5|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V5|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V6
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V6|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V6|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V6|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V6|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V6|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V7
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V7|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V7|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V7|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V7|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V7|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V8
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V8|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V8|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V8|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V8|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V8|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V9
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V9|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V9|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V9|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V9|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V9|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V10
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V10|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V10|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V10|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V10|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V10|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V11
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V11|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V11|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V11|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V11|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V11|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V12
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V12|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V12|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V12|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V12|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V12|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V13
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V13|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V13|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V13|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V13|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V13|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V14
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V14|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V14|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V14|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V14|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V14|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V15
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder16|fulladder:V15|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V15|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V15|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V15|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|fulladder:V15|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder16|myXOR:Overflow
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

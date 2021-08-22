@@ -1,0 +1,12 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity myAND is
+port (A, B: in std_logic;
+		Q: out std_logic);
+end myAND;
+
+architecture LogicFunc of myAND is
+begin
+	Q <= A OR B;
+end LogicFunc;

@@ -1,0 +1,1662 @@
+|ALU16
+in1[0] => fulladder16:V0.in1[0]
+in1[0] => myAND16:V1.in1[0]
+in1[0] => myOR16:V2.in1[0]
+in1[0] => myALU16_NOT:V4.in1[0]
+in1[1] => fulladder16:V0.in1[1]
+in1[1] => myAND16:V1.in1[1]
+in1[1] => myOR16:V2.in1[1]
+in1[1] => myALU16_NOT:V4.in1[1]
+in1[2] => fulladder16:V0.in1[2]
+in1[2] => myAND16:V1.in1[2]
+in1[2] => myOR16:V2.in1[2]
+in1[2] => myALU16_NOT:V4.in1[2]
+in1[3] => fulladder16:V0.in1[3]
+in1[3] => myAND16:V1.in1[3]
+in1[3] => myOR16:V2.in1[3]
+in1[3] => myALU16_NOT:V4.in1[3]
+in1[4] => fulladder16:V0.in1[4]
+in1[4] => myAND16:V1.in1[4]
+in1[4] => myOR16:V2.in1[4]
+in1[4] => myALU16_NOT:V4.in1[4]
+in1[5] => fulladder16:V0.in1[5]
+in1[5] => myAND16:V1.in1[5]
+in1[5] => myOR16:V2.in1[5]
+in1[5] => myALU16_NOT:V4.in1[5]
+in1[6] => fulladder16:V0.in1[6]
+in1[6] => myAND16:V1.in1[6]
+in1[6] => myOR16:V2.in1[6]
+in1[6] => myALU16_NOT:V4.in1[6]
+in1[7] => fulladder16:V0.in1[7]
+in1[7] => myAND16:V1.in1[7]
+in1[7] => myOR16:V2.in1[7]
+in1[7] => myALU16_NOT:V4.in1[7]
+in1[8] => fulladder16:V0.in1[8]
+in1[8] => myAND16:V1.in1[8]
+in1[8] => myOR16:V2.in1[8]
+in1[8] => myALU16_NOT:V4.in1[8]
+in1[9] => fulladder16:V0.in1[9]
+in1[9] => myAND16:V1.in1[9]
+in1[9] => myOR16:V2.in1[9]
+in1[9] => myALU16_NOT:V4.in1[9]
+in1[10] => fulladder16:V0.in1[10]
+in1[10] => myAND16:V1.in1[10]
+in1[10] => myOR16:V2.in1[10]
+in1[10] => myALU16_NOT:V4.in1[10]
+in1[11] => fulladder16:V0.in1[11]
+in1[11] => myAND16:V1.in1[11]
+in1[11] => myOR16:V2.in1[11]
+in1[11] => myALU16_NOT:V4.in1[11]
+in1[12] => fulladder16:V0.in1[12]
+in1[12] => myAND16:V1.in1[12]
+in1[12] => myOR16:V2.in1[12]
+in1[12] => myALU16_NOT:V4.in1[12]
+in1[13] => fulladder16:V0.in1[13]
+in1[13] => myAND16:V1.in1[13]
+in1[13] => myOR16:V2.in1[13]
+in1[13] => myALU16_NOT:V4.in1[13]
+in1[14] => fulladder16:V0.in1[14]
+in1[14] => myAND16:V1.in1[14]
+in1[14] => myOR16:V2.in1[14]
+in1[14] => myALU16_NOT:V4.in1[14]
+in1[15] => fulladder16:V0.in1[15]
+in1[15] => myAND16:V1.in1[15]
+in1[15] => myOR16:V2.in1[15]
+in1[15] => myMUX2_1_16:V3.in1
+in1[15] => myALU16_NOT:V4.in1[15]
+in2[0] => TwosComplement:G0.in1[0]
+in2[0] => myAND16:V1.in2[0]
+in2[0] => myOR16:V2.in2[0]
+in2[1] => TwosComplement:G0.in1[1]
+in2[1] => myAND16:V1.in2[1]
+in2[1] => myOR16:V2.in2[1]
+in2[2] => TwosComplement:G0.in1[2]
+in2[2] => myAND16:V1.in2[2]
+in2[2] => myOR16:V2.in2[2]
+in2[3] => TwosComplement:G0.in1[3]
+in2[3] => myAND16:V1.in2[3]
+in2[3] => myOR16:V2.in2[3]
+in2[4] => TwosComplement:G0.in1[4]
+in2[4] => myAND16:V1.in2[4]
+in2[4] => myOR16:V2.in2[4]
+in2[5] => TwosComplement:G0.in1[5]
+in2[5] => myAND16:V1.in2[5]
+in2[5] => myOR16:V2.in2[5]
+in2[6] => TwosComplement:G0.in1[6]
+in2[6] => myAND16:V1.in2[6]
+in2[6] => myOR16:V2.in2[6]
+in2[7] => TwosComplement:G0.in1[7]
+in2[7] => myAND16:V1.in2[7]
+in2[7] => myOR16:V2.in2[7]
+in2[8] => TwosComplement:G0.in1[8]
+in2[8] => myAND16:V1.in2[8]
+in2[8] => myOR16:V2.in2[8]
+in2[9] => TwosComplement:G0.in1[9]
+in2[9] => myAND16:V1.in2[9]
+in2[9] => myOR16:V2.in2[9]
+in2[10] => TwosComplement:G0.in1[10]
+in2[10] => myAND16:V1.in2[10]
+in2[10] => myOR16:V2.in2[10]
+in2[11] => TwosComplement:G0.in1[11]
+in2[11] => myAND16:V1.in2[11]
+in2[11] => myOR16:V2.in2[11]
+in2[12] => TwosComplement:G0.in1[12]
+in2[12] => myAND16:V1.in2[12]
+in2[12] => myOR16:V2.in2[12]
+in2[13] => TwosComplement:G0.in1[13]
+in2[13] => myAND16:V1.in2[13]
+in2[13] => myOR16:V2.in2[13]
+in2[14] => TwosComplement:G0.in1[14]
+in2[14] => myAND16:V1.in2[14]
+in2[14] => myOR16:V2.in2[14]
+in2[15] => TwosComplement:G0.in1[15]
+in2[15] => myAND16:V1.in2[15]
+in2[15] => myOR16:V2.in2[15]
+carry_in => fulladder16:V0.carry_in
+op[0] => TwosComplement:G0.op[0]
+op[0] => myMUX8_1:V5.sel[0]
+op[1] => TwosComplement:G0.op[1]
+op[1] => myMUX8_1:V5.sel[1]
+op[2] => TwosComplement:G0.op[2]
+op[2] => myMUX8_1:V5.sel[2]
+op[3] => TwosComplement:G0.op[3]
+op[3] => myMUX8_1:V5.sel[3]
+output[0] <= myMUX8_1:V5.final_out[0]
+output[1] <= myMUX8_1:V5.final_out[1]
+output[2] <= myMUX8_1:V5.final_out[2]
+output[3] <= myMUX8_1:V5.final_out[3]
+output[4] <= myMUX8_1:V5.final_out[4]
+output[5] <= myMUX8_1:V5.final_out[5]
+output[6] <= myMUX8_1:V5.final_out[6]
+output[7] <= myMUX8_1:V5.final_out[7]
+output[8] <= myMUX8_1:V5.final_out[8]
+output[9] <= myMUX8_1:V5.final_out[9]
+output[10] <= myMUX8_1:V5.final_out[10]
+output[11] <= myMUX8_1:V5.final_out[11]
+output[12] <= myMUX8_1:V5.final_out[12]
+output[13] <= myMUX8_1:V5.final_out[13]
+output[14] <= myMUX8_1:V5.final_out[14]
+output[15] <= myMUX8_1:V5.final_out[15]
+carry_out <= fulladder16:V0.carry_out
+
+
+|ALU16|TwosComplement:G0
+in1[0] => Mux15.IN1
+in1[0] => Mux15.IN2
+in1[0] => Mux15.IN3
+in1[0] => Mux15.IN4
+in1[0] => Mux15.IN5
+in1[0] => Mux15.IN6
+in1[0] => Mux15.IN7
+in1[0] => Mux15.IN8
+in1[0] => Mux15.IN9
+in1[0] => Mux15.IN10
+in1[0] => Mux15.IN11
+in1[0] => Mux15.IN12
+in1[0] => Mux15.IN13
+in1[0] => Mux15.IN14
+in1[0] => Mux15.IN15
+in1[0] => myNOT16:V0.in1[0]
+in1[1] => Mux14.IN1
+in1[1] => Mux14.IN2
+in1[1] => Mux14.IN3
+in1[1] => Mux14.IN4
+in1[1] => Mux14.IN5
+in1[1] => Mux14.IN6
+in1[1] => Mux14.IN7
+in1[1] => Mux14.IN8
+in1[1] => Mux14.IN9
+in1[1] => Mux14.IN10
+in1[1] => Mux14.IN11
+in1[1] => Mux14.IN12
+in1[1] => Mux14.IN13
+in1[1] => Mux14.IN14
+in1[1] => Mux14.IN15
+in1[1] => myNOT16:V0.in1[1]
+in1[2] => Mux13.IN1
+in1[2] => Mux13.IN2
+in1[2] => Mux13.IN3
+in1[2] => Mux13.IN4
+in1[2] => Mux13.IN5
+in1[2] => Mux13.IN6
+in1[2] => Mux13.IN7
+in1[2] => Mux13.IN8
+in1[2] => Mux13.IN9
+in1[2] => Mux13.IN10
+in1[2] => Mux13.IN11
+in1[2] => Mux13.IN12
+in1[2] => Mux13.IN13
+in1[2] => Mux13.IN14
+in1[2] => Mux13.IN15
+in1[2] => myNOT16:V0.in1[2]
+in1[3] => Mux12.IN1
+in1[3] => Mux12.IN2
+in1[3] => Mux12.IN3
+in1[3] => Mux12.IN4
+in1[3] => Mux12.IN5
+in1[3] => Mux12.IN6
+in1[3] => Mux12.IN7
+in1[3] => Mux12.IN8
+in1[3] => Mux12.IN9
+in1[3] => Mux12.IN10
+in1[3] => Mux12.IN11
+in1[3] => Mux12.IN12
+in1[3] => Mux12.IN13
+in1[3] => Mux12.IN14
+in1[3] => Mux12.IN15
+in1[3] => myNOT16:V0.in1[3]
+in1[4] => Mux11.IN1
+in1[4] => Mux11.IN2
+in1[4] => Mux11.IN3
+in1[4] => Mux11.IN4
+in1[4] => Mux11.IN5
+in1[4] => Mux11.IN6
+in1[4] => Mux11.IN7
+in1[4] => Mux11.IN8
+in1[4] => Mux11.IN9
+in1[4] => Mux11.IN10
+in1[4] => Mux11.IN11
+in1[4] => Mux11.IN12
+in1[4] => Mux11.IN13
+in1[4] => Mux11.IN14
+in1[4] => Mux11.IN15
+in1[4] => myNOT16:V0.in1[4]
+in1[5] => Mux10.IN1
+in1[5] => Mux10.IN2
+in1[5] => Mux10.IN3
+in1[5] => Mux10.IN4
+in1[5] => Mux10.IN5
+in1[5] => Mux10.IN6
+in1[5] => Mux10.IN7
+in1[5] => Mux10.IN8
+in1[5] => Mux10.IN9
+in1[5] => Mux10.IN10
+in1[5] => Mux10.IN11
+in1[5] => Mux10.IN12
+in1[5] => Mux10.IN13
+in1[5] => Mux10.IN14
+in1[5] => Mux10.IN15
+in1[5] => myNOT16:V0.in1[5]
+in1[6] => Mux9.IN1
+in1[6] => Mux9.IN2
+in1[6] => Mux9.IN3
+in1[6] => Mux9.IN4
+in1[6] => Mux9.IN5
+in1[6] => Mux9.IN6
+in1[6] => Mux9.IN7
+in1[6] => Mux9.IN8
+in1[6] => Mux9.IN9
+in1[6] => Mux9.IN10
+in1[6] => Mux9.IN11
+in1[6] => Mux9.IN12
+in1[6] => Mux9.IN13
+in1[6] => Mux9.IN14
+in1[6] => Mux9.IN15
+in1[6] => myNOT16:V0.in1[6]
+in1[7] => Mux8.IN1
+in1[7] => Mux8.IN2
+in1[7] => Mux8.IN3
+in1[7] => Mux8.IN4
+in1[7] => Mux8.IN5
+in1[7] => Mux8.IN6
+in1[7] => Mux8.IN7
+in1[7] => Mux8.IN8
+in1[7] => Mux8.IN9
+in1[7] => Mux8.IN10
+in1[7] => Mux8.IN11
+in1[7] => Mux8.IN12
+in1[7] => Mux8.IN13
+in1[7] => Mux8.IN14
+in1[7] => Mux8.IN15
+in1[7] => myNOT16:V0.in1[7]
+in1[8] => Mux7.IN1
+in1[8] => Mux7.IN2
+in1[8] => Mux7.IN3
+in1[8] => Mux7.IN4
+in1[8] => Mux7.IN5
+in1[8] => Mux7.IN6
+in1[8] => Mux7.IN7
+in1[8] => Mux7.IN8
+in1[8] => Mux7.IN9
+in1[8] => Mux7.IN10
+in1[8] => Mux7.IN11
+in1[8] => Mux7.IN12
+in1[8] => Mux7.IN13
+in1[8] => Mux7.IN14
+in1[8] => Mux7.IN15
+in1[8] => myNOT16:V0.in1[8]
+in1[9] => Mux6.IN1
+in1[9] => Mux6.IN2
+in1[9] => Mux6.IN3
+in1[9] => Mux6.IN4
+in1[9] => Mux6.IN5
+in1[9] => Mux6.IN6
+in1[9] => Mux6.IN7
+in1[9] => Mux6.IN8
+in1[9] => Mux6.IN9
+in1[9] => Mux6.IN10
+in1[9] => Mux6.IN11
+in1[9] => Mux6.IN12
+in1[9] => Mux6.IN13
+in1[9] => Mux6.IN14
+in1[9] => Mux6.IN15
+in1[9] => myNOT16:V0.in1[9]
+in1[10] => Mux5.IN1
+in1[10] => Mux5.IN2
+in1[10] => Mux5.IN3
+in1[10] => Mux5.IN4
+in1[10] => Mux5.IN5
+in1[10] => Mux5.IN6
+in1[10] => Mux5.IN7
+in1[10] => Mux5.IN8
+in1[10] => Mux5.IN9
+in1[10] => Mux5.IN10
+in1[10] => Mux5.IN11
+in1[10] => Mux5.IN12
+in1[10] => Mux5.IN13
+in1[10] => Mux5.IN14
+in1[10] => Mux5.IN15
+in1[10] => myNOT16:V0.in1[10]
+in1[11] => Mux4.IN1
+in1[11] => Mux4.IN2
+in1[11] => Mux4.IN3
+in1[11] => Mux4.IN4
+in1[11] => Mux4.IN5
+in1[11] => Mux4.IN6
+in1[11] => Mux4.IN7
+in1[11] => Mux4.IN8
+in1[11] => Mux4.IN9
+in1[11] => Mux4.IN10
+in1[11] => Mux4.IN11
+in1[11] => Mux4.IN12
+in1[11] => Mux4.IN13
+in1[11] => Mux4.IN14
+in1[11] => Mux4.IN15
+in1[11] => myNOT16:V0.in1[11]
+in1[12] => Mux3.IN1
+in1[12] => Mux3.IN2
+in1[12] => Mux3.IN3
+in1[12] => Mux3.IN4
+in1[12] => Mux3.IN5
+in1[12] => Mux3.IN6
+in1[12] => Mux3.IN7
+in1[12] => Mux3.IN8
+in1[12] => Mux3.IN9
+in1[12] => Mux3.IN10
+in1[12] => Mux3.IN11
+in1[12] => Mux3.IN12
+in1[12] => Mux3.IN13
+in1[12] => Mux3.IN14
+in1[12] => Mux3.IN15
+in1[12] => myNOT16:V0.in1[12]
+in1[13] => Mux2.IN1
+in1[13] => Mux2.IN2
+in1[13] => Mux2.IN3
+in1[13] => Mux2.IN4
+in1[13] => Mux2.IN5
+in1[13] => Mux2.IN6
+in1[13] => Mux2.IN7
+in1[13] => Mux2.IN8
+in1[13] => Mux2.IN9
+in1[13] => Mux2.IN10
+in1[13] => Mux2.IN11
+in1[13] => Mux2.IN12
+in1[13] => Mux2.IN13
+in1[13] => Mux2.IN14
+in1[13] => Mux2.IN15
+in1[13] => myNOT16:V0.in1[13]
+in1[14] => Mux1.IN1
+in1[14] => Mux1.IN2
+in1[14] => Mux1.IN3
+in1[14] => Mux1.IN4
+in1[14] => Mux1.IN5
+in1[14] => Mux1.IN6
+in1[14] => Mux1.IN7
+in1[14] => Mux1.IN8
+in1[14] => Mux1.IN9
+in1[14] => Mux1.IN10
+in1[14] => Mux1.IN11
+in1[14] => Mux1.IN12
+in1[14] => Mux1.IN13
+in1[14] => Mux1.IN14
+in1[14] => Mux1.IN15
+in1[14] => myNOT16:V0.in1[14]
+in1[15] => Mux0.IN1
+in1[15] => Mux0.IN2
+in1[15] => Mux0.IN3
+in1[15] => Mux0.IN4
+in1[15] => Mux0.IN5
+in1[15] => Mux0.IN6
+in1[15] => Mux0.IN7
+in1[15] => Mux0.IN8
+in1[15] => Mux0.IN9
+in1[15] => Mux0.IN10
+in1[15] => Mux0.IN11
+in1[15] => Mux0.IN12
+in1[15] => Mux0.IN13
+in1[15] => Mux0.IN14
+in1[15] => Mux0.IN15
+in1[15] => myNOT16:V0.in1[15]
+op[0] => Mux0.IN19
+op[0] => Mux1.IN19
+op[0] => Mux2.IN19
+op[0] => Mux3.IN19
+op[0] => Mux4.IN19
+op[0] => Mux5.IN19
+op[0] => Mux6.IN19
+op[0] => Mux7.IN19
+op[0] => Mux8.IN19
+op[0] => Mux9.IN19
+op[0] => Mux10.IN19
+op[0] => Mux11.IN19
+op[0] => Mux12.IN19
+op[0] => Mux13.IN19
+op[0] => Mux14.IN19
+op[0] => Mux15.IN19
+op[1] => Mux0.IN18
+op[1] => Mux1.IN18
+op[1] => Mux2.IN18
+op[1] => Mux3.IN18
+op[1] => Mux4.IN18
+op[1] => Mux5.IN18
+op[1] => Mux6.IN18
+op[1] => Mux7.IN18
+op[1] => Mux8.IN18
+op[1] => Mux9.IN18
+op[1] => Mux10.IN18
+op[1] => Mux11.IN18
+op[1] => Mux12.IN18
+op[1] => Mux13.IN18
+op[1] => Mux14.IN18
+op[1] => Mux15.IN18
+op[2] => Mux0.IN17
+op[2] => Mux1.IN17
+op[2] => Mux2.IN17
+op[2] => Mux3.IN17
+op[2] => Mux4.IN17
+op[2] => Mux5.IN17
+op[2] => Mux6.IN17
+op[2] => Mux7.IN17
+op[2] => Mux8.IN17
+op[2] => Mux9.IN17
+op[2] => Mux10.IN17
+op[2] => Mux11.IN17
+op[2] => Mux12.IN17
+op[2] => Mux13.IN17
+op[2] => Mux14.IN17
+op[2] => Mux15.IN17
+op[3] => Mux0.IN16
+op[3] => Mux1.IN16
+op[3] => Mux2.IN16
+op[3] => Mux3.IN16
+op[3] => Mux4.IN16
+op[3] => Mux5.IN16
+op[3] => Mux6.IN16
+op[3] => Mux7.IN16
+op[3] => Mux8.IN16
+op[3] => Mux9.IN16
+op[3] => Mux10.IN16
+op[3] => Mux11.IN16
+op[3] => Mux12.IN16
+op[3] => Mux13.IN16
+op[3] => Mux14.IN16
+op[3] => Mux15.IN16
+out1[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+out1[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+out1[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+out1[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out1[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out1[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out1[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out1[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out1[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out1[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|TwosComplement:G0|myNOT16:V0
+in1[0] => out1[0].DATAIN
+in1[1] => out1[1].DATAIN
+in1[2] => out1[2].DATAIN
+in1[3] => out1[3].DATAIN
+in1[4] => out1[4].DATAIN
+in1[5] => out1[5].DATAIN
+in1[6] => out1[6].DATAIN
+in1[7] => out1[7].DATAIN
+in1[8] => out1[8].DATAIN
+in1[9] => out1[9].DATAIN
+in1[10] => out1[10].DATAIN
+in1[11] => out1[11].DATAIN
+in1[12] => out1[12].DATAIN
+in1[13] => out1[13].DATAIN
+in1[14] => out1[14].DATAIN
+in1[15] => out1[15].DATAIN
+out1[0] <= in1[0].DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= in1[1].DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= in1[2].DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= in1[3].DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= in1[4].DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= in1[5].DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= in1[6].DB_MAX_OUTPUT_PORT_TYPE
+out1[7] <= in1[7].DB_MAX_OUTPUT_PORT_TYPE
+out1[8] <= in1[8].DB_MAX_OUTPUT_PORT_TYPE
+out1[9] <= in1[9].DB_MAX_OUTPUT_PORT_TYPE
+out1[10] <= in1[10].DB_MAX_OUTPUT_PORT_TYPE
+out1[11] <= in1[11].DB_MAX_OUTPUT_PORT_TYPE
+out1[12] <= in1[12].DB_MAX_OUTPUT_PORT_TYPE
+out1[13] <= in1[13].DB_MAX_OUTPUT_PORT_TYPE
+out1[14] <= in1[14].DB_MAX_OUTPUT_PORT_TYPE
+out1[15] <= in1[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0
+in1[0] => fulladder:V0.in1
+in1[1] => fulladder:V1.in1
+in1[2] => fulladder:V2.in1
+in1[3] => fulladder:V3.in1
+in1[4] => fulladder:V4.in1
+in1[5] => fulladder:V5.in1
+in1[6] => fulladder:V6.in1
+in1[7] => fulladder:V7.in1
+in1[8] => fulladder:V8.in1
+in1[9] => fulladder:V9.in1
+in1[10] => fulladder:V10.in1
+in1[11] => fulladder:V11.in1
+in1[12] => fulladder:V12.in1
+in1[13] => fulladder:V13.in1
+in1[14] => fulladder:V14.in1
+in1[15] => fulladder:V15.in1
+in2[0] => fulladder:V0.in2
+in2[1] => fulladder:V1.in2
+in2[2] => fulladder:V2.in2
+in2[3] => fulladder:V3.in2
+in2[4] => fulladder:V4.in2
+in2[5] => fulladder:V5.in2
+in2[6] => fulladder:V6.in2
+in2[7] => fulladder:V7.in2
+in2[8] => fulladder:V8.in2
+in2[9] => fulladder:V9.in2
+in2[10] => fulladder:V10.in2
+in2[11] => fulladder:V11.in2
+in2[12] => fulladder:V12.in2
+in2[13] => fulladder:V13.in2
+in2[14] => fulladder:V14.in2
+in2[15] => fulladder:V15.in2
+carry_in => fulladder:V0.carry_in
+sum[0] <= fulladder:V0.sum
+sum[1] <= fulladder:V1.sum
+sum[2] <= fulladder:V2.sum
+sum[3] <= fulladder:V3.sum
+sum[4] <= fulladder:V4.sum
+sum[5] <= fulladder:V5.sum
+sum[6] <= fulladder:V6.sum
+sum[7] <= fulladder:V7.sum
+sum[8] <= fulladder:V8.sum
+sum[9] <= fulladder:V9.sum
+sum[10] <= fulladder:V10.sum
+sum[11] <= fulladder:V11.sum
+sum[12] <= fulladder:V12.sum
+sum[13] <= fulladder:V13.sum
+sum[14] <= fulladder:V14.sum
+sum[15] <= fulladder:V15.sum
+carry_out <= myXOR:Overflow.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V0
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V0|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V0|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V0|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V0|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V0|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V1
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V1|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V1|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V1|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V1|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V1|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V2
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V2|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V2|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V2|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V2|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V2|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V3
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V3|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V3|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V3|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V3|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V3|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V4
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V4|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V4|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V4|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V4|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V4|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V5
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V5|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V5|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V5|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V5|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V5|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V6
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V6|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V6|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V6|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V6|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V6|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V7
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V7|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V7|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V7|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V7|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V7|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V8
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V8|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V8|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V8|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V8|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V8|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V9
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V9|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V9|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V9|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V9|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V9|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V10
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V10|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V10|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V10|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V10|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V10|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V11
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V11|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V11|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V11|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V11|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V11|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V12
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V12|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V12|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V12|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V12|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V12|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V13
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V13|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V13|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V13|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V13|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V13|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V14
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V14|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V14|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V14|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V14|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V14|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V15
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|ALU16|fulladder16:V0|fulladder:V15|myXOR3:V0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V15|myAND:V1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V15|myAND:V2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V15|myAND:V3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|fulladder:V15|myOR3:V4
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|fulladder16:V0|myXOR:Overflow
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|MyAND16:V1
+in1[0] => out1.IN0
+in1[1] => out1.IN0
+in1[2] => out1.IN0
+in1[3] => out1.IN0
+in1[4] => out1.IN0
+in1[5] => out1.IN0
+in1[6] => out1.IN0
+in1[7] => out1.IN0
+in1[8] => out1.IN0
+in1[9] => out1.IN0
+in1[10] => out1.IN0
+in1[11] => out1.IN0
+in1[12] => out1.IN0
+in1[13] => out1.IN0
+in1[14] => out1.IN0
+in1[15] => out1.IN0
+in2[0] => out1.IN1
+in2[1] => out1.IN1
+in2[2] => out1.IN1
+in2[3] => out1.IN1
+in2[4] => out1.IN1
+in2[5] => out1.IN1
+in2[6] => out1.IN1
+in2[7] => out1.IN1
+in2[8] => out1.IN1
+in2[9] => out1.IN1
+in2[10] => out1.IN1
+in2[11] => out1.IN1
+in2[12] => out1.IN1
+in2[13] => out1.IN1
+in2[14] => out1.IN1
+in2[15] => out1.IN1
+out1[0] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[7] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[8] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[9] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[10] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[11] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[12] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[13] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[14] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[15] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|MyOR16:V2
+in1[0] => out1.IN0
+in1[1] => out1.IN0
+in1[2] => out1.IN0
+in1[3] => out1.IN0
+in1[4] => out1.IN0
+in1[5] => out1.IN0
+in1[6] => out1.IN0
+in1[7] => out1.IN0
+in1[8] => out1.IN0
+in1[9] => out1.IN0
+in1[10] => out1.IN0
+in1[11] => out1.IN0
+in1[12] => out1.IN0
+in1[13] => out1.IN0
+in1[14] => out1.IN0
+in1[15] => out1.IN0
+in2[0] => out1.IN1
+in2[1] => out1.IN1
+in2[2] => out1.IN1
+in2[3] => out1.IN1
+in2[4] => out1.IN1
+in2[5] => out1.IN1
+in2[6] => out1.IN1
+in2[7] => out1.IN1
+in2[8] => out1.IN1
+in2[9] => out1.IN1
+in2[10] => out1.IN1
+in2[11] => out1.IN1
+in2[12] => out1.IN1
+in2[13] => out1.IN1
+in2[14] => out1.IN1
+in2[15] => out1.IN1
+out1[0] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[7] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[8] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[9] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[10] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[11] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[12] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[13] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[14] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out1[15] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|myMUX2_1_16:V3
+in1 => out1[15].DATAIN
+in1 => out1[14].DATAIN
+in1 => out1[13].DATAIN
+in1 => out1[12].DATAIN
+in1 => out1[11].DATAIN
+in1 => out1[10].DATAIN
+in1 => out1[9].DATAIN
+in1 => out1[8].DATAIN
+in1 => out1[7].DATAIN
+in1 => out1[6].DATAIN
+in1 => out1[5].DATAIN
+in1 => out1[4].DATAIN
+in1 => out1[3].DATAIN
+in1 => out1[2].DATAIN
+in1 => out1[1].DATAIN
+in1 => out1[0].DATAIN
+out1[0] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[7] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[8] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[9] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[10] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[11] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[12] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[13] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[14] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[15] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU16|myALU16_NOT:V4
+in1[0] => Equal0.IN15
+in1[1] => Equal0.IN14
+in1[2] => Equal0.IN13
+in1[3] => Equal0.IN12
+in1[4] => Equal0.IN11
+in1[5] => Equal0.IN10
+in1[6] => Equal0.IN9
+in1[7] => Equal0.IN8
+in1[8] => Equal0.IN7
+in1[9] => Equal0.IN6
+in1[10] => Equal0.IN5
+in1[11] => Equal0.IN4
+in1[12] => Equal0.IN3
+in1[13] => Equal0.IN2
+in1[14] => Equal0.IN1
+in1[15] => Equal0.IN0
+out1[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= <GND>
+out1[2] <= <GND>
+out1[3] <= <GND>
+out1[4] <= <GND>
+out1[5] <= <GND>
+out1[6] <= <GND>
+out1[7] <= <GND>
+out1[8] <= <GND>
+out1[9] <= <GND>
+out1[10] <= <GND>
+out1[11] <= <GND>
+out1[12] <= <GND>
+out1[13] <= <GND>
+out1[14] <= <GND>
+out1[15] <= <GND>
+
+
+|ALU16|myMUX8_1:V5
+add_out[0] => Mux15.IN10
+add_out[0] => Mux15.IN11
+add_out[1] => Mux14.IN10
+add_out[1] => Mux14.IN11
+add_out[2] => Mux13.IN10
+add_out[2] => Mux13.IN11
+add_out[3] => Mux12.IN10
+add_out[3] => Mux12.IN11
+add_out[4] => Mux11.IN10
+add_out[4] => Mux11.IN11
+add_out[5] => Mux10.IN10
+add_out[5] => Mux10.IN11
+add_out[6] => Mux9.IN10
+add_out[6] => Mux9.IN11
+add_out[7] => Mux8.IN10
+add_out[7] => Mux8.IN11
+add_out[8] => Mux7.IN10
+add_out[8] => Mux7.IN11
+add_out[9] => Mux6.IN10
+add_out[9] => Mux6.IN11
+add_out[10] => Mux5.IN10
+add_out[10] => Mux5.IN11
+add_out[11] => Mux4.IN10
+add_out[11] => Mux4.IN11
+add_out[12] => Mux3.IN10
+add_out[12] => Mux3.IN11
+add_out[13] => Mux2.IN10
+add_out[13] => Mux2.IN11
+add_out[14] => Mux1.IN10
+add_out[14] => Mux1.IN11
+add_out[15] => Mux0.IN10
+add_out[15] => Mux0.IN11
+and_out[0] => Mux15.IN12
+and_out[1] => Mux14.IN12
+and_out[2] => Mux13.IN12
+and_out[3] => Mux12.IN12
+and_out[4] => Mux11.IN12
+and_out[5] => Mux10.IN12
+and_out[6] => Mux9.IN12
+and_out[7] => Mux8.IN12
+and_out[8] => Mux7.IN12
+and_out[9] => Mux6.IN12
+and_out[10] => Mux5.IN12
+and_out[11] => Mux4.IN12
+and_out[12] => Mux3.IN12
+and_out[13] => Mux2.IN12
+and_out[14] => Mux1.IN12
+and_out[15] => Mux0.IN12
+or_out[0] => Mux15.IN13
+or_out[1] => Mux14.IN13
+or_out[2] => Mux13.IN13
+or_out[3] => Mux12.IN13
+or_out[4] => Mux11.IN13
+or_out[5] => Mux10.IN13
+or_out[6] => Mux9.IN13
+or_out[7] => Mux8.IN13
+or_out[8] => Mux7.IN13
+or_out[9] => Mux6.IN13
+or_out[10] => Mux5.IN13
+or_out[11] => Mux4.IN13
+or_out[12] => Mux3.IN13
+or_out[13] => Mux2.IN13
+or_out[14] => Mux1.IN13
+or_out[15] => Mux0.IN13
+geq_out[0] => Mux15.IN14
+geq_out[1] => Mux14.IN14
+geq_out[2] => Mux13.IN14
+geq_out[3] => Mux12.IN14
+geq_out[4] => Mux11.IN14
+geq_out[5] => Mux10.IN14
+geq_out[6] => Mux9.IN14
+geq_out[7] => Mux8.IN14
+geq_out[8] => Mux7.IN14
+geq_out[9] => Mux6.IN14
+geq_out[10] => Mux5.IN14
+geq_out[11] => Mux4.IN14
+geq_out[12] => Mux3.IN14
+geq_out[13] => Mux2.IN14
+geq_out[14] => Mux1.IN14
+geq_out[15] => Mux0.IN14
+not_out[0] => Mux15.IN15
+not_out[1] => Mux14.IN15
+not_out[2] => Mux13.IN15
+not_out[3] => Mux12.IN15
+not_out[4] => Mux11.IN15
+not_out[5] => Mux10.IN15
+not_out[6] => Mux9.IN15
+not_out[7] => Mux8.IN15
+not_out[8] => Mux7.IN15
+not_out[9] => Mux6.IN15
+not_out[10] => Mux5.IN15
+not_out[11] => Mux4.IN15
+not_out[12] => Mux3.IN15
+not_out[13] => Mux2.IN15
+not_out[14] => Mux1.IN15
+not_out[15] => Mux0.IN15
+sel[0] => Mux0.IN19
+sel[0] => Mux1.IN19
+sel[0] => Mux2.IN19
+sel[0] => Mux3.IN19
+sel[0] => Mux4.IN19
+sel[0] => Mux5.IN19
+sel[0] => Mux6.IN19
+sel[0] => Mux7.IN19
+sel[0] => Mux8.IN19
+sel[0] => Mux9.IN19
+sel[0] => Mux10.IN19
+sel[0] => Mux11.IN19
+sel[0] => Mux12.IN19
+sel[0] => Mux13.IN19
+sel[0] => Mux14.IN19
+sel[0] => Mux15.IN19
+sel[1] => Mux0.IN18
+sel[1] => Mux1.IN18
+sel[1] => Mux2.IN18
+sel[1] => Mux3.IN18
+sel[1] => Mux4.IN18
+sel[1] => Mux5.IN18
+sel[1] => Mux6.IN18
+sel[1] => Mux7.IN18
+sel[1] => Mux8.IN18
+sel[1] => Mux9.IN18
+sel[1] => Mux10.IN18
+sel[1] => Mux11.IN18
+sel[1] => Mux12.IN18
+sel[1] => Mux13.IN18
+sel[1] => Mux14.IN18
+sel[1] => Mux15.IN18
+sel[2] => Mux0.IN17
+sel[2] => Mux1.IN17
+sel[2] => Mux2.IN17
+sel[2] => Mux3.IN17
+sel[2] => Mux4.IN17
+sel[2] => Mux5.IN17
+sel[2] => Mux6.IN17
+sel[2] => Mux7.IN17
+sel[2] => Mux8.IN17
+sel[2] => Mux9.IN17
+sel[2] => Mux10.IN17
+sel[2] => Mux11.IN17
+sel[2] => Mux12.IN17
+sel[2] => Mux13.IN17
+sel[2] => Mux14.IN17
+sel[2] => Mux15.IN17
+sel[3] => Mux0.IN16
+sel[3] => Mux1.IN16
+sel[3] => Mux2.IN16
+sel[3] => Mux3.IN16
+sel[3] => Mux4.IN16
+sel[3] => Mux5.IN16
+sel[3] => Mux6.IN16
+sel[3] => Mux7.IN16
+sel[3] => Mux8.IN16
+sel[3] => Mux9.IN16
+sel[3] => Mux10.IN16
+sel[3] => Mux11.IN16
+sel[3] => Mux12.IN16
+sel[3] => Mux13.IN16
+sel[3] => Mux14.IN16
+sel[3] => Mux15.IN16
+final_out[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+final_out[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+final_out[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+final_out[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+final_out[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+final_out[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+final_out[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+final_out[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+final_out[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+final_out[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+final_out[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+final_out[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+final_out[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+final_out[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+final_out[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+final_out[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

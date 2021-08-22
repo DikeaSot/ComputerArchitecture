@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, D:/Dikea/Desktop/Project/myXOR/myXOR.vhd
+source_file = 1, D:/Dikea/Desktop/Project/myXOR/Waveform.vwf
+source_file = 1, D:/Dikea/Desktop/Project/myXOR/myXOR.vwf
+source_file = 1, D:/Dikea/Desktop/Project/myXOR/db/myXOR.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = myXOR
+instance = comp, \in2~I , in2, myXOR, 1
+instance = comp, \in1~I , in1, myXOR, 1
+instance = comp, \out1~0 , out1~0, myXOR, 1
+instance = comp, \out1~I , out1, myXOR, 1

@@ -1,0 +1,37 @@
+|Reg0
+in1[0] => ~NO_FANOUT~
+in1[1] => ~NO_FANOUT~
+in1[2] => ~NO_FANOUT~
+in1[3] => ~NO_FANOUT~
+in1[4] => ~NO_FANOUT~
+in1[5] => ~NO_FANOUT~
+in1[6] => ~NO_FANOUT~
+in1[7] => ~NO_FANOUT~
+in1[8] => ~NO_FANOUT~
+in1[9] => ~NO_FANOUT~
+in1[10] => ~NO_FANOUT~
+in1[11] => ~NO_FANOUT~
+in1[12] => ~NO_FANOUT~
+in1[13] => ~NO_FANOUT~
+in1[14] => ~NO_FANOUT~
+in1[15] => ~NO_FANOUT~
+enable => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+out1[0] <= <GND>
+out1[1] <= <GND>
+out1[2] <= <GND>
+out1[3] <= <GND>
+out1[4] <= <GND>
+out1[5] <= <GND>
+out1[6] <= <GND>
+out1[7] <= <GND>
+out1[8] <= <GND>
+out1[9] <= <GND>
+out1[10] <= <GND>
+out1[11] <= <GND>
+out1[12] <= <GND>
+out1[13] <= <GND>
+out1[14] <= <GND>
+out1[15] <= <GND>
+
+

@@ -1,0 +1,179 @@
+|Reg16
+in1[0] => GatedClockDFF:G0.in1
+in1[1] => GatedClockDFF:G1.in1
+in1[2] => GatedClockDFF:G2.in1
+in1[3] => GatedClockDFF:G3.in1
+in1[4] => GatedClockDFF:G4.in1
+in1[5] => GatedClockDFF:G5.in1
+in1[6] => GatedClockDFF:G6.in1
+in1[7] => GatedClockDFF:G7.in1
+in1[8] => GatedClockDFF:G8.in1
+in1[9] => GatedClockDFF:G9.in1
+in1[10] => GatedClockDFF:G10.in1
+in1[11] => GatedClockDFF:G11.in1
+in1[12] => GatedClockDFF:G12.in1
+in1[13] => GatedClockDFF:G13.in1
+in1[14] => GatedClockDFF:G14.in1
+in1[15] => GatedClockDFF:G15.in1
+enable => GatedClockDFF:G0.enable
+enable => GatedClockDFF:G1.enable
+enable => GatedClockDFF:G2.enable
+enable => GatedClockDFF:G3.enable
+enable => GatedClockDFF:G4.enable
+enable => GatedClockDFF:G5.enable
+enable => GatedClockDFF:G6.enable
+enable => GatedClockDFF:G7.enable
+enable => GatedClockDFF:G8.enable
+enable => GatedClockDFF:G9.enable
+enable => GatedClockDFF:G10.enable
+enable => GatedClockDFF:G11.enable
+enable => GatedClockDFF:G12.enable
+enable => GatedClockDFF:G13.enable
+enable => GatedClockDFF:G14.enable
+enable => GatedClockDFF:G15.enable
+clock => GatedClockDFF:G0.clock
+clock => GatedClockDFF:G1.clock
+clock => GatedClockDFF:G2.clock
+clock => GatedClockDFF:G3.clock
+clock => GatedClockDFF:G4.clock
+clock => GatedClockDFF:G5.clock
+clock => GatedClockDFF:G6.clock
+clock => GatedClockDFF:G7.clock
+clock => GatedClockDFF:G8.clock
+clock => GatedClockDFF:G9.clock
+clock => GatedClockDFF:G10.clock
+clock => GatedClockDFF:G11.clock
+clock => GatedClockDFF:G12.clock
+clock => GatedClockDFF:G13.clock
+clock => GatedClockDFF:G14.clock
+clock => GatedClockDFF:G15.clock
+out1[0] <= GatedClockDFF:G0.out1
+out1[1] <= GatedClockDFF:G1.out1
+out1[2] <= GatedClockDFF:G2.out1
+out1[3] <= GatedClockDFF:G3.out1
+out1[4] <= GatedClockDFF:G4.out1
+out1[5] <= GatedClockDFF:G5.out1
+out1[6] <= GatedClockDFF:G6.out1
+out1[7] <= GatedClockDFF:G7.out1
+out1[8] <= GatedClockDFF:G8.out1
+out1[9] <= GatedClockDFF:G9.out1
+out1[10] <= GatedClockDFF:G10.out1
+out1[11] <= GatedClockDFF:G11.out1
+out1[12] <= GatedClockDFF:G12.out1
+out1[13] <= GatedClockDFF:G13.out1
+out1[14] <= GatedClockDFF:G14.out1
+out1[15] <= GatedClockDFF:G15.out1
+
+
+|Reg16|GatedClockDFF:G0
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G1
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G2
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G3
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G4
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G5
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G6
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G7
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G8
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G9
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G10
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G11
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G12
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G13
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G14
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Reg16|GatedClockDFF:G15
+in1 => P4.IN0
+clock => afterClock.IN0
+enable => afterClock.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+

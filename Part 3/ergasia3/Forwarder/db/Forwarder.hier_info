@@ -1,0 +1,31 @@
+|Forwarder
+R1AD[0] => Equal0.IN2
+R1AD[0] => Equal1.IN2
+R1AD[1] => Equal0.IN1
+R1AD[1] => Equal1.IN1
+R1AD[2] => Equal0.IN0
+R1AD[2] => Equal1.IN0
+R2AD[0] => Equal2.IN2
+R2AD[0] => Equal3.IN2
+R2AD[1] => Equal2.IN1
+R2AD[1] => Equal3.IN1
+R2AD[2] => Equal2.IN0
+R2AD[2] => Equal3.IN0
+RegAD_EXMEM[0] => Equal0.IN5
+RegAD_EXMEM[0] => Equal2.IN5
+RegAD_EXMEM[1] => Equal0.IN4
+RegAD_EXMEM[1] => Equal2.IN4
+RegAD_EXMEM[2] => Equal0.IN3
+RegAD_EXMEM[2] => Equal2.IN3
+RegAD_MEMWB[0] => Equal1.IN5
+RegAD_MEMWB[0] => Equal3.IN5
+RegAD_MEMWB[1] => Equal1.IN4
+RegAD_MEMWB[1] => Equal3.IN4
+RegAD_MEMWB[2] => Equal1.IN3
+RegAD_MEMWB[2] => Equal3.IN3
+S1[0] <= S1~0.DB_MAX_OUTPUT_PORT_TYPE
+S1[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+S2[0] <= S2~0.DB_MAX_OUTPUT_PORT_TYPE
+S2[1] <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+
+

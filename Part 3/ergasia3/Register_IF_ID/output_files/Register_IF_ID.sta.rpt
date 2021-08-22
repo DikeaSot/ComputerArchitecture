@@ -1,0 +1,1336 @@
+TimeQuest Timing Analyzer report for Register_IF_ID
+Thu May 27 09:53:02 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'IF_Flush'
+ 12. Slow Model Hold: 'IF_Flush'
+ 13. Slow Model Minimum Pulse Width: 'IF_Flush'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'IF_Flush'
+ 24. Fast Model Hold: 'IF_Flush'
+ 25. Fast Model Minimum Pulse Width: 'IF_Flush'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Register_IF_ID                                                    ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; IF_Flush   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { IF_Flush } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                    ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name ; Note                                                          ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; 2008.03 MHz ; 450.05 MHz      ; IF_Flush   ; limit due to minimum period restriction (max I/O toggle rate) ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------+
+; Slow Model Setup Summary         ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; IF_Flush ; 0.251 ; 0.000         ;
++----------+-------+---------------+
+
+
++-----------------------------------+
+; Slow Model Hold Summary           ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; IF_Flush ; -0.928 ; -25.286       ;
++----------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; IF_Flush ; -1.222 ; -1.222             ;
++----------+--------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'IF_Flush'                                                                                       ;
++-------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; 0.251 ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.682      ; 4.080      ;
+; 0.342 ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.773      ; 4.113      ;
+; 0.358 ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.774      ; 4.098      ;
+; 0.372 ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.682      ; 4.124      ;
+; 0.424 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.697      ; 3.915      ;
+; 0.427 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.697      ; 3.912      ;
+; 0.456 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.700      ; 3.915      ;
+; 0.457 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.702      ; 3.927      ;
+; 0.459 ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.771      ; 4.129      ;
+; 0.461 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.699      ; 3.909      ;
+; 0.471 ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.770      ; 4.116      ;
+; 0.478 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.721      ; 3.885      ;
+; 0.483 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.722      ; 3.889      ;
+; 0.483 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.689      ; 3.830      ;
+; 0.487 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.690      ; 3.841      ;
+; 0.492 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.776      ; 4.098      ;
+; 0.504 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.776      ; 4.086      ;
+; 0.509 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.700      ; 3.862      ;
+; 0.511 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.724      ; 3.855      ;
+; 0.525 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.722      ; 3.873      ;
+; 0.547 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.721      ; 3.856      ;
+; 0.547 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.724      ; 3.859      ;
+; 0.552 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.724      ; 3.849      ;
+; 0.600 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.701      ; 3.919      ;
+; 0.630 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.702      ; 3.891      ;
+; 0.638 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.688      ; 3.873      ;
+; 0.642 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.689      ; 3.865      ;
+; 0.676 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.690      ; 3.833      ;
+; 0.694 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.724      ; 3.854      ;
+; 0.701 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.802      ; 3.923      ;
+; 0.727 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.802      ; 3.897      ;
+; 0.750 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 4.801      ; 3.873      ;
+; 0.751 ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.682      ; 4.080      ;
+; 0.842 ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.773      ; 4.113      ;
+; 0.858 ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.774      ; 4.098      ;
+; 0.872 ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.682      ; 4.124      ;
+; 0.924 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.697      ; 3.915      ;
+; 0.927 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.697      ; 3.912      ;
+; 0.956 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.700      ; 3.915      ;
+; 0.957 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.702      ; 3.927      ;
+; 0.959 ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.771      ; 4.129      ;
+; 0.961 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.699      ; 3.909      ;
+; 0.971 ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.770      ; 4.116      ;
+; 0.978 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.721      ; 3.885      ;
+; 0.983 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.722      ; 3.889      ;
+; 0.983 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.689      ; 3.830      ;
+; 0.987 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.690      ; 3.841      ;
+; 0.992 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.776      ; 4.098      ;
+; 1.004 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.776      ; 4.086      ;
+; 1.009 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.700      ; 3.862      ;
+; 1.011 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.724      ; 3.855      ;
+; 1.025 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.722      ; 3.873      ;
+; 1.047 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.721      ; 3.856      ;
+; 1.047 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.724      ; 3.859      ;
+; 1.052 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.724      ; 3.849      ;
+; 1.100 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.701      ; 3.919      ;
+; 1.130 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.702      ; 3.891      ;
+; 1.138 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.688      ; 3.873      ;
+; 1.142 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.689      ; 3.865      ;
+; 1.176 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.690      ; 3.833      ;
+; 1.194 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.724      ; 3.854      ;
+; 1.201 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.802      ; 3.923      ;
+; 1.227 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.802      ; 3.897      ;
+; 1.250 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 4.801      ; 3.873      ;
++-------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'IF_Flush'                                                                                         ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; -0.928 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.801      ; 3.873      ;
+; -0.905 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.802      ; 3.897      ;
+; -0.879 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.802      ; 3.923      ;
+; -0.875 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.724      ; 3.849      ;
+; -0.870 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.724      ; 3.854      ;
+; -0.869 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.724      ; 3.855      ;
+; -0.865 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.721      ; 3.856      ;
+; -0.865 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.724      ; 3.859      ;
+; -0.859 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.689      ; 3.830      ;
+; -0.857 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.690      ; 3.833      ;
+; -0.849 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.722      ; 3.873      ;
+; -0.849 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.690      ; 3.841      ;
+; -0.838 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.700      ; 3.862      ;
+; -0.836 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.721      ; 3.885      ;
+; -0.833 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.722      ; 3.889      ;
+; -0.824 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.689      ; 3.865      ;
+; -0.815 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.688      ; 3.873      ;
+; -0.811 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.702      ; 3.891      ;
+; -0.790 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.699      ; 3.909      ;
+; -0.785 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.697      ; 3.912      ;
+; -0.785 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.700      ; 3.915      ;
+; -0.782 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.701      ; 3.919      ;
+; -0.782 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.697      ; 3.915      ;
+; -0.775 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.702      ; 3.927      ;
+; -0.690 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.776      ; 4.086      ;
+; -0.678 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.776      ; 4.098      ;
+; -0.676 ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.774      ; 4.098      ;
+; -0.660 ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.773      ; 4.113      ;
+; -0.654 ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.770      ; 4.116      ;
+; -0.642 ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.771      ; 4.129      ;
+; -0.602 ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.682      ; 4.080      ;
+; -0.558 ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 4.682      ; 4.124      ;
+; -0.428 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.801      ; 3.873      ;
+; -0.405 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.802      ; 3.897      ;
+; -0.379 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.802      ; 3.923      ;
+; -0.375 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.724      ; 3.849      ;
+; -0.370 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.724      ; 3.854      ;
+; -0.369 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.724      ; 3.855      ;
+; -0.365 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.721      ; 3.856      ;
+; -0.365 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.724      ; 3.859      ;
+; -0.359 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.689      ; 3.830      ;
+; -0.357 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.690      ; 3.833      ;
+; -0.349 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.722      ; 3.873      ;
+; -0.349 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.690      ; 3.841      ;
+; -0.338 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.700      ; 3.862      ;
+; -0.336 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.721      ; 3.885      ;
+; -0.333 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.722      ; 3.889      ;
+; -0.324 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.689      ; 3.865      ;
+; -0.315 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.688      ; 3.873      ;
+; -0.311 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.702      ; 3.891      ;
+; -0.290 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.699      ; 3.909      ;
+; -0.285 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.697      ; 3.912      ;
+; -0.285 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.700      ; 3.915      ;
+; -0.282 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.701      ; 3.919      ;
+; -0.282 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.697      ; 3.915      ;
+; -0.275 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.702      ; 3.927      ;
+; -0.190 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.776      ; 4.086      ;
+; -0.178 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.776      ; 4.098      ;
+; -0.176 ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.774      ; 4.098      ;
+; -0.160 ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.773      ; 4.113      ;
+; -0.154 ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.770      ; 4.116      ;
+; -0.142 ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.771      ; 4.129      ;
+; -0.102 ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.682      ; 4.080      ;
+; -0.058 ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 4.682      ; 4.124      ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'IF_Flush'                                                                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; IF_Flush ; Rise       ; IF_Flush                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; IF_Flush|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; IF_Flush|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[0]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[0]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[0]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[0]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[10]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[10]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[10]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[10]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[11]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[11]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[11]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[11]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[12]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[12]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[12]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[12]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[13]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[13]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[13]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[13]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[14]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[14]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[14]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[14]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[15]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[15]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[15]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[15]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[1]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[1]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[1]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[1]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[2]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[2]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[2]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[2]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[3]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[3]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[3]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[3]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[4]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[4]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[4]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[4]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[5]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[5]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[5]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[5]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[6]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[6]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[6]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[6]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[7]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[7]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[7]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[7]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[8]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[8]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[8]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[8]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[9]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[9]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[9]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[9]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[0]$latch                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[0]$latch                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[0]$latch|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[0]$latch|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[10]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[10]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[10]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[10]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[11]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[11]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[11]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[11]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[12]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[12]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[12]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[12]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[13]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[13]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[13]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[13]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[14]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[14]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[14]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[14]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[15]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[15]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[15]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|inclk[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|inclk[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|outclk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|outclk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]~1|combout            ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Setup Times                                                                    ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; IF_Flush           ; IF_Flush   ; 0.249 ; 0.249 ; Fall       ; IF_Flush        ;
+; IF_ID_ENABLE       ; IF_Flush   ; 4.092 ; 4.092 ; Fall       ; IF_Flush        ;
+; clock              ; IF_Flush   ; 4.418 ; 4.418 ; Fall       ; IF_Flush        ;
+; inInstruction[*]   ; IF_Flush   ; 3.823 ; 3.823 ; Fall       ; IF_Flush        ;
+;  inInstruction[0]  ; IF_Flush   ; 3.024 ; 3.024 ; Fall       ; IF_Flush        ;
+;  inInstruction[1]  ; IF_Flush   ; 3.307 ; 3.307 ; Fall       ; IF_Flush        ;
+;  inInstruction[2]  ; IF_Flush   ; 3.142 ; 3.142 ; Fall       ; IF_Flush        ;
+;  inInstruction[3]  ; IF_Flush   ; 3.343 ; 3.343 ; Fall       ; IF_Flush        ;
+;  inInstruction[4]  ; IF_Flush   ; 3.488 ; 3.488 ; Fall       ; IF_Flush        ;
+;  inInstruction[5]  ; IF_Flush   ; 3.505 ; 3.505 ; Fall       ; IF_Flush        ;
+;  inInstruction[6]  ; IF_Flush   ; 3.337 ; 3.337 ; Fall       ; IF_Flush        ;
+;  inInstruction[7]  ; IF_Flush   ; 3.258 ; 3.258 ; Fall       ; IF_Flush        ;
+;  inInstruction[8]  ; IF_Flush   ; 3.823 ; 3.823 ; Fall       ; IF_Flush        ;
+;  inInstruction[9]  ; IF_Flush   ; 3.256 ; 3.256 ; Fall       ; IF_Flush        ;
+;  inInstruction[10] ; IF_Flush   ; 3.162 ; 3.162 ; Fall       ; IF_Flush        ;
+;  inInstruction[11] ; IF_Flush   ; 3.262 ; 3.262 ; Fall       ; IF_Flush        ;
+;  inInstruction[12] ; IF_Flush   ; 3.565 ; 3.565 ; Fall       ; IF_Flush        ;
+;  inInstruction[13] ; IF_Flush   ; 3.033 ; 3.033 ; Fall       ; IF_Flush        ;
+;  inInstruction[14] ; IF_Flush   ; 3.201 ; 3.201 ; Fall       ; IF_Flush        ;
+;  inInstruction[15] ; IF_Flush   ; 3.796 ; 3.796 ; Fall       ; IF_Flush        ;
+; inPC[*]            ; IF_Flush   ; 5.838 ; 5.838 ; Fall       ; IF_Flush        ;
+;  inPC[0]           ; IF_Flush   ; 3.279 ; 3.279 ; Fall       ; IF_Flush        ;
+;  inPC[1]           ; IF_Flush   ; 5.708 ; 5.708 ; Fall       ; IF_Flush        ;
+;  inPC[2]           ; IF_Flush   ; 5.634 ; 5.634 ; Fall       ; IF_Flush        ;
+;  inPC[3]           ; IF_Flush   ; 5.838 ; 5.838 ; Fall       ; IF_Flush        ;
+;  inPC[4]           ; IF_Flush   ; 5.773 ; 5.773 ; Fall       ; IF_Flush        ;
+;  inPC[5]           ; IF_Flush   ; 5.720 ; 5.720 ; Fall       ; IF_Flush        ;
+;  inPC[6]           ; IF_Flush   ; 5.688 ; 5.688 ; Fall       ; IF_Flush        ;
+;  inPC[7]           ; IF_Flush   ; 4.964 ; 4.964 ; Fall       ; IF_Flush        ;
+;  inPC[8]           ; IF_Flush   ; 5.320 ; 5.320 ; Fall       ; IF_Flush        ;
+;  inPC[9]           ; IF_Flush   ; 5.101 ; 5.101 ; Fall       ; IF_Flush        ;
+;  inPC[10]          ; IF_Flush   ; 5.021 ; 5.021 ; Fall       ; IF_Flush        ;
+;  inPC[11]          ; IF_Flush   ; 4.568 ; 4.568 ; Fall       ; IF_Flush        ;
+;  inPC[12]          ; IF_Flush   ; 4.461 ; 4.461 ; Fall       ; IF_Flush        ;
+;  inPC[13]          ; IF_Flush   ; 5.043 ; 5.043 ; Fall       ; IF_Flush        ;
+;  inPC[14]          ; IF_Flush   ; 4.537 ; 4.537 ; Fall       ; IF_Flush        ;
+;  inPC[15]          ; IF_Flush   ; 4.512 ; 4.512 ; Fall       ; IF_Flush        ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------+
+; Hold Times                                                                       ;
++--------------------+------------+--------+--------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------------+------------+--------+--------+------------+-----------------+
+; IF_Flush           ; IF_Flush   ; 0.928  ; 0.928  ; Fall       ; IF_Flush        ;
+; IF_ID_ENABLE       ; IF_Flush   ; -2.534 ; -2.534 ; Fall       ; IF_Flush        ;
+; clock              ; IF_Flush   ; -2.919 ; -2.919 ; Fall       ; IF_Flush        ;
+; inInstruction[*]   ; IF_Flush   ; -2.195 ; -2.195 ; Fall       ; IF_Flush        ;
+;  inInstruction[0]  ; IF_Flush   ; -2.195 ; -2.195 ; Fall       ; IF_Flush        ;
+;  inInstruction[1]  ; IF_Flush   ; -2.478 ; -2.478 ; Fall       ; IF_Flush        ;
+;  inInstruction[2]  ; IF_Flush   ; -2.460 ; -2.460 ; Fall       ; IF_Flush        ;
+;  inInstruction[3]  ; IF_Flush   ; -2.485 ; -2.485 ; Fall       ; IF_Flush        ;
+;  inInstruction[4]  ; IF_Flush   ; -2.807 ; -2.807 ; Fall       ; IF_Flush        ;
+;  inInstruction[5]  ; IF_Flush   ; -2.676 ; -2.676 ; Fall       ; IF_Flush        ;
+;  inInstruction[6]  ; IF_Flush   ; -2.479 ; -2.479 ; Fall       ; IF_Flush        ;
+;  inInstruction[7]  ; IF_Flush   ; -2.440 ; -2.440 ; Fall       ; IF_Flush        ;
+;  inInstruction[8]  ; IF_Flush   ; -3.142 ; -3.142 ; Fall       ; IF_Flush        ;
+;  inInstruction[9]  ; IF_Flush   ; -2.394 ; -2.394 ; Fall       ; IF_Flush        ;
+;  inInstruction[10] ; IF_Flush   ; -2.484 ; -2.484 ; Fall       ; IF_Flush        ;
+;  inInstruction[11] ; IF_Flush   ; -2.584 ; -2.584 ; Fall       ; IF_Flush        ;
+;  inInstruction[12] ; IF_Flush   ; -2.883 ; -2.883 ; Fall       ; IF_Flush        ;
+;  inInstruction[13] ; IF_Flush   ; -2.356 ; -2.356 ; Fall       ; IF_Flush        ;
+;  inInstruction[14] ; IF_Flush   ; -2.325 ; -2.325 ; Fall       ; IF_Flush        ;
+;  inInstruction[15] ; IF_Flush   ; -3.118 ; -3.118 ; Fall       ; IF_Flush        ;
+; inPC[*]            ; IF_Flush   ; -2.429 ; -2.429 ; Fall       ; IF_Flush        ;
+;  inPC[0]           ; IF_Flush   ; -2.429 ; -2.429 ; Fall       ; IF_Flush        ;
+;  inPC[1]           ; IF_Flush   ; -3.644 ; -3.644 ; Fall       ; IF_Flush        ;
+;  inPC[2]           ; IF_Flush   ; -3.483 ; -3.483 ; Fall       ; IF_Flush        ;
+;  inPC[3]           ; IF_Flush   ; -3.938 ; -3.938 ; Fall       ; IF_Flush        ;
+;  inPC[4]           ; IF_Flush   ; -3.952 ; -3.952 ; Fall       ; IF_Flush        ;
+;  inPC[5]           ; IF_Flush   ; -3.776 ; -3.776 ; Fall       ; IF_Flush        ;
+;  inPC[6]           ; IF_Flush   ; -3.826 ; -3.826 ; Fall       ; IF_Flush        ;
+;  inPC[7]           ; IF_Flush   ; -3.188 ; -3.188 ; Fall       ; IF_Flush        ;
+;  inPC[8]           ; IF_Flush   ; -3.598 ; -3.598 ; Fall       ; IF_Flush        ;
+;  inPC[9]           ; IF_Flush   ; -3.313 ; -3.313 ; Fall       ; IF_Flush        ;
+;  inPC[10]          ; IF_Flush   ; -3.670 ; -3.670 ; Fall       ; IF_Flush        ;
+;  inPC[11]          ; IF_Flush   ; -2.905 ; -2.905 ; Fall       ; IF_Flush        ;
+;  inPC[12]          ; IF_Flush   ; -3.068 ; -3.068 ; Fall       ; IF_Flush        ;
+;  inPC[13]          ; IF_Flush   ; -3.546 ; -3.546 ; Fall       ; IF_Flush        ;
+;  inPC[14]          ; IF_Flush   ; -3.667 ; -3.667 ; Fall       ; IF_Flush        ;
+;  inPC[15]          ; IF_Flush   ; -3.661 ; -3.661 ; Fall       ; IF_Flush        ;
++--------------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Clock to Output Times                                                           ;
++---------------------+------------+-------+-------+------------+-----------------+
+; Data Port           ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------------+------------+-------+-------+------------+-----------------+
+; outInstruction[*]   ; IF_Flush   ; 8.493 ; 8.493 ; Fall       ; IF_Flush        ;
+;  outInstruction[0]  ; IF_Flush   ; 7.814 ; 7.814 ; Fall       ; IF_Flush        ;
+;  outInstruction[1]  ; IF_Flush   ; 7.770 ; 7.770 ; Fall       ; IF_Flush        ;
+;  outInstruction[2]  ; IF_Flush   ; 8.493 ; 8.493 ; Fall       ; IF_Flush        ;
+;  outInstruction[3]  ; IF_Flush   ; 8.098 ; 8.098 ; Fall       ; IF_Flush        ;
+;  outInstruction[4]  ; IF_Flush   ; 7.813 ; 7.813 ; Fall       ; IF_Flush        ;
+;  outInstruction[5]  ; IF_Flush   ; 8.049 ; 8.049 ; Fall       ; IF_Flush        ;
+;  outInstruction[6]  ; IF_Flush   ; 8.051 ; 8.051 ; Fall       ; IF_Flush        ;
+;  outInstruction[7]  ; IF_Flush   ; 7.815 ; 7.815 ; Fall       ; IF_Flush        ;
+;  outInstruction[8]  ; IF_Flush   ; 8.010 ; 8.010 ; Fall       ; IF_Flush        ;
+;  outInstruction[9]  ; IF_Flush   ; 8.427 ; 8.427 ; Fall       ; IF_Flush        ;
+;  outInstruction[10] ; IF_Flush   ; 8.144 ; 8.144 ; Fall       ; IF_Flush        ;
+;  outInstruction[11] ; IF_Flush   ; 8.147 ; 8.147 ; Fall       ; IF_Flush        ;
+;  outInstruction[12] ; IF_Flush   ; 8.326 ; 8.326 ; Fall       ; IF_Flush        ;
+;  outInstruction[13] ; IF_Flush   ; 7.739 ; 7.739 ; Fall       ; IF_Flush        ;
+;  outInstruction[14] ; IF_Flush   ; 8.456 ; 8.456 ; Fall       ; IF_Flush        ;
+;  outInstruction[15] ; IF_Flush   ; 8.482 ; 8.482 ; Fall       ; IF_Flush        ;
+; outPC[*]            ; IF_Flush   ; 8.286 ; 8.286 ; Fall       ; IF_Flush        ;
+;  outPC[0]           ; IF_Flush   ; 7.823 ; 7.823 ; Fall       ; IF_Flush        ;
+;  outPC[1]           ; IF_Flush   ; 7.825 ; 7.825 ; Fall       ; IF_Flush        ;
+;  outPC[2]           ; IF_Flush   ; 8.081 ; 8.081 ; Fall       ; IF_Flush        ;
+;  outPC[3]           ; IF_Flush   ; 7.817 ; 7.817 ; Fall       ; IF_Flush        ;
+;  outPC[4]           ; IF_Flush   ; 7.815 ; 7.815 ; Fall       ; IF_Flush        ;
+;  outPC[5]           ; IF_Flush   ; 8.068 ; 8.068 ; Fall       ; IF_Flush        ;
+;  outPC[6]           ; IF_Flush   ; 7.931 ; 7.931 ; Fall       ; IF_Flush        ;
+;  outPC[7]           ; IF_Flush   ; 8.121 ; 8.121 ; Fall       ; IF_Flush        ;
+;  outPC[8]           ; IF_Flush   ; 8.034 ; 8.034 ; Fall       ; IF_Flush        ;
+;  outPC[9]           ; IF_Flush   ; 8.177 ; 8.177 ; Fall       ; IF_Flush        ;
+;  outPC[10]          ; IF_Flush   ; 7.870 ; 7.870 ; Fall       ; IF_Flush        ;
+;  outPC[11]          ; IF_Flush   ; 8.129 ; 8.129 ; Fall       ; IF_Flush        ;
+;  outPC[12]          ; IF_Flush   ; 7.857 ; 7.857 ; Fall       ; IF_Flush        ;
+;  outPC[13]          ; IF_Flush   ; 7.811 ; 7.811 ; Fall       ; IF_Flush        ;
+;  outPC[14]          ; IF_Flush   ; 8.129 ; 8.129 ; Fall       ; IF_Flush        ;
+;  outPC[15]          ; IF_Flush   ; 8.286 ; 8.286 ; Fall       ; IF_Flush        ;
++---------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                   ;
++---------------------+------------+-------+-------+------------+-----------------+
+; Data Port           ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------------+------------+-------+-------+------------+-----------------+
+; outInstruction[*]   ; IF_Flush   ; 7.739 ; 7.739 ; Fall       ; IF_Flush        ;
+;  outInstruction[0]  ; IF_Flush   ; 7.814 ; 7.814 ; Fall       ; IF_Flush        ;
+;  outInstruction[1]  ; IF_Flush   ; 7.770 ; 7.770 ; Fall       ; IF_Flush        ;
+;  outInstruction[2]  ; IF_Flush   ; 8.493 ; 8.493 ; Fall       ; IF_Flush        ;
+;  outInstruction[3]  ; IF_Flush   ; 8.098 ; 8.098 ; Fall       ; IF_Flush        ;
+;  outInstruction[4]  ; IF_Flush   ; 7.813 ; 7.813 ; Fall       ; IF_Flush        ;
+;  outInstruction[5]  ; IF_Flush   ; 8.049 ; 8.049 ; Fall       ; IF_Flush        ;
+;  outInstruction[6]  ; IF_Flush   ; 8.051 ; 8.051 ; Fall       ; IF_Flush        ;
+;  outInstruction[7]  ; IF_Flush   ; 7.815 ; 7.815 ; Fall       ; IF_Flush        ;
+;  outInstruction[8]  ; IF_Flush   ; 8.010 ; 8.010 ; Fall       ; IF_Flush        ;
+;  outInstruction[9]  ; IF_Flush   ; 8.427 ; 8.427 ; Fall       ; IF_Flush        ;
+;  outInstruction[10] ; IF_Flush   ; 8.144 ; 8.144 ; Fall       ; IF_Flush        ;
+;  outInstruction[11] ; IF_Flush   ; 8.147 ; 8.147 ; Fall       ; IF_Flush        ;
+;  outInstruction[12] ; IF_Flush   ; 8.326 ; 8.326 ; Fall       ; IF_Flush        ;
+;  outInstruction[13] ; IF_Flush   ; 7.739 ; 7.739 ; Fall       ; IF_Flush        ;
+;  outInstruction[14] ; IF_Flush   ; 8.456 ; 8.456 ; Fall       ; IF_Flush        ;
+;  outInstruction[15] ; IF_Flush   ; 8.482 ; 8.482 ; Fall       ; IF_Flush        ;
+; outPC[*]            ; IF_Flush   ; 7.811 ; 7.811 ; Fall       ; IF_Flush        ;
+;  outPC[0]           ; IF_Flush   ; 7.823 ; 7.823 ; Fall       ; IF_Flush        ;
+;  outPC[1]           ; IF_Flush   ; 7.825 ; 7.825 ; Fall       ; IF_Flush        ;
+;  outPC[2]           ; IF_Flush   ; 8.081 ; 8.081 ; Fall       ; IF_Flush        ;
+;  outPC[3]           ; IF_Flush   ; 7.817 ; 7.817 ; Fall       ; IF_Flush        ;
+;  outPC[4]           ; IF_Flush   ; 7.815 ; 7.815 ; Fall       ; IF_Flush        ;
+;  outPC[5]           ; IF_Flush   ; 8.068 ; 8.068 ; Fall       ; IF_Flush        ;
+;  outPC[6]           ; IF_Flush   ; 7.931 ; 7.931 ; Fall       ; IF_Flush        ;
+;  outPC[7]           ; IF_Flush   ; 8.121 ; 8.121 ; Fall       ; IF_Flush        ;
+;  outPC[8]           ; IF_Flush   ; 8.034 ; 8.034 ; Fall       ; IF_Flush        ;
+;  outPC[9]           ; IF_Flush   ; 8.177 ; 8.177 ; Fall       ; IF_Flush        ;
+;  outPC[10]          ; IF_Flush   ; 7.870 ; 7.870 ; Fall       ; IF_Flush        ;
+;  outPC[11]          ; IF_Flush   ; 8.129 ; 8.129 ; Fall       ; IF_Flush        ;
+;  outPC[12]          ; IF_Flush   ; 7.857 ; 7.857 ; Fall       ; IF_Flush        ;
+;  outPC[13]          ; IF_Flush   ; 7.811 ; 7.811 ; Fall       ; IF_Flush        ;
+;  outPC[14]          ; IF_Flush   ; 8.129 ; 8.129 ; Fall       ; IF_Flush        ;
+;  outPC[15]          ; IF_Flush   ; 8.286 ; 8.286 ; Fall       ; IF_Flush        ;
++---------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------+
+; Fast Model Setup Summary         ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; IF_Flush ; 0.613 ; 0.000         ;
++----------+-------+---------------+
+
+
++-----------------------------------+
+; Fast Model Hold Summary           ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; IF_Flush ; -0.731 ; -20.114       ;
++----------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; IF_Flush ; -1.222 ; -1.222             ;
++----------+--------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'IF_Flush'                                                                                       ;
++-------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; 0.613 ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.539      ; 2.076      ;
+; 0.651 ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.586      ; 2.094      ;
+; 0.652 ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.587      ; 2.092      ;
+; 0.656 ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.539      ; 2.107      ;
+; 0.705 ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.584      ; 2.106      ;
+; 0.715 ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.583      ; 2.095      ;
+; 0.726 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.588      ; 2.087      ;
+; 0.732 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.588      ; 2.080      ;
+; 0.806 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.540      ; 1.882      ;
+; 0.812 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.543      ; 1.884      ;
+; 0.812 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.539      ; 1.875      ;
+; 0.824 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.565      ; 1.898      ;
+; 0.824 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.545      ; 1.882      ;
+; 0.824 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.535      ; 1.858      ;
+; 0.824 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.535      ; 1.852      ;
+; 0.829 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.542      ; 1.869      ;
+; 0.830 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.565      ; 1.883      ;
+; 0.831 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.566      ; 1.886      ;
+; 0.835 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.543      ; 1.864      ;
+; 0.848 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.567      ; 1.867      ;
+; 0.859 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.564      ; 1.862      ;
+; 0.860 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.568      ; 1.870      ;
+; 0.868 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.534      ; 1.895      ;
+; 0.876 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.535      ; 1.886      ;
+; 0.881 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.577      ; 1.922      ;
+; 0.885 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.544      ; 1.886      ;
+; 0.891 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.568      ; 1.837      ;
+; 0.901 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.577      ; 1.902      ;
+; 0.907 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.545      ; 1.865      ;
+; 0.909 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.536      ; 1.854      ;
+; 0.919 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.567      ; 1.877      ;
+; 0.939 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; 0.500        ; 2.576      ; 1.863      ;
+; 1.113 ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.539      ; 2.076      ;
+; 1.151 ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.586      ; 2.094      ;
+; 1.152 ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.587      ; 2.092      ;
+; 1.156 ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.539      ; 2.107      ;
+; 1.205 ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.584      ; 2.106      ;
+; 1.215 ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.583      ; 2.095      ;
+; 1.226 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.588      ; 2.087      ;
+; 1.232 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.588      ; 2.080      ;
+; 1.306 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.540      ; 1.882      ;
+; 1.312 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.543      ; 1.884      ;
+; 1.312 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.539      ; 1.875      ;
+; 1.324 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.565      ; 1.898      ;
+; 1.324 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.545      ; 1.882      ;
+; 1.324 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.535      ; 1.858      ;
+; 1.324 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.535      ; 1.852      ;
+; 1.329 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.542      ; 1.869      ;
+; 1.330 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.565      ; 1.883      ;
+; 1.331 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.566      ; 1.886      ;
+; 1.335 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.543      ; 1.864      ;
+; 1.348 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.567      ; 1.867      ;
+; 1.359 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.564      ; 1.862      ;
+; 1.360 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.568      ; 1.870      ;
+; 1.368 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.534      ; 1.895      ;
+; 1.376 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.535      ; 1.886      ;
+; 1.381 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.577      ; 1.922      ;
+; 1.385 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.544      ; 1.886      ;
+; 1.391 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.568      ; 1.837      ;
+; 1.401 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.577      ; 1.902      ;
+; 1.407 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.545      ; 1.865      ;
+; 1.409 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.536      ; 1.854      ;
+; 1.419 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.567      ; 1.877      ;
+; 1.439 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; 1.000        ; 2.576      ; 1.863      ;
++-------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'IF_Flush'                                                                                         ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; -0.731 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.568      ; 1.837      ;
+; -0.713 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.576      ; 1.863      ;
+; -0.702 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.564      ; 1.862      ;
+; -0.700 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.567      ; 1.867      ;
+; -0.698 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.568      ; 1.870      ;
+; -0.690 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.567      ; 1.877      ;
+; -0.683 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.535      ; 1.852      ;
+; -0.682 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.565      ; 1.883      ;
+; -0.682 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.536      ; 1.854      ;
+; -0.680 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.566      ; 1.886      ;
+; -0.680 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.545      ; 1.865      ;
+; -0.679 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.543      ; 1.864      ;
+; -0.677 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.535      ; 1.858      ;
+; -0.675 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.577      ; 1.902      ;
+; -0.673 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.542      ; 1.869      ;
+; -0.667 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.565      ; 1.898      ;
+; -0.664 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.539      ; 1.875      ;
+; -0.663 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.545      ; 1.882      ;
+; -0.659 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.543      ; 1.884      ;
+; -0.658 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.544      ; 1.886      ;
+; -0.658 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.540      ; 1.882      ;
+; -0.655 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.577      ; 1.922      ;
+; -0.649 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.535      ; 1.886      ;
+; -0.639 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.534      ; 1.895      ;
+; -0.508 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.588      ; 2.080      ;
+; -0.501 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.588      ; 2.087      ;
+; -0.495 ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.587      ; 2.092      ;
+; -0.492 ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.586      ; 2.094      ;
+; -0.488 ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.583      ; 2.095      ;
+; -0.478 ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.584      ; 2.106      ;
+; -0.463 ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.539      ; 2.076      ;
+; -0.432 ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; 0.000        ; 2.539      ; 2.107      ;
+; -0.231 ; IF_Flush  ; outPC[3]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.568      ; 1.837      ;
+; -0.213 ; IF_Flush  ; outInstruction[15]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.576      ; 1.863      ;
+; -0.202 ; IF_Flush  ; outPC[1]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.564      ; 1.862      ;
+; -0.200 ; IF_Flush  ; outPC[5]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.567      ; 1.867      ;
+; -0.198 ; IF_Flush  ; outPC[6]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.568      ; 1.870      ;
+; -0.190 ; IF_Flush  ; outPC[2]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.567      ; 1.877      ;
+; -0.183 ; IF_Flush  ; outInstruction[14]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.535      ; 1.852      ;
+; -0.182 ; IF_Flush  ; outPC[4]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.565      ; 1.883      ;
+; -0.182 ; IF_Flush  ; outInstruction[8]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.536      ; 1.854      ;
+; -0.180 ; IF_Flush  ; outPC[0]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.566      ; 1.886      ;
+; -0.180 ; IF_Flush  ; outInstruction[4]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.545      ; 1.865      ;
+; -0.179 ; IF_Flush  ; outInstruction[0]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.543      ; 1.864      ;
+; -0.177 ; IF_Flush  ; outInstruction[9]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.535      ; 1.858      ;
+; -0.175 ; IF_Flush  ; outInstruction[11]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.577      ; 1.902      ;
+; -0.173 ; IF_Flush  ; outInstruction[1]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.542      ; 1.869      ;
+; -0.167 ; IF_Flush  ; outPC[7]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.565      ; 1.898      ;
+; -0.164 ; IF_Flush  ; outInstruction[6]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.539      ; 1.875      ;
+; -0.163 ; IF_Flush  ; outInstruction[7]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.545      ; 1.882      ;
+; -0.159 ; IF_Flush  ; outInstruction[5]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.543      ; 1.884      ;
+; -0.158 ; IF_Flush  ; outInstruction[2]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.544      ; 1.886      ;
+; -0.158 ; IF_Flush  ; outInstruction[3]$latch  ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.540      ; 1.882      ;
+; -0.155 ; IF_Flush  ; outInstruction[10]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.577      ; 1.922      ;
+; -0.149 ; IF_Flush  ; outInstruction[12]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.535      ; 1.886      ;
+; -0.139 ; IF_Flush  ; outInstruction[13]$latch ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.534      ; 1.895      ;
+; -0.008 ; IF_Flush  ; outPC[14]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.588      ; 2.080      ;
+; -0.001 ; IF_Flush  ; outPC[12]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.588      ; 2.087      ;
+; 0.005  ; IF_Flush  ; outPC[11]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.587      ; 2.092      ;
+; 0.008  ; IF_Flush  ; outPC[9]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.586      ; 2.094      ;
+; 0.012  ; IF_Flush  ; outPC[13]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.583      ; 2.095      ;
+; 0.022  ; IF_Flush  ; outPC[10]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.584      ; 2.106      ;
+; 0.037  ; IF_Flush  ; outPC[15]$latch          ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.539      ; 2.076      ;
+; 0.068  ; IF_Flush  ; outPC[8]$latch           ; IF_Flush     ; IF_Flush    ; -0.500       ; 2.539      ; 2.107      ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'IF_Flush'                                                                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; IF_Flush ; Rise       ; IF_Flush                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; IF_Flush|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; IF_Flush|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[0]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[0]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[0]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[0]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[10]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[10]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[10]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[10]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[11]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[11]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[11]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[11]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[12]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[12]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[12]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[12]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[13]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[13]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[13]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[13]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[14]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[14]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[14]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[14]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[15]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[15]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[15]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[15]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[1]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[1]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[1]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[1]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[2]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[2]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[2]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[2]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[3]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[3]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[3]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[3]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[4]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[4]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[4]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[4]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[5]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[5]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[5]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[5]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[6]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[6]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[6]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[6]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[7]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[7]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[7]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[7]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[8]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[8]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[8]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[8]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outInstruction[9]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outInstruction[9]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outInstruction[9]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outInstruction[9]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[0]$latch                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[0]$latch                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[0]$latch|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[0]$latch|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[10]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[10]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[10]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[10]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[11]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[11]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[11]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[11]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[12]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[12]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[12]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[12]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[13]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[13]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[13]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[13]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[14]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[14]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[14]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[14]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Fall       ; outPC[15]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Fall       ; outPC[15]$latch                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[15]$latch|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|inclk[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|inclk[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|outclk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; IF_Flush ; Rise       ; outPC[15]~1clkctrl|outclk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; IF_Flush ; Rise       ; outPC[15]~1|combout            ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Setup Times                                                                      ;
++--------------------+------------+--------+--------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------------+------------+--------+--------+------------+-----------------+
+; IF_Flush           ; IF_Flush   ; -0.113 ; -0.113 ; Fall       ; IF_Flush        ;
+; IF_ID_ENABLE       ; IF_Flush   ; 2.188  ; 2.188  ; Fall       ; IF_Flush        ;
+; clock              ; IF_Flush   ; 2.319  ; 2.319  ; Fall       ; IF_Flush        ;
+; inInstruction[*]   ; IF_Flush   ; 2.038  ; 2.038  ; Fall       ; IF_Flush        ;
+;  inInstruction[0]  ; IF_Flush   ; 1.658  ; 1.658  ; Fall       ; IF_Flush        ;
+;  inInstruction[1]  ; IF_Flush   ; 1.789  ; 1.789  ; Fall       ; IF_Flush        ;
+;  inInstruction[2]  ; IF_Flush   ; 1.708  ; 1.708  ; Fall       ; IF_Flush        ;
+;  inInstruction[3]  ; IF_Flush   ; 1.816  ; 1.816  ; Fall       ; IF_Flush        ;
+;  inInstruction[4]  ; IF_Flush   ; 1.857  ; 1.857  ; Fall       ; IF_Flush        ;
+;  inInstruction[5]  ; IF_Flush   ; 1.874  ; 1.874  ; Fall       ; IF_Flush        ;
+;  inInstruction[6]  ; IF_Flush   ; 1.803  ; 1.803  ; Fall       ; IF_Flush        ;
+;  inInstruction[7]  ; IF_Flush   ; 1.747  ; 1.747  ; Fall       ; IF_Flush        ;
+;  inInstruction[8]  ; IF_Flush   ; 2.030  ; 2.030  ; Fall       ; IF_Flush        ;
+;  inInstruction[9]  ; IF_Flush   ; 1.766  ; 1.766  ; Fall       ; IF_Flush        ;
+;  inInstruction[10] ; IF_Flush   ; 1.731  ; 1.731  ; Fall       ; IF_Flush        ;
+;  inInstruction[11] ; IF_Flush   ; 1.804  ; 1.804  ; Fall       ; IF_Flush        ;
+;  inInstruction[12] ; IF_Flush   ; 1.907  ; 1.907  ; Fall       ; IF_Flush        ;
+;  inInstruction[13] ; IF_Flush   ; 1.675  ; 1.675  ; Fall       ; IF_Flush        ;
+;  inInstruction[14] ; IF_Flush   ; 1.732  ; 1.732  ; Fall       ; IF_Flush        ;
+;  inInstruction[15] ; IF_Flush   ; 2.038  ; 2.038  ; Fall       ; IF_Flush        ;
+; inPC[*]            ; IF_Flush   ; 2.935  ; 2.935  ; Fall       ; IF_Flush        ;
+;  inPC[0]           ; IF_Flush   ; 1.736  ; 1.736  ; Fall       ; IF_Flush        ;
+;  inPC[1]           ; IF_Flush   ; 2.865  ; 2.865  ; Fall       ; IF_Flush        ;
+;  inPC[2]           ; IF_Flush   ; 2.825  ; 2.825  ; Fall       ; IF_Flush        ;
+;  inPC[3]           ; IF_Flush   ; 2.935  ; 2.935  ; Fall       ; IF_Flush        ;
+;  inPC[4]           ; IF_Flush   ; 2.882  ; 2.882  ; Fall       ; IF_Flush        ;
+;  inPC[5]           ; IF_Flush   ; 2.844  ; 2.844  ; Fall       ; IF_Flush        ;
+;  inPC[6]           ; IF_Flush   ; 2.840  ; 2.840  ; Fall       ; IF_Flush        ;
+;  inPC[7]           ; IF_Flush   ; 2.488  ; 2.488  ; Fall       ; IF_Flush        ;
+;  inPC[8]           ; IF_Flush   ; 2.635  ; 2.635  ; Fall       ; IF_Flush        ;
+;  inPC[9]           ; IF_Flush   ; 2.550  ; 2.550  ; Fall       ; IF_Flush        ;
+;  inPC[10]          ; IF_Flush   ; 2.507  ; 2.507  ; Fall       ; IF_Flush        ;
+;  inPC[11]          ; IF_Flush   ; 2.276  ; 2.276  ; Fall       ; IF_Flush        ;
+;  inPC[12]          ; IF_Flush   ; 2.239  ; 2.239  ; Fall       ; IF_Flush        ;
+;  inPC[13]          ; IF_Flush   ; 2.499  ; 2.499  ; Fall       ; IF_Flush        ;
+;  inPC[14]          ; IF_Flush   ; 2.286  ; 2.286  ; Fall       ; IF_Flush        ;
+;  inPC[15]          ; IF_Flush   ; 2.320  ; 2.320  ; Fall       ; IF_Flush        ;
++--------------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------+
+; Hold Times                                                                       ;
++--------------------+------------+--------+--------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------------+------------+--------+--------+------------+-----------------+
+; IF_Flush           ; IF_Flush   ; 0.731  ; 0.731  ; Fall       ; IF_Flush        ;
+; IF_ID_ENABLE       ; IF_Flush   ; -1.471 ; -1.471 ; Fall       ; IF_Flush        ;
+; clock              ; IF_Flush   ; -1.660 ; -1.660 ; Fall       ; IF_Flush        ;
+; inInstruction[*]   ; IF_Flush   ; -1.314 ; -1.314 ; Fall       ; IF_Flush        ;
+;  inInstruction[0]  ; IF_Flush   ; -1.314 ; -1.314 ; Fall       ; IF_Flush        ;
+;  inInstruction[1]  ; IF_Flush   ; -1.445 ; -1.445 ; Fall       ; IF_Flush        ;
+;  inInstruction[2]  ; IF_Flush   ; -1.435 ; -1.435 ; Fall       ; IF_Flush        ;
+;  inInstruction[3]  ; IF_Flush   ; -1.464 ; -1.464 ; Fall       ; IF_Flush        ;
+;  inInstruction[4]  ; IF_Flush   ; -1.584 ; -1.584 ; Fall       ; IF_Flush        ;
+;  inInstruction[5]  ; IF_Flush   ; -1.527 ; -1.527 ; Fall       ; IF_Flush        ;
+;  inInstruction[6]  ; IF_Flush   ; -1.451 ; -1.451 ; Fall       ; IF_Flush        ;
+;  inInstruction[7]  ; IF_Flush   ; -1.408 ; -1.408 ; Fall       ; IF_Flush        ;
+;  inInstruction[8]  ; IF_Flush   ; -1.757 ; -1.757 ; Fall       ; IF_Flush        ;
+;  inInstruction[9]  ; IF_Flush   ; -1.413 ; -1.413 ; Fall       ; IF_Flush        ;
+;  inInstruction[10] ; IF_Flush   ; -1.457 ; -1.457 ; Fall       ; IF_Flush        ;
+;  inInstruction[11] ; IF_Flush   ; -1.530 ; -1.530 ; Fall       ; IF_Flush        ;
+;  inInstruction[12] ; IF_Flush   ; -1.634 ; -1.634 ; Fall       ; IF_Flush        ;
+;  inInstruction[13] ; IF_Flush   ; -1.404 ; -1.404 ; Fall       ; IF_Flush        ;
+;  inInstruction[14] ; IF_Flush   ; -1.373 ; -1.373 ; Fall       ; IF_Flush        ;
+;  inInstruction[15] ; IF_Flush   ; -1.764 ; -1.764 ; Fall       ; IF_Flush        ;
+; inPC[*]            ; IF_Flush   ; -1.387 ; -1.387 ; Fall       ; IF_Flush        ;
+;  inPC[0]           ; IF_Flush   ; -1.387 ; -1.387 ; Fall       ; IF_Flush        ;
+;  inPC[1]           ; IF_Flush   ; -1.970 ; -1.970 ; Fall       ; IF_Flush        ;
+;  inPC[2]           ; IF_Flush   ; -1.895 ; -1.895 ; Fall       ; IF_Flush        ;
+;  inPC[3]           ; IF_Flush   ; -2.093 ; -2.093 ; Fall       ; IF_Flush        ;
+;  inPC[4]           ; IF_Flush   ; -2.092 ; -2.092 ; Fall       ; IF_Flush        ;
+;  inPC[5]           ; IF_Flush   ; -2.008 ; -2.008 ; Fall       ; IF_Flush        ;
+;  inPC[6]           ; IF_Flush   ; -2.044 ; -2.044 ; Fall       ; IF_Flush        ;
+;  inPC[7]           ; IF_Flush   ; -1.763 ; -1.763 ; Fall       ; IF_Flush        ;
+;  inPC[8]           ; IF_Flush   ; -1.942 ; -1.942 ; Fall       ; IF_Flush        ;
+;  inPC[9]           ; IF_Flush   ; -1.810 ; -1.810 ; Fall       ; IF_Flush        ;
+;  inPC[10]          ; IF_Flush   ; -1.938 ; -1.938 ; Fall       ; IF_Flush        ;
+;  inPC[11]          ; IF_Flush   ; -1.604 ; -1.604 ; Fall       ; IF_Flush        ;
+;  inPC[12]          ; IF_Flush   ; -1.682 ; -1.682 ; Fall       ; IF_Flush        ;
+;  inPC[13]          ; IF_Flush   ; -1.902 ; -1.902 ; Fall       ; IF_Flush        ;
+;  inPC[14]          ; IF_Flush   ; -1.936 ; -1.936 ; Fall       ; IF_Flush        ;
+;  inPC[15]          ; IF_Flush   ; -1.970 ; -1.970 ; Fall       ; IF_Flush        ;
++--------------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Clock to Output Times                                                           ;
++---------------------+------------+-------+-------+------------+-----------------+
+; Data Port           ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------------+------------+-------+-------+------------+-----------------+
+; outInstruction[*]   ; IF_Flush   ; 4.537 ; 4.537 ; Fall       ; IF_Flush        ;
+;  outInstruction[0]  ; IF_Flush   ; 4.188 ; 4.188 ; Fall       ; IF_Flush        ;
+;  outInstruction[1]  ; IF_Flush   ; 4.163 ; 4.163 ; Fall       ; IF_Flush        ;
+;  outInstruction[2]  ; IF_Flush   ; 4.537 ; 4.537 ; Fall       ; IF_Flush        ;
+;  outInstruction[3]  ; IF_Flush   ; 4.312 ; 4.312 ; Fall       ; IF_Flush        ;
+;  outInstruction[4]  ; IF_Flush   ; 4.189 ; 4.189 ; Fall       ; IF_Flush        ;
+;  outInstruction[5]  ; IF_Flush   ; 4.283 ; 4.283 ; Fall       ; IF_Flush        ;
+;  outInstruction[6]  ; IF_Flush   ; 4.286 ; 4.286 ; Fall       ; IF_Flush        ;
+;  outInstruction[7]  ; IF_Flush   ; 4.190 ; 4.190 ; Fall       ; IF_Flush        ;
+;  outInstruction[8]  ; IF_Flush   ; 4.254 ; 4.254 ; Fall       ; IF_Flush        ;
+;  outInstruction[9]  ; IF_Flush   ; 4.484 ; 4.484 ; Fall       ; IF_Flush        ;
+;  outInstruction[10] ; IF_Flush   ; 4.309 ; 4.309 ; Fall       ; IF_Flush        ;
+;  outInstruction[11] ; IF_Flush   ; 4.309 ; 4.309 ; Fall       ; IF_Flush        ;
+;  outInstruction[12] ; IF_Flush   ; 4.434 ; 4.434 ; Fall       ; IF_Flush        ;
+;  outInstruction[13] ; IF_Flush   ; 4.135 ; 4.135 ; Fall       ; IF_Flush        ;
+;  outInstruction[14] ; IF_Flush   ; 4.498 ; 4.498 ; Fall       ; IF_Flush        ;
+;  outInstruction[15] ; IF_Flush   ; 4.487 ; 4.487 ; Fall       ; IF_Flush        ;
+; outPC[*]            ; IF_Flush   ; 4.408 ; 4.408 ; Fall       ; IF_Flush        ;
+;  outPC[0]           ; IF_Flush   ; 4.200 ; 4.200 ; Fall       ; IF_Flush        ;
+;  outPC[1]           ; IF_Flush   ; 4.199 ; 4.199 ; Fall       ; IF_Flush        ;
+;  outPC[2]           ; IF_Flush   ; 4.316 ; 4.316 ; Fall       ; IF_Flush        ;
+;  outPC[3]           ; IF_Flush   ; 4.193 ; 4.193 ; Fall       ; IF_Flush        ;
+;  outPC[4]           ; IF_Flush   ; 4.190 ; 4.190 ; Fall       ; IF_Flush        ;
+;  outPC[5]           ; IF_Flush   ; 4.304 ; 4.304 ; Fall       ; IF_Flush        ;
+;  outPC[6]           ; IF_Flush   ; 4.222 ; 4.222 ; Fall       ; IF_Flush        ;
+;  outPC[7]           ; IF_Flush   ; 4.337 ; 4.337 ; Fall       ; IF_Flush        ;
+;  outPC[8]           ; IF_Flush   ; 4.284 ; 4.284 ; Fall       ; IF_Flush        ;
+;  outPC[9]           ; IF_Flush   ; 4.364 ; 4.364 ; Fall       ; IF_Flush        ;
+;  outPC[10]          ; IF_Flush   ; 4.211 ; 4.211 ; Fall       ; IF_Flush        ;
+;  outPC[11]          ; IF_Flush   ; 4.333 ; 4.333 ; Fall       ; IF_Flush        ;
+;  outPC[12]          ; IF_Flush   ; 4.202 ; 4.202 ; Fall       ; IF_Flush        ;
+;  outPC[13]          ; IF_Flush   ; 4.174 ; 4.174 ; Fall       ; IF_Flush        ;
+;  outPC[14]          ; IF_Flush   ; 4.334 ; 4.334 ; Fall       ; IF_Flush        ;
+;  outPC[15]          ; IF_Flush   ; 4.408 ; 4.408 ; Fall       ; IF_Flush        ;
++---------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                   ;
++---------------------+------------+-------+-------+------------+-----------------+
+; Data Port           ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------------+------------+-------+-------+------------+-----------------+
+; outInstruction[*]   ; IF_Flush   ; 4.135 ; 4.135 ; Fall       ; IF_Flush        ;
+;  outInstruction[0]  ; IF_Flush   ; 4.188 ; 4.188 ; Fall       ; IF_Flush        ;
+;  outInstruction[1]  ; IF_Flush   ; 4.163 ; 4.163 ; Fall       ; IF_Flush        ;
+;  outInstruction[2]  ; IF_Flush   ; 4.537 ; 4.537 ; Fall       ; IF_Flush        ;
+;  outInstruction[3]  ; IF_Flush   ; 4.312 ; 4.312 ; Fall       ; IF_Flush        ;
+;  outInstruction[4]  ; IF_Flush   ; 4.189 ; 4.189 ; Fall       ; IF_Flush        ;
+;  outInstruction[5]  ; IF_Flush   ; 4.283 ; 4.283 ; Fall       ; IF_Flush        ;
+;  outInstruction[6]  ; IF_Flush   ; 4.286 ; 4.286 ; Fall       ; IF_Flush        ;
+;  outInstruction[7]  ; IF_Flush   ; 4.190 ; 4.190 ; Fall       ; IF_Flush        ;
+;  outInstruction[8]  ; IF_Flush   ; 4.254 ; 4.254 ; Fall       ; IF_Flush        ;
+;  outInstruction[9]  ; IF_Flush   ; 4.484 ; 4.484 ; Fall       ; IF_Flush        ;
+;  outInstruction[10] ; IF_Flush   ; 4.309 ; 4.309 ; Fall       ; IF_Flush        ;
+;  outInstruction[11] ; IF_Flush   ; 4.309 ; 4.309 ; Fall       ; IF_Flush        ;
+;  outInstruction[12] ; IF_Flush   ; 4.434 ; 4.434 ; Fall       ; IF_Flush        ;
+;  outInstruction[13] ; IF_Flush   ; 4.135 ; 4.135 ; Fall       ; IF_Flush        ;
+;  outInstruction[14] ; IF_Flush   ; 4.498 ; 4.498 ; Fall       ; IF_Flush        ;
+;  outInstruction[15] ; IF_Flush   ; 4.487 ; 4.487 ; Fall       ; IF_Flush        ;
+; outPC[*]            ; IF_Flush   ; 4.174 ; 4.174 ; Fall       ; IF_Flush        ;
+;  outPC[0]           ; IF_Flush   ; 4.200 ; 4.200 ; Fall       ; IF_Flush        ;
+;  outPC[1]           ; IF_Flush   ; 4.199 ; 4.199 ; Fall       ; IF_Flush        ;
+;  outPC[2]           ; IF_Flush   ; 4.316 ; 4.316 ; Fall       ; IF_Flush        ;
+;  outPC[3]           ; IF_Flush   ; 4.193 ; 4.193 ; Fall       ; IF_Flush        ;
+;  outPC[4]           ; IF_Flush   ; 4.190 ; 4.190 ; Fall       ; IF_Flush        ;
+;  outPC[5]           ; IF_Flush   ; 4.304 ; 4.304 ; Fall       ; IF_Flush        ;
+;  outPC[6]           ; IF_Flush   ; 4.222 ; 4.222 ; Fall       ; IF_Flush        ;
+;  outPC[7]           ; IF_Flush   ; 4.337 ; 4.337 ; Fall       ; IF_Flush        ;
+;  outPC[8]           ; IF_Flush   ; 4.284 ; 4.284 ; Fall       ; IF_Flush        ;
+;  outPC[9]           ; IF_Flush   ; 4.364 ; 4.364 ; Fall       ; IF_Flush        ;
+;  outPC[10]          ; IF_Flush   ; 4.211 ; 4.211 ; Fall       ; IF_Flush        ;
+;  outPC[11]          ; IF_Flush   ; 4.333 ; 4.333 ; Fall       ; IF_Flush        ;
+;  outPC[12]          ; IF_Flush   ; 4.202 ; 4.202 ; Fall       ; IF_Flush        ;
+;  outPC[13]          ; IF_Flush   ; 4.174 ; 4.174 ; Fall       ; IF_Flush        ;
+;  outPC[14]          ; IF_Flush   ; 4.334 ; 4.334 ; Fall       ; IF_Flush        ;
+;  outPC[15]          ; IF_Flush   ; 4.408 ; 4.408 ; Fall       ; IF_Flush        ;
++---------------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+-------+---------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+---------+----------+---------+---------------------+
+; Worst-case Slack ; 0.251 ; -0.928  ; N/A      ; N/A     ; -1.222              ;
+;  IF_Flush        ; 0.251 ; -0.928  ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; 0.0   ; -25.286 ; 0.0      ; 0.0     ; -1.222              ;
+;  IF_Flush        ; 0.000 ; -25.286 ; N/A      ; N/A     ; -1.222              ;
++------------------+-------+---------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------------------------+
+; Setup Times                                                                    ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; IF_Flush           ; IF_Flush   ; 0.249 ; 0.249 ; Fall       ; IF_Flush        ;
+; IF_ID_ENABLE       ; IF_Flush   ; 4.092 ; 4.092 ; Fall       ; IF_Flush        ;
+; clock              ; IF_Flush   ; 4.418 ; 4.418 ; Fall       ; IF_Flush        ;
+; inInstruction[*]   ; IF_Flush   ; 3.823 ; 3.823 ; Fall       ; IF_Flush        ;
+;  inInstruction[0]  ; IF_Flush   ; 3.024 ; 3.024 ; Fall       ; IF_Flush        ;
+;  inInstruction[1]  ; IF_Flush   ; 3.307 ; 3.307 ; Fall       ; IF_Flush        ;
+;  inInstruction[2]  ; IF_Flush   ; 3.142 ; 3.142 ; Fall       ; IF_Flush        ;
+;  inInstruction[3]  ; IF_Flush   ; 3.343 ; 3.343 ; Fall       ; IF_Flush        ;
+;  inInstruction[4]  ; IF_Flush   ; 3.488 ; 3.488 ; Fall       ; IF_Flush        ;
+;  inInstruction[5]  ; IF_Flush   ; 3.505 ; 3.505 ; Fall       ; IF_Flush        ;
+;  inInstruction[6]  ; IF_Flush   ; 3.337 ; 3.337 ; Fall       ; IF_Flush        ;
+;  inInstruction[7]  ; IF_Flush   ; 3.258 ; 3.258 ; Fall       ; IF_Flush        ;
+;  inInstruction[8]  ; IF_Flush   ; 3.823 ; 3.823 ; Fall       ; IF_Flush        ;
+;  inInstruction[9]  ; IF_Flush   ; 3.256 ; 3.256 ; Fall       ; IF_Flush        ;
+;  inInstruction[10] ; IF_Flush   ; 3.162 ; 3.162 ; Fall       ; IF_Flush        ;
+;  inInstruction[11] ; IF_Flush   ; 3.262 ; 3.262 ; Fall       ; IF_Flush        ;
+;  inInstruction[12] ; IF_Flush   ; 3.565 ; 3.565 ; Fall       ; IF_Flush        ;
+;  inInstruction[13] ; IF_Flush   ; 3.033 ; 3.033 ; Fall       ; IF_Flush        ;
+;  inInstruction[14] ; IF_Flush   ; 3.201 ; 3.201 ; Fall       ; IF_Flush        ;
+;  inInstruction[15] ; IF_Flush   ; 3.796 ; 3.796 ; Fall       ; IF_Flush        ;
+; inPC[*]            ; IF_Flush   ; 5.838 ; 5.838 ; Fall       ; IF_Flush        ;
+;  inPC[0]           ; IF_Flush   ; 3.279 ; 3.279 ; Fall       ; IF_Flush        ;
+;  inPC[1]           ; IF_Flush   ; 5.708 ; 5.708 ; Fall       ; IF_Flush        ;
+;  inPC[2]           ; IF_Flush   ; 5.634 ; 5.634 ; Fall       ; IF_Flush        ;
+;  inPC[3]           ; IF_Flush   ; 5.838 ; 5.838 ; Fall       ; IF_Flush        ;
+;  inPC[4]           ; IF_Flush   ; 5.773 ; 5.773 ; Fall       ; IF_Flush        ;
+;  inPC[5]           ; IF_Flush   ; 5.720 ; 5.720 ; Fall       ; IF_Flush        ;
+;  inPC[6]           ; IF_Flush   ; 5.688 ; 5.688 ; Fall       ; IF_Flush        ;
+;  inPC[7]           ; IF_Flush   ; 4.964 ; 4.964 ; Fall       ; IF_Flush        ;
+;  inPC[8]           ; IF_Flush   ; 5.320 ; 5.320 ; Fall       ; IF_Flush        ;
+;  inPC[9]           ; IF_Flush   ; 5.101 ; 5.101 ; Fall       ; IF_Flush        ;
+;  inPC[10]          ; IF_Flush   ; 5.021 ; 5.021 ; Fall       ; IF_Flush        ;
+;  inPC[11]          ; IF_Flush   ; 4.568 ; 4.568 ; Fall       ; IF_Flush        ;
+;  inPC[12]          ; IF_Flush   ; 4.461 ; 4.461 ; Fall       ; IF_Flush        ;
+;  inPC[13]          ; IF_Flush   ; 5.043 ; 5.043 ; Fall       ; IF_Flush        ;
+;  inPC[14]          ; IF_Flush   ; 4.537 ; 4.537 ; Fall       ; IF_Flush        ;
+;  inPC[15]          ; IF_Flush   ; 4.512 ; 4.512 ; Fall       ; IF_Flush        ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------+
+; Hold Times                                                                       ;
++--------------------+------------+--------+--------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------------+------------+--------+--------+------------+-----------------+
+; IF_Flush           ; IF_Flush   ; 0.928  ; 0.928  ; Fall       ; IF_Flush        ;
+; IF_ID_ENABLE       ; IF_Flush   ; -1.471 ; -1.471 ; Fall       ; IF_Flush        ;
+; clock              ; IF_Flush   ; -1.660 ; -1.660 ; Fall       ; IF_Flush        ;
+; inInstruction[*]   ; IF_Flush   ; -1.314 ; -1.314 ; Fall       ; IF_Flush        ;
+;  inInstruction[0]  ; IF_Flush   ; -1.314 ; -1.314 ; Fall       ; IF_Flush        ;
+;  inInstruction[1]  ; IF_Flush   ; -1.445 ; -1.445 ; Fall       ; IF_Flush        ;
+;  inInstruction[2]  ; IF_Flush   ; -1.435 ; -1.435 ; Fall       ; IF_Flush        ;
+;  inInstruction[3]  ; IF_Flush   ; -1.464 ; -1.464 ; Fall       ; IF_Flush        ;
+;  inInstruction[4]  ; IF_Flush   ; -1.584 ; -1.584 ; Fall       ; IF_Flush        ;
+;  inInstruction[5]  ; IF_Flush   ; -1.527 ; -1.527 ; Fall       ; IF_Flush        ;
+;  inInstruction[6]  ; IF_Flush   ; -1.451 ; -1.451 ; Fall       ; IF_Flush        ;
+;  inInstruction[7]  ; IF_Flush   ; -1.408 ; -1.408 ; Fall       ; IF_Flush        ;
+;  inInstruction[8]  ; IF_Flush   ; -1.757 ; -1.757 ; Fall       ; IF_Flush        ;
+;  inInstruction[9]  ; IF_Flush   ; -1.413 ; -1.413 ; Fall       ; IF_Flush        ;
+;  inInstruction[10] ; IF_Flush   ; -1.457 ; -1.457 ; Fall       ; IF_Flush        ;
+;  inInstruction[11] ; IF_Flush   ; -1.530 ; -1.530 ; Fall       ; IF_Flush        ;
+;  inInstruction[12] ; IF_Flush   ; -1.634 ; -1.634 ; Fall       ; IF_Flush        ;
+;  inInstruction[13] ; IF_Flush   ; -1.404 ; -1.404 ; Fall       ; IF_Flush        ;
+;  inInstruction[14] ; IF_Flush   ; -1.373 ; -1.373 ; Fall       ; IF_Flush        ;
+;  inInstruction[15] ; IF_Flush   ; -1.764 ; -1.764 ; Fall       ; IF_Flush        ;
+; inPC[*]            ; IF_Flush   ; -1.387 ; -1.387 ; Fall       ; IF_Flush        ;
+;  inPC[0]           ; IF_Flush   ; -1.387 ; -1.387 ; Fall       ; IF_Flush        ;
+;  inPC[1]           ; IF_Flush   ; -1.970 ; -1.970 ; Fall       ; IF_Flush        ;
+;  inPC[2]           ; IF_Flush   ; -1.895 ; -1.895 ; Fall       ; IF_Flush        ;
+;  inPC[3]           ; IF_Flush   ; -2.093 ; -2.093 ; Fall       ; IF_Flush        ;
+;  inPC[4]           ; IF_Flush   ; -2.092 ; -2.092 ; Fall       ; IF_Flush        ;
+;  inPC[5]           ; IF_Flush   ; -2.008 ; -2.008 ; Fall       ; IF_Flush        ;
+;  inPC[6]           ; IF_Flush   ; -2.044 ; -2.044 ; Fall       ; IF_Flush        ;
+;  inPC[7]           ; IF_Flush   ; -1.763 ; -1.763 ; Fall       ; IF_Flush        ;
+;  inPC[8]           ; IF_Flush   ; -1.942 ; -1.942 ; Fall       ; IF_Flush        ;
+;  inPC[9]           ; IF_Flush   ; -1.810 ; -1.810 ; Fall       ; IF_Flush        ;
+;  inPC[10]          ; IF_Flush   ; -1.938 ; -1.938 ; Fall       ; IF_Flush        ;
+;  inPC[11]          ; IF_Flush   ; -1.604 ; -1.604 ; Fall       ; IF_Flush        ;
+;  inPC[12]          ; IF_Flush   ; -1.682 ; -1.682 ; Fall       ; IF_Flush        ;
+;  inPC[13]          ; IF_Flush   ; -1.902 ; -1.902 ; Fall       ; IF_Flush        ;
+;  inPC[14]          ; IF_Flush   ; -1.936 ; -1.936 ; Fall       ; IF_Flush        ;
+;  inPC[15]          ; IF_Flush   ; -1.970 ; -1.970 ; Fall       ; IF_Flush        ;
++--------------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Clock to Output Times                                                           ;
++---------------------+------------+-------+-------+------------+-----------------+
+; Data Port           ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------------+------------+-------+-------+------------+-----------------+
+; outInstruction[*]   ; IF_Flush   ; 8.493 ; 8.493 ; Fall       ; IF_Flush        ;
+;  outInstruction[0]  ; IF_Flush   ; 7.814 ; 7.814 ; Fall       ; IF_Flush        ;
+;  outInstruction[1]  ; IF_Flush   ; 7.770 ; 7.770 ; Fall       ; IF_Flush        ;
+;  outInstruction[2]  ; IF_Flush   ; 8.493 ; 8.493 ; Fall       ; IF_Flush        ;
+;  outInstruction[3]  ; IF_Flush   ; 8.098 ; 8.098 ; Fall       ; IF_Flush        ;
+;  outInstruction[4]  ; IF_Flush   ; 7.813 ; 7.813 ; Fall       ; IF_Flush        ;
+;  outInstruction[5]  ; IF_Flush   ; 8.049 ; 8.049 ; Fall       ; IF_Flush        ;
+;  outInstruction[6]  ; IF_Flush   ; 8.051 ; 8.051 ; Fall       ; IF_Flush        ;
+;  outInstruction[7]  ; IF_Flush   ; 7.815 ; 7.815 ; Fall       ; IF_Flush        ;
+;  outInstruction[8]  ; IF_Flush   ; 8.010 ; 8.010 ; Fall       ; IF_Flush        ;
+;  outInstruction[9]  ; IF_Flush   ; 8.427 ; 8.427 ; Fall       ; IF_Flush        ;
+;  outInstruction[10] ; IF_Flush   ; 8.144 ; 8.144 ; Fall       ; IF_Flush        ;
+;  outInstruction[11] ; IF_Flush   ; 8.147 ; 8.147 ; Fall       ; IF_Flush        ;
+;  outInstruction[12] ; IF_Flush   ; 8.326 ; 8.326 ; Fall       ; IF_Flush        ;
+;  outInstruction[13] ; IF_Flush   ; 7.739 ; 7.739 ; Fall       ; IF_Flush        ;
+;  outInstruction[14] ; IF_Flush   ; 8.456 ; 8.456 ; Fall       ; IF_Flush        ;
+;  outInstruction[15] ; IF_Flush   ; 8.482 ; 8.482 ; Fall       ; IF_Flush        ;
+; outPC[*]            ; IF_Flush   ; 8.286 ; 8.286 ; Fall       ; IF_Flush        ;
+;  outPC[0]           ; IF_Flush   ; 7.823 ; 7.823 ; Fall       ; IF_Flush        ;
+;  outPC[1]           ; IF_Flush   ; 7.825 ; 7.825 ; Fall       ; IF_Flush        ;
+;  outPC[2]           ; IF_Flush   ; 8.081 ; 8.081 ; Fall       ; IF_Flush        ;
+;  outPC[3]           ; IF_Flush   ; 7.817 ; 7.817 ; Fall       ; IF_Flush        ;
+;  outPC[4]           ; IF_Flush   ; 7.815 ; 7.815 ; Fall       ; IF_Flush        ;
+;  outPC[5]           ; IF_Flush   ; 8.068 ; 8.068 ; Fall       ; IF_Flush        ;
+;  outPC[6]           ; IF_Flush   ; 7.931 ; 7.931 ; Fall       ; IF_Flush        ;
+;  outPC[7]           ; IF_Flush   ; 8.121 ; 8.121 ; Fall       ; IF_Flush        ;
+;  outPC[8]           ; IF_Flush   ; 8.034 ; 8.034 ; Fall       ; IF_Flush        ;
+;  outPC[9]           ; IF_Flush   ; 8.177 ; 8.177 ; Fall       ; IF_Flush        ;
+;  outPC[10]          ; IF_Flush   ; 7.870 ; 7.870 ; Fall       ; IF_Flush        ;
+;  outPC[11]          ; IF_Flush   ; 8.129 ; 8.129 ; Fall       ; IF_Flush        ;
+;  outPC[12]          ; IF_Flush   ; 7.857 ; 7.857 ; Fall       ; IF_Flush        ;
+;  outPC[13]          ; IF_Flush   ; 7.811 ; 7.811 ; Fall       ; IF_Flush        ;
+;  outPC[14]          ; IF_Flush   ; 8.129 ; 8.129 ; Fall       ; IF_Flush        ;
+;  outPC[15]          ; IF_Flush   ; 8.286 ; 8.286 ; Fall       ; IF_Flush        ;
++---------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                   ;
++---------------------+------------+-------+-------+------------+-----------------+
+; Data Port           ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------------+------------+-------+-------+------------+-----------------+
+; outInstruction[*]   ; IF_Flush   ; 4.135 ; 4.135 ; Fall       ; IF_Flush        ;
+;  outInstruction[0]  ; IF_Flush   ; 4.188 ; 4.188 ; Fall       ; IF_Flush        ;
+;  outInstruction[1]  ; IF_Flush   ; 4.163 ; 4.163 ; Fall       ; IF_Flush        ;
+;  outInstruction[2]  ; IF_Flush   ; 4.537 ; 4.537 ; Fall       ; IF_Flush        ;
+;  outInstruction[3]  ; IF_Flush   ; 4.312 ; 4.312 ; Fall       ; IF_Flush        ;
+;  outInstruction[4]  ; IF_Flush   ; 4.189 ; 4.189 ; Fall       ; IF_Flush        ;
+;  outInstruction[5]  ; IF_Flush   ; 4.283 ; 4.283 ; Fall       ; IF_Flush        ;
+;  outInstruction[6]  ; IF_Flush   ; 4.286 ; 4.286 ; Fall       ; IF_Flush        ;
+;  outInstruction[7]  ; IF_Flush   ; 4.190 ; 4.190 ; Fall       ; IF_Flush        ;
+;  outInstruction[8]  ; IF_Flush   ; 4.254 ; 4.254 ; Fall       ; IF_Flush        ;
+;  outInstruction[9]  ; IF_Flush   ; 4.484 ; 4.484 ; Fall       ; IF_Flush        ;
+;  outInstruction[10] ; IF_Flush   ; 4.309 ; 4.309 ; Fall       ; IF_Flush        ;
+;  outInstruction[11] ; IF_Flush   ; 4.309 ; 4.309 ; Fall       ; IF_Flush        ;
+;  outInstruction[12] ; IF_Flush   ; 4.434 ; 4.434 ; Fall       ; IF_Flush        ;
+;  outInstruction[13] ; IF_Flush   ; 4.135 ; 4.135 ; Fall       ; IF_Flush        ;
+;  outInstruction[14] ; IF_Flush   ; 4.498 ; 4.498 ; Fall       ; IF_Flush        ;
+;  outInstruction[15] ; IF_Flush   ; 4.487 ; 4.487 ; Fall       ; IF_Flush        ;
+; outPC[*]            ; IF_Flush   ; 4.174 ; 4.174 ; Fall       ; IF_Flush        ;
+;  outPC[0]           ; IF_Flush   ; 4.200 ; 4.200 ; Fall       ; IF_Flush        ;
+;  outPC[1]           ; IF_Flush   ; 4.199 ; 4.199 ; Fall       ; IF_Flush        ;
+;  outPC[2]           ; IF_Flush   ; 4.316 ; 4.316 ; Fall       ; IF_Flush        ;
+;  outPC[3]           ; IF_Flush   ; 4.193 ; 4.193 ; Fall       ; IF_Flush        ;
+;  outPC[4]           ; IF_Flush   ; 4.190 ; 4.190 ; Fall       ; IF_Flush        ;
+;  outPC[5]           ; IF_Flush   ; 4.304 ; 4.304 ; Fall       ; IF_Flush        ;
+;  outPC[6]           ; IF_Flush   ; 4.222 ; 4.222 ; Fall       ; IF_Flush        ;
+;  outPC[7]           ; IF_Flush   ; 4.337 ; 4.337 ; Fall       ; IF_Flush        ;
+;  outPC[8]           ; IF_Flush   ; 4.284 ; 4.284 ; Fall       ; IF_Flush        ;
+;  outPC[9]           ; IF_Flush   ; 4.364 ; 4.364 ; Fall       ; IF_Flush        ;
+;  outPC[10]          ; IF_Flush   ; 4.211 ; 4.211 ; Fall       ; IF_Flush        ;
+;  outPC[11]          ; IF_Flush   ; 4.333 ; 4.333 ; Fall       ; IF_Flush        ;
+;  outPC[12]          ; IF_Flush   ; 4.202 ; 4.202 ; Fall       ; IF_Flush        ;
+;  outPC[13]          ; IF_Flush   ; 4.174 ; 4.174 ; Fall       ; IF_Flush        ;
+;  outPC[14]          ; IF_Flush   ; 4.334 ; 4.334 ; Fall       ; IF_Flush        ;
+;  outPC[15]          ; IF_Flush   ; 4.408 ; 4.408 ; Fall       ; IF_Flush        ;
++---------------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; IF_Flush   ; IF_Flush ; 0        ; 0        ; 32       ; 32       ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; IF_Flush   ; IF_Flush ; 0        ; 0        ; 32       ; 32       ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 34    ; 34   ;
+; Unconstrained Input Port Paths  ; 201   ; 201  ;
+; Unconstrained Output Ports      ; 32    ; 32   ;
+; Unconstrained Output Port Paths ; 32    ; 32   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 27 09:53:01 2021
+Info: Command: quartus_sta Register_IF_ID -c Register_IF_ID
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 32 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Register_IF_ID.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name IF_Flush IF_Flush
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 0.251
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.251         0.000 IF_Flush 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -0.928
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.928       -25.286 IF_Flush 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 IF_Flush 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.613
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.613         0.000 IF_Flush 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -0.731
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.731       -20.114 IF_Flush 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 IF_Flush 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4540 megabytes
+    Info: Processing ended: Thu May 27 09:53:02 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

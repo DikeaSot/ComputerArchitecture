@@ -1,0 +1,35 @@
+|MyMUX2_1_16
+in1 => out1[15].DATAIN
+in1 => out1[14].DATAIN
+in1 => out1[13].DATAIN
+in1 => out1[12].DATAIN
+in1 => out1[11].DATAIN
+in1 => out1[10].DATAIN
+in1 => out1[9].DATAIN
+in1 => out1[8].DATAIN
+in1 => out1[7].DATAIN
+in1 => out1[6].DATAIN
+in1 => out1[5].DATAIN
+in1 => out1[4].DATAIN
+in1 => out1[3].DATAIN
+in1 => out1[2].DATAIN
+in1 => out1[1].DATAIN
+in1 => out1[0].DATAIN
+out1[0] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[7] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[8] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[9] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[10] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[11] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[12] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[13] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[14] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out1[15] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+
+

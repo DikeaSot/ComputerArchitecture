@@ -1,0 +1,576 @@
+TimeQuest Timing Analyzer report for Controller
+Thu Jun 03 09:54:21 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Controller                                                        ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++---------------------------------------------------------------+
+; Propagation Delay                                             ;
++------------+--------------+--------+--------+--------+--------+
+; Input Port ; Output Port  ; RR     ; RF     ; FR     ; FF     ;
++------------+--------------+--------+--------+--------+--------+
+; flush      ; isBranch     ;        ; 10.430 ; 10.430 ;        ;
+; flush      ; isJR         ;        ; 10.089 ; 10.089 ;        ;
+; flush      ; isJumpD      ;        ; 9.943  ; 9.943  ;        ;
+; flush      ; isLW         ;        ; 10.569 ; 10.569 ;        ;
+; flush      ; isMFPC       ;        ; 10.726 ; 10.726 ;        ;
+; flush      ; isPrintDigit ;        ; 10.182 ; 10.182 ;        ;
+; flush      ; isR          ;        ; 10.668 ; 10.668 ;        ;
+; flush      ; isReadRight  ;        ; 10.627 ; 10.627 ;        ;
+; flush      ; isSW         ;        ; 10.466 ; 10.466 ;        ;
+; func[0]    ; isMFPC       ; 10.848 ;        ;        ; 10.848 ;
+; func[1]    ; isMFPC       ; 10.678 ;        ;        ; 10.678 ;
+; func[2]    ; isMFPC       ; 11.139 ;        ;        ; 11.139 ;
+; op[0]      ; isBranch     ;        ; 6.963  ; 6.963  ;        ;
+; op[0]      ; isJR         ; 6.929  ;        ;        ; 6.929  ;
+; op[0]      ; isJumpD      ; 6.783  ;        ;        ; 6.783  ;
+; op[0]      ; isLW         ; 6.869  ;        ;        ; 6.869  ;
+; op[0]      ; isMFPC       ;        ; 7.259  ; 7.259  ;        ;
+; op[0]      ; isPrintDigit ; 7.022  ;        ;        ; 7.022  ;
+; op[0]      ; isR          ;        ; 7.201  ; 7.201  ;        ;
+; op[0]      ; isReadRight  ;        ; 7.160  ; 7.160  ;        ;
+; op[0]      ; isSW         ;        ; 6.999  ; 6.999  ;        ;
+; op[1]      ; isBranch     ;        ; 9.726  ; 9.726  ;        ;
+; op[1]      ; isJR         ;        ; 9.917  ; 9.917  ;        ;
+; op[1]      ; isJumpD      ; 9.756  ;        ;        ; 9.756  ;
+; op[1]      ; isLW         ;        ; 10.524 ; 10.524 ;        ;
+; op[1]      ; isMFPC       ;        ; 10.281 ; 10.281 ;        ;
+; op[1]      ; isPrintDigit ; 10.007 ;        ;        ; 10.007 ;
+; op[1]      ; isR          ;        ; 9.946  ; 9.946  ;        ;
+; op[1]      ; isReadRight  ; 9.921  ;        ;        ; 9.921  ;
+; op[1]      ; isSW         ; 9.728  ;        ;        ; 9.728  ;
+; op[2]      ; isBranch     ; 9.504  ;        ;        ; 9.504  ;
+; op[2]      ; isJR         ; 10.393 ;        ;        ; 10.393 ;
+; op[2]      ; isJumpD      ; 10.247 ;        ;        ; 10.247 ;
+; op[2]      ; isLW         ;        ; 9.767  ; 9.767  ;        ;
+; op[2]      ; isMFPC       ;        ; 9.905  ; 9.905  ;        ;
+; op[2]      ; isPrintDigit ; 10.486 ;        ;        ; 10.486 ;
+; op[2]      ; isR          ;        ; 9.705  ; 9.705  ;        ;
+; op[2]      ; isReadRight  ; 9.697  ;        ;        ; 9.697  ;
+; op[2]      ; isSW         ;        ; 9.509  ; 9.509  ;        ;
+; op[3]      ; isBranch     ;        ; 7.139  ; 7.139  ;        ;
+; op[3]      ; isJR         ; 6.895  ;        ;        ; 6.895  ;
+; op[3]      ; isJumpD      ; 6.749  ;        ;        ; 6.749  ;
+; op[3]      ; isLW         ;        ; 7.490  ; 7.490  ;        ;
+; op[3]      ; isMFPC       ;        ; 7.435  ; 7.435  ;        ;
+; op[3]      ; isPrintDigit ;        ; 6.971  ; 6.971  ;        ;
+; op[3]      ; isR          ;        ; 7.377  ; 7.377  ;        ;
+; op[3]      ; isReadRight  ;        ; 7.336  ; 7.336  ;        ;
+; op[3]      ; isSW         ;        ; 7.175  ; 7.175  ;        ;
++------------+--------------+--------+--------+--------+--------+
+
+
++---------------------------------------------------------------+
+; Minimum Propagation Delay                                     ;
++------------+--------------+--------+--------+--------+--------+
+; Input Port ; Output Port  ; RR     ; RF     ; FR     ; FF     ;
++------------+--------------+--------+--------+--------+--------+
+; flush      ; isBranch     ;        ; 10.430 ; 10.430 ;        ;
+; flush      ; isJR         ;        ; 10.089 ; 10.089 ;        ;
+; flush      ; isJumpD      ;        ; 9.943  ; 9.943  ;        ;
+; flush      ; isLW         ;        ; 10.569 ; 10.569 ;        ;
+; flush      ; isMFPC       ;        ; 10.726 ; 10.726 ;        ;
+; flush      ; isPrintDigit ;        ; 10.182 ; 10.182 ;        ;
+; flush      ; isR          ;        ; 10.668 ; 10.668 ;        ;
+; flush      ; isReadRight  ;        ; 10.627 ; 10.627 ;        ;
+; flush      ; isSW         ;        ; 10.466 ; 10.466 ;        ;
+; func[0]    ; isMFPC       ; 10.848 ;        ;        ; 10.848 ;
+; func[1]    ; isMFPC       ; 10.678 ;        ;        ; 10.678 ;
+; func[2]    ; isMFPC       ; 11.139 ;        ;        ; 11.139 ;
+; op[0]      ; isBranch     ;        ; 6.963  ; 6.963  ;        ;
+; op[0]      ; isJR         ; 6.929  ;        ;        ; 6.929  ;
+; op[0]      ; isJumpD      ; 6.783  ;        ;        ; 6.783  ;
+; op[0]      ; isLW         ; 6.869  ;        ;        ; 6.869  ;
+; op[0]      ; isMFPC       ;        ; 7.259  ; 7.259  ;        ;
+; op[0]      ; isPrintDigit ; 7.022  ;        ;        ; 7.022  ;
+; op[0]      ; isR          ;        ; 7.201  ; 7.201  ;        ;
+; op[0]      ; isReadRight  ;        ; 7.160  ; 7.160  ;        ;
+; op[0]      ; isSW         ;        ; 6.999  ; 6.999  ;        ;
+; op[1]      ; isBranch     ;        ; 9.726  ; 9.726  ;        ;
+; op[1]      ; isJR         ;        ; 9.917  ; 9.917  ;        ;
+; op[1]      ; isJumpD      ; 9.756  ;        ;        ; 9.756  ;
+; op[1]      ; isLW         ;        ; 10.524 ; 10.524 ;        ;
+; op[1]      ; isMFPC       ;        ; 10.281 ; 10.281 ;        ;
+; op[1]      ; isPrintDigit ; 10.007 ;        ;        ; 10.007 ;
+; op[1]      ; isR          ;        ; 9.946  ; 9.946  ;        ;
+; op[1]      ; isReadRight  ; 9.921  ;        ;        ; 9.921  ;
+; op[1]      ; isSW         ; 9.728  ;        ;        ; 9.728  ;
+; op[2]      ; isBranch     ; 9.504  ;        ;        ; 9.504  ;
+; op[2]      ; isJR         ; 10.393 ;        ;        ; 10.393 ;
+; op[2]      ; isJumpD      ; 10.247 ;        ;        ; 10.247 ;
+; op[2]      ; isLW         ;        ; 9.767  ; 9.767  ;        ;
+; op[2]      ; isMFPC       ;        ; 9.905  ; 9.905  ;        ;
+; op[2]      ; isPrintDigit ; 10.486 ;        ;        ; 10.486 ;
+; op[2]      ; isR          ;        ; 9.705  ; 9.705  ;        ;
+; op[2]      ; isReadRight  ; 9.697  ;        ;        ; 9.697  ;
+; op[2]      ; isSW         ;        ; 9.509  ; 9.509  ;        ;
+; op[3]      ; isBranch     ;        ; 7.139  ; 7.139  ;        ;
+; op[3]      ; isJR         ; 6.895  ;        ;        ; 6.895  ;
+; op[3]      ; isJumpD      ; 6.749  ;        ;        ; 6.749  ;
+; op[3]      ; isLW         ;        ; 7.490  ; 7.490  ;        ;
+; op[3]      ; isMFPC       ;        ; 7.435  ; 7.435  ;        ;
+; op[3]      ; isPrintDigit ;        ; 6.971  ; 6.971  ;        ;
+; op[3]      ; isR          ;        ; 7.377  ; 7.377  ;        ;
+; op[3]      ; isReadRight  ;        ; 7.336  ; 7.336  ;        ;
+; op[3]      ; isSW         ;        ; 7.175  ; 7.175  ;        ;
++------------+--------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; flush      ; isBranch     ;       ; 5.733 ; 5.733 ;       ;
+; flush      ; isJR         ;       ; 5.595 ; 5.595 ;       ;
+; flush      ; isJumpD      ;       ; 5.485 ; 5.485 ;       ;
+; flush      ; isLW         ;       ; 5.783 ; 5.783 ;       ;
+; flush      ; isMFPC       ;       ; 5.920 ; 5.920 ;       ;
+; flush      ; isPrintDigit ;       ; 5.581 ; 5.581 ;       ;
+; flush      ; isR          ;       ; 5.883 ; 5.883 ;       ;
+; flush      ; isReadRight  ;       ; 5.874 ; 5.874 ;       ;
+; flush      ; isSW         ;       ; 5.736 ; 5.736 ;       ;
+; func[0]    ; isMFPC       ; 5.938 ;       ;       ; 5.938 ;
+; func[1]    ; isMFPC       ; 5.874 ;       ;       ; 5.874 ;
+; func[2]    ; isMFPC       ; 6.093 ;       ;       ; 6.093 ;
+; op[0]      ; isBranch     ;       ; 3.580 ; 3.580 ;       ;
+; op[0]      ; isJR         ; 3.573 ;       ;       ; 3.573 ;
+; op[0]      ; isJumpD      ; 3.463 ;       ;       ; 3.463 ;
+; op[0]      ; isLW         ; 3.508 ;       ;       ; 3.508 ;
+; op[0]      ; isMFPC       ;       ; 3.767 ; 3.767 ;       ;
+; op[0]      ; isPrintDigit ; 3.559 ;       ;       ; 3.559 ;
+; op[0]      ; isR          ;       ; 3.730 ; 3.730 ;       ;
+; op[0]      ; isReadRight  ;       ; 3.721 ; 3.721 ;       ;
+; op[0]      ; isSW         ;       ; 3.583 ; 3.583 ;       ;
+; op[1]      ; isBranch     ;       ; 5.393 ; 5.393 ;       ;
+; op[1]      ; isJR         ;       ; 5.530 ; 5.530 ;       ;
+; op[1]      ; isJumpD      ; 5.434 ;       ;       ; 5.434 ;
+; op[1]      ; isLW         ;       ; 5.751 ; 5.751 ;       ;
+; op[1]      ; isMFPC       ;       ; 5.725 ; 5.725 ;       ;
+; op[1]      ; isPrintDigit ; 5.541 ;       ;       ; 5.541 ;
+; op[1]      ; isR          ;       ; 5.558 ; 5.558 ;       ;
+; op[1]      ; isReadRight  ; 5.563 ;       ;       ; 5.563 ;
+; op[1]      ; isSW         ; 5.422 ;       ;       ; 5.422 ;
+; op[2]      ; isBranch     ; 5.324 ;       ;       ; 5.324 ;
+; op[2]      ; isJR         ; 5.756 ;       ;       ; 5.756 ;
+; op[2]      ; isJumpD      ; 5.646 ;       ;       ; 5.646 ;
+; op[2]      ; isLW         ;       ; 5.432 ; 5.432 ;       ;
+; op[2]      ; isMFPC       ;       ; 5.553 ; 5.553 ;       ;
+; op[2]      ; isPrintDigit ; 5.742 ;       ;       ; 5.742 ;
+; op[2]      ; isR          ;       ; 5.471 ; 5.471 ;       ;
+; op[2]      ; isReadRight  ; 5.464 ;       ;       ; 5.464 ;
+; op[2]      ; isSW         ;       ; 5.326 ; 5.326 ;       ;
+; op[3]      ; isBranch     ;       ; 3.638 ; 3.638 ;       ;
+; op[3]      ; isJR         ; 3.585 ;       ;       ; 3.585 ;
+; op[3]      ; isJumpD      ; 3.469 ;       ;       ; 3.469 ;
+; op[3]      ; isLW         ;       ; 3.804 ; 3.804 ;       ;
+; op[3]      ; isMFPC       ;       ; 3.825 ; 3.825 ;       ;
+; op[3]      ; isPrintDigit ;       ; 3.566 ; 3.566 ;       ;
+; op[3]      ; isR          ;       ; 3.788 ; 3.788 ;       ;
+; op[3]      ; isReadRight  ;       ; 3.779 ; 3.779 ;       ;
+; op[3]      ; isSW         ;       ; 3.641 ; 3.641 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; flush      ; isBranch     ;       ; 5.733 ; 5.733 ;       ;
+; flush      ; isJR         ;       ; 5.595 ; 5.595 ;       ;
+; flush      ; isJumpD      ;       ; 5.485 ; 5.485 ;       ;
+; flush      ; isLW         ;       ; 5.783 ; 5.783 ;       ;
+; flush      ; isMFPC       ;       ; 5.920 ; 5.920 ;       ;
+; flush      ; isPrintDigit ;       ; 5.581 ; 5.581 ;       ;
+; flush      ; isR          ;       ; 5.883 ; 5.883 ;       ;
+; flush      ; isReadRight  ;       ; 5.874 ; 5.874 ;       ;
+; flush      ; isSW         ;       ; 5.736 ; 5.736 ;       ;
+; func[0]    ; isMFPC       ; 5.938 ;       ;       ; 5.938 ;
+; func[1]    ; isMFPC       ; 5.874 ;       ;       ; 5.874 ;
+; func[2]    ; isMFPC       ; 6.093 ;       ;       ; 6.093 ;
+; op[0]      ; isBranch     ;       ; 3.580 ; 3.580 ;       ;
+; op[0]      ; isJR         ; 3.573 ;       ;       ; 3.573 ;
+; op[0]      ; isJumpD      ; 3.463 ;       ;       ; 3.463 ;
+; op[0]      ; isLW         ; 3.508 ;       ;       ; 3.508 ;
+; op[0]      ; isMFPC       ;       ; 3.767 ; 3.767 ;       ;
+; op[0]      ; isPrintDigit ; 3.559 ;       ;       ; 3.559 ;
+; op[0]      ; isR          ;       ; 3.730 ; 3.730 ;       ;
+; op[0]      ; isReadRight  ;       ; 3.721 ; 3.721 ;       ;
+; op[0]      ; isSW         ;       ; 3.583 ; 3.583 ;       ;
+; op[1]      ; isBranch     ;       ; 5.393 ; 5.393 ;       ;
+; op[1]      ; isJR         ;       ; 5.530 ; 5.530 ;       ;
+; op[1]      ; isJumpD      ; 5.434 ;       ;       ; 5.434 ;
+; op[1]      ; isLW         ;       ; 5.751 ; 5.751 ;       ;
+; op[1]      ; isMFPC       ;       ; 5.725 ; 5.725 ;       ;
+; op[1]      ; isPrintDigit ; 5.541 ;       ;       ; 5.541 ;
+; op[1]      ; isR          ;       ; 5.558 ; 5.558 ;       ;
+; op[1]      ; isReadRight  ; 5.563 ;       ;       ; 5.563 ;
+; op[1]      ; isSW         ; 5.422 ;       ;       ; 5.422 ;
+; op[2]      ; isBranch     ; 5.324 ;       ;       ; 5.324 ;
+; op[2]      ; isJR         ; 5.756 ;       ;       ; 5.756 ;
+; op[2]      ; isJumpD      ; 5.646 ;       ;       ; 5.646 ;
+; op[2]      ; isLW         ;       ; 5.432 ; 5.432 ;       ;
+; op[2]      ; isMFPC       ;       ; 5.553 ; 5.553 ;       ;
+; op[2]      ; isPrintDigit ; 5.742 ;       ;       ; 5.742 ;
+; op[2]      ; isR          ;       ; 5.471 ; 5.471 ;       ;
+; op[2]      ; isReadRight  ; 5.464 ;       ;       ; 5.464 ;
+; op[2]      ; isSW         ;       ; 5.326 ; 5.326 ;       ;
+; op[3]      ; isBranch     ;       ; 3.638 ; 3.638 ;       ;
+; op[3]      ; isJR         ; 3.585 ;       ;       ; 3.585 ;
+; op[3]      ; isJumpD      ; 3.469 ;       ;       ; 3.469 ;
+; op[3]      ; isLW         ;       ; 3.804 ; 3.804 ;       ;
+; op[3]      ; isMFPC       ;       ; 3.825 ; 3.825 ;       ;
+; op[3]      ; isPrintDigit ;       ; 3.566 ; 3.566 ;       ;
+; op[3]      ; isR          ;       ; 3.788 ; 3.788 ;       ;
+; op[3]      ; isReadRight  ;       ; 3.779 ; 3.779 ;       ;
+; op[3]      ; isSW         ;       ; 3.641 ; 3.641 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------+
+; Progagation Delay                                             ;
++------------+--------------+--------+--------+--------+--------+
+; Input Port ; Output Port  ; RR     ; RF     ; FR     ; FF     ;
++------------+--------------+--------+--------+--------+--------+
+; flush      ; isBranch     ;        ; 10.430 ; 10.430 ;        ;
+; flush      ; isJR         ;        ; 10.089 ; 10.089 ;        ;
+; flush      ; isJumpD      ;        ; 9.943  ; 9.943  ;        ;
+; flush      ; isLW         ;        ; 10.569 ; 10.569 ;        ;
+; flush      ; isMFPC       ;        ; 10.726 ; 10.726 ;        ;
+; flush      ; isPrintDigit ;        ; 10.182 ; 10.182 ;        ;
+; flush      ; isR          ;        ; 10.668 ; 10.668 ;        ;
+; flush      ; isReadRight  ;        ; 10.627 ; 10.627 ;        ;
+; flush      ; isSW         ;        ; 10.466 ; 10.466 ;        ;
+; func[0]    ; isMFPC       ; 10.848 ;        ;        ; 10.848 ;
+; func[1]    ; isMFPC       ; 10.678 ;        ;        ; 10.678 ;
+; func[2]    ; isMFPC       ; 11.139 ;        ;        ; 11.139 ;
+; op[0]      ; isBranch     ;        ; 6.963  ; 6.963  ;        ;
+; op[0]      ; isJR         ; 6.929  ;        ;        ; 6.929  ;
+; op[0]      ; isJumpD      ; 6.783  ;        ;        ; 6.783  ;
+; op[0]      ; isLW         ; 6.869  ;        ;        ; 6.869  ;
+; op[0]      ; isMFPC       ;        ; 7.259  ; 7.259  ;        ;
+; op[0]      ; isPrintDigit ; 7.022  ;        ;        ; 7.022  ;
+; op[0]      ; isR          ;        ; 7.201  ; 7.201  ;        ;
+; op[0]      ; isReadRight  ;        ; 7.160  ; 7.160  ;        ;
+; op[0]      ; isSW         ;        ; 6.999  ; 6.999  ;        ;
+; op[1]      ; isBranch     ;        ; 9.726  ; 9.726  ;        ;
+; op[1]      ; isJR         ;        ; 9.917  ; 9.917  ;        ;
+; op[1]      ; isJumpD      ; 9.756  ;        ;        ; 9.756  ;
+; op[1]      ; isLW         ;        ; 10.524 ; 10.524 ;        ;
+; op[1]      ; isMFPC       ;        ; 10.281 ; 10.281 ;        ;
+; op[1]      ; isPrintDigit ; 10.007 ;        ;        ; 10.007 ;
+; op[1]      ; isR          ;        ; 9.946  ; 9.946  ;        ;
+; op[1]      ; isReadRight  ; 9.921  ;        ;        ; 9.921  ;
+; op[1]      ; isSW         ; 9.728  ;        ;        ; 9.728  ;
+; op[2]      ; isBranch     ; 9.504  ;        ;        ; 9.504  ;
+; op[2]      ; isJR         ; 10.393 ;        ;        ; 10.393 ;
+; op[2]      ; isJumpD      ; 10.247 ;        ;        ; 10.247 ;
+; op[2]      ; isLW         ;        ; 9.767  ; 9.767  ;        ;
+; op[2]      ; isMFPC       ;        ; 9.905  ; 9.905  ;        ;
+; op[2]      ; isPrintDigit ; 10.486 ;        ;        ; 10.486 ;
+; op[2]      ; isR          ;        ; 9.705  ; 9.705  ;        ;
+; op[2]      ; isReadRight  ; 9.697  ;        ;        ; 9.697  ;
+; op[2]      ; isSW         ;        ; 9.509  ; 9.509  ;        ;
+; op[3]      ; isBranch     ;        ; 7.139  ; 7.139  ;        ;
+; op[3]      ; isJR         ; 6.895  ;        ;        ; 6.895  ;
+; op[3]      ; isJumpD      ; 6.749  ;        ;        ; 6.749  ;
+; op[3]      ; isLW         ;        ; 7.490  ; 7.490  ;        ;
+; op[3]      ; isMFPC       ;        ; 7.435  ; 7.435  ;        ;
+; op[3]      ; isPrintDigit ;        ; 6.971  ; 6.971  ;        ;
+; op[3]      ; isR          ;        ; 7.377  ; 7.377  ;        ;
+; op[3]      ; isReadRight  ;        ; 7.336  ; 7.336  ;        ;
+; op[3]      ; isSW         ;        ; 7.175  ; 7.175  ;        ;
++------------+--------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; flush      ; isBranch     ;       ; 5.733 ; 5.733 ;       ;
+; flush      ; isJR         ;       ; 5.595 ; 5.595 ;       ;
+; flush      ; isJumpD      ;       ; 5.485 ; 5.485 ;       ;
+; flush      ; isLW         ;       ; 5.783 ; 5.783 ;       ;
+; flush      ; isMFPC       ;       ; 5.920 ; 5.920 ;       ;
+; flush      ; isPrintDigit ;       ; 5.581 ; 5.581 ;       ;
+; flush      ; isR          ;       ; 5.883 ; 5.883 ;       ;
+; flush      ; isReadRight  ;       ; 5.874 ; 5.874 ;       ;
+; flush      ; isSW         ;       ; 5.736 ; 5.736 ;       ;
+; func[0]    ; isMFPC       ; 5.938 ;       ;       ; 5.938 ;
+; func[1]    ; isMFPC       ; 5.874 ;       ;       ; 5.874 ;
+; func[2]    ; isMFPC       ; 6.093 ;       ;       ; 6.093 ;
+; op[0]      ; isBranch     ;       ; 3.580 ; 3.580 ;       ;
+; op[0]      ; isJR         ; 3.573 ;       ;       ; 3.573 ;
+; op[0]      ; isJumpD      ; 3.463 ;       ;       ; 3.463 ;
+; op[0]      ; isLW         ; 3.508 ;       ;       ; 3.508 ;
+; op[0]      ; isMFPC       ;       ; 3.767 ; 3.767 ;       ;
+; op[0]      ; isPrintDigit ; 3.559 ;       ;       ; 3.559 ;
+; op[0]      ; isR          ;       ; 3.730 ; 3.730 ;       ;
+; op[0]      ; isReadRight  ;       ; 3.721 ; 3.721 ;       ;
+; op[0]      ; isSW         ;       ; 3.583 ; 3.583 ;       ;
+; op[1]      ; isBranch     ;       ; 5.393 ; 5.393 ;       ;
+; op[1]      ; isJR         ;       ; 5.530 ; 5.530 ;       ;
+; op[1]      ; isJumpD      ; 5.434 ;       ;       ; 5.434 ;
+; op[1]      ; isLW         ;       ; 5.751 ; 5.751 ;       ;
+; op[1]      ; isMFPC       ;       ; 5.725 ; 5.725 ;       ;
+; op[1]      ; isPrintDigit ; 5.541 ;       ;       ; 5.541 ;
+; op[1]      ; isR          ;       ; 5.558 ; 5.558 ;       ;
+; op[1]      ; isReadRight  ; 5.563 ;       ;       ; 5.563 ;
+; op[1]      ; isSW         ; 5.422 ;       ;       ; 5.422 ;
+; op[2]      ; isBranch     ; 5.324 ;       ;       ; 5.324 ;
+; op[2]      ; isJR         ; 5.756 ;       ;       ; 5.756 ;
+; op[2]      ; isJumpD      ; 5.646 ;       ;       ; 5.646 ;
+; op[2]      ; isLW         ;       ; 5.432 ; 5.432 ;       ;
+; op[2]      ; isMFPC       ;       ; 5.553 ; 5.553 ;       ;
+; op[2]      ; isPrintDigit ; 5.742 ;       ;       ; 5.742 ;
+; op[2]      ; isR          ;       ; 5.471 ; 5.471 ;       ;
+; op[2]      ; isReadRight  ; 5.464 ;       ;       ; 5.464 ;
+; op[2]      ; isSW         ;       ; 5.326 ; 5.326 ;       ;
+; op[3]      ; isBranch     ;       ; 3.638 ; 3.638 ;       ;
+; op[3]      ; isJR         ; 3.585 ;       ;       ; 3.585 ;
+; op[3]      ; isJumpD      ; 3.469 ;       ;       ; 3.469 ;
+; op[3]      ; isLW         ;       ; 3.804 ; 3.804 ;       ;
+; op[3]      ; isMFPC       ;       ; 3.825 ; 3.825 ;       ;
+; op[3]      ; isPrintDigit ;       ; 3.566 ; 3.566 ;       ;
+; op[3]      ; isR          ;       ; 3.788 ; 3.788 ;       ;
+; op[3]      ; isReadRight  ;       ; 3.779 ; 3.779 ;       ;
+; op[3]      ; isSW         ;       ; 3.641 ; 3.641 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 48    ; 48   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 48    ; 48   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jun 03 09:54:20 2021
+Info: Command: quartus_sta Controller -c Controller
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Controller.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4536 megabytes
+    Info: Processing ended: Thu Jun 03 09:54:21 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

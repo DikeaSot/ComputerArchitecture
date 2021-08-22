@@ -1,0 +1,1132 @@
+Analysis & Synthesis report for CPU
+Sat Jun 19 13:46:22 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: jumpAD:JumpAddress
+ 13. Parameter Settings for User Entity Instance: JRSelector:JRSelect
+ 14. Parameter Settings for User Entity Instance: register_MEM_WB:RMEMWB
+ 15. Parameter Settings for User Entity Instance: register_IF_ID:RIFID
+ 16. Parameter Settings for User Entity Instance: forwarder:Forward
+ 17. Parameter Settings for User Entity Instance: selector:Selector1
+ 18. Parameter Settings for User Entity Instance: selector:Selector2
+ 19. Parameter Settings for User Entity Instance: signExtender:sign_extend
+ 20. Parameter Settings for User Entity Instance: regFile:FileRegister
+ 21. Parameter Settings for User Entity Instance: regFile:FileRegister|reg0:G1
+ 22. Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G2
+ 23. Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G3
+ 24. Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G4
+ 25. Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G5
+ 26. Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G6
+ 27. Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G7
+ 28. Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G8
+ 29. Parameter Settings for User Entity Instance: regFile:FileRegister|mux8to1:G9
+ 30. Parameter Settings for User Entity Instance: regFile:FileRegister|mux8to1:G10
+ 31. Parameter Settings for User Entity Instance: register_ID_EX:RIDEX
+ 32. Parameter Settings for User Entity Instance: register_EX_MEM:REXMEM
+ 33. Port Connectivity Checks: "register_ID_EX:RIDEX"
+ 34. Port Connectivity Checks: "hazardUnit:Hazard"
+ 35. Port Connectivity Checks: "ALU16:ALU"
+ 36. Port Connectivity Checks: "register_IF_ID:RIFID"
+ 37. Elapsed Time Per Partition
+ 38. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jun 19 13:46:22 2021           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; CPU                                             ;
+; Top-level Entity Name              ; CPU                                             ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 861                                             ;
+;     Total combinational functions  ; 858                                             ;
+;     Dedicated logic registers      ; 74                                              ;
+; Total registers                    ; 74                                              ;
+; Total pins                         ; 277                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; CPU                ; CPU                ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                             ; Library ;
++----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
+; ../TwosComplement/TwosComplement.vhd   ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/TwosComplement/TwosComplement.vhd   ;         ;
+; ../TrapUnit/TrapUnit.vhd               ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/TrapUnit/TrapUnit.vhd               ;         ;
+; ../SignExtender/SignExtender.vhd       ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/SignExtender/SignExtender.vhd       ;         ;
+; ../Selector/Selector.vhd               ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Selector/Selector.vhd               ;         ;
+; ../Register_MEM_WB/Register_MEM_WB.vhd ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Register_MEM_WB/Register_MEM_WB.vhd ;         ;
+; ../Register_IF_ID/Register_IF_ID.vhd   ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Register_IF_ID/Register_IF_ID.vhd   ;         ;
+; ../Register_ID_EX/Register_ID_EX.vhd   ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Register_ID_EX/Register_ID_EX.vhd   ;         ;
+; ../Register_EX_MEM/Register_EX_MEM.vhd ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Register_EX_MEM/Register_EX_MEM.vhd ;         ;
+; ../RegFile/RegFile.vhd                 ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/RegFile/RegFile.vhd                 ;         ;
+; ../Reg16b/Reg16b.vhd                   ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Reg16b/Reg16b.vhd                   ;         ;
+; ../Reg16/Reg16.vhd                     ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Reg16/Reg16.vhd                     ;         ;
+; ../Reg0/Reg0.vhd                       ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Reg0/Reg0.vhd                       ;         ;
+; ../MyXOR3/MyXOR3.vhd                   ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyXOR3/MyXOR3.vhd                   ;         ;
+; ../myXOR/myXOR.vhd                     ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/myXOR/myXOR.vhd                     ;         ;
+; ../MyOR16/MyOR16.vhd                   ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyOR16/MyOR16.vhd                   ;         ;
+; ../MyOR3/MyOR3.vhd                     ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyOR3/MyOR3.vhd                     ;         ;
+; ../MyNOT16/MyNOT16.vhd                 ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyNOT16/MyNOT16.vhd                 ;         ;
+; ../MyMUX8_1/myMUX8_1.vhd               ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyMUX8_1/myMUX8_1.vhd               ;         ;
+; ../MyMUX2_1_16/MyMUX2_1_16.vhd         ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyMUX2_1_16/MyMUX2_1_16.vhd         ;         ;
+; ../MyAND16/MyAND16.vhd                 ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyAND16/MyAND16.vhd                 ;         ;
+; ../MyAND/MyAND.vhd                     ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyAND/MyAND.vhd                     ;         ;
+; ../MyALU16_NOT/MyALU16_NOT.vhd         ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/MyALU16_NOT/MyALU16_NOT.vhd         ;         ;
+; ../mux8to1/mux8to1.vhd                 ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/mux8to1/mux8to1.vhd                 ;         ;
+; ../JumpAD/JumpAD.vhd                   ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/JumpAD/JumpAD.vhd                   ;         ;
+; ../JRSelector/JRSelector.vhd           ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/JRSelector/JRSelector.vhd           ;         ;
+; ../HazardUnit/HazardUnit.vhd           ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/HazardUnit/HazardUnit.vhd           ;         ;
+; ../GatedClockDFF/GatedClockDFF.vhd     ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/GatedClockDFF/GatedClockDFF.vhd     ;         ;
+; ../FullAdder16/FullAdder16.vhd         ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/FullAdder16/FullAdder16.vhd         ;         ;
+; ../FullAdder/FullAdder.vhd             ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/FullAdder/FullAdder.vhd             ;         ;
+; ../Forwarder/Forwarder.vhd             ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Forwarder/Forwarder.vhd             ;         ;
+; ../Decode3_8/Decode3_8.vhd             ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Decode3_8/Decode3_8.vhd             ;         ;
+; ../Controller/Controller.vhd           ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/Controller/Controller.vhd           ;         ;
+; ../ALUControl/ALUControl.vhd           ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/ALUControl/ALUControl.vhd           ;         ;
+; ../ALU16/ALU16.vhd                     ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/ALU16/ALU16.vhd                     ;         ;
+; CPU.vhd                                ; yes             ; User VHDL File  ; D:/University/Architecture/Project 3/CPU/CPU.vhd                         ;         ;
++----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 861   ;
+;                                             ;       ;
+; Total combinational functions               ; 858   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 561   ;
+;     -- 3 input functions                    ; 122   ;
+;     -- <=2 input functions                  ; 175   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 815   ;
+;     -- arithmetic mode                      ; 43    ;
+;                                             ;       ;
+; Total registers                             ; 74    ;
+;     -- Dedicated logic registers            ; 74    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 277   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 163   ;
+; Total fan-out                               ; 3363  ;
+; Average fan-out                             ; 2.78  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                             ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; |CPU                         ; 858 (194)         ; 74 (0)       ; 0           ; 0            ; 0       ; 0         ; 277  ; 0            ; |CPU                                                  ; work         ;
+;    |ALU16:ALU|               ; 116 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU                                        ; work         ;
+;       |TwosComplement:G0|    ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|TwosComplement:G0                      ; work         ;
+;       |fulladder16:V0|       ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0                         ; work         ;
+;          |fulladder:V10|     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V10           ; work         ;
+;             |myOR3:V4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V10|myOR3:V4  ; work         ;
+;             |myXOR3:V0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V10|myXOR3:V0 ; work         ;
+;          |fulladder:V12|     ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V12           ; work         ;
+;             |myOR3:V4|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V12|myOR3:V4  ; work         ;
+;             |myXOR3:V0|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V12|myXOR3:V0 ; work         ;
+;          |fulladder:V13|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V13           ; work         ;
+;             |myOR3:V4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V13|myOR3:V4  ; work         ;
+;          |fulladder:V1|      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V1            ; work         ;
+;             |myOR3:V4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V1|myOR3:V4   ; work         ;
+;          |fulladder:V2|      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V2            ; work         ;
+;             |myXOR3:V0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V2|myXOR3:V0  ; work         ;
+;          |fulladder:V3|      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V3            ; work         ;
+;             |myOR3:V4|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V3|myOR3:V4   ; work         ;
+;          |fulladder:V4|      ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V4            ; work         ;
+;             |myOR3:V4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V4|myOR3:V4   ; work         ;
+;             |myXOR3:V0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V4|myXOR3:V0  ; work         ;
+;          |fulladder:V6|      ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V6            ; work         ;
+;             |myOR3:V4|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V6|myOR3:V4   ; work         ;
+;             |myXOR3:V0|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V6|myXOR3:V0  ; work         ;
+;          |fulladder:V7|      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V7            ; work         ;
+;             |myOR3:V4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V7|myOR3:V4   ; work         ;
+;          |fulladder:V8|      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V8            ; work         ;
+;             |myXOR3:V0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V8|myXOR3:V0  ; work         ;
+;          |fulladder:V9|      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V9            ; work         ;
+;             |myOR3:V4|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|fulladder:V9|myOR3:V4   ; work         ;
+;          |myXOR:Overflow|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|fulladder16:V0|myXOR:Overflow          ; work         ;
+;       |myMUX8_1:V5|          ; 67 (67)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU16:ALU|myMUX8_1:V5                            ; work         ;
+;    |JRSelector:JRSelect|     ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|JRSelector:JRSelect                              ; work         ;
+;    |controller:Control|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|controller:Control                               ; work         ;
+;    |forwarder:Forward|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|forwarder:Forward                                ; work         ;
+;    |hazardUnit:Hazard|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|hazardUnit:Hazard                                ; work         ;
+;    |reg16b:PCRegister|       ; 18 (18)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|reg16b:PCRegister                                ; work         ;
+;    |regFile:FileRegister|    ; 343 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister                             ; work         ;
+;       |decode3_8:G0|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|decode3_8:G0                ; work         ;
+;       |reg16:G2|             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2                    ; work         ;
+;          |GatedClockDFF:G0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G0   ; work         ;
+;          |GatedClockDFF:G10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G10  ; work         ;
+;          |GatedClockDFF:G11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G11  ; work         ;
+;          |GatedClockDFF:G12| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G12  ; work         ;
+;          |GatedClockDFF:G13| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G13  ; work         ;
+;          |GatedClockDFF:G14| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G14  ; work         ;
+;          |GatedClockDFF:G15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G15  ; work         ;
+;          |GatedClockDFF:G1|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G1   ; work         ;
+;          |GatedClockDFF:G2|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G2   ; work         ;
+;          |GatedClockDFF:G3|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G3   ; work         ;
+;          |GatedClockDFF:G4|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G4   ; work         ;
+;          |GatedClockDFF:G5|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G5   ; work         ;
+;          |GatedClockDFF:G6|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G6   ; work         ;
+;          |GatedClockDFF:G7|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G7   ; work         ;
+;          |GatedClockDFF:G8|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G8   ; work         ;
+;          |GatedClockDFF:G9|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G2|GatedClockDFF:G9   ; work         ;
+;       |reg16:G3|             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3                    ; work         ;
+;          |GatedClockDFF:G0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G0   ; work         ;
+;          |GatedClockDFF:G10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G10  ; work         ;
+;          |GatedClockDFF:G11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G11  ; work         ;
+;          |GatedClockDFF:G12| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G12  ; work         ;
+;          |GatedClockDFF:G13| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G13  ; work         ;
+;          |GatedClockDFF:G14| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G14  ; work         ;
+;          |GatedClockDFF:G15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G15  ; work         ;
+;          |GatedClockDFF:G1|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G1   ; work         ;
+;          |GatedClockDFF:G2|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G2   ; work         ;
+;          |GatedClockDFF:G3|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G3   ; work         ;
+;          |GatedClockDFF:G4|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G4   ; work         ;
+;          |GatedClockDFF:G5|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G5   ; work         ;
+;          |GatedClockDFF:G6|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G6   ; work         ;
+;          |GatedClockDFF:G7|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G7   ; work         ;
+;          |GatedClockDFF:G8|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G8   ; work         ;
+;          |GatedClockDFF:G9|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G3|GatedClockDFF:G9   ; work         ;
+;       |reg16:G4|             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4                    ; work         ;
+;          |GatedClockDFF:G0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G0   ; work         ;
+;          |GatedClockDFF:G10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G10  ; work         ;
+;          |GatedClockDFF:G11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G11  ; work         ;
+;          |GatedClockDFF:G12| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G12  ; work         ;
+;          |GatedClockDFF:G13| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G13  ; work         ;
+;          |GatedClockDFF:G14| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G14  ; work         ;
+;          |GatedClockDFF:G15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G15  ; work         ;
+;          |GatedClockDFF:G1|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G1   ; work         ;
+;          |GatedClockDFF:G2|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G2   ; work         ;
+;          |GatedClockDFF:G3|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G3   ; work         ;
+;          |GatedClockDFF:G4|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G4   ; work         ;
+;          |GatedClockDFF:G5|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G5   ; work         ;
+;          |GatedClockDFF:G6|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G6   ; work         ;
+;          |GatedClockDFF:G7|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G7   ; work         ;
+;          |GatedClockDFF:G8|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G8   ; work         ;
+;          |GatedClockDFF:G9|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G4|GatedClockDFF:G9   ; work         ;
+;       |reg16:G5|             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5                    ; work         ;
+;          |GatedClockDFF:G0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G0   ; work         ;
+;          |GatedClockDFF:G10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G10  ; work         ;
+;          |GatedClockDFF:G11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G11  ; work         ;
+;          |GatedClockDFF:G12| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G12  ; work         ;
+;          |GatedClockDFF:G13| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G13  ; work         ;
+;          |GatedClockDFF:G14| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G14  ; work         ;
+;          |GatedClockDFF:G15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G15  ; work         ;
+;          |GatedClockDFF:G1|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G1   ; work         ;
+;          |GatedClockDFF:G2|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G2   ; work         ;
+;          |GatedClockDFF:G3|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G3   ; work         ;
+;          |GatedClockDFF:G4|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G4   ; work         ;
+;          |GatedClockDFF:G5|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G5   ; work         ;
+;          |GatedClockDFF:G6|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G6   ; work         ;
+;          |GatedClockDFF:G7|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G7   ; work         ;
+;          |GatedClockDFF:G8|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G8   ; work         ;
+;          |GatedClockDFF:G9|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G5|GatedClockDFF:G9   ; work         ;
+;       |reg16:G6|             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6                    ; work         ;
+;          |GatedClockDFF:G0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G0   ; work         ;
+;          |GatedClockDFF:G10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G10  ; work         ;
+;          |GatedClockDFF:G11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G11  ; work         ;
+;          |GatedClockDFF:G12| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G12  ; work         ;
+;          |GatedClockDFF:G13| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G13  ; work         ;
+;          |GatedClockDFF:G14| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G14  ; work         ;
+;          |GatedClockDFF:G15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G15  ; work         ;
+;          |GatedClockDFF:G1|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G1   ; work         ;
+;          |GatedClockDFF:G2|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G2   ; work         ;
+;          |GatedClockDFF:G3|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G3   ; work         ;
+;          |GatedClockDFF:G4|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G4   ; work         ;
+;          |GatedClockDFF:G5|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G5   ; work         ;
+;          |GatedClockDFF:G6|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G6   ; work         ;
+;          |GatedClockDFF:G7|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G7   ; work         ;
+;          |GatedClockDFF:G8|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G8   ; work         ;
+;          |GatedClockDFF:G9|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G6|GatedClockDFF:G9   ; work         ;
+;       |reg16:G7|             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7                    ; work         ;
+;          |GatedClockDFF:G0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G0   ; work         ;
+;          |GatedClockDFF:G10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G10  ; work         ;
+;          |GatedClockDFF:G11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G11  ; work         ;
+;          |GatedClockDFF:G12| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G12  ; work         ;
+;          |GatedClockDFF:G13| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G13  ; work         ;
+;          |GatedClockDFF:G14| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G14  ; work         ;
+;          |GatedClockDFF:G15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G15  ; work         ;
+;          |GatedClockDFF:G1|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G1   ; work         ;
+;          |GatedClockDFF:G2|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G2   ; work         ;
+;          |GatedClockDFF:G3|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G3   ; work         ;
+;          |GatedClockDFF:G4|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G4   ; work         ;
+;          |GatedClockDFF:G5|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G5   ; work         ;
+;          |GatedClockDFF:G6|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G6   ; work         ;
+;          |GatedClockDFF:G7|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G7   ; work         ;
+;          |GatedClockDFF:G8|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G8   ; work         ;
+;          |GatedClockDFF:G9|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G7|GatedClockDFF:G9   ; work         ;
+;       |reg16:G8|             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8                    ; work         ;
+;          |GatedClockDFF:G0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G0   ; work         ;
+;          |GatedClockDFF:G10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G10  ; work         ;
+;          |GatedClockDFF:G11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G11  ; work         ;
+;          |GatedClockDFF:G12| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G12  ; work         ;
+;          |GatedClockDFF:G13| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G13  ; work         ;
+;          |GatedClockDFF:G14| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G14  ; work         ;
+;          |GatedClockDFF:G15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G15  ; work         ;
+;          |GatedClockDFF:G1|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G1   ; work         ;
+;          |GatedClockDFF:G2|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G2   ; work         ;
+;          |GatedClockDFF:G3|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G3   ; work         ;
+;          |GatedClockDFF:G4|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G4   ; work         ;
+;          |GatedClockDFF:G5|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G5   ; work         ;
+;          |GatedClockDFF:G6|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G6   ; work         ;
+;          |GatedClockDFF:G7|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G7   ; work         ;
+;          |GatedClockDFF:G8|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G8   ; work         ;
+;          |GatedClockDFF:G9|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|regFile:FileRegister|reg16:G8|GatedClockDFF:G9   ; work         ;
+;    |register_EX_MEM:REXMEM|  ; 2 (2)             ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|register_EX_MEM:REXMEM                           ; work         ;
+;    |register_ID_EX:RIDEX|    ; 112 (112)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|register_ID_EX:RIDEX                             ; work         ;
+;    |register_IF_ID:RIFID|    ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|register_IF_ID:RIFID                             ; work         ;
+;    |register_MEM_WB:RMEMWB|  ; 0 (0)             ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|register_MEM_WB:RMEMWB                           ; work         ;
+;    |trapUnit:Trap|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|trapUnit:Trap                                    ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; register_IF_ID:RIFID|outInstruction[12]             ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[13]             ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[14]             ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[15]             ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[11]             ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[5]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[10]             ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[4]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[9]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[3]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[7]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[8]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[6]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[1]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[2]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outInstruction[0]              ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[12]                      ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[3]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[0]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[4]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[5]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[2]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[14]                      ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[7]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[8]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[9]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[11]                      ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[15]                      ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[13]                      ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[10]                      ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[1]                       ; clock               ; yes                    ;
+; register_IF_ID:RIFID|outPC[6]                       ; clock               ; yes                    ;
+; Number of user-specified and inferred latches = 32  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                 ;
++--------------------------------------------------------+-----+
+; Logic Cell Name                                        ;     ;
++--------------------------------------------------------+-----+
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G0|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G1|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G2|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G3|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G4|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G5|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G6|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G7|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G8|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G9|out1~0  ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G10|out1~0 ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G11|out1~0 ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G12|out1~0 ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G13|out1~0 ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G14|out1~0 ;     ;
+; regFile:FileRegister|reg16:G2|GatedClockDFF:G15|out1~0 ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G0|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G1|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G2|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G3|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G4|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G5|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G6|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G7|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G8|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G9|out1~0  ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G10|out1~0 ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G11|out1~0 ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G12|out1~0 ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G13|out1~0 ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G14|out1~0 ;     ;
+; regFile:FileRegister|reg16:G3|GatedClockDFF:G15|out1~0 ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G0|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G1|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G2|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G3|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G4|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G5|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G6|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G7|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G8|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G9|out1~0  ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G10|out1~0 ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G11|out1~0 ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G12|out1~0 ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G13|out1~0 ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G14|out1~0 ;     ;
+; regFile:FileRegister|reg16:G4|GatedClockDFF:G15|out1~0 ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G0|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G1|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G2|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G3|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G4|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G5|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G6|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G7|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G8|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G9|out1~0  ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G10|out1~0 ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G11|out1~0 ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G12|out1~0 ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G13|out1~0 ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G14|out1~0 ;     ;
+; regFile:FileRegister|reg16:G5|GatedClockDFF:G15|out1~0 ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G0|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G1|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G2|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G3|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G4|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G5|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G6|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G7|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G8|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G9|out1~0  ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G10|out1~0 ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G11|out1~0 ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G12|out1~0 ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G13|out1~0 ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G14|out1~0 ;     ;
+; regFile:FileRegister|reg16:G6|GatedClockDFF:G15|out1~0 ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G0|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G1|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G2|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G3|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G4|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G5|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G6|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G7|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G8|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G9|out1~0  ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G10|out1~0 ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G11|out1~0 ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G12|out1~0 ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G13|out1~0 ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G14|out1~0 ;     ;
+; regFile:FileRegister|reg16:G7|GatedClockDFF:G15|out1~0 ;     ;
+; regFile:FileRegister|reg16:G8|GatedClockDFF:G0|out1~0  ;     ;
+; regFile:FileRegister|reg16:G8|GatedClockDFF:G1|out1~0  ;     ;
+; regFile:FileRegister|reg16:G8|GatedClockDFF:G2|out1~0  ;     ;
+; regFile:FileRegister|reg16:G8|GatedClockDFF:G3|out1~0  ;     ;
+; Number of logic cells representing combinational loops ; 337 ;
++--------------------------------------------------------+-----+
+Table restricted to first 100 entries. Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 74    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 15    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 15    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |CPU|reg16b:PCRegister|output[13]           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |CPU|register_EX_MEM:REXMEM|ReadDigit_EXMEM ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 45 LEs               ; 0 LEs                  ; Yes        ; |CPU|register_EX_MEM:REXMEM|Result_EXMEM[3] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |CPU|MEM_WB_Out[13]                         ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |CPU|register_ID_EX:RIDEX|ALUFunc_IDEX[2]   ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |CPU|ALU_Input2[12]                         ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 80 LEs               ; 16 LEs                 ; No         ; |CPU|register_ID_EX:RIDEX|R2Reg_IDEX[1]     ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; No         ; |CPU|ALU_Input1[12]                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: jumpAD:JumpAddress ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 16    ; Signed Integer                         ;
+; k              ; 12    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: JRSelector:JRSelect ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; n              ; 16    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEM_WB:RMEMWB ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
+; addresssize    ; 3     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IF_ID:RIFID ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: forwarder:Forward ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; addr_size      ; 3     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: selector:Selector1 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 16    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: selector:Selector2 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 16    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: signExtender:sign_extend ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 16    ; Signed Integer                               ;
+; k              ; 6     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
+; k              ; 3     ; Signed Integer                           ;
+; regnum         ; 8     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg0:G1 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 16    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G2 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G3 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G4 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G5 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G6 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G7 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|reg16:G8 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|mux8to1:G9 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 16    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:FileRegister|mux8to1:G10 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_ID_EX:RIDEX ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
+; addresssize    ; 3     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EX_MEM:REXMEM ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
+; addresssize    ; 3     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register_ID_EX:RIDEX"                                                                          ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; clock_idex      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wasjumpout_idex ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; isjump_idex     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; isjr_idex       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "hazardUnit:Hazard" ;
++---------+-------+----------+------------------+
+; Port    ; Type  ; Severity ; Details          ;
++---------+-------+----------+------------------+
+; wasjump ; Input ; Info     ; Stuck at GND     ;
++---------+-------+----------+------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "ALU16:ALU"      ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; carry_in ; Input ; Info     ; Stuck at GND ;
++----------+-------+----------+--------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "register_IF_ID:RIFID" ;
++--------------+-------+----------+----------------+
+; Port         ; Type  ; Severity ; Details        ;
++--------------+-------+----------+----------------+
+; if_flush     ; Input ; Info     ; Stuck at GND   ;
+; if_id_enable ; Input ; Info     ; Stuck at VCC   ;
++--------------+-------+----------+----------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Jun 19 13:46:18 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/twoscomplement/twoscomplement.vhd
+    Info (12022): Found design unit 1: TwosComplement-logic
+    Info (12023): Found entity 1: TwosComplement
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/trapunit/trapunit.vhd
+    Info (12022): Found design unit 1: trapUnit-behav
+    Info (12023): Found entity 1: trapUnit
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/signextender/signextender.vhd
+    Info (12022): Found design unit 1: signExtender-logic
+    Info (12023): Found entity 1: signExtender
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/selector/selector.vhd
+    Info (12022): Found design unit 1: selector-behav
+    Info (12023): Found entity 1: selector
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/register_mem_wb/register_mem_wb.vhd
+    Info (12022): Found design unit 1: register_MEM_WB-behav
+    Info (12023): Found entity 1: register_MEM_WB
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/register_if_id/register_if_id.vhd
+    Info (12022): Found design unit 1: register_IF_ID-behav
+    Info (12023): Found entity 1: register_IF_ID
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/register_id_ex/register_id_ex.vhd
+    Info (12022): Found design unit 1: register_ID_EX-behav
+    Info (12023): Found entity 1: register_ID_EX
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/register_ex_mem/register_ex_mem.vhd
+    Info (12022): Found design unit 1: register_EX_MEM-behav
+    Info (12023): Found entity 1: register_EX_MEM
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/regfile/regfile.vhd
+    Info (12022): Found design unit 1: regFile-logic
+    Info (12023): Found entity 1: regFile
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/reg16b/reg16b.vhd
+    Info (12022): Found design unit 1: reg16b-behav
+    Info (12023): Found entity 1: reg16b
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/reg16/reg16.vhd
+    Info (12022): Found design unit 1: reg16-logic
+    Info (12023): Found entity 1: reg16
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/reg0/reg0.vhd
+    Info (12022): Found design unit 1: reg0-behav
+    Info (12023): Found entity 1: reg0
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/myxor3/myxor3.vhd
+    Info (12022): Found design unit 1: myXOR3-logic
+    Info (12023): Found entity 1: myXOR3
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/myxor/myxor.vhd
+    Info (12022): Found design unit 1: myXOR-LogicFunc
+    Info (12023): Found entity 1: myXOR
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/myor16/myor16.vhd
+    Info (12022): Found design unit 1: MyOR16-logic
+    Info (12023): Found entity 1: MyOR16
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/myor3/myor3.vhd
+    Info (12022): Found design unit 1: myOR3-logic
+    Info (12023): Found entity 1: myOR3
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/mynot16/mynot16.vhd
+    Info (12022): Found design unit 1: myNOT16-logic
+    Info (12023): Found entity 1: myNOT16
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/mymux8_1/mymux8_1.vhd
+    Info (12022): Found design unit 1: mymUX8_1-logic
+    Info (12023): Found entity 1: myMUX8_1
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/mymux2_1_16/mymux2_1_16.vhd
+    Info (12022): Found design unit 1: mymUX2_1_16-logic
+    Info (12023): Found entity 1: myMUX2_1_16
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/myand16/myand16.vhd
+    Info (12022): Found design unit 1: MyAND16-logic
+    Info (12023): Found entity 1: MyAND16
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/myand/myand.vhd
+    Info (12022): Found design unit 1: myAND-logic
+    Info (12023): Found entity 1: myAND
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/myalu16_not/myalu16_not.vhd
+    Info (12022): Found design unit 1: myALU16_NOT-logic
+    Info (12023): Found entity 1: myALU16_NOT
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/mux8to1/mux8to1.vhd
+    Info (12022): Found design unit 1: mux8to1-LogicFunc
+    Info (12023): Found entity 1: mux8to1
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/jumpad/jumpad.vhd
+    Info (12022): Found design unit 1: jumpAD-logic
+    Info (12023): Found entity 1: jumpAD
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/jrselector/jrselector.vhd
+    Info (12022): Found design unit 1: JRSelector-behav
+    Info (12023): Found entity 1: JRSelector
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/hazardunit/hazardunit.vhd
+    Info (12022): Found design unit 1: hazardUnit-behav
+    Info (12023): Found entity 1: hazardUnit
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/gatedclockdff/gatedclockdff.vhd
+    Info (12022): Found design unit 1: GatedClockDFF-logic
+    Info (12023): Found entity 1: GatedClockDFF
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/fulladder16/fulladder16.vhd
+    Info (12022): Found design unit 1: fulladder16-logic
+    Info (12023): Found entity 1: fulladder16
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/fulladder/fulladder.vhd
+    Info (12022): Found design unit 1: fulladder-logic
+    Info (12023): Found entity 1: fulladder
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/forwarder/forwarder.vhd
+    Info (12022): Found design unit 1: forwarder-behav
+    Info (12023): Found entity 1: forwarder
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/decode3_8/decode3_8.vhd
+    Info (12022): Found design unit 1: decode3_8-logic
+    Info (12023): Found entity 1: decode3_8
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/controller/controller.vhd
+    Info (12022): Found design unit 1: controller-rtl
+    Info (12023): Found entity 1: controller
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/alucontrol/alucontrol.vhd
+    Info (12022): Found design unit 1: aluControl-behav
+    Info (12023): Found entity 1: aluControl
+Info (12021): Found 2 design units, including 1 entities, in source file /university/architecture/project 3/alu16/alu16.vhd
+    Info (12022): Found design unit 1: ALU16-logic
+    Info (12023): Found entity 1: ALU16
+Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
+    Info (12022): Found design unit 1: CPU-behav
+    Info (12023): Found entity 1: CPU
+Info (12127): Elaborating entity "CPU" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(213): object "clock_IDEX" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(213): object "wasJumpOut_IDEX" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(213): object "isJump_IDEX" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(214): object "isJR_IDEX" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at CPU.vhd(279): signal "fromData" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(281): signal "keyData" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(283): signal "Result_EXMEM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(310): signal "sel_out1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(312): signal "outPC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(320): signal "immediate16_IDEX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(322): signal "sel_out2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(337): signal "outInstruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(339): signal "outInstruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CPU.vhd(341): signal "outInstruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "trapUnit" for hierarchy "trapUnit:Trap"
+Info (12128): Elaborating entity "jumpAD" for hierarchy "jumpAD:JumpAddress"
+Warning (10492): VHDL Process Statement warning at JumpAD.vhd(28): signal "extended" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at JumpAD.vhd(29): signal "multed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "JRSelector" for hierarchy "JRSelector:JRSelect"
+Warning (10492): VHDL Process Statement warning at JRSelector.vhd(25): signal "PCP2AD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at JRSelector.vhd(27): signal "EjumpAD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at JRSelector.vhd(29): signal "branchAD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at JRSelector.vhd(30): signal "PCP2AD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "reg16b" for hierarchy "reg16b:PCRegister"
+Info (12128): Elaborating entity "register_MEM_WB" for hierarchy "register_MEM_WB:RMEMWB"
+Info (12128): Elaborating entity "register_IF_ID" for hierarchy "register_IF_ID:RIFID"
+Warning (10492): VHDL Process Statement warning at Register_IF_ID.vhd(24): signal "inPC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_IF_ID.vhd(25): signal "inInstruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Register_IF_ID.vhd(21): inferring latch(es) for signal or variable "outPC", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at Register_IF_ID.vhd(21): inferring latch(es) for signal or variable "outInstruction", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "outInstruction[0]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[1]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[2]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[3]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[4]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[5]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[6]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[7]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[8]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[9]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[10]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[11]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[12]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[13]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[14]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outInstruction[15]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[0]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[1]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[2]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[3]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[4]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[5]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[6]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[7]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[8]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[9]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[10]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[11]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[12]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[13]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[14]" at Register_IF_ID.vhd(21)
+Info (10041): Inferred latch for "outPC[15]" at Register_IF_ID.vhd(21)
+Info (12128): Elaborating entity "forwarder" for hierarchy "forwarder:Forward"
+Info (12128): Elaborating entity "selector" for hierarchy "selector:Selector1"
+Info (12128): Elaborating entity "aluControl" for hierarchy "aluControl:ALUController"
+Info (12128): Elaborating entity "signExtender" for hierarchy "signExtender:sign_extend"
+Info (12128): Elaborating entity "controller" for hierarchy "controller:Control"
+Info (12128): Elaborating entity "ALU16" for hierarchy "ALU16:ALU"
+Info (12128): Elaborating entity "TwosComplement" for hierarchy "ALU16:ALU|TwosComplement:G0"
+Info (12128): Elaborating entity "myNOT16" for hierarchy "ALU16:ALU|TwosComplement:G0|myNOT16:V0"
+Info (12128): Elaborating entity "fulladder16" for hierarchy "ALU16:ALU|fulladder16:V0"
+Info (12128): Elaborating entity "fulladder" for hierarchy "ALU16:ALU|fulladder16:V0|fulladder:V0"
+Info (12128): Elaborating entity "myXOR3" for hierarchy "ALU16:ALU|fulladder16:V0|fulladder:V0|myXOR3:V0"
+Info (12128): Elaborating entity "myAND" for hierarchy "ALU16:ALU|fulladder16:V0|fulladder:V0|myAND:V1"
+Info (12128): Elaborating entity "myOR3" for hierarchy "ALU16:ALU|fulladder16:V0|fulladder:V0|myOR3:V4"
+Info (12128): Elaborating entity "myXOR" for hierarchy "ALU16:ALU|fulladder16:V0|myXOR:Overflow"
+Info (12128): Elaborating entity "MyAND16" for hierarchy "ALU16:ALU|MyAND16:V1"
+Info (12128): Elaborating entity "MyOR16" for hierarchy "ALU16:ALU|MyOR16:V2"
+Info (12128): Elaborating entity "myMUX2_1_16" for hierarchy "ALU16:ALU|myMUX2_1_16:V3"
+Info (12128): Elaborating entity "myALU16_NOT" for hierarchy "ALU16:ALU|myALU16_NOT:V4"
+Info (12128): Elaborating entity "myMUX8_1" for hierarchy "ALU16:ALU|myMUX8_1:V5"
+Info (12128): Elaborating entity "hazardUnit" for hierarchy "hazardUnit:Hazard"
+Info (12128): Elaborating entity "regFile" for hierarchy "regFile:FileRegister"
+Info (12128): Elaborating entity "decode3_8" for hierarchy "regFile:FileRegister|decode3_8:G0"
+Info (12128): Elaborating entity "reg0" for hierarchy "regFile:FileRegister|reg0:G1"
+Info (12128): Elaborating entity "reg16" for hierarchy "regFile:FileRegister|reg16:G2"
+Info (12128): Elaborating entity "GatedClockDFF" for hierarchy "regFile:FileRegister|reg16:G2|GatedClockDFF:G0"
+Info (12128): Elaborating entity "mux8to1" for hierarchy "regFile:FileRegister|mux8to1:G9"
+Info (12128): Elaborating entity "register_ID_EX" for hierarchy "register_ID_EX:RIDEX"
+Warning (10541): VHDL Signal Declaration warning at Register_ID_EX.vhd(21): used implicit default value for signal "clock_IDEX" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(36): signal "isEOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(37): signal "wasJumpOut" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(38): signal "isJump" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(39): signal "isJR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(40): signal "isBranch" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(41): signal "isR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(42): signal "isMFPC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(43): signal "ALUFunc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(44): signal "R1Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(45): signal "R2Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(46): signal "immediate16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(47): signal "R1AD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(48): signal "R2AD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(49): signal "jumpShortAddr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(50): signal "isReadDigit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(51): signal "isPrintDigit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(52): signal "isLW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Register_ID_EX.vhd(53): signal "isSW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "register_EX_MEM" for hierarchy "register_EX_MEM:REXMEM"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "regOUT[0]" is stuck at GND
+    Warning (13410): Pin "regOUT[1]" is stuck at GND
+    Warning (13410): Pin "regOUT[2]" is stuck at GND
+    Warning (13410): Pin "regOUT[3]" is stuck at GND
+    Warning (13410): Pin "regOUT[4]" is stuck at GND
+    Warning (13410): Pin "regOUT[5]" is stuck at GND
+    Warning (13410): Pin "regOUT[6]" is stuck at GND
+    Warning (13410): Pin "regOUT[7]" is stuck at GND
+    Warning (13410): Pin "regOUT[8]" is stuck at GND
+    Warning (13410): Pin "regOUT[9]" is stuck at GND
+    Warning (13410): Pin "regOUT[10]" is stuck at GND
+    Warning (13410): Pin "regOUT[11]" is stuck at GND
+    Warning (13410): Pin "regOUT[12]" is stuck at GND
+    Warning (13410): Pin "regOUT[13]" is stuck at GND
+    Warning (13410): Pin "regOUT[14]" is stuck at GND
+    Warning (13410): Pin "regOUT[15]" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1172 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 50 input pins
+    Info (21059): Implemented 227 output pins
+    Info (21061): Implemented 895 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 4652 megabytes
+    Info: Processing ended: Sat Jun 19 13:46:22 2021
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

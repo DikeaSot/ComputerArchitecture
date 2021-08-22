@@ -1,0 +1,35 @@
+|SignExtender
+immediate[0] => extended[0].DATAIN
+immediate[1] => extended[1].DATAIN
+immediate[2] => extended[2].DATAIN
+immediate[3] => extended[3].DATAIN
+immediate[4] => extended[4].DATAIN
+immediate[5] => extended[5].DATAIN
+immediate[5] => extended[15].DATAIN
+immediate[5] => extended[14].DATAIN
+immediate[5] => extended[13].DATAIN
+immediate[5] => extended[12].DATAIN
+immediate[5] => extended[11].DATAIN
+immediate[5] => extended[10].DATAIN
+immediate[5] => extended[9].DATAIN
+immediate[5] => extended[8].DATAIN
+immediate[5] => extended[7].DATAIN
+immediate[5] => extended[6].DATAIN
+extended[0] <= immediate[0].DB_MAX_OUTPUT_PORT_TYPE
+extended[1] <= immediate[1].DB_MAX_OUTPUT_PORT_TYPE
+extended[2] <= immediate[2].DB_MAX_OUTPUT_PORT_TYPE
+extended[3] <= immediate[3].DB_MAX_OUTPUT_PORT_TYPE
+extended[4] <= immediate[4].DB_MAX_OUTPUT_PORT_TYPE
+extended[5] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[6] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[7] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[8] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[9] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[10] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[11] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[12] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[13] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[14] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+extended[15] <= immediate[5].DB_MAX_OUTPUT_PORT_TYPE
+
+

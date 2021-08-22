@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fulladder16 is 
+	port (in1, in2: in std_logic_vector(15 downto 0);
+			carry_in: in std_logic;
+			sum: out std_logic_vector(15 downto 0);
+			carry_out: out std_logic):
+end fulladder16;
+
+architecture logic of fulladder16 is
+	component myAND16
+	port (in1, in2: in std_logic_vector(15 downto 0);
+			out1: out std_logic_vector(15 downto 0));
+	end component;
+
+	component myOR16
+	port (in1, in2, in3: in std_logic_vector(15 downto 0);
+			out1: out std_logic_vector(15 downto 0));
+	end component;
+	
+	component myXOR16
+	port (in1, in2, in3: in std_logic_vector(15 downto 0);
+			out1: out std_logic_vector(15 downto 0));
+	end component;
+	
+	signal s1, s2, s3: std_logic_vector(15 downto 0);
+	begin
+		V0: myXOR16 port map (in1, in2, carry_in, sum);
+		V1: myAND port map (in1, in2, s1);
+		V2: myAND port map (in1, in2, s2);
+		V3: myAND port map (in1, in2, s3);
+		V4: myOR3 port map (s1, s2, s3, carry_out);
+		
+end logic;

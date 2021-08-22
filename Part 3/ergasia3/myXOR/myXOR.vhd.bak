@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity myXOR is
+port(A, B: in std_logic;
+Q: out std_logic);
+end myXOR;
+
+
+architecture LogicFunc of myXOR is
+begin
+Q <= A XOR B;
+end LogicFunc;

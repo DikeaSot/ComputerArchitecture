@@ -1,0 +1,106 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 17:46:09  June 06, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:46:09  JUNE 06, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name RTLV_GROUP_RELATED_NODES ON
+set_global_assignment -name RTLV_GROUP_COMB_LOGIC_IN_CLOUD ON
+set_global_assignment -name RTLV_REMOVE_FANOUT_FREE_REGISTERS OFF
+set_global_assignment -name VHDL_FILE ../TwosComplement/TwosComplement.vhd
+set_global_assignment -name VHDL_FILE ../TrapUnit/TrapUnit.vhd
+set_global_assignment -name VHDL_FILE ../SignExtender/SignExtender.vhd
+set_global_assignment -name VHDL_FILE ../Selector/Selector.vhd
+set_global_assignment -name VHDL_FILE ../Register_MEM_WB/Register_MEM_WB.vhd
+set_global_assignment -name VHDL_FILE ../Register_IF_ID/Register_IF_ID.vhd
+set_global_assignment -name VHDL_FILE ../Register_ID_EX/Register_ID_EX.vhd
+set_global_assignment -name VHDL_FILE ../Register_EX_MEM/Register_EX_MEM.vhd
+set_global_assignment -name VHDL_FILE ../RegFile/RegFile.vhd
+set_global_assignment -name VHDL_FILE ../Reg16b/Reg16b.vhd
+set_global_assignment -name VHDL_FILE ../Reg16/Reg16.vhd
+set_global_assignment -name VHDL_FILE ../Reg0/Reg0.vhd
+set_global_assignment -name VHDL_FILE ../MyXOR3/MyXOR3.vhd
+set_global_assignment -name VHDL_FILE ../myXOR/myXOR.vhd
+set_global_assignment -name VHDL_FILE ../MyOR16/MyOR16.vhd
+set_global_assignment -name VHDL_FILE ../MyOR3/MyOR3.vhd
+set_global_assignment -name VHDL_FILE ../MyNOT16/MyNOT16.vhd
+set_global_assignment -name VHDL_FILE ../MyMUX8_1/myMUX8_1.vhd
+set_global_assignment -name VHDL_FILE ../MyMUX2_1_16/MyMUX2_1_16.vhd
+set_global_assignment -name VHDL_FILE ../MyAND16/MyAND16.vhd
+set_global_assignment -name VHDL_FILE ../MyAND/MyAND.vhd
+set_global_assignment -name VHDL_FILE ../MyALU16_NOT/MyALU16_NOT.vhd
+set_global_assignment -name VHDL_FILE ../mux8to1/mux8to1.vhd
+set_global_assignment -name VHDL_FILE ../JumpAD/JumpAD.vhd
+set_global_assignment -name VHDL_FILE ../JRSelector/JRSelector.vhd
+set_global_assignment -name VHDL_FILE ../HazardUnit/HazardUnit.vhd
+set_global_assignment -name VHDL_FILE ../GatedClockDFF/GatedClockDFF.vhd
+set_global_assignment -name VHDL_FILE ../FullAdder16/FullAdder16.vhd
+set_global_assignment -name VHDL_FILE ../FullAdder/FullAdder.vhd
+set_global_assignment -name VHDL_FILE ../Forwarder/Forwarder.vhd
+set_global_assignment -name VHDL_FILE ../Decode3_8/Decode3_8.vhd
+set_global_assignment -name VHDL_FILE ../Controller/Controller.vhd
+set_global_assignment -name VHDL_FILE ../ALUControl/ALUControl.vhd
+set_global_assignment -name VHDL_FILE ../ALU16/ALU16.vhd
+set_global_assignment -name VHDL_FILE CPU.vhd
+set_global_assignment -name RTLV_SIMPLIFIED_LOGIC ON
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Self_Add.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Success1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Success2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Success_NOT.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Success_ADD.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/University/Architecture/Project 3/CPU/Success_NOT.vwf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

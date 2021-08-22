@@ -1,0 +1,373 @@
+Simulator report for JumpAD
+Thu May 20 10:03:30 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 80.0 ns      ;
+; Simulation Netlist Size     ; 112 nodes    ;
+; Simulation Coverage         ;      76.79 % ;
+; Total Number of Transitions ; 293          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                            ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                             ;               ;
+; Vector input source                                                                        ; D:/University/Architecture/Quartus Projects/JumpAD/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                              ; On            ;
+; Check outputs                                                                              ; Off                                                             ; Off           ;
+; Report simulation coverage                                                                 ; On                                                              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                              ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                              ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                              ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                             ; Off           ;
+; Detect glitches                                                                            ; Off                                                             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                             ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      76.79 % ;
+; Total nodes checked                                 ; 112          ;
+; Total output ports checked                          ; 112          ;
+; Total output ports with complete 1/0-value coverage ; 86           ;
+; Total output ports with no 1/0-value coverage       ; 7            ;
+; Total output ports with no 1-value coverage         ; 14           ;
+; Total output ports with no 0-value coverage         ; 19           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |jumpAD|jumpADR[1]    ; |jumpAD|jumpADR[1]    ; out              ;
+; |jumpAD|jumpADR[2]    ; |jumpAD|jumpADR[2]    ; out              ;
+; |jumpAD|jumpADR[3]    ; |jumpAD|jumpADR[3]    ; out              ;
+; |jumpAD|jumpADR[5]    ; |jumpAD|jumpADR[5]    ; out              ;
+; |jumpAD|jumpADR[8]    ; |jumpAD|jumpADR[8]    ; out              ;
+; |jumpAD|jumpADR[9]    ; |jumpAD|jumpADR[9]    ; out              ;
+; |jumpAD|jumpADR[10]   ; |jumpAD|jumpADR[10]   ; out              ;
+; |jumpAD|jumpADR[11]   ; |jumpAD|jumpADR[11]   ; out              ;
+; |jumpAD|instrP2AD[1]  ; |jumpAD|instrP2AD[1]  ; out              ;
+; |jumpAD|instrP2AD[5]  ; |jumpAD|instrP2AD[5]  ; out              ;
+; |jumpAD|instrP2AD[6]  ; |jumpAD|instrP2AD[6]  ; out              ;
+; |jumpAD|instrP2AD[8]  ; |jumpAD|instrP2AD[8]  ; out              ;
+; |jumpAD|instrP2AD[11] ; |jumpAD|instrP2AD[11] ; out              ;
+; |jumpAD|instrP2AD[13] ; |jumpAD|instrP2AD[13] ; out              ;
+; |jumpAD|instrP2AD[14] ; |jumpAD|instrP2AD[14] ; out              ;
+; |jumpAD|EjumpAD[2]    ; |jumpAD|EjumpAD[2]    ; pin_out          ;
+; |jumpAD|EjumpAD[3]    ; |jumpAD|EjumpAD[3]    ; pin_out          ;
+; |jumpAD|EjumpAD[4]    ; |jumpAD|EjumpAD[4]    ; pin_out          ;
+; |jumpAD|EjumpAD[5]    ; |jumpAD|EjumpAD[5]    ; pin_out          ;
+; |jumpAD|EjumpAD[6]    ; |jumpAD|EjumpAD[6]    ; pin_out          ;
+; |jumpAD|EjumpAD[7]    ; |jumpAD|EjumpAD[7]    ; pin_out          ;
+; |jumpAD|EjumpAD[8]    ; |jumpAD|EjumpAD[8]    ; pin_out          ;
+; |jumpAD|EjumpAD[9]    ; |jumpAD|EjumpAD[9]    ; pin_out          ;
+; |jumpAD|EjumpAD[10]   ; |jumpAD|EjumpAD[10]   ; pin_out          ;
+; |jumpAD|EjumpAD[11]   ; |jumpAD|EjumpAD[11]   ; pin_out          ;
+; |jumpAD|EjumpAD[12]   ; |jumpAD|EjumpAD[12]   ; pin_out          ;
+; |jumpAD|EjumpAD[13]   ; |jumpAD|EjumpAD[13]   ; pin_out          ;
+; |jumpAD|EjumpAD[14]   ; |jumpAD|EjumpAD[14]   ; pin_out          ;
+; |jumpAD|EjumpAD[15]   ; |jumpAD|EjumpAD[15]   ; pin_out          ;
+; |jumpAD|Add0~1        ; |jumpAD|Add0~1        ; out0             ;
+; |jumpAD|Add0~2        ; |jumpAD|Add0~2        ; out0             ;
+; |jumpAD|Add0~4        ; |jumpAD|Add0~4        ; out0             ;
+; |jumpAD|Add0~5        ; |jumpAD|Add0~5        ; out0             ;
+; |jumpAD|Add0~6        ; |jumpAD|Add0~6        ; out0             ;
+; |jumpAD|Add0~7        ; |jumpAD|Add0~7        ; out0             ;
+; |jumpAD|Add0~8        ; |jumpAD|Add0~8        ; out0             ;
+; |jumpAD|Add0~9        ; |jumpAD|Add0~9        ; out0             ;
+; |jumpAD|Add0~10       ; |jumpAD|Add0~10       ; out0             ;
+; |jumpAD|Add0~11       ; |jumpAD|Add0~11       ; out0             ;
+; |jumpAD|Add0~12       ; |jumpAD|Add0~12       ; out0             ;
+; |jumpAD|Add0~13       ; |jumpAD|Add0~13       ; out0             ;
+; |jumpAD|Add0~14       ; |jumpAD|Add0~14       ; out0             ;
+; |jumpAD|Add0~15       ; |jumpAD|Add0~15       ; out0             ;
+; |jumpAD|Add0~16       ; |jumpAD|Add0~16       ; out0             ;
+; |jumpAD|Add0~17       ; |jumpAD|Add0~17       ; out0             ;
+; |jumpAD|Add0~19       ; |jumpAD|Add0~19       ; out0             ;
+; |jumpAD|Add0~21       ; |jumpAD|Add0~21       ; out0             ;
+; |jumpAD|Add0~22       ; |jumpAD|Add0~22       ; out0             ;
+; |jumpAD|Add0~23       ; |jumpAD|Add0~23       ; out0             ;
+; |jumpAD|Add0~24       ; |jumpAD|Add0~24       ; out0             ;
+; |jumpAD|Add0~26       ; |jumpAD|Add0~26       ; out0             ;
+; |jumpAD|Add0~27       ; |jumpAD|Add0~27       ; out0             ;
+; |jumpAD|Add0~28       ; |jumpAD|Add0~28       ; out0             ;
+; |jumpAD|Add0~29       ; |jumpAD|Add0~29       ; out0             ;
+; |jumpAD|Add0~30       ; |jumpAD|Add0~30       ; out0             ;
+; |jumpAD|Add0~31       ; |jumpAD|Add0~31       ; out0             ;
+; |jumpAD|Add0~32       ; |jumpAD|Add0~32       ; out0             ;
+; |jumpAD|Add0~33       ; |jumpAD|Add0~33       ; out0             ;
+; |jumpAD|Add0~34       ; |jumpAD|Add0~34       ; out0             ;
+; |jumpAD|Add0~35       ; |jumpAD|Add0~35       ; out0             ;
+; |jumpAD|Add0~36       ; |jumpAD|Add0~36       ; out0             ;
+; |jumpAD|Add0~37       ; |jumpAD|Add0~37       ; out0             ;
+; |jumpAD|Add0~38       ; |jumpAD|Add0~38       ; out0             ;
+; |jumpAD|Add0~39       ; |jumpAD|Add0~39       ; out0             ;
+; |jumpAD|Add0~42       ; |jumpAD|Add0~42       ; out0             ;
+; |jumpAD|Add0~43       ; |jumpAD|Add0~43       ; out0             ;
+; |jumpAD|Add0~44       ; |jumpAD|Add0~44       ; out0             ;
+; |jumpAD|Add0~45       ; |jumpAD|Add0~45       ; out0             ;
+; |jumpAD|Add0~46       ; |jumpAD|Add0~46       ; out0             ;
+; |jumpAD|Add0~47       ; |jumpAD|Add0~47       ; out0             ;
+; |jumpAD|Add0~48       ; |jumpAD|Add0~48       ; out0             ;
+; |jumpAD|Add0~49       ; |jumpAD|Add0~49       ; out0             ;
+; |jumpAD|Add0~50       ; |jumpAD|Add0~50       ; out0             ;
+; |jumpAD|Add0~51       ; |jumpAD|Add0~51       ; out0             ;
+; |jumpAD|Add0~52       ; |jumpAD|Add0~52       ; out0             ;
+; |jumpAD|Add0~53       ; |jumpAD|Add0~53       ; out0             ;
+; |jumpAD|Add0~54       ; |jumpAD|Add0~54       ; out0             ;
+; |jumpAD|Add0~57       ; |jumpAD|Add0~57       ; out0             ;
+; |jumpAD|Add0~58       ; |jumpAD|Add0~58       ; out0             ;
+; |jumpAD|Add0~59       ; |jumpAD|Add0~59       ; out0             ;
+; |jumpAD|Add0~60       ; |jumpAD|Add0~60       ; out0             ;
+; |jumpAD|Add0~61       ; |jumpAD|Add0~61       ; out0             ;
+; |jumpAD|Add0~62       ; |jumpAD|Add0~62       ; out0             ;
+; |jumpAD|Add0~63       ; |jumpAD|Add0~63       ; out0             ;
+; |jumpAD|Add0~64       ; |jumpAD|Add0~64       ; out0             ;
+; |jumpAD|Add0~67       ; |jumpAD|Add0~67       ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------+
+; Missing 1-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |jumpAD|instrP2AD[0]  ; |jumpAD|instrP2AD[0]  ; out              ;
+; |jumpAD|instrP2AD[2]  ; |jumpAD|instrP2AD[2]  ; out              ;
+; |jumpAD|instrP2AD[3]  ; |jumpAD|instrP2AD[3]  ; out              ;
+; |jumpAD|instrP2AD[7]  ; |jumpAD|instrP2AD[7]  ; out              ;
+; |jumpAD|instrP2AD[9]  ; |jumpAD|instrP2AD[9]  ; out              ;
+; |jumpAD|instrP2AD[10] ; |jumpAD|instrP2AD[10] ; out              ;
+; |jumpAD|instrP2AD[12] ; |jumpAD|instrP2AD[12] ; out              ;
+; |jumpAD|instrP2AD[15] ; |jumpAD|instrP2AD[15] ; out              ;
+; |jumpAD|EjumpAD[0]    ; |jumpAD|EjumpAD[0]    ; pin_out          ;
+; |jumpAD|Add0~25       ; |jumpAD|Add0~25       ; out0             ;
+; |jumpAD|Add0~40       ; |jumpAD|Add0~40       ; out0             ;
+; |jumpAD|Add0~41       ; |jumpAD|Add0~41       ; out0             ;
+; |jumpAD|Add0~55       ; |jumpAD|Add0~55       ; out0             ;
+; |jumpAD|Add0~56       ; |jumpAD|Add0~56       ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------+
+; Missing 0-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |jumpAD|jumpADR[0]   ; |jumpAD|jumpADR[0]   ; out              ;
+; |jumpAD|jumpADR[4]   ; |jumpAD|jumpADR[4]   ; out              ;
+; |jumpAD|jumpADR[6]   ; |jumpAD|jumpADR[6]   ; out              ;
+; |jumpAD|jumpADR[7]   ; |jumpAD|jumpADR[7]   ; out              ;
+; |jumpAD|instrP2AD[2] ; |jumpAD|instrP2AD[2] ; out              ;
+; |jumpAD|instrP2AD[4] ; |jumpAD|instrP2AD[4] ; out              ;
+; |jumpAD|instrP2AD[9] ; |jumpAD|instrP2AD[9] ; out              ;
+; |jumpAD|EjumpAD[1]   ; |jumpAD|EjumpAD[1]   ; pin_out          ;
+; |jumpAD|Add0~0       ; |jumpAD|Add0~0       ; out0             ;
+; |jumpAD|Add0~3       ; |jumpAD|Add0~3       ; out0             ;
+; |jumpAD|Add0~18      ; |jumpAD|Add0~18      ; out0             ;
+; |jumpAD|Add0~20      ; |jumpAD|Add0~20      ; out0             ;
+; |jumpAD|Add0~25      ; |jumpAD|Add0~25      ; out0             ;
+; |jumpAD|Add0~40      ; |jumpAD|Add0~40      ; out0             ;
+; |jumpAD|Add0~41      ; |jumpAD|Add0~41      ; out0             ;
+; |jumpAD|Add0~55      ; |jumpAD|Add0~55      ; out0             ;
+; |jumpAD|Add0~56      ; |jumpAD|Add0~56      ; out0             ;
+; |jumpAD|Add0~65      ; |jumpAD|Add0~65      ; out0             ;
+; |jumpAD|Add0~66      ; |jumpAD|Add0~66      ; out0             ;
++----------------------+----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 20 10:03:29 2021
+Info: Command: quartus_sim --simulation_results_format=VWF JumpAD -c JumpAD
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Info (324025): Using vector source file "D:/University/Architecture/Quartus Projects/JumpAD/Waveform.vwf"
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      76.79 %
+Info (328052): Number of transitions in simulation is 293
+Info (324045): Vector file JumpAD.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 4441 megabytes
+    Info: Processing ended: Thu May 20 10:03:30 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

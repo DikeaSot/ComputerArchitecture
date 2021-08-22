@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fulladder is 
+	port (in1, in2, carry_in: std_logic;
+			sum carry_out: std_logic);
+	end fulladder;
+
+	architecture logic of fulladders is
+		component myAND
+		port (A, B: in std_logic;
+				Q: out std_logic);
+		end component;
+
+		component myOR
+		port (A, B: in std_logic;
+				Q: out std_logic)		end component;
+		
+		component myXOR
+		port (A, B)
+		

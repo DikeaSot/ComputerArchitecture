@@ -1,0 +1,7 @@
+|MyOR3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

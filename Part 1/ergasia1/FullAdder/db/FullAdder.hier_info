@@ -1,0 +1,46 @@
+|FullAdder
+in1 => myXOR3:V0.in1
+in1 => myAND:V1.in1
+in1 => myAND:V2.in1
+in2 => myXOR3:V0.in2
+in2 => myAND:V1.in2
+in2 => myAND:V3.in2
+carry_in => myXOR3:V0.in3
+carry_in => myAND:V2.in2
+carry_in => myAND:V3.in1
+sum <= myXOR3:V0.out1
+carry_out <= myOR3:V4.out1
+
+
+|FullAdder|myXOR3:V0
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder|myAND:V1
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder|myAND:V2
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder|myAND:V3
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder|myOR3:V4
+in1 => out1~0.IN0
+in2 => out1~0.IN1
+in3 => out1~1.IN1
+out1 <= out1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
